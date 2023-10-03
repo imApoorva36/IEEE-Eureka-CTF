@@ -1,8 +1,8 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
-from . views import ItemListCreateView
 from .views import index
+from .api import router
 urlpatterns = [
     path("", index, name="index"),
-    path('items/', ItemListCreateView.as_view(), name='item-list-create'),
+    path('api/', include(router.urls)),
 ]

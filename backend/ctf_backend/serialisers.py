@@ -1,7 +1,17 @@
 from rest_framework import serializers
-from .models import Item
+from .models import teams, questions, scoreboard
 
-class ItemSerializer(serializers.ModelSerializer):
+class TeamsSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Item
+        model = teams
+        fields = '__all__'
+
+class QuestionsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = questions
+        fields = '__all__'
+
+class ScoreboardSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = scoreboard
         fields = '__all__'
