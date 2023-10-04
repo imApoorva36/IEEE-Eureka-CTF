@@ -1,9 +1,12 @@
 import { TeamBrief } from '@/models/Team'
 import s from './teams.module.css'
 import Link from 'next/link'
+import ENDPOINT from '@/helpers/endpoint'
 
 export default async function Teams() {
-	let teams: TeamBrief[] = await fetch('http://localhost:8000/api/teams').then((res) => res.json())
+	let teams: TeamBrief[] = await fetch(ENDPOINT + '/teams', {
+        next: { revalidate: 30 }
+    }).then((res) => res.json())
 
 	return (
 		<main className={s.teams}>
