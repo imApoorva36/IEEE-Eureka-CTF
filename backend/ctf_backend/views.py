@@ -6,7 +6,7 @@ from rest_framework import viewsets
 from .models import teams, questions, scoreboard
 from .serialisers import TeamsSerializer, QuestionsSerializer, ScoreboardSerializer
 
-def index(request):
+def index(request, path):
     return render_nextjs_page_sync(request)
 
 class TeamsViewSet(viewsets.ModelViewSet):

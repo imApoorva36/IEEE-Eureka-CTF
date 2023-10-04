@@ -1,6 +1,6 @@
 export interface TeamBrief {
-	id: string
-	name: string
+	teamid: string
+	teamname: string
 }
 
 export interface TeamDetailed {
