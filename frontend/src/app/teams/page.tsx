@@ -4,9 +4,10 @@ import Link from 'next/link'
 import ENDPOINT from '@/helpers/endpoint'
 
 export default async function Teams() {
-	let teams: TeamBrief[] = await fetch(ENDPOINT + '/teams', {
+	let teams: TeamBrief[] = await fetch(ENDPOINT + '/teams/', {
         next: { revalidate: 30 }
     }).then((res) => res.json())
+	.catch(err => console.log(err))
 
 	return (
 		<main className={s.teams}>
