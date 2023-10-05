@@ -3,12 +3,12 @@ import Scoreboard from '@/models/Scoreboard'
 import s from './scoreboard.module.css'
 
 export default async function ScoreboardPage () {
-	// let scores: number[] = await fetch(ENDPOINT + '/scoreboard')
-    // .then((res) =>
-	// 	res.json()
-	// )
+	let scores: number[] = await fetch(ENDPOINT + '/scoreboard')
+    .then((res) =>
+		res.json()
+	)
 
-	let scores = [100, 150, 140, 130, 110, 100]
+	//let scores = [100, 150, 140, 130, 110, 100]
 
 	let scoreboard = new Scoreboard(scores)
 
