@@ -5,7 +5,6 @@ import s from './login.module.css'
 import ENDPOINT from '@/helpers/endpoint'
 import { useRouter } from 'next/navigation';
 
-// Import necessary dependencies
 export default function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -26,7 +25,7 @@ export default function Login() {
                 }),
             });
 
-            if (res.status === 400) {
+            if (res.status === 401) {
                 alert('Wrong credentials');
             } else if (res.ok) {
                 const data = await res.json();
