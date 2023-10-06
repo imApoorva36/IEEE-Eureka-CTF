@@ -3,7 +3,7 @@ import Scoreboard from '@/models/Scoreboard'
 import s from './scoreboard.module.css'
 
 export default async function ScoreboardPage () {
-	// let scores: number[] = await fetch(ENDPOINT + '/scoreboard')
+	// let scores: number[] = await fetch(ENDPOINT + '/scoreboard/')
     // .then((res) =>
 	// 	res.json()
 	// )
