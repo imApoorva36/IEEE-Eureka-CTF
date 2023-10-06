@@ -1,8 +1,7 @@
 # api.py
 
 from rest_framework import routers
-from .views import TeamsViewSet, QuestionsViewSet, ScoreboardViewSet, UserAPIView
-
+from .views import TeamsViewSet, QuestionsViewSet, ScoreboardViewSet
 router = routers.DefaultRouter()
 router.register(r'teams', TeamsViewSet)
 router.register(r'questions', QuestionsViewSet)
