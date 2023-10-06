@@ -3,35 +3,53 @@
 import { useState } from 'react'
 import s from './login.module.css'
 import ENDPOINT from '@/helpers/endpoint'
+import { useRouter } from 'next/navigation';
 
+// Import necessary dependencies
 export default function Login() {
-	let [email, setEmail] = useState('')
-	let [password, setPassword] = useState('')
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const router = useRouter(); // Initialize the router object
 
-	async function submit(e: React.FormEvent<HTMLFormElement>) {
-		e.preventDefault()
+    async function submit(e: React.FormEvent<HTMLFormElement>) {
+        e.preventDefault();
 
-		let res = await fetch(ENDPOINT + '/login', {
-			method: 'POST',
-			body: JSON.stringify({ email, password })
-		})
-		
-		if (res.status == 400) {
-			alert("wrong credentials")
-		} else {
-			let data = await res.json()
-			document.cookie = `user=${data.jwt}`
-		}
+        try {
+            const res = await fetch(ENDPOINT + '/token/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    username: email,  // Use email as the username
+                    password,
+                }),
+            });
 
-		setEmail('')
-		setPassword('')
-	}
+            if (res.status === 400) {
+                alert('Wrong credentials');
+            } else if (res.ok) {
+                const data = await res.json();
+                // Save the JWT token to cookies or local storage
+                document.cookie = `access_token=${data.access}`;
+                document.cookie = `refresh_token=${data.refresh}`;
+                
+                // Redirect to the desired page on successful login
+                router.push('/teams');
+            }
+        } catch (error) {
+            console.error('Login error:', error);
+        }
 
-	return (
-		<main className={`${s.login} pd-top`}>
-			<form onSubmit={submit}>
-				<label htmlFor="email">Email: </label>
-				<input
+        setEmail('');
+        setPassword('');
+    }
+	
+    return (
+        <main className={`${s.login} pd-top`}>
+ 			<form onSubmit={submit}>
+ 				<label htmlFor="email">Email: </label>
+ 				<input
 					type="text"
 					id="email"
 					value={email}
@@ -55,5 +73,5 @@ export default function Login() {
 				<button type="submit">Submit</button>
 			</form>
 		</main>
-	)
+    );
 }
