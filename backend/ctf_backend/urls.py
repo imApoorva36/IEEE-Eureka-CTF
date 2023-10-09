@@ -9,6 +9,7 @@ urlpatterns = [
     path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
     #path('api/user/', UserAPIView.as_view(), name='user'),
     path('api/register/', views.register, name='register'),
+    path('api/logout/', views.custom_logout, name='custom_logout'),
     path('api/', include(router.urls)),
     path("<path:path>", index, name="index"),
 ]
