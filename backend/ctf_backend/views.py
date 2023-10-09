@@ -13,6 +13,9 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 from django.contrib.auth import authenticate, login
 from rest_framework.decorators import action
+from django.http import JsonResponse
+from django.contrib.auth import logout
+from rest_framework.decorators import api_view, permission_classes
 
 @api_view(['POST'])
 def register(request):
@@ -43,7 +46,7 @@ def index(request, path):
 class TeamsViewSet(viewsets.ModelViewSet):
     queryset = teams.objects.all()
     serializer_class = TeamsSerializer
-    #permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
     @action(detail=True, methods=['GET'])
     def team_detail(self, request, pk=None):
         """
@@ -63,3 +66,8 @@ class ScoreboardViewSet(viewsets.ModelViewSet):
     serializer_class = ScoreboardSerializer
     permission_classes = [IsAuthenticated]
 
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])  # Add this line
+def custom_logout(request):
+    logout(request)
+    return JsonResponse({'message': 'Logged out successfully'})

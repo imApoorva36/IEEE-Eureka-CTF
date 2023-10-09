@@ -35,6 +35,7 @@ export default function Login() {
                 
                 // Redirect to the desired page on successful login
                 router.push('/teams');
+                alert('Login Successfull!!')
             }
         } catch (error) {
             console.error('Login error:', error);
