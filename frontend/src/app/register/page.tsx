@@ -1,62 +1,56 @@
+// Import necessary dependencies
 'use client'
 
 import { useState } from 'react'
-import s from './login.module.css'
+import s from './register.module.css'
 import ENDPOINT from '@/helpers/endpoint'
-import { useRouter } from 'next/navigation';
 
-export default function Login() {
-    const [email, setEmail] = useState('');
+export default function Register() {
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const router = useRouter(); // Initialize the router object
-
-	let [loading, setLoading] = useState(false)
-	let [error, setError] = useState(false)
 
     async function submit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
 
         try {
-            const res = await fetch(ENDPOINT + '/token/', {
+            const res = await fetch(ENDPOINT + '/register/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    username: email,  // Use email as the username
+                    username,
                     password,
                 }),
             });
 
-            if (res.status === 401) {
+            if (res.status === 400) {
                 alert('Wrong credentials');
+                console.log(await res.json());
             } else if (res.ok) {
                 const data = await res.json();
                 // Save the JWT token to cookies or local storage
                 document.cookie = `access_token=${data.access}`;
                 document.cookie = `refresh_token=${data.refresh}`;
-                
-                // Redirect to the desired page on successful login
-                router.push('/teams');
-                alert('Login Successfull!!')
+                // Redirect to another page or update your UI accordingly
             }
         } catch (error) {
             console.error('Login error:', error);
         }
 
-        setEmail('');
+        setUsername('');
         setPassword('');
     }
-	
+
     return (
-        <main className={`${s.login} pd-top`}>
+        <main className={`${s.register} pd-top`}>
  			<form onSubmit={submit}>
- 				<label htmlFor="email">Email: </label>
+ 				<label>Username: </label>
  				<input
 					type="text"
-					id="email"
-					value={email}
-					onChange={(e) => setEmail(e.target.value)}
+					id="username"
+					value={username}
+					onChange={(e) => setUsername(e.target.value)}
 				/>
 
 				<br />
@@ -74,12 +68,6 @@ export default function Login() {
 				<br />
 
 				<button type="submit">Submit</button>
-				
-				<br />
-
-				{ loading ? <p>loading</p> : null }
-				{ error ? <p>wrong credentials</p> : null }
-
 			</form>
 		</main>
     );

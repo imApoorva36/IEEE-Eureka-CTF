@@ -10,6 +10,31 @@
     font-size: 30px;
 }
 
+.logoutButton {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logoutButton:hover {
+    background-color: #ff3a0c;
+  }
+  .link {
+    text-decoration: none;
+    color: #0070f3;
+    margin-right: 10px;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+    color: #0366d6;
+  }
+
 .content .buttons {
     margin-top: 50px;
     display: flex;
