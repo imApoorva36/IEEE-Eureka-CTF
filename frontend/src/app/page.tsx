@@ -11,6 +11,7 @@ export default function Home() {
 				<div className = {s.buttons}>
 					<Link href = "/login">Login</Link>
 					<Link href = "/register">Register</Link>
+					<Link href = "/logout">Logout</Link>
 				</div>
 			</div>
 		</main>
