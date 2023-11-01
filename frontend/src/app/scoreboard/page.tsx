@@ -1,17 +1,16 @@
-'use client'
+'use client';
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation'; 
+import { useRouter } from 'next/navigation';
 import ENDPOINT from '@/helpers/endpoint';
-import Scoreboard from '@/models/Scoreboard';
 import s from './scoreboard.module.css';
-import { useCookies } from 'react-cookie'; // Import the useCookies hook
-import { useAuth } from '../useAuth'; // Import the useAuth hook
+import { useCookies } from 'react-cookie';
+import { useAuth } from '../useAuth';
 
 const ScoreboardPage = () => {
   useAuth();
   const router = useRouter();
-  const [scores, setScores] = useState([]);
-  const [scoreboard, setScoreboard] = useState<Scoreboard | null>(null);
+  const [scores, setScores] = useState<number[]>([]); // Store scores as an array of numbers
+  const [currentScore, setCurrentScore] = useState<number | null>(null); // Store the current user's score
   const [scoreboardLoaded, setScoreboardLoaded] = useState(false);
 
   const [cookies] = useCookies(['access_token']);
@@ -20,20 +19,18 @@ const ScoreboardPage = () => {
   useEffect(() => {
     async function fetchScoreboard() {
       try {
-        // console.log("The access token", access_token);
-        const axiosConfig = {
-            headers: {
-                'Authorization': `Bearer ${access_token}`,
-            },
-        };
-        const response = await fetch(`${ENDPOINT}/scoreboard/`);
+        const response = await fetch(ENDPOINT + '/scoreboard/', {
+          headers: {
+            'Authorization': `Bearer ${access_token}`,
+          },
+        });
         if (response.ok) {
           const data = await response.json();
-          setScores(data);
+          const { top_10_scores, current_user_score } = data; // Extract scores
 
-          // Initialize the scoreboard here
-          const newScoreboard = new Scoreboard(data);
-          setScoreboard(newScoreboard);
+          setScores(top_10_scores); // Set top 10 scores
+          setCurrentScore(current_user_score); // Set the current user's score
+          setScoreboardLoaded(true); // Mark scoreboard as loaded
         } else {
           // Handle errors here, e.g., redirect or display an error message
           console.error('Error fetching scoreboard:', response.status);
@@ -43,27 +40,41 @@ const ScoreboardPage = () => {
         console.error('Network error:', error);
       }
     }
-
-    
+    fetchScoreboard();
   }, [router]);
-
-  if (!scoreboard) {
-    return null;
-  }
 
   return (
     <main className={`${s.scoreboard} pd-top`}>
       <h1>Scoreboard</h1>
       <br />
-	  <hr />
-	  <p>Yayy, Welcome to ScoreBoard!!</p><h1>YAYYY!!</h1>
-      {/* <h2>Your score: {scoreboard.me}</h2> */}
+      <hr />
+      <p>Yayy, Welcome to ScoreBoard!!</p>
+      <h1>YAYYY!!</h1>
       <br /><br />
-      {/* <ul>
-        {scoreboard.leaderboard.map((pos, index) => (
-          <li key={index}>{pos.position}. {pos.nickname} - {pos.score}</li>
-        ))}
-      </ul> */}
+
+      {scoreboardLoaded ? (
+        <div>
+          <p>Your Score: {currentScore}</p> {/* Display the current user's score */}
+          <table className={s.scoreTable}>
+            <thead>
+              <tr>
+                <th>Position</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              {scores.map((score, index) => (
+                <tr key={index}>
+                  <td>{index + 1}</td>
+                  <td>{score}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : (
+        <p>Loading scoreboard...</p>
+      )}
     </main>
   );
 };

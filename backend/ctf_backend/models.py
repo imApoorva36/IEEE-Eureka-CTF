@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-class questions(models.Model):
+class Question(models.Model):
     title=models.TextField()
     text=models.TextField()
     points=models.IntegerField()
@@ -10,19 +10,20 @@ class questions(models.Model):
     def __str__(self):
         return f"{self.id} - {self.title} - {self.text} - {self.points} - {self.link} - {self.flag}"
 
-class teams(models.Model):
+class Team(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    name=models.CharField(max_length=20)
-    member1=models.CharField(max_length=20)
-    member2=models.CharField(max_length=20)
-    member3=models.CharField(max_length=20)
+    name=models.CharField(max_length=20, null=True, blank=True)
+    member1=models.CharField(max_length=20, null=True, blank=True)
+    member2=models.CharField(max_length=20, null=True, blank=True)
+    member3=models.CharField(max_length=20, null=True, blank=True)
     contact=models.IntegerField()
-    answered = models.ManyToManyField(questions)
     def __str__(self):
         return f"{self.id} - {self.user}  - {self.name}"
     
-class scoreboard(models.Model):
-    team = models.ForeignKey(teams, on_delete=models.CASCADE)
-    score=models.IntegerField()
+class Flagresponse(models.Model):
+    team = models.ForeignKey(Team, on_delete=models.CASCADE)
+    timestamp=models.DateTimeField(null=True, blank=True)
+    question=models.ForeignKey(Question, on_delete=models.CASCADE)
+    response=models.CharField(default='', max_length=50, null=True, blank=True)
     def __str__(self):
-        return f"{self.id} - {self.team.name} - {self.score}"
+        return f"{self.team} - {self.timestamp} - {self.question} - {self.response}"
