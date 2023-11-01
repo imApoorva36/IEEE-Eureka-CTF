@@ -16,13 +16,11 @@ export default function Logout() {
         document.cookie = 'refresh_token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
 		localStorage.removeItem('access_token');
         localStorage.removeItem('refresh_token');
-        // Redirect to the login page
         router.push('/login');
     }
 
     return (
         <main className={`${s.logout} pd-top`}>
-            {/* Add a logout button */}
 			<label htmlFor="Logout">Logout</label>
             <button onClick={logout}>Logout</button>
         </main>
