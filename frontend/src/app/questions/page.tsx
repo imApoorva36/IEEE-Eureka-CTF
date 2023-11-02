@@ -10,7 +10,7 @@ export default async function Questions () {
 
     try {
         let res = await fetch(ENDPOINT + "/questions/", {
-            next: { revalidate: 60 },
+            next: { revalidate: 0 },
             headers: {
                 "Authorization": `Bearer ${access_token}`
             }
@@ -28,7 +28,7 @@ export default async function Questions () {
             <main className={`${s.questions} pd-top`}>
                 <ul>
                     {data.map(q => {
-                        return <li>{q.title}</li>
+                        return <li>{q.title} - {q.text} - {q.link} - {q.points}</li>
                     })}
                 </ul>
             </main>
