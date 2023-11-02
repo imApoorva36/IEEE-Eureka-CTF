@@ -5,11 +5,12 @@ import { TeamBrief } from '@/models/Team'
 import s from './teams.module.css'
 import ENDPOINT from '@/helpers/endpoint';
 import Cookies from 'js-cookie';
+import { useAuth } from '../useAuth';
 
 export default function Teams() {
   const [teamData, setTeamData] = useState([{}]);
   const accessToken = Cookies.get('access_token');
-
+  useAuth();
   useEffect(() => {
     async function fetchTeamData() {
       try {

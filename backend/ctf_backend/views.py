@@ -23,18 +23,17 @@ from rest_framework.decorators import api_view, permission_classes
 def register(request):
     username = request.data.get('username')
     password = request.data.get('password')
-    
+    member1 = request.data.get('member1')
+    member2 = request.data.get('member2')
+    member3 = request.data.get('member3')
+    contact = request.data.get('contact')
     if not username or not password:
         return Response({'error': 'Both username and password are required.'}, status=status.HTTP_400_BAD_REQUEST)
-
     if User.objects.filter(username=username).exists():
         return Response({'error': 'Username already exists.'}, status=status.HTTP_400_BAD_REQUEST)
-
     user = User.objects.create_user(username=username, password=password)
-    # login(request, user)  # Log in the user immediately after registration
-
+    team = Team.objects.create(user=user, member1=member1, member2=member2, member3=member3, contact=contact)
     return Response({'message': 'Registration successful.'}, status=status.HTTP_201_CREATED)
-
 
 def index(request):
     return render_nextjs_page_sync(request)
@@ -42,7 +41,7 @@ def index(request):
 class TeamsViewSet(viewsets.ModelViewSet):
     queryset = Team.objects.all()
     serializer_class = TeamsSerializer
-    # permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
     @action(detail=True, methods=['GET'])
     def team_detail(self, request, pk=None):
         team = self.get_object()  # Get the team instance
@@ -65,16 +64,13 @@ class FlagresponsesViewSet(viewsets.ModelViewSet):
         except Question.DoesNotExist:
             return Response({'error': 'Flag not found'}, status=status.HTTP_404_NOT_FOUND)
         user = request.user
-
         data = {
             'team': user.team.id,
             'question': question.id,
             'response': flag,
             'timestamp': datetime.fromisoformat(timestamp),
         }
-
         serializer = FlagresponsesSerializer(data=data)
-
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -86,27 +82,8 @@ class ScoreboardViewSet(viewsets.ModelViewSet):
     queryset = Team.objects.all()
     serializer_class = ScoreboardSerializer
     permission_classes = [IsAuthenticated]
-
-    # def list(self, request):
-    #     user = request.user  # Get the current user
-    #     teams = Team.objects.all()
-    #     scores = []
-
-    #     for team in teams:
-    #         responses = Flagresponse.objects.filter(team=team)
-    #         total_score = sum(response.question.points for response in responses)
-    #         scores.append({'team': team, 'score': total_score})
-
-    #     scores.sort(key=lambda x: x['score'], reverse=True)
-    #     top_10_scores = scores[:10]
-    #     current_user_score = next((score for score in scores if score['team'] == user.team), None)
-
-    #     # Serialize the custom data structure using the ScoreboardSerializer
-    #     serialized_data = ScoreboardSerializer(top_10_scores, many=True).data
-
-    #     return Response({'top_10_scores': serialized_data, 'current_user_score': current_user_score})
     def list(self, request):
-        user = request.user  # Get the current user
+        user = request.user
         teams = Team.objects.all()
         scores = []
 
@@ -118,10 +95,7 @@ class ScoreboardViewSet(viewsets.ModelViewSet):
         scores.sort(reverse=True)
         top_10_scores = scores[:10]
         current_user_score = scores[user.team.id - 1] if 1 <= user.team.id <= len(scores) else None
-
-        # Serialize the data using the ScoreboardSerializer
         serialized_data = ScoreboardSerializer({'top_10_scores': top_10_scores, 'current_user_score': current_user_score})
-
         return Response(serialized_data.data)
     
 @api_view(['POST'])
