@@ -63,7 +63,7 @@ export default function Register() {
             <h2>Welcome to Register Page, enter your details to be Registered!!</h2><br />
             <form onSubmit={submit}>
                 <div className={s.formGroup}>
-                    <label>Username: </label>
+                    <label>Username/Team Name: </label>
                     <input
                         type="text"
                         id="username"
@@ -109,7 +109,7 @@ export default function Register() {
                 <div className={s.formGroup}>
                     <label htmlFor="password">Password: </label>
                     <input
-                        type="text"
+                        type="password"
                         id="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}

@@ -1,19 +1,12 @@
 .scoreboard {
-    /* background-color: #f0f0f0; */
-    /* padding: 20px; */
-    /* border: 1px solid #ccc; */
+    padding: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-
-/* scoreboard.module.css or your custom styles */
-
-/* Center the scoreboard table horizontally and vertically */
 .scoreTable {
     margin: auto;
     display: block;
     width: 80%; /* Adjust as needed */
     max-width: 800px; /* Set a maximum width to control table size */
-    /* Center the table vertically on the page */
     position: absolute;
     top: 50%;
     left: 50%;
