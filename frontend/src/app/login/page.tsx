@@ -56,28 +56,24 @@ export default function Login() {
         <main className={`${s.login} pd-top`}>
             <h2>Wecome to Login Page, enter your details to be logged into your account!!</h2><br />
  			<form onSubmit={submit}>
- 				<label htmlFor="email">Username: </label>
- 				<input
-					type="text"
-					id="email"
-					value={email}
-					onChange={(e) => setEmail(e.target.value)}
-				/>
-
-				<br />
-				<br />
-
-				<label htmlFor="password">Password: </label>
-				<input
-					type="text"
-					id="password"
-					value={password}
-					onChange={(e) => setPassword(e.target.value)}
-				/>
-
-				<br />
-				<br />
-
+                <div className={s.formGroup}>
+                    <label htmlFor="email">Username: </label>
+                    <input
+                        type="text"
+                        id="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                </div>
+                <div className={s.formGroup}>
+                    <label htmlFor="password">Password: </label>
+                    <input
+                        type="text"
+                        id="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                </div>
 				<button type="submit">Submit</button>
 			</form>
 		</main>

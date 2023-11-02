@@ -27,16 +27,13 @@ const ScoreboardPage = () => {
         if (response.ok) {
           const data = await response.json();
           const { top_10_scores, current_user_score } = data; // Extract scores
-
           setScores(top_10_scores); // Set top 10 scores
           setCurrentScore(current_user_score); // Set the current user's score
           setScoreboardLoaded(true); // Mark scoreboard as loaded
         } else {
-          // Handle errors here, e.g., redirect or display an error message
           console.error('Error fetching scoreboard:', response.status);
         }
       } catch (error) {
-        // Handle network errors here
         console.error('Network error:', error);
       }
     }
@@ -48,13 +45,10 @@ const ScoreboardPage = () => {
       <h1>Scoreboard</h1>
       <br />
       <hr />
-      <p>Yayy, Welcome to ScoreBoard!!</p>
-      <h1>YAYYY!!</h1>
       <br /><br />
-
       {scoreboardLoaded ? (
         <div>
-          <p>Your Score: {currentScore}</p> {/* Display the current user's score */}
+          <h1>Your Score Right now is : {currentScore}</h1> {/* Display the current user's score */}
           <table className={s.scoreTable}>
             <thead>
               <tr>
@@ -62,7 +56,7 @@ const ScoreboardPage = () => {
                 <th>Score</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className={s.tablebody}>
               {scores.map((score, index) => (
                 <tr key={index}>
                   <td>{index + 1}</td>
