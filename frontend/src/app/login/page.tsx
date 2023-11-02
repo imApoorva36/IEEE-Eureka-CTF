@@ -36,11 +36,8 @@ export default function Login() {
                 setCookie('access_token', data.access, { path: '/' });
                 setCookie('refresh_token', data.refresh, { path: '/' });
                 setCookie('username', email, { path: '/' });
-
                 const username=email;
                 setUsername(email);
-                console.log('Username:', email);
-                // Redirect to the desired page on successful login
                 router.push('/teams');
                 alert('Login Successfull!')
             }
@@ -68,7 +65,7 @@ export default function Login() {
                 <div className={s.formGroup}>
                     <label htmlFor="password">Password: </label>
                     <input
-                        type="text"
+                        type="password"
                         id="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}

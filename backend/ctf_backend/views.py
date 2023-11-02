@@ -22,6 +22,7 @@ from rest_framework.decorators import api_view, permission_classes
 @api_view(['POST'])
 def register(request):
     username = request.data.get('username')
+    name=username
     password = request.data.get('password')
     member1 = request.data.get('member1')
     member2 = request.data.get('member2')
@@ -32,7 +33,7 @@ def register(request):
     if User.objects.filter(username=username).exists():
         return Response({'error': 'Username already exists.'}, status=status.HTTP_400_BAD_REQUEST)
     user = User.objects.create_user(username=username, password=password)
-    team = Team.objects.create(user=user, member1=member1, member2=member2, member3=member3, contact=contact)
+    team = Team.objects.create(user=user,name=name, member1=member1, member2=member2, member3=member3, contact=contact)
     return Response({'message': 'Registration successful.'}, status=status.HTTP_201_CREATED)
 
 def index(request):
@@ -94,7 +95,7 @@ class ScoreboardViewSet(viewsets.ModelViewSet):
 
         scores.sort(reverse=True)
         top_10_scores = scores[:10]
-        current_user_score = scores[user.team.id - 1] if 1 <= user.team.id <= len(scores) else None
+        current_user_score = scores[user.team.id-1] if 1 <= user.team.id <= len(scores) else None
         serialized_data = ScoreboardSerializer({'top_10_scores': top_10_scores, 'current_user_score': current_user_score})
         return Response(serialized_data.data)
     
