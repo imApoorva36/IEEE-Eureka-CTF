@@ -53,22 +53,30 @@ class QuestionsViewSet(viewsets.ModelViewSet):
     queryset = Question.objects.all()
     serializer_class = QuestionsSerializer
     permission_classes = [IsAuthenticated]
-
+    @action(detail=True, methods=['GET'])
+    def question_detail(self, request, pk=None):
+        question = self.get_object()  # Get the team instance
+        serializer = self.get_serializer(question)  # Serialize the team data
+        return Response(serializer.data)
+    
 class FlagresponsesViewSet(viewsets.ModelViewSet):
     queryset = Flagresponse.objects.all()
     permission_classes = [IsAuthenticated]
     def post(self, request):
-        flag = request.data.get('flag')
-        timestamp = request.data.get('timestamp')
+        flagres = request.data.get('flag')
+        qnid=request.data.get('id')
+        timestamp=datetime.now()
         try:
-            question = Question.objects.get(flag=flag)  # Check if the flag exists in the Question table
+            question=Question.objects.get(id=qnid)
+            if(flagres!=question.flag):
+                    raise Exception()
         except Question.DoesNotExist:
-            return Response({'error': 'Flag not found'}, status=status.HTTP_404_NOT_FOUND)
+            return Response({'error': 'Flag incorrrect'}, status=status.HTTP_404_NOT_FOUND)
         user = request.user
         data = {
             'team': user.team.id,
             'question': question.id,
-            'response': flag,
+            'response': flagres,
             'timestamp': datetime.fromisoformat(timestamp),
         }
         serializer = FlagresponsesSerializer(data=data)

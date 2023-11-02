@@ -8,15 +8,9 @@ class TeamsSerializer(serializers.ModelSerializer):
         fields = ('name','member1','member2','member3',)
 
 class QuestionsSerializer(serializers.ModelSerializer):
-    is_answered = serializers.SerializerMethodField()
     class Meta:
         model = Question
         fields = ('title','text','points','link',)
-    def get_is_answered(self, obj):
-        user = self.context['request'].user
-        user_qns = Team.objects.filter(users=user)
-        is_answered = user_qns.filter(questions=obj, answered=True).exists()
-        return is_answered
 
 class FlagresponsesSerializer(serializers.ModelSerializer):
     class Meta:

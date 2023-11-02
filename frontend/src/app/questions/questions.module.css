@@ -1,0 +1,12 @@
+main.questions {
+    padding-top: 120px;
+}
+
+.questions ul {
+    padding: 20px;
+}
+
+.questions ul li a {
+    color: inherit;
+    text-decoration: none;
+}

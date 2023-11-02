@@ -12,6 +12,9 @@ export default function Login() {
     const router = useRouter(); // Initialize the router object
     const [cookies, setCookie] = useCookies(['access_token', 'refresh_token', 'username']);
 
+	let [loading, setLoading] = useState(false)
+	let [error, setError] = useState(false)
+
     async function submit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
 
@@ -72,6 +75,12 @@ export default function Login() {
                     />
                 </div>
 				<button type="submit">Submit</button>
+				
+				<br />
+
+				{ loading ? <p>loading</p> : null }
+				{ error ? <p>wrong credentials</p> : null }
+
 			</form>
 		</main>
     );

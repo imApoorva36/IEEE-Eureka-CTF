@@ -1,8 +1,8 @@
 export default interface Question {
-    qnid: string
+    id: string
     title: string
-    qntext: string
+    text: string
     points: number
-    links: string
+    link: string
     answered: boolean
 }
