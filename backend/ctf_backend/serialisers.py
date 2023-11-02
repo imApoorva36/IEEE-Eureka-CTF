@@ -1,30 +1,36 @@
 from rest_framework import serializers
-from .models import teams, questions, scoreboard
+from .models import Team, Question, Flagresponse
 from django.contrib.auth import get_user_model
-from rest_framework import serializers
 
 class TeamsSerializer(serializers.ModelSerializer):
     class Meta:
-        model = teams
-        fields = ('name','id','member1','member2','member3',)
+        model = Team
+        fields = ('name','member1','member2','member3',)
 
 class QuestionsSerializer(serializers.ModelSerializer):
     is_answered = serializers.SerializerMethodField()
     class Meta:
-        model = questions
-        fields = ('title','id','text','points','link',)
+        model = Question
+        fields = ('title','text','points','link',)
     def get_is_answered(self, obj):
         user = self.context['request'].user
-        user_qns = teams.objects.filter(users=user)
+        user_qns = Team.objects.filter(users=user)
         is_answered = user_qns.filter(questions=obj, answered=True).exists()
         return is_answered
 
-class ScoreboardSerializer(serializers.ModelSerializer):
+class FlagresponsesSerializer(serializers.ModelSerializer):
     class Meta:
-        model = scoreboard
-        fields = ('score',)
+        model = Flagresponse
+        fields = ('team', 'timestamp', 'question', 'response')
 
-    def to_representation(self, obj):
-        top_scores = scoreboard.objects.order_by('-score')[:10]
-        serialized_scores = self.__class__(top_scores, many=True).data
-        return serialized_scores
+    def create(self, validated_data):
+        user = self.context['request'].user  # Get the current user
+        response = validated_data.get('response')
+        question = validated_data.get('question')
+        timestamp = validated_data.get('timestamp')
+        flag_response = Flagresponse.objects.create(team=user.team,timestamp=timestamp, question=question, response=response)
+        return flag_response
+
+class ScoreboardSerializer(serializers.Serializer):
+    top_10_scores = serializers.ListField(child=serializers.IntegerField())
+    current_user_score = serializers.IntegerField(allow_null=True)

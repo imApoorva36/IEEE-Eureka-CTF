@@ -1,75 +1,74 @@
-// Import necessary dependencies and modules
-'use client'
+'use client';
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation'; // Change from 'next/navigation' to 'next/router'
+import { useRouter } from 'next/navigation';
 import ENDPOINT from '@/helpers/endpoint';
-import Scoreboard from '@/models/Scoreboard';
 import s from './scoreboard.module.css';
-import useAuth from './useAuth'; // Adjust the path as needed
+import { useCookies } from 'react-cookie';
+import { useAuth } from '../useAuth';
 
 const ScoreboardPage = () => {
+  useAuth();
   const router = useRouter();
-  const { user } = useAuth();
-  const [scores, setScores] = useState([]);
-  const [scoreboard, setScoreboard] = useState<Scoreboard | null>(null); // Initialize scoreboard state with null
-  const [scoreboardLoaded, setScoreboardLoaded] = useState(false); // Initialize scoreboardLoaded state
+  const [scores, setScores] = useState<number[]>([]); // Store scores as an array of numbers
+  const [currentScore, setCurrentScore] = useState<number | null>(null); // Store the current user's score
+  const [scoreboardLoaded, setScoreboardLoaded] = useState(false);
 
-//   const [scoreboard, setScoreboard] = useState(null); // Initialize scoreboard state
+  const [cookies] = useCookies(['access_token']);
+  const access_token = cookies.access_token;
 
   useEffect(() => {
     async function fetchScoreboard() {
       try {
-        const response = await fetch(`${ENDPOINT}/scoreboard/`, {
+        const response = await fetch(ENDPOINT + '/scoreboard/', {
           headers: {
-            // Add headers if needed for authentication
-            // e.g., 'Authorization': `Bearer ${user.token}`,
+            'Authorization': `Bearer ${access_token}`,
           },
         });
-
         if (response.ok) {
           const data = await response.json();
-          setScores(data);
-
-          // Initialize the scoreboard here
-          const newScoreboard = new Scoreboard(data);
-          setScoreboard(newScoreboard);
+          const { top_10_scores, current_user_score } = data; // Extract scores
+          setScores(top_10_scores); // Set top 10 scores
+          setCurrentScore(current_user_score); // Set the current user's score
+          setScoreboardLoaded(true); // Mark scoreboard as loaded
         } else {
-          // Handle errors here, e.g., redirect or display an error message
           console.error('Error fetching scoreboard:', response.status);
         }
       } catch (error) {
-        // Handle network errors here
         console.error('Network error:', error);
       }
     }
-
-    if (!user) {
-      // User is not authenticated, redirect to the login page
-      router.push('/login'); // Adjust the path to your login page
-    } else {
-      // User is authenticated, fetch scoreboard data
-      fetchScoreboard();
-    }
-  }, [user, router]);
-
-  if (!scoreboard) {
-    // You may want to show a loading indicator or handle this case differently
-    return null;
-  }
+    fetchScoreboard();
+  }, [router]);
 
   return (
     <main className={`${s.scoreboard} pd-top`}>
       <h1>Scoreboard</h1>
       <br />
-	  <hr />
-	  <p>Yayy, Welcome to ScoreBoard!!</p><h1>YAYYY!!</h1>
-      {/* <h2>Your score: {scoreboard.me}</h2> */}
+      <hr />
       <br /><br />
-      {/* <ul>
-        {scoreboard.leaderboard.map((pos, index) => (
-          <li key={index}>{pos.position}. {pos.nickname} - {pos.score}</li>
-        ))}
-      </ul> */}
+      {scoreboardLoaded ? (
+        <div>
+          <h1>Your Score Right now is : {currentScore}</h1> {/* Display the current user's score */}
+          <table className={s.scoreTable}>
+            <thead>
+              <tr>
+                <th>Position</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody className={s.tablebody}>
+              {scores.map((score, index) => (
+                <tr key={index}>
+                  <td>{index + 1}</td>
+                  <td>{score}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : (
+        <p>Loading scoreboard...</p>
+      )}
     </main>
   );
 };

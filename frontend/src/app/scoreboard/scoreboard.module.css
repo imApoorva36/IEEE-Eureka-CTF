@@ -1,10 +1,35 @@
-/* scoreboard.module.css */
 .scoreboard {
-    /* Add your CSS styles here */
-    background-color: #f0f0f0;
     padding: 20px;
-    border: 1px solid #ccc;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    /* Add more styles as needed */
+}
+.scoreTable {
+    margin: auto;
+    display: block;
+    width: 80%; /* Adjust as needed */
+    max-width: 800px; /* Set a maximum width to control table size */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 35px;
+  }
+  
+  .scoreTable .tablebody tr:hover {
+    background-color: rgb(32, 32, 144); /* Light gray background on hover */
+    transform: scale(1.05); /* Scale up slightly on hover */
+    transition: transform 0.3s ease;
+  }
+  
+  .scoreTable thead {
+    background-color: #333; /* Dark background for table header */
+    color: #fff; /* White text color for table header */
+  }
+  
+  .scoreTable th {
+    padding: 15px; /* Add some padding to the table header cells */
+  }
+  
+  .scoreTable td {
+    padding: 15px; /* Add some padding to the table body cells */
   }
   

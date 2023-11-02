@@ -1,10 +1,6 @@
 from django.contrib import admin
-from .models import teams, questions, scoreboard
+from .models import Team, Question, Flagresponse
 
-class ScoreboardAdmin(admin.ModelAdmin):
-    ordering = ('-score',)
-
-admin.site.register(teams)
-admin.site.register(questions)
-admin.site.register(scoreboard, ScoreboardAdmin)
-
+admin.site.register(Team)
+admin.site.register(Question)
+admin.site.register(Flagresponse)

@@ -1,0 +1,12 @@
+main.team {
+    padding-top: 120px;
+}
+
+.team ul {
+    padding: 20px;
+}
+
+.team ul li a {
+    color: inherit;
+    text-decoration: none;
+}

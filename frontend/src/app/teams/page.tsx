@@ -1,24 +1,53 @@
+'use client'
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { TeamBrief } from '@/models/Team'
 import s from './teams.module.css'
-import Link from 'next/link'
-import ENDPOINT from '@/helpers/endpoint'
+import ENDPOINT from '@/helpers/endpoint';
+import Cookies from 'js-cookie';
+import { useAuth } from '../useAuth';
 
-export default async function Teams() {
-	let teams: TeamBrief[] = await fetch(ENDPOINT + '/teams/', {
-        next: { revalidate: 30 }
-    }).then((res) => res.json())
-	.catch(err => console.log(err))
+export default function Teams() {
+  const [teamData, setTeamData] = useState([{}]);
+  const accessToken = Cookies.get('access_token');
+  useAuth();
+  useEffect(() => {
+    async function fetchTeamData() {
+      try {
+        const response = await fetch(ENDPOINT + '/teams/', {
+          headers: {
+            'Authorization': `Bearer ${accessToken}`,
+          },
+        });
 
-	return (
-		<main className={s.teams}>
-			<h1>Teams</h1>
-			<ul>
-				{teams.map((team) => (
-					<li key = {team.teamid}>
-						<Link href={`/teams/${team.teamid}`}>{team.teamname}</Link>
-					</li>
-				))}
-			</ul>
-		</main>
-	)
+        if (response.ok) {
+          const data = await response.json();
+          setTeamData(data); // Set the team data from the API response
+		  console.log(teamData);
+		  console.log(data);
+        } else {
+          console.error('Failed to fetch team data');
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    fetchTeamData();
+  }, [accessToken]);
+
+  return (
+    <main className={s.teams}>
+      <h1>Teams</h1>
+      <ul>
+        {teamData.map((team, index) => (
+          <li key={index}>
+            <Link href={`/teams/${team.name}`}>
+              {team.name}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </main>
+  );
 }
