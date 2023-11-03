@@ -3,6 +3,7 @@ import s from './questions.module.css'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 import Question from '@/models/Question'
+import QuestionsGrid from './_components/QuestionsGrid'
 
 export default async function Questions () {
     let access_token = cookies().get("access_token")?.value
@@ -26,11 +27,8 @@ export default async function Questions () {
 
         return (
             <main className={`${s.questions} pd-top`}>
-                <ul>
-                    {data.map(q => {
-                        return <li>{q.title} - {q.text} - {q.link} - {q.points}</li>
-                    })}
-                </ul>
+                <h1 className={s.heading}>Questions</h1>
+                <QuestionsGrid questions = {data} />
             </main>
         )
 
@@ -38,6 +36,5 @@ export default async function Questions () {
     } catch (err) {
         console.log(err)
         redirect("/login")
-        return <></>
     }
 }

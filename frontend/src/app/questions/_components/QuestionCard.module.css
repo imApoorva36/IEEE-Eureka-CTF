@@ -1,0 +1,33 @@
+.card {
+    padding: 20px;
+    box-shadow: #ffffff44 0px 0px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 200ms;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: #ffffff55 0px 0px 6px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    text-align: justify;
+    height: 100%;
+    line-height: 150%;;
+}
+
+.card div {
+    font-size: 19px;
+    font-weight: 900;
+    text-align: right;
+    margin-top: 20px;
+    color: rgb(120, 227, 120);
+}
