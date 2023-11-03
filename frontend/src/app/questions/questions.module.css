@@ -1,12 +1,4 @@
-main.questions {
-    padding-top: 120px;
-}
-
-.questions ul {
+.heading {
     padding: 20px;
-}
-
-.questions ul li a {
-    color: inherit;
-    text-decoration: none;
+    font-size: 45px;
 }

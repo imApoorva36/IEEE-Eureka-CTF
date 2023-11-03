@@ -4,8 +4,8 @@ export interface TeamBrief {
 }
 
 export interface TeamDetailed {
-	teamid: string
-	teamname: string
+	id: string
+	name: string
 	member1: string
 	member2: string
 	member3:string
