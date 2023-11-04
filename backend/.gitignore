@@ -1,4 +1,75 @@
-/env
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
 
-**/__pycache__
-*/migrations
+# Ignore database files
+db.sqlite3
+
+# Ignore log files
+*.log
+
+# Ignore temporary and backup files
+*.swp
+*.swo
+*~
+
+# Ignore media files (uploaded user content)
+media/
+
+# Ignore static files (collected assets)
+staticfiles/
+
+# Ignore the virtual environment
+venv/
+.env
+
+# Ignore secrets and configuration files
+*.secret
+*.conf
+*.settings
+
+# Ignore editor-specific files
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore database migrations
+/migrations/
+
+# Ignore local development settings
+local_settings.py
+
+# Ignore IDE-specific project files
+.idea/
+
+# Ignore Docker files (if using Docker)
+Dockerfile
+docker-compose.yml
+
+# Ignore dependency and cache files
+*.egg-info/
+*.egg
+.Python
+*.db
+*.sqlite3
+*.db-shm
+*.db-wal
+__pycache__
+.pytest_cache/
+# Ignore Mac-specific files
+.DS_Store
+
+# Ignore backup files
+*.bak
+*.bkp
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system and temporary files
+*.swp
+*.swo
+*.tmp
+
+# Ignore coverage reports
+htmlcov/
