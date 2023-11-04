@@ -87,7 +87,6 @@ class FlagresponsesViewSet(viewsets.ModelViewSet):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class ScoreboardViewSet(viewsets.ModelViewSet):
-    # queryset = Flagresponse.objects.all()
     queryset = Team.objects.all()
     serializer_class = ScoreboardSerializer
     permission_classes = [IsAuthenticated]

@@ -8,9 +8,13 @@ class TeamsSerializer(serializers.ModelSerializer):
         fields = ('name','member1','member2','member3',)
 
 class QuestionsSerializer(serializers.ModelSerializer):
+    is_answered = serializers.SerializerMethodField()
     class Meta:
         model = Question
-        fields = ('title','text','points','link',)
+        fields = ('id', 'title', 'text', 'points', 'link', 'user_response_count', 'is_answered')    
+    def get_is_answered(self, obj):
+        user = self.context['request'].user
+        return obj.answered(user)
 
 class FlagresponsesSerializer(serializers.ModelSerializer):
     class Meta:
