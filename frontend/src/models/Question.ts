@@ -5,4 +5,6 @@ export default interface Question {
     points: number
     link: string
     answered: boolean
+    is_answered:boolean
+    user_response_count: number
 }
