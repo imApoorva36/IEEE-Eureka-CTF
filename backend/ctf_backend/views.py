@@ -1,22 +1,25 @@
 from django.shortcuts import render
 from django_nextjs.render import render_nextjs_page_sync
-from rest_framework import generics
+# from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import viewsets
 from .models import Team, Question, Flagresponse
-from rest_framework.views import APIView
+from django.core.exceptions import ValidationError
+from django.http import HttpResponse
 from .serialisers import TeamsSerializer, QuestionsSerializer, FlagresponsesSerializer, ScoreboardSerializer
-from rest_framework.generics import RetrieveAPIView
 from rest_framework.response import Response
+from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import status
 from rest_framework.decorators import api_view
-from django.contrib.auth import authenticate, login
+# from django.contrib.auth import authenticate, login
+from datetime import datetime
+from django.utils.timezone import make_aware
 from rest_framework.decorators import action
 from django.http import JsonResponse
-from datetime import datetime
 from django.contrib.auth import logout
+from celery import shared_task
 from rest_framework.decorators import api_view, permission_classes
 
 @api_view(['POST'])
@@ -43,6 +46,8 @@ class TeamsViewSet(viewsets.ModelViewSet):
     queryset = Team.objects.all()
     serializer_class = TeamsSerializer
     permission_classes = [IsAuthenticated]
+    def create(self,request): # Basically to handle POST Requests
+        return Response("Nope",status=status.HTTP_404_NOT_FOUND)
     @action(detail=True, methods=['GET'])
     def team_detail(self, request, pk=None):
         team = self.get_object()  # Get the team instance
@@ -53,43 +58,63 @@ class QuestionsViewSet(viewsets.ModelViewSet):
     queryset = Question.objects.all()
     serializer_class = QuestionsSerializer
     permission_classes = [IsAuthenticated]
-    @action(detail=True, methods=['GET'])
-    def question_detail(self, request, pk=None):
-        question = self.get_object()  # Get the team instance
-        serializer = self.get_serializer(question)  # Serialize the team data
+    def create(self,request): # Basically to handle POST Requests
+        return Response("Nope",status=status.HTTP_404_NOT_FOUND)
+    def list(self, request): # Basically to handle GET Requests
+        current_time = make_aware(datetime.now())
+        time_5_pm = make_aware(datetime(2023, 11, 4, 17, 0, 0))
+        time_5_am = make_aware(datetime(2023, 11, 17, 5, 0, 0))
+        if current_time >= time_5_pm and current_time < time_5_am:
+            questions = Question.objects.filter(id__range=(1, 5))
+        elif current_time >= time_5_am:
+            questions = Question.objects.filter(id__range=(1, 5))
+        else:
+            questions = Question.objects.none()
+        serializer = self.get_serializer(questions,many=True)
         return Response(serializer.data)
-    
+
 class FlagresponsesViewSet(viewsets.ModelViewSet):
     queryset = Flagresponse.objects.all()
+    serializer_class = FlagresponsesSerializer
     permission_classes = [IsAuthenticated]
-    def post(self, request):
-        flagres = request.data.get('flag')
-        qnid=request.data.get('id')
-        timestamp=datetime.now()
-        try:
-            question=Question.objects.get(id=qnid)
-            if(flagres!=question.flag):
-                    raise Exception()
-        except Question.DoesNotExist:
-            return Response({'error': 'Flag incorrrect'}, status=status.HTTP_404_NOT_FOUND)
-        user = request.user
-        data = {
-            'team': user.team.id,
-            'question': question.id,
-            'response': flagres,
-            'timestamp': datetime.fromisoformat(timestamp),
-        }
-        serializer = FlagresponsesSerializer(data=data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        else:
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    def create(self, request):
+        if request.method == "POST":
+            flagres = request.data.get('flag')
+            qnid = request.data.get('id')
+            timestamp = make_aware(datetime.now())
+            print('entered')
+            try:
+                question = get_object_or_404(Question, id=qnid)
+                if flagres != question.flag:
+                    raise ValidationError("Flag is incorrect")
+            except ValidationError as e:
+                return Response({'error': "Flag Incorrect"}, status=status.HTTP_400_BAD_REQUEST)
+            user = request.user
+            existing_flag_response = Flagresponse.objects.filter(team__user=user, question=question)
+            if existing_flag_response.exists():
+                return Response({'error': "You have already submitted a response for this question."}, status=status.HTTP_400_BAD_REQUEST)
+
+            data = {
+                'team': user.team.id,
+                'question': question.id,
+                'response': flagres,
+                'timestamp': timestamp,
+            }
+            # serializer = FlagresponsesSerializer(data=data)
+            # if serializer.is_valid():
+            Flagresponse.objects.create(team=user.team,timestamp=timestamp,question=question,response=flagres)
+            return Response({"Done"},status=status.HTTP_200_OK)
+                # serializer.save()
+                # return Response(serializer.data, status=status.HTTP_201_CREATED)
+            # else:
+                # return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class ScoreboardViewSet(viewsets.ModelViewSet):
     queryset = Team.objects.all()
     serializer_class = ScoreboardSerializer
     permission_classes = [IsAuthenticated]
+    def create(self,request): # Basically to handle POST Requests
+        return Response("Nope",status=status.HTTP_404_NOT_FOUND)
     def list(self, request):
         user = request.user
         teams = Team.objects.all()
