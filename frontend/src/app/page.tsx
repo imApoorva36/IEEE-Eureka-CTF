@@ -13,7 +13,7 @@ export default function Home() {
 				<h1>IEEE Eureka</h1>
 				<p>Get ready for action!</p><br />
 				<h2>
-				{username && ( <span>!!Welcome to the EUREKA CTF TEAM {username}!!</span> )}
+				{username && ( <span className={s.welcome_team}>!!Welcome to the EUREKA CTF TEAM {username}!!</span> )}
 				</h2><br />
 				<div className = {s.buttons}>
 					<Link href = "/login">Login</Link>

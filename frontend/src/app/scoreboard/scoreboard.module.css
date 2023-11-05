@@ -1,35 +1,90 @@
 .scoreboard {
-    padding: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 105px;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #040110;
+
 }
+.title {
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.hr {
+  border: none;
+  border-top: 2px solid #3498db;
+  margin: 20px auto;
+  width: 50%;
+}
+
+.userScore {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #3498db;
+  position: relative;
+}
+
+.userScore_text::after {
+  content: "|"; /* The cursor symbol (you can change it to any character you like) */
+  animation: cursor-blink 1s infinite; /* Blinking animation */
+  opacity: 0.6; /* Slightly transparent */
+  position: absolute;
+  top: 0;
+  right: auto; /* Position the cursor at the end of the text */
+}
+
+@keyframes cursor-blink {
+  0%, 100% {
+    opacity: 0; /* Cursor is invisible at the start and end of animation */
+  }
+  50% {
+    opacity: 0.5; /* Cursor is visible halfway through animation */
+  }
+}
+
 .scoreTable {
-    margin: auto;
-    display: block;
-    width: 80%; /* Adjust as needed */
-    max-width: 800px; /* Set a maximum width to control table size */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding-top: 35px;
-  }
-  
-  .scoreTable .tablebody tr:hover {
-    background-color: rgb(32, 32, 144); /* Light gray background on hover */
-    transform: scale(1.05); /* Scale up slightly on hover */
-    transition: transform 0.3s ease;
-  }
-  
-  .scoreTable thead {
-    background-color: #333; /* Dark background for table header */
-    color: #fff; /* White text color for table header */
-  }
-  
-  .scoreTable th {
-    padding: 15px; /* Add some padding to the table header cells */
-  }
-  
-  .scoreTable td {
-    padding: 15px; /* Add some padding to the table body cells */
-  }
-  
+  width: 70%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.scoreTable thead {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.scoreTable th, .scoreTable td {
+  padding: 10px;
+}
+
+.tablebody {
+  background-color: #222;
+}
+
+.scoreRow:nth-child(even) {
+  background-color: #2f2f2f;
+}
+
+.scoreRow {
+  transition: background-color 0.1s; /* Add a smooth transition effect */
+}
+
+.scoreRow:hover {
+  background-color: #26265b; /* Deep blue color on row hover */
+}
+
+
+.loading {
+  font-size: 24px;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.pd-top {
+  padding-top: 20px;
+}
+
+/* Add any additional styles you need here */

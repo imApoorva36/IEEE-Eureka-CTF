@@ -6,6 +6,19 @@ import s from './scoreboard.module.css';
 import { useCookies } from 'react-cookie';
 import { useAuth } from '../useAuth';
 
+const coolNames = [
+  'Cool Cat',
+  'Funky Monkey',
+  'Rockstar',
+  'Score Wizard',
+  'Top Gun',
+  'Superstar',
+  'Score King',
+  'Awesome Achiever',
+  'Score Champion',
+  'Mega Maestro',
+];
+
 const ScoreboardPage = () => {
   useAuth();
   const router = useRouter();
@@ -42,24 +55,28 @@ const ScoreboardPage = () => {
 
   return (
     <main className={`${s.scoreboard} pd-top`}>
-      <h1>Scoreboard</h1>
+      <h1 className={s.title}>Live Scoreboard of Top Scorers</h1>
       <br />
-      <hr />
+      <hr className={s.hr} />
       <br /><br />
       {scoreboardLoaded ? (
         <div>
-          <h1>Your Score Right now is : {currentScore}</h1> {/* Display the current user's score */}
+          <h1 className={s.userScore}>
+            <span className={s.userScore_text}>Your Current Score is : {currentScore}</span>
+          </h1><br />
           <table className={s.scoreTable}>
             <thead>
               <tr>
                 <th>Position</th>
+                <th>Cover Name</th>
                 <th>Score</th>
               </tr>
             </thead>
             <tbody className={s.tablebody}>
               {scores.map((score, index) => (
-                <tr key={index}>
-                  <td>{index + 1}</td>
+                <tr key={index} className={s.scoreRow}>
+                  <td>{index+1}</td>
+                  <td>{coolNames[index]}</td>
                   <td>{score}</td>
                 </tr>
               ))}
@@ -67,7 +84,7 @@ const ScoreboardPage = () => {
           </table>
         </div>
       ) : (
-        <p>Loading scoreboard...</p>
+        <p className={s.loading}>Loading Scoreboard...</p>
       )}
     </main>
   );
