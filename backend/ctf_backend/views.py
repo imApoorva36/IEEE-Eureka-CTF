@@ -119,15 +119,15 @@ class ScoreboardViewSet(viewsets.ModelViewSet):
         user = request.user
         teams = Team.objects.all()
         scores = []
-
         for team in teams:
             responses = Flagresponse.objects.filter(team=team)
             total_score = sum(response.question.points for response in responses)
             scores.append(total_score)
-
+        if user.team in teams:
+            responses = Flagresponse.objects.filter(team=user.team)
+            current_user_score = sum(response.question.points for response in responses)
         scores.sort(reverse=True)
         top_10_scores = scores[:10]
-        current_user_score = scores[user.team.id-1] if 1 <= user.team.id <= len(scores) else None
         serialized_data = ScoreboardSerializer({'top_10_scores': top_10_scores, 'current_user_score': current_user_score})
         return Response(serialized_data.data)
     
