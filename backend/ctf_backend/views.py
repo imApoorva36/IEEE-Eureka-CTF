@@ -92,7 +92,7 @@ class FlagresponsesViewSet(viewsets.ModelViewSet):
             user = request.user
             existing_flag_response = Flagresponse.objects.filter(team__user=user, question=question)
             if existing_flag_response.exists():
-                return Response({'error': "You have already submitted a response for this question."}, status=status.HTTP_400_BAD_REQUEST)
+                return Response({'error': "You have already submitted a response for this question."}, status=status.HTTP_404_NOT_FOUND)
 
             data = {
                 'team': user.team.id,

@@ -11,7 +11,7 @@ export default function QuestionsGrid ({ questions } : { questions: Question[] }
     return (
         <>
             {
-                selected ?
+                selected !== false ?
                     <QuestionModal 
                         question={questions[selected]}
                         close = {() => setSelected(false)}
@@ -22,7 +22,7 @@ export default function QuestionsGrid ({ questions } : { questions: Question[] }
             <div className={s.grid}>
                 {
                     questions.map((q, i) => 
-                        <QuestionCard question={q} onClick={() => setSelected(i)}/>
+                        <QuestionCard question={q} select={() => setSelected(i)}/>
                     )
                 }
             </div>

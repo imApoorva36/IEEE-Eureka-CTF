@@ -18,4 +18,60 @@
     border: 1px solid #aaaaaa;
     padding: 30px;
     border-radius: 10px;
+    position: relative;
+}
+
+.modal h2 {
+    margin-bottom: 20px;
+}
+
+.modal p {
+    text-align: justify;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+#close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.bottom {
+    padding: 10px 0px;
+}
+
+
+.bottom .points {
+    font-size: 19px;
+    font-weight: 900;
+    float: right;
+    color: rgb(120, 227, 120);
+}
+
+.bottom input {
+    padding: 5px 10px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.bottom button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.bottom #error {
+    color: red;
+    margin-top: 5px;
+}
+
+.bottom #correct {
+    color: rgb(120, 227, 120);
+    padding: 0px 10px;
 }
