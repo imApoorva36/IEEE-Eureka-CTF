@@ -1,15 +1,7 @@
-.home .content {
+/* .home .content {
     margin: 100px 0px 0px 200px;
 }
 
-@keyframes cursor-blink {
-  0%, 100% {
-    opacity: 0; /* Cursor is invisible at the start and end of animation */
-  }
-  50% {
-    opacity: 0.25; /* Cursor is visible halfway through animation */
-  }
-}
 .content h1 {
     font-size: 75px;
 }
@@ -62,4 +54,97 @@
 
 .content .buttons a:hover {
     background-color: #652065;
+} */
+
+/* home.module.css */
+
+/* Global styles (you can include a global CSS file for fonts, resets, etc.) */
+
+/* Define styles for the home page */
+/* home.module.css */
+
+/* Global styles (you can include a global CSS file for fonts, resets, etc.) */
+
+/* Define styles for the home page */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
 }
+
+.pdTop {
+  padding-top: 20px;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: 4rem; /* Adjust the font size to make the title bigger */
+  margin-bottom: 20px; 
+  position: relative;
+}
+
+.title::after {
+  content: "|"; /* The cursor symbol (you can change it to any character you like) */
+  animation: cursor-blink 1s infinite; /* Blinking animation */
+  opacity: 0.6; /* Slightly transparent */
+  position: absolute;
+  top: 0;
+  right: auto; /* Position the cursor at the end of the text */
+  font-size: 53px;
+}
+
+@keyframes cursor-blink {
+  0%, 100% {
+    opacity: 0; /* Cursor is invisible at the start and end of animation */
+  }
+  50% {
+    opacity: 0.5; /* Cursor is visible halfway through animation */
+  }
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.welcomeTeam {
+  font-size: 1.2rem;
+  /* background-color: #d4d4d4; */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.welcomeTeam span {
+  color: #009688;
+  ;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #009688;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #007870;
+}
+
