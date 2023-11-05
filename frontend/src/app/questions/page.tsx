@@ -7,7 +7,6 @@ import QuestionsGrid from './_components/QuestionsGrid'
 
 export default async function Questions () {
     let access_token = cookies().get("access_token")?.value
-    console.log(access_token)
 
     try {
         let res = await fetch(ENDPOINT + "/questions/", {
@@ -23,7 +22,6 @@ export default async function Questions () {
 
         
         let data: Question[] = await res.json()
-        console.log(data)
 
         return (
             <main className={`${s.questions} pd-top`}>
