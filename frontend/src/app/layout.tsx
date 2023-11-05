@@ -34,6 +34,11 @@ export default function RootLayout({
 					</nav>
 				</header>
 				{children}
+				<footer>
+					<nav>
+						Made with <span style={{ color: 'red' }}>❤</span> by Eureka Team, IEEE NITK
+					</nav>
+				</footer>
 			</body>
 		</html>
 	)

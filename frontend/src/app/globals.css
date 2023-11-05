@@ -16,12 +16,10 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 50px;
-
     box-shadow: inset 0px -2px 5px #555555;
     border-radius: 0px 0px 7px 7px;
     background-color: #222222;
@@ -56,4 +54,15 @@ header nav ul li a:hover {
 
 .pd-top {
     padding-top: 120px;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    background-color: #222222;
 }

@@ -1,76 +1,8 @@
-/* .home .content {
-    margin: 100px 0px 0px 200px;
-}
-
-.content h1 {
-    font-size: 75px;
-}
-
-.content p {
-    font-size: 30px;
-}
-
-.logoutButton {
-    background-color: #ff5733;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .logoutButton:hover {
-    background-color: #ff3a0c;
-  }
-  .link {
-    text-decoration: none;
-    color: #0070f3;
-    margin-right: 10px;
-  }
-  
-  .link:hover {
-    text-decoration: underline;
-    color: #0366d6;
-  }
-
-.content .buttons {
-    margin-top: 50px;
-    display: flex;
-    gap: 30px;
-}
-
-.content .buttons a {
-    color: inherit;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 600;
-    padding: 15px 50px;
-    background-color: #4c1a4c;
-    border-radius: 7px;
-    transition: 0.3s;
-}
-
-.content .buttons a:hover {
-    background-color: #652065;
-} */
-
-/* home.module.css */
-
-/* Global styles (you can include a global CSS file for fonts, resets, etc.) */
-
-/* Define styles for the home page */
-/* home.module.css */
-
-/* Global styles (you can include a global CSS file for fonts, resets, etc.) */
-
-/* Define styles for the home page */
 .home {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 94vh;
   background-color: #1a1a1a;
   color: #ffffff;
   font-family: Arial, sans-serif;
