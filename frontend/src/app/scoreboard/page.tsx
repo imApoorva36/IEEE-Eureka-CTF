@@ -81,7 +81,7 @@ const ScoreboardPage = () => {
                 </tr>
               ))}
             </tbody>
-          </table>
+          </table><br /><br />
         </div>
       ) : (
         <p className={s.loading}>Loading Scoreboard...</p>
