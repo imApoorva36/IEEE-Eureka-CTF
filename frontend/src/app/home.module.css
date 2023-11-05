@@ -2,6 +2,14 @@
     margin: 100px 0px 0px 200px;
 }
 
+@keyframes cursor-blink {
+  0%, 100% {
+    opacity: 0; /* Cursor is invisible at the start and end of animation */
+  }
+  50% {
+    opacity: 0.25; /* Cursor is visible halfway through animation */
+  }
+}
 .content h1 {
     font-size: 75px;
 }
