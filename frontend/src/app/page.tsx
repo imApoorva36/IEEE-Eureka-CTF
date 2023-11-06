@@ -18,8 +18,8 @@ export default function Home() {
           </h2>
         )}
         <div className={s.buttons}>
-			<Link href="/login" className={s.button}>Login</Link>
-			<Link href="/register" className={s.button}>Register</Link>
+            <Link href="/login" className={s.button}>Login</Link>
+            <Link href="/register" className={s.button}>Register</Link>
             <Link href="/logout" className={s.button}>Logout</Link>
         </div>
       </div>

@@ -1,12 +1,27 @@
-main.team {
-    padding-top: 120px;
+.team {
+  text-align: center;
+  color: #fff; /* Text color in white */
+  background-color: #333; /* Dark background color */
+  padding: 20px;
+  margin-top: 105px;
+  min-height: 79vh;
 }
 
-.team ul {
-    padding: 20px;
+.hr {
+    border: none;
+    border-top: 2px solid #3498db;
+    margin: 20px auto;
+    width: 50%;
+  }
+
+.team h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 46px;
+  color: rgb(0, 51, 255);
 }
 
-.team ul li a {
-    color: inherit;
-    text-decoration: none;
+.team p {
+  font-size: 24px;
+  color: #3498db; 
 }
