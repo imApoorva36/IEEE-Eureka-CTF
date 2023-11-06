@@ -9,6 +9,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    animation: fadeIn;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+
+.container.closing {
+    animation-name: fadeOut;
+}
+
+.container.closing .modal {
+    animation-name: zoomOut;
+    animation-timing-function: ease-out;
+    animation-duration: 300ms;
 }
 
 .container .modal {
@@ -19,6 +33,30 @@
     padding: 30px;
     border-radius: 10px;
     position: relative;
+
+    animation: zoomIn;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoomIn {
+    0% { scale: 50%; }
+    100% { scale: 100%; }
+}
+
+@keyframes fadeIn {
+    0% { background-color: #00000000; }
+    100% { background-color: #000000cc; }
+}
+
+@keyframes zoomOut {
+    0% { scale: 100%; opacity: 1;}
+    100% { scale: 50%; opacity: 0; }
+}
+
+@keyframes fadeOut {
+    0% { background-color: #000000cc; }
+    100% { background-color: #00000000; }
 }
 
 .modal h2 {

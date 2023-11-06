@@ -11,10 +11,14 @@ export default function QuestionModal ({ question, close } : Props) {
     let [ errorText, setErrorText ] = useState("")
     let [ correct, setCorrect ] = useState(false)
 
+    let [ closing, setClosing ] = useState(false)
+
     const [cookies] = useCookies(['access_token']);
     const access_token = cookies.access_token;
     
     async function submit () {
+        if (correct) return
+        
         let res = await fetch(ENDPOINT + "/response/", {
             method: "POST",
             body: JSON.stringify({
@@ -38,9 +42,14 @@ export default function QuestionModal ({ question, close } : Props) {
             setCorrect(true)
         }
     }
+
+    function handleClose () {
+        setClosing(true)
+        setTimeout(close, 300)
+    }
     
     return (
-        <div className={s.container} onClick={close}>
+        <div className={`${s.container} ${closing ? s.closing : ""}`} onClick={handleClose}>
             <div className={s.modal} onClick={e => e.stopPropagation()}>
                 <div className={s.content}>
                     <h2>{question.title}</h2>
@@ -52,7 +61,7 @@ export default function QuestionModal ({ question, close } : Props) {
                         null :
                         <>
                             <input type="text" value={answer} onChange={e => setAnswer(e.target.value)} disabled={correct} />
-                            <button onClick={submit}>Answer</button>
+                            <button onClick={submit} disabled={correct}>Answer</button>
                             <span id={s.correct}>{ correct ? "✔" : "" }</span>
                             <p id={s.error}>{errorText}</p>
                         </>
@@ -65,7 +74,7 @@ export default function QuestionModal ({ question, close } : Props) {
                         { question.points } Points
                     </div>
                 </div>
-                <span className="material-symbols-outlined" id = {s.close} onClick={close}>close</span>
+                <span className="material-symbols-outlined" id = {s.close} onClick={handleClose}>close</span>
             </div>
         </div>
     )

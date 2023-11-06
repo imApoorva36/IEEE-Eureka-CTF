@@ -22,7 +22,7 @@ export default function QuestionsGrid ({ questions } : { questions: Question[] }
             <div className={s.grid}>
                 {
                     questions.map((q, i) => 
-                        <QuestionCard question={q} select={() => setSelected(i)}/>
+                        <QuestionCard key={q.id} question={q} select={() => setSelected(i)}/>
                     )
                 }
             </div>

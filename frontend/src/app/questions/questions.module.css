@@ -1,9 +1,14 @@
 .heading {
-    padding: 20px;
-    font-size: 45px;
+	padding: 20px;
+	font-size: 40px;
 }
 
-.questions{
-  background-color: #040110;
+.subheading {
+	padding: 10px 20px;
+	font-size: 25px;
+}
 
+.questions {
+	background-color: #040110;
+	min-height: calc(100vh - 42px);
 }
