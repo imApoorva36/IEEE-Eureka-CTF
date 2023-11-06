@@ -7,6 +7,7 @@
 body {
     background-color: #040110;
     color: #dddddd;
+    min-height: 100vh;
 }
 
 

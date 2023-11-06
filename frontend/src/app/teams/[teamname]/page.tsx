@@ -27,10 +27,10 @@ export default async function TeamDetailPage( {
     if (team) {
       return (
         <main className={s.team}>
-          <h1>{team.name}</h1>
-          <p>Member 1: {team.member1}</p>
-          <p>Member 2: {team.member2}</p>
-          <p>Member 3: {team.member3}</p>
+          <h1>This is Team {team.name}</h1><hr className={s.hr} /><br /><br />
+          <p>Team Member Name : {team.member1}</p><br /><br />
+          <p>Team Member Name : {team.member2}</p><br /><br />
+          <p>Team Member Name: {team.member3}</p><br /><br /> 
         </main>
       );
     } else {
