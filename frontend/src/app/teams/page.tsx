@@ -1,79 +1,4 @@
 'use client'
-// import { useEffect, useState, useRef } from 'react'; // Import useRef and useEffect
-// import Link from 'next/link';
-// import { TeamBrief } from '@/models/Team';
-// import s from './teams.module.css';
-// import ENDPOINT from '@/helpers/endpoint';
-// import Cookies from 'js-cookie';
-// import { useAuth } from '../useAuth';
-
-// export default function Teams() {
-//   const [teamData, setTeamData] = useState([{}]);
-//   const [searchInput, setSearchInput] = useState('');
-//   const accessToken = Cookies.get('access_token');
-//   useAuth();
-//   const inputRef = useRef(null); // Create a ref for the input field
-
-//   useEffect(() => {
-//     async function fetchTeamData() {
-//       try {
-//         const response = await fetch(ENDPOINT + '/teams/', {
-//           headers: {
-//             'Authorization': `Bearer ${accessToken}`,
-//           },
-//         });
-
-//         if (response.ok) {
-//           const data = await response.json();
-//           setTeamData(data);
-//         } else {
-//           console.error('Failed to fetch team data');
-//         }
-//       } catch (err) {
-//         console.error(err);
-//       }
-//     }
-
-//     fetchTeamData();
-//   }, [accessToken]);
-
-//   useEffect(() => {
-//     inputRef.current.focus(); // Focus on the input field when the component is mounted
-//   }, []); // The empty dependency array ensures it runs only once
-
-//   const filteredTeams = teamData.filter((team) =>
-//     team.name && team.name.toLowerCase().includes(searchInput.toLowerCase())
-//   );
-
-//   return (
-//     <main className={s.teams}>
-//       <div className={s.header}>
-//         <h1>Explore Registered Teams</h1>
-//         <br />
-//         <hr className={s.hr} />
-//         <br />
-//         <input
-//           type="text"
-//           placeholder="Search for a team..."
-//           className={s.searchInput}
-//           value={searchInput}
-//           onChange={(e) => setSearchInput(e.target.value)}
-//           ref={inputRef} // Assign the ref to the input field
-//         />
-//       </div>
-//       <ul className={s.teamList}>
-//         {filteredTeams.map((team, index) => (
-//           <li key={index} className={s.teamItem}>
-//             <Link href={`/teams/${team.name}`} className={s.teamLink}>
-//               {team.name}
-//             </Link><br />
-//           </li>
-//         ))}
-//       </ul>
-//     </main>
-//   );
-// }
-
 import { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
 import { TeamBrief } from '@/models/Team';
@@ -88,16 +13,15 @@ export default function Teams() {
   const [sortDirection, setSortDirection] = useState(1); // 1 for ascending, -1 for descending
   const sortColumnRef = useRef(null);
   const accessToken = Cookies.get('access_token');
-  useAuth();
+  // useAuth();
   const inputRef = useRef(null);
-
   useEffect(() => {
     async function fetchTeamData() {
       try {
         const response = await fetch(ENDPOINT + '/teams/', {
-          headers: {
-            'Authorization': `Bearer ${accessToken}`,
-          },
+          // headers: {
+          //   'Authorization': `Bearer ${accessToken}`,
+          // },
         });
 
         if (response.ok) {
@@ -120,10 +44,8 @@ export default function Teams() {
 
   const handleSort = (columnName) => {
     if (sortColumnRef.current === columnName) {
-      // Toggle sort direction if clicking on the same column
       setSortDirection(sortDirection * -1);
     } else {
-      // Set the column to sort and default to ascending order
       sortColumnRef.current = columnName;
       setSortDirection(1);
     }

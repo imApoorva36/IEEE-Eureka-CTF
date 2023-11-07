@@ -45,7 +45,7 @@ def index(request):
 class TeamsViewSet(viewsets.ModelViewSet):
     queryset = Team.objects.all()
     serializer_class = TeamsSerializer
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
     def create(self,request): # Basically to handle POST Requests
         return Response("Nope",status=status.HTTP_404_NOT_FOUND)
     @action(detail=True, methods=['GET'])

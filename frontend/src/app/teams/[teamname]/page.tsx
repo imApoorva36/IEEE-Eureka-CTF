@@ -14,16 +14,14 @@ export default async function TeamDetailPage( {
   const { teamname } = params;
   const decodedTeamname = decodeURIComponent(teamname); // Decode %20 to space
   const accessToken = Cookies.get('access_token');
-  useAuth();
+  // useAuth();
   try {
     const teams: TeamDetailed[] = await fetch(ENDPOINT + '/teams/', {
-      headers: {
-        'Authorization': `Bearer ${accessToken}`,
-      },
+      // headers: {
+      //   'Authorization': `Bearer ${accessToken}`,
+      // },
     }).then((res) => res.json());
-
     const team = teams.find((t) => t.name === decodedTeamname);
-
     if (team) {
       return (
         <main className={s.team}>

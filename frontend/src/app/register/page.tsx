@@ -59,8 +59,8 @@ export default function Register() {
     }
 
     return (
-        <main className={`${s.register} pd-top`}>
-            <h2>Welcome to Register Page, enter your details to be Registered!!</h2><br />
+        <main className={`${s.register} pd-top`}><br />
+            <h2>Welcome to Register Page, enter your details to be Registered!!</h2><br /><br />
             <form onSubmit={submit}>
                 <div className={s.formGroup}>
                     <label>Username/Team Name: </label>
