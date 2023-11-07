@@ -80,36 +80,102 @@
 
 .bottom {
     padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
 }
 
 
 .bottom .points {
     font-size: 19px;
     font-weight: 900;
-    float: right;
-    color: rgb(120, 227, 120);
+    /* float: right; */
+    color: rgb(57, 166, 57);;
 }
 
-.bottom input {
-    padding: 5px 10px;
-    margin-right: 10px;
+.bottom .response {
+    display: grid;
+    grid-template-columns: 6fr 3fr 1fr;
+    grid-auto-rows: 1fr;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.bottom .response .textbox {
+    /* display: inline; */
+    position: relative;
+}
+
+.bottom .textbox::after {
+    content: "";
+    height: 4px;
+    width: 0%;
+    background-color: #3489db;
+    border-radius: 0px 0px 4px 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 200ms;
+}
+
+.bottom .textbox:focus-within:after {
+    width: 100%;
+}
+
+.bottom .textbox input {
+    padding: 10px 10px;
+    width: 100%;
+    font-size: 18px;
+    color: white;
     outline: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
+    background-color: #000000;
+    border-bottom: 2px solid #3489db;
+    transition: 200ms;
+    display: block;
 }
 
-.bottom button {
-    padding: 5px 10px;
+.bottom .textbox input:focus {
+    background-color: #080808;
+}
+
+.bottom .textbox input:disabled {
+    background-color: #111111;
+    border-bottom-color: #2565a1;
+}
+
+.bottom .button {
+    padding: 0px 30px;
+    height: 90%;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #3fa1fc;
+    color: black;
     border-radius: 5px;
-    border: none;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bottom .button.disabled {
+    background-color: #2565a1;
+    color: #222222;
+    cursor: default;
+}
+
+.bottom #error, .bottom #success {
+    grid-column: 1 / 4;
+    font-weight: 700;
+    padding-left: 5px;
+    margin-bottom: 0;
 }
 
 .bottom #error {
-    color: red;
-    margin-top: 5px;
+    color: rgb(226, 62, 62);
 }
 
-.bottom #correct {
+.bottom #success {
     color: rgb(120, 227, 120);
-    padding: 0px 10px;
 }

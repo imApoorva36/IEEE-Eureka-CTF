@@ -30,9 +30,9 @@ export default async function Questions () {
                 <h2 className={s.subheading}>Easy</h2>
                 <QuestionsGrid questions = {data.filter(q => q.points <= 35)} />
                 <h2 className={s.subheading}>Medium</h2>
-                <QuestionsGrid questions = {data.filter(q => q.points > 35 && q.points <= 65)} />
+                <QuestionsGrid questions = {data.filter(q => q.points > 35 && q.points < 65)} />
                 <h2 className={s.subheading}>Hard</h2>
-                <QuestionsGrid questions = {data.filter(q => q.points > 65)} />
+                <QuestionsGrid questions = {data.filter(q => q.points >= 65)} />
             </main>
         )
 

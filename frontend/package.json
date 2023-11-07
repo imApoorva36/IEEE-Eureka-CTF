@@ -13,7 +13,8 @@
     "next": "^14.0.1",
     "react": "latest",
     "react-cookie": "^6.1.1",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-spinners": "^0.13.8"
   },
   "devDependencies": {
     "@types/node": "latest",
