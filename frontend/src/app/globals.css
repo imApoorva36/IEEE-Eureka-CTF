@@ -20,9 +20,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px 50px;
-    box-shadow: inset 0px -2px 5px #0f0f0f;
+    box-shadow: inset 0px -2px 5px #232323;
     border-radius: 0px 0px 7px 7px;
-    background-color: #222222;
+    background-color: #0e1116;
     opacity: 80%;
 }
 
@@ -52,7 +52,7 @@ header nav ul li a {
 header nav ul li a:hover {
     color: #bbbbbb;
     /* border: 4px solid blue; */
-    background-color: rgb(24, 23, 33);
+    background-color: rgb(59, 59, 234);
     padding: 12px;
     border-radius: 10%;
 }
