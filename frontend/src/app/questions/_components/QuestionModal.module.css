@@ -69,6 +69,14 @@
     margin-bottom: 20px;
 }
 
+.modal a {
+    color: rgb(148, 148, 240);
+    font-size: 20px;
+    font-weight: 700;
+    /* display: block; */
+    padding: 20px 0;
+}
+
 #close {
     position: absolute;
     top: 0;
