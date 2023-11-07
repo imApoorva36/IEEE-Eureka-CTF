@@ -73,6 +73,11 @@ export default function QuestionModal ({ question, close } : Props) {
                             return <p key={i}>{text}</p>
                         })
                     }
+                    {
+                        question.link !== "" ?
+                            <a target="_blank" href={question.link}>Link to Resources</a>
+                        : null
+                    }<br /><br />
                 </div>
                 <div className={s.bottom}>
                     <div className={s.response}>
