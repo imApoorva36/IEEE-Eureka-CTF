@@ -10,7 +10,6 @@ body {
     min-height: 100vh;
 }
 
-
 header {
     height: 100px;
     width: 100%;
@@ -21,9 +20,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px 50px;
-    box-shadow: inset 0px -2px 5px #333232;
+    box-shadow: inset 0px -2px 5px #0f0f0f;
     border-radius: 0px 0px 7px 7px;
     background-color: #222222;
+    opacity: 80%;
 }
 
 header>a {
@@ -46,10 +46,15 @@ header nav ul li a {
     color: inherit;
     text-decoration: none;
     font-size: 17px;
+    padding: 10px;
 }
 
 header nav ul li a:hover {
     color: #bbbbbb;
+    /* border: 4px solid blue; */
+    background-color: rgb(24, 23, 33);
+    padding: 12px;
+    border-radius: 10%;
 }
 
 

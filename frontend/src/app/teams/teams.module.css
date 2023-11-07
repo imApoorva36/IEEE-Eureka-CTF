@@ -42,7 +42,7 @@
   }
   
   .teamList th {
-    background-color: #444;
+    background-color: #214eca;
     color: #fff;
     font-size: 18px;
     text-align: left;
@@ -57,17 +57,6 @@
     margin-left: 5px;
     width: 0;
     height: 0;
-    border-style: solid;
-  }
-  
-  .teamList th.sort-asc::after {
-    border-width: 5px 5px 0 5px;
-    border-color: #fff transparent transparent transparent;
-  }
-  
-  .teamList th.sort-desc::after {
-    border-width: 0 5px 5px 5px;
-    border-color: transparent transparent #fff transparent;
   }
   
   .teamList td {
