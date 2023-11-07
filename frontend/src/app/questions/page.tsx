@@ -26,7 +26,6 @@ export default async function Questions () {
         return (
             <main className={`${s.questions} pd-top`}>
                 <h1 className={s.heading}>Questions</h1>
-
                 <h2 className={s.subheading}>Easy</h2>
                 <QuestionsGrid questions = {data.filter(q => q.points <= 35)} />
                 <h2 className={s.subheading}>Medium</h2>

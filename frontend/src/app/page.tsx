@@ -8,7 +8,7 @@ export default function Home() {
   console.log('Username from cookie:', username);
 
   return (
-    <main className={`${s.home} pd-top`}>
+    <main className={s.home}>
       <div className={s.content}>
         <h1 className={s.title}>IEEE Eureka CTF 2023</h1>
         <p className={s.subtitle}>Get ready for action!</p>

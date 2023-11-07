@@ -65,7 +65,7 @@ class QuestionsViewSet(viewsets.ModelViewSet):
         time_5_pm = make_aware(datetime(2023, 11, 4, 17, 0, 0))
         time_5_am = make_aware(datetime(2023, 11, 17, 5, 0, 0))
         if current_time >= time_5_pm and current_time < time_5_am:
-            questions = Question.objects.filter(id__range=(1, 5))
+            questions = Question.objects.filter(id__range=(1, 6))
         elif current_time >= time_5_am:
             questions = Question.objects.filter(id__range=(1, 5))
         else:

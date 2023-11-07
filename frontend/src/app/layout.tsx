@@ -28,8 +28,9 @@ export default function RootLayout({
 						<ul>
 							<li><Link href = "/">HOME</Link></li>
 							<li><Link href = "/teams">TEAMS</Link></li>
-							<li><Link href = "/scoreboard">SCOREBOARD</Link></li>
 							<li><Link href = "/questions">QUESTIONS</Link></li>
+							<li><Link href = "/scoreboard">SCOREBOARD</Link></li>
+							
 						</ul>
 					</nav>
 				</header>

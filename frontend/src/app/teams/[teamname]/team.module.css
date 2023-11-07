@@ -1,10 +1,9 @@
 .team {
   text-align: center;
-  color: #fff; /* Text color in white */
-  background-color: #333; /* Dark background color */
+  color: #ddb7b7; /* Text color in white */
   padding: 20px;
-  margin-top: 105px;
-  min-height: 79vh;
+  background-color: #040110;
+  min-height: calc( 100vh - var(--footer-height) - var(--header-height));
 }
 
 .hr {
@@ -18,7 +17,8 @@
   font-weight: bold;
   margin: 0;
   font-size: 46px;
-  color: rgb(0, 51, 255);
+  color: white;
+
 }
 
 .team p {

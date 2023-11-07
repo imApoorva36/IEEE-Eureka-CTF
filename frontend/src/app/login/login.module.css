@@ -3,7 +3,12 @@
     flex-direction: column;
     align-items: center;
     padding: 100px;
-    min-height: 94vh;
+    min-height: calc( 100vh - var(--footer-height) - var(--header-height));
+}
+
+.login p{
+    text-align: right;
+    margin-left: 200px;
 }
 
 .formGroup {
