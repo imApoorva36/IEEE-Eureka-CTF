@@ -2,9 +2,8 @@
   text-align: center;
   color: #ddb7b7; /* Text color in white */
   padding: 20px;
-  margin-top: 105px;
   background-color: #040110;
-  min-height: 79vh;
+  min-height: calc( 100vh - var(--footer-height) - var(--header-height));
 }
 
 .hr {

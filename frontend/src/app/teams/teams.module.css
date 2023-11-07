@@ -2,9 +2,8 @@
     text-align: center;
     color: #fff;
     padding: 20px;
-    margin-top: 105px;
     margin-bottom: auto;
-    min-height: 79vh;
+    min-height: calc( 100vh - var(--footer-height) - var(--header-height));
   }
   
   .header h1 {

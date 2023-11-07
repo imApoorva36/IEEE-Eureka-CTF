@@ -32,17 +32,16 @@ export default function Login() {
             });
             console.log(res);
             if (res.status === 401) {
-                alert('Wrong credentials');
+                console.log('Wrong credentials');
             } else if (res.ok) {
                 const data = await res.json();
-                // Save the JWT token to cookies or local storage
                 setCookie('access_token', data.access, { path: '/' });
                 setCookie('refresh_token', data.refresh, { path: '/' });
                 setCookie('username', email, { path: '/' });
                 const username=email;
                 setUsername(email);
-                router.push('/teams');
-                alert('Login Successfull!')
+                router.push('/questions');
+                console.log('Login Successfull!')
             }
         } catch (error) {
             console.error('Login error:', error);
@@ -53,8 +52,9 @@ export default function Login() {
     }
 
     return (
-        <main className={`${s.login} pd-top`}><br /><br />
+        <main className={s.login}><br /><br />
             <h2>Wecome to Login Page, enter your details to be logged into your account!!</h2><br />
+            <p>P.S. You will be redirected on successful login</p>
  			<form onSubmit={submit}><br />
                 <div className={s.formGroup}>
                     <label htmlFor="email">Username: </label>

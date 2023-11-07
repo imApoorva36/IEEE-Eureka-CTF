@@ -2,14 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 94vh;
+	min-height: calc( 100vh - var(--footer-height) - var(--header-height));
   background-color: #0c0a13;
   color: #ffffff;
   font-family: Arial, sans-serif;
-}
-
-.pdTop {
-  padding-top: 20px;
 }
 
 .content {

@@ -1,10 +1,9 @@
 .scoreboard {
   text-align: center;
-  margin-top: 105px;
   color: #fff;
   padding: 20px;
   border-radius: 10px;
-  min-height: 79vh;
+  min-height: calc( 100vh - var(--footer-height) - var(--header-height));
   background-color: #040110;
 
 }

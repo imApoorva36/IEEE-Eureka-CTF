@@ -42,7 +42,7 @@ export default function Register() {
                 // Save the JWT token to cookies or local storage
                 document.cookie = `access_token=${data.access}`;
                 document.cookie = `refresh_token=${data.refresh}`;
-                alert('User Registration Successful!!')
+                // alert('User Registration Successful!!')
                 router.push('/login');
                 // Redirect to another page or update your UI accordingly
             }
@@ -59,7 +59,7 @@ export default function Register() {
     }
 
     return (
-        <main className={`${s.register} pd-top`}><br />
+        <main className={s.register}>   
             <h2>Welcome to Register Page, enter your details to be Registered!!</h2><br /><br />
             <form onSubmit={submit}>
                 <div className={s.formGroup}>

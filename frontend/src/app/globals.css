@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root{
+    --footer-height:50px;
+    --header-height:90px;
+}
+
 body {
     background-color: #040110;
     color: #dddddd;
@@ -11,11 +16,12 @@ body {
 }
 
 header {
-    height: 100px;
+    height: var(--header-height);
     width: 100%;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
+    margin-right: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,12 +52,11 @@ header nav ul li a {
     color: inherit;
     text-decoration: none;
     font-size: 17px;
-    padding: 10px;
+    padding: 12px;
 }
 
 header nav ul li a:hover {
-    color: #bbbbbb;
-    /* border: 4px solid blue; */
+    color: #ffffff;
     background-color: rgb(59, 59, 234);
     padding: 12px;
     border-radius: 10%;
@@ -69,6 +74,7 @@ footer{
     position: relative;
     bottom: 0;
     width: 100%;
+    height: var(--footer-height);
     margin-top: auto;
     background-color: #222222;
 }

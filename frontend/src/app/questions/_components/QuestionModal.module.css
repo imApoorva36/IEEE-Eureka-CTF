@@ -150,8 +150,8 @@
     height: 90%;
     font-size: 18px;
     font-weight: 700;
-    background-color: #3fa1fc;
-    color: black;
+    background-color: #009688;
+    color: rgb(255, 255, 255);
     border-radius: 5px;
 
     display: flex;
@@ -160,8 +160,8 @@
 }
 
 .bottom .button.disabled {
-    background-color: #2565a1;
-    color: #222222;
+    background-color: #015e55;
+    color: #b6b6b6;
     cursor: default;
 }
 
