@@ -53,9 +53,9 @@ export default function Login() {
     }
 
     return (
-        <main className={`${s.login} pd-top`}>
+        <main className={`${s.login} pd-top`}><br /><br />
             <h2>Wecome to Login Page, enter your details to be logged into your account!!</h2><br />
- 			<form onSubmit={submit}>
+ 			<form onSubmit={submit}><br />
                 <div className={s.formGroup}>
                     <label htmlFor="email">Username: </label>
                     <input
