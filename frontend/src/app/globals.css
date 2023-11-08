@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* border: 1px solid #d60f0f; */
     box-sizing: border-box;
 }
 
@@ -110,14 +111,15 @@ header nav ul li a:hover {
     padding-top: 120px;
 }
 
-footer{
+footer nav{
     text-align: center;
     color: white;
     padding: 10px;
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: 50vw;
+    border-radius: 10px;
+    margin:auto;
     height: var(--footer-height);
-    margin-top: auto;
-    background-color: #222222;
+    /* background-color: #d60f0f; */
 }

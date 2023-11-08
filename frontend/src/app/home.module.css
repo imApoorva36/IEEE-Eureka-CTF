@@ -76,3 +76,8 @@
   background-color: #007870;
 }
 
+.logoutButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
