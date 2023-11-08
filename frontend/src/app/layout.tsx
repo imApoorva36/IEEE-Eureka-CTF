@@ -1,9 +1,13 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Lexend } from 'next/font/google'
+import { League_Spartan } from 'next/font/google'
+
 import Link from "next/link"
 
-const inter = Inter({ subsets: ['latin'] })
+const lexend = Lexend({ subsets: ['latin'] })
+const league_spartan = League_Spartan({ subsets: ['latin'] })
+
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -21,7 +25,7 @@ export default function RootLayout({
 			<head>
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 			</head>
-			<body className={inter.className}>
+			<body className={lexend.className}>
 				<header>
 					<Link href = "/"><img className='logo' src = {"/assets/images/logo.png"} /></Link>
 					<nav>
