@@ -23,7 +23,7 @@ export default function RootLayout({
 			</head>
 			<body className={inter.className}>
 				<header>
-					<Link href = "/"><img src = {"/assets/images/logo.png"} /></Link>
+					<Link href = "/"><img className='logo' src = {"/assets/images/logo.png"} /></Link>
 					<nav>
 						<ul>
 							<li><Link href = "/">HOME</Link></li>

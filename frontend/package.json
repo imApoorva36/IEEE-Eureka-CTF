@@ -17,12 +17,12 @@
     "react-spinners": "^0.13.8"
   },
   "devDependencies": {
-    "@types/node": "latest",
-    "@types/react": "latest",
+    "@types/node": "20.9.0",
+    "@types/react": "18.2.37",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
     "postcss": "latest",
     "tailwindcss": "latest",
-    "typescript": "latest"
+    "typescript": "5.2.2"
   }
 }
