@@ -1,4 +1,5 @@
 export interface TeamBrief {
+	name:string
 	teamid: string
 	teamname: string
 }

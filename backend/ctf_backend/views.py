@@ -21,6 +21,7 @@ from django.http import JsonResponse
 from django.contrib.auth import logout
 from celery import shared_task
 from rest_framework.decorators import api_view, permission_classes
+from .middleware import TimeRestrictedMiddleware
 
 @api_view(['POST'])
 def register(request):
@@ -65,7 +66,7 @@ class QuestionsViewSet(viewsets.ModelViewSet):
         time_5_pm = make_aware(datetime(2023, 11, 4, 17, 0, 0))
         time_5_am = make_aware(datetime(2023, 11, 17, 5, 0, 0))
         if current_time >= time_5_pm and current_time < time_5_am:
-            questions = Question.objects.filter(id__range=(1, 6))
+            questions = Question.objects.filter(id__range=(1, 9))
         elif current_time >= time_5_am:
             questions = Question.objects.filter(id__range=(1, 5))
         else:
