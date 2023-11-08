@@ -26,7 +26,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px 50px;
-    box-shadow: inset 0px -2px 5px #232323;
+    box-shadow: inset 0px -2px 5px #393939;
     border-radius: 0px 0px 7px 7px;
     background-color: #0e1116;
     opacity: 80%;
@@ -49,7 +49,7 @@ header nav ul {
 
 header nav ul li a {
     font-weight: bold;
-    color: inherit;
+    color: white;
     text-decoration: none;
     font-size: 17px;
     padding: 12px;
