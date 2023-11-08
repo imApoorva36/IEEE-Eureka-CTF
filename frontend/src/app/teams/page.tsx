@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, RefObject } from 'react';
 import Link from 'next/link';
 import { TeamBrief } from '@/models/Team';
 import s from './teams.module.css';
@@ -8,13 +8,14 @@ import Cookies from 'js-cookie';
 import { useAuth } from '../useAuth';
 
 export default function Teams() {
-  const [teamData, setTeamData] = useState([{}]);
+  const [teamData, setTeamData] = useState<TeamBrief[]>([]);
   const [searchInput, setSearchInput] = useState('');
   const [sortDirection, setSortDirection] = useState(1); // 1 for ascending, -1 for descending
-  const sortColumnRef = useRef(null);
+  // const sortColumnRef = useRef(null);
+  let sortColumnRef: RefObject<string | null> = useRef(null);
   const accessToken = Cookies.get('access_token');
+  const inputRef = useRef<HTMLInputElement | null>(null); // Specify the type as `HTMLInputElement | null`
   // useAuth();
-  const inputRef = useRef(null);
   useEffect(() => {
     async function fetchTeamData() {
       try {
@@ -39,23 +40,29 @@ export default function Teams() {
   }, [accessToken]);
 
   useEffect(() => {
-    inputRef.current.focus();
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
   }, []);
 
-  const handleSort = (columnName) => {
+  const handleSort = (columnName: string) => {
     if (sortColumnRef.current === columnName) {
       setSortDirection(sortDirection * -1);
     } else {
-      sortColumnRef.current = columnName;
+      sortColumnRef = useRef(columnName);
       setSortDirection(1);
     }
   };
 
   const sortedTeams = [...teamData].sort((a, b) => {
     if (sortColumnRef.current === 'name') {
-      return sortDirection * a.name.localeCompare(b.name);
+      const nameA = a.name || '';
+      const nameB = b.name || '';
+      return sortDirection * nameA.localeCompare(nameB);
     }
+    return 0;
   });
+  
 
   const filteredTeams = sortedTeams.filter((team) =>
     team.name && team.name.toLowerCase().includes(searchInput.toLowerCase())
