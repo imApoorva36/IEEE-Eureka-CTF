@@ -27,7 +27,7 @@ const Design = () => {
         //         value: "#0d47a1",
         //     },
         // },
-        fpsLimit: 60,
+        fpsLimit: 120,
         interactivity: {
             events: {
                 onClick: {
@@ -80,7 +80,7 @@ const Design = () => {
                 value: 80,
             },
             opacity: {
-                value: 0.2,
+                value: 0.1,
             },
             shape: {
                 type: "circle",
