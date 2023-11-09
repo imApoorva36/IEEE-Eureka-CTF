@@ -11,6 +11,28 @@
     margin-left: 200px;
 }
 
+
+
+@media (max-width: 768px) {
+    .login p{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .welcome h2 {
+        font-size: 2rem;
+    }
+}
+    
+
+.content {
+    margin : 3rem;
+    width: 400px;
+    background-color: #050815;
+    border-radius: 10px;
+    padding: 3rem 2rem;
+    box-shadow: 0 0 2rem rgba(215, 213, 213, 0.275);
+}
+
 .formGroup {
     margin-bottom: 10px;
 }
