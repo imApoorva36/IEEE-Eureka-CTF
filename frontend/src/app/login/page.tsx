@@ -4,6 +4,7 @@ import s from './login.module.css'
 import ENDPOINT from '@/helpers/endpoint'
 import { useRouter } from 'next/navigation';
 import { useCookies } from 'react-cookie';
+import Design from '@/components/Design';
 
 export default function Login() {
     const [username, setUsername] = useState('');
@@ -53,35 +54,39 @@ export default function Login() {
 
     return (
         <main className={s.login}><br /><br />
-            <h2>Wecome to Login Page, enter your details to be logged into your account!!</h2><br />
+            <Design/>
+            <h2 className={s.welcome}>Wecome to Login Page, enter your details to be logged into your account!!</h2><br />
+            <div className={s.content}> 
+                <form onSubmit={submit}><br />
+                    <div className={s.formGroup}>
+                        <label htmlFor="email">Username: </label>
+                        <input
+                            type="text"
+                            id="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                    </div>
+                    <div className={s.formGroup}>
+                        <label htmlFor="password">Password: </label>
+                        <input
+                            type="password"
+                            id="password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
+                    </div>
+                    <button type="submit">Submit</button>
+                    
+                    <br />
+                    
+
+                    { loading ? <p>loading</p> : null }
+                    { error ? <p>wrong credentials</p> : null }
+
+                </form>
+            </div>
             <p>P.S. You will be redirected on successful login</p>
- 			<form onSubmit={submit}><br />
-                <div className={s.formGroup}>
-                    <label htmlFor="email">Username: </label>
-                    <input
-                        type="text"
-                        id="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                    />
-                </div>
-                <div className={s.formGroup}>
-                    <label htmlFor="password">Password: </label>
-                    <input
-                        type="password"
-                        id="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                    />
-                </div>
-				<button type="submit">Submit</button>
-				
-				<br />
-
-				{ loading ? <p>loading</p> : null }
-				{ error ? <p>wrong credentials</p> : null }
-
-			</form>
 		</main>
     );
 }

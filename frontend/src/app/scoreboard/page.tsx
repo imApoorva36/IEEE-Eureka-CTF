@@ -5,7 +5,7 @@ import ENDPOINT from '@/helpers/endpoint';
 import s from './scoreboard.module.css';
 import { useCookies } from 'react-cookie';
 import { useAuth } from '../useAuth';
-
+import Design from '@/components/Design';
 const coolNames = [
   'Cool Cat',
   'Funky Monkey',
@@ -55,6 +55,7 @@ const ScoreboardPage = () => {
 
   return (
     <main className={`${s.scoreboard} pd-top`}>
+      <Design />
       <h1 className={s.title}>Live Scoreboard of Top Scorers</h1>
       <br />
       <hr className={s.hr} />
