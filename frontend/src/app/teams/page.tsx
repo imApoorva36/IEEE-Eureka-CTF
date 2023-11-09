@@ -5,6 +5,7 @@ import { TeamBrief } from '@/models/Team';
 import s from './teams.module.css';
 import ENDPOINT from '@/helpers/endpoint';
 import Cookies from 'js-cookie';
+import Design from '@/components/Design';
 import { useAuth } from '../useAuth';
 
 export default function Teams() {
@@ -70,6 +71,7 @@ export default function Teams() {
 
   return (
     <main className={s.teams}>
+      <Design />
       <div className={s.header}>
         <h1>Explore Registered Teams</h1>
         <br />
