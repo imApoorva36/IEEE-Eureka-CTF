@@ -10,9 +10,6 @@ import Design from '@/components/Design';
 const lexend = Lexend({ subsets: ['latin'] })
 const league_spartan = League_Spartan({ subsets: ['latin'] })
 
-
-
-
 export default function Home() {
   const username = Cookies.get('username');
   console.log('Username from cookie:', username);
@@ -32,7 +29,7 @@ export default function Home() {
         {!username && (
         <div className={s.buttons}>
             <Link href="/login" className={s.button}>Login</Link>
-            <Link href="/register" className={s.button}>Register</Link>
+            {/* <Link href="/register" className={s.button}>Register</Link> */}
             <Link href="/logout" className={s.button}>Logout</Link>
         </div>
         )}

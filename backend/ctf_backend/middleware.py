@@ -8,7 +8,7 @@ class TimeRestrictedMiddleware:
 
     def __call__(self, request):
         current_time = make_aware(datetime.now())
-        restricted_time = make_aware(datetime(2023,11,7))
+        restricted_time = make_aware(datetime(2023,9,7))
         if current_time < restricted_time:
             return HttpResponseForbidden("Access is restricted before the specified time.")
         return self.get_response(request)

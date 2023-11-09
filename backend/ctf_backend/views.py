@@ -23,22 +23,22 @@ from celery import shared_task
 from rest_framework.decorators import api_view, permission_classes
 from .middleware import TimeRestrictedMiddleware
 
-@api_view(['POST'])
-def register(request):
-    username = request.data.get('username')
-    name=username
-    password = request.data.get('password')
-    member1 = request.data.get('member1')
-    member2 = request.data.get('member2')
-    member3 = request.data.get('member3')
-    contact = request.data.get('contact')
-    if not username or not password:
-        return Response({'error': 'Both username and password are required.'}, status=status.HTTP_400_BAD_REQUEST)
-    if User.objects.filter(username=username).exists():
-        return Response({'error': 'Username already exists.'}, status=status.HTTP_400_BAD_REQUEST)
-    user = User.objects.create_user(username=username, password=password)
-    team = Team.objects.create(user=user,name=name, member1=member1, member2=member2, member3=member3, contact=contact)
-    return Response({'message': 'Registration successful.'}, status=status.HTTP_201_CREATED)
+# @api_view(['POST'])
+# def register(request):
+#     username = request.data.get('username')
+#     name=username
+#     password = request.data.get('password')
+#     member1 = request.data.get('member1')
+#     member2 = request.data.get('member2')
+#     member3 = request.data.get('member3')
+#     contact = request.data.get('contact')
+#     if not username or not password:
+#         return Response({'error': 'Both username and password are required.'}, status=status.HTTP_400_BAD_REQUEST)
+#     if User.objects.filter(username=username).exists():
+#         return Response({'error': 'Username already exists.'}, status=status.HTTP_400_BAD_REQUEST)
+#     user = User.objects.create_user(username=username, password=password)
+#     team = Team.objects.create(user=user,name=name, member1=member1, member2=member2, member3=member3, contact=contact)
+#     return Response({'message': 'Registration successful.'}, status=status.HTTP_201_CREATED)
 
 def index(request):
     return render_nextjs_page_sync(request)
@@ -63,8 +63,8 @@ class QuestionsViewSet(viewsets.ModelViewSet):
         return Response("Nope",status=status.HTTP_404_NOT_FOUND)
     def list(self, request): # Basically to handle GET Requests
         current_time = make_aware(datetime.now())
-        time_5_pm = make_aware(datetime(2023, 11, 4, 17, 0, 0))
-        time_5_am = make_aware(datetime(2023, 11, 17, 5, 0, 0))
+        time_5_pm = make_aware(datetime(2023, 10, 4, 17, 0, 0))
+        time_5_am = make_aware(datetime(2023, 10, 17, 5, 0, 0))
         if current_time >= time_5_pm and current_time < time_5_am:
             questions = Question.objects.filter(id__range=(1, 9))
         elif current_time >= time_5_am:
