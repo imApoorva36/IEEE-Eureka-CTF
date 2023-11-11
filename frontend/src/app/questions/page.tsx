@@ -1,12 +1,17 @@
+"use client"
+
 import ENDPOINT from '@/helpers/endpoint'
 import s from './questions.module.css'
-import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 import Question from '@/models/Question'
 import QuestionsGrid from './_components/QuestionsGrid'
+import { useCookies } from 'react-cookie'
+import { useAuth } from '../useAuth'
 
 export default async function Questions () {
-    let access_token = cookies().get("access_token")?.value
+    useAuth()
+    const [cookies] = useCookies(['access_token']);
+    const access_token = cookies.access_token;
 
     try {
         let res = await fetch(ENDPOINT + "/questions/", {
@@ -38,6 +43,5 @@ export default async function Questions () {
 
     } catch (err) {
         console.log(err)
-        redirect("/login")
     }
 }

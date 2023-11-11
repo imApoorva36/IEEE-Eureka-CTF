@@ -13,6 +13,8 @@
     animation: fadeIn;
     animation-duration: 300ms;
     animation-fill-mode: forwards;
+
+    z-index: 2;
 }
 
 .container.closing {
