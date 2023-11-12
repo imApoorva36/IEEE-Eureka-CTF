@@ -1,2 +1,2 @@
-const ENDPOINT = "http://backend:8000/api"
+const ENDPOINT = "https://ctf-backend.azurewebsites.net/api"
 export default ENDPOINT
