@@ -3,6 +3,7 @@ import { TeamDetailed } from '@/models/Team';
 import s from './team.module.css';
 import ENDPOINT from '@/helpers/endpoint';
 import { useAuth } from '../../useAuth';
+import Design from '@/components/Design';
 import Cookies from 'js-cookie';
 
 export default async function TeamDetailPage( {
@@ -42,6 +43,7 @@ export default async function TeamDetailPage( {
     // Handle errors (e.g., network error)
     return (
       <main className={s.team}>
+        <Design />
         <p>Failed to fetch team data.</p>
       </main>
     );

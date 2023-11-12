@@ -16,7 +16,6 @@
     "react-dom": "latest",
     "react-particles": "^2.12.2",
     "react-spinners": "^0.13.8",
-    "react-tsparticles": "^2.12.2",
     "tsparticles-slim": "^2.12.0"
   },
   "devDependencies": {

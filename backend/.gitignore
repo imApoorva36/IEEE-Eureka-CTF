@@ -22,6 +22,7 @@ staticfiles/
 # Ignore the virtual environment
 venv/
 .env
+/env
 
 # Ignore secrets and configuration files
 *.secret

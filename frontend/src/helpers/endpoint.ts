@@ -1,2 +1,2 @@
-const ENDPOINT = "http://127.0.0.1:8000/api"
+const ENDPOINT = "http://backend:8000/api"
 export default ENDPOINT

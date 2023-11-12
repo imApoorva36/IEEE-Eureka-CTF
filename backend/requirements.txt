@@ -19,3 +19,8 @@ sqlparse==0.4.4
 tzdata==2023.3
 websockets==11.0.3
 yarl==1.9.2
+celery==5.2.6
+django-environ==0.9.0
+psycopg2==2.9.4
+sqlparse==0.4.3
+python-decouple==3.8
