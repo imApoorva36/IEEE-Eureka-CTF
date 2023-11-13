@@ -1,6 +1,6 @@
 from pathlib import Path
+from decouple import config 
 import os
-import datetime
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -10,12 +10,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ah&w004!i7v0ia6l4n_bi73k%t^orf=*a6ygl59-pyfh7-3zu7'
+# Your secret key
+# SECRET_KEY = env("SECRET_KEY")
+SECRET_KEY = config("SECRET_KEY", default='django-insecure-(-j@9zqbe1x)9-i)%*&l&vg(_1j2p(!r@55qdpcuhyf0jdlfas')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
 from datetime import timedelta
 
 # Application definition
@@ -33,9 +34,8 @@ INSTALLED_APPS = [
     'rest_framework',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-]
+
+CSRF_TRUSTED_ORIGINS = ['https://ctf-backend.azurewebsites.net', "https://eurekactf.azurewebsites.net",]
 
 # Optional: Allow cookies to be included in CORS requests (if needed)
 CORS_ALLOW_CREDENTIALS = True
@@ -68,10 +68,10 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-
-    "http://localhost:3000",
-
+    "http://frontend:3000","https://eurekactf.azurewebsites.net","https://ctf-backend.azurewebsites.net",
 ]
+
+ALLOWED_HOSTS=['frontend','localhost','backend','ctf-backend.azurewebsites.net','127.0.0.1']
 
 ROOT_URLCONF = 'backend.urls'
 
@@ -97,10 +97,21 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config("DB_NAME"),
+        'USER': config("DB_USER"),
+        'PASSWORD': config("DB_PASSWORD"),
+        'HOST': config("DB_HOST"),
+        'PORT': config("DB_PORT"),
+        'OPTIONS': {'sslmode': 'require'},
     }
 }
 
@@ -139,7 +150,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+MEDIA_URL='/media/'
+if DEBUG:
+    STATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]
+else:
+    STATIC_ROOT=os.path.join(BASE_DIR,'static')
+MEDIA_ROOT=[os.path.join(BASE_DIR,'media')]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -156,7 +173,3 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
 }
-
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-]
