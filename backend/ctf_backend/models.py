@@ -8,7 +8,7 @@ class Team(models.Model):
     member1 = models.CharField(max_length=20, null=True, blank=True)
     member2 = models.CharField(max_length=20, null=True, blank=True)
     member3 = models.CharField(max_length=20, null=True, blank=True)
-    contact = models.IntegerField()
+    contact = models.CharField(max_length=10, null=True, blank=True)
 
     def __str__(self):
         return f"{self.id} - {self.user} - {self.name}"
