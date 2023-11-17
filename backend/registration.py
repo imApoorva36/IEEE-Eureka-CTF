@@ -47,8 +47,12 @@ def create_users_from_csv(file_name):
         password = PasswordGenerator().generate()
         username = create_team_name(team_name)
         user = create_user(username, password)
-        create_team(team_name, user, member1, member2, member3, contact)
-        print(f'Created user {username} with password {password} for team {team_name}')
+        # create team if it doesn't exist
+        if not Team.objects.filter(user=user).exists():
+            create_team(team_name, user, member1, member2, member3, contact)
+            print(f'Team {team_name} with username {username} and password {password} created')
+        else:
+            print(f'Team {team_name} already exists')
         login_details[row['Email Address']] = {'username': username, 'password': password}
     dump_login_details(login_details)
 

@@ -1,4 +1,4 @@
-# send emails to users regarding login details
+# Sending emails to all participants with their login details
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -45,7 +45,6 @@ def getDetails():
 def send_emails():
     login_details = getDetails()
     for email, details in login_details.items():
-        # format the body beautifully with a header image and table for the username and password
         path_to_image = '../eureka.png'
         body = f"""
         <!DOCTYPE html>
