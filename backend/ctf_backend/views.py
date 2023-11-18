@@ -53,6 +53,7 @@ class QuestionsViewSet(viewsets.ModelViewSet):
         slot3 = make_aware(datetime(2023, 11, 18, 3, 0, 0))
         slot4 = make_aware(datetime(2023, 11, 18, 6, 0, 0))
         slot5 = make_aware(datetime(2023, 11, 18, 9, 0, 0))
+        endslot = make_aware(datetime(2023, 11, 18, 10, 0, 1))
         if current_time >= slot1 and current_time < slot2:
             questions = Question.objects.filter(id__range=(1, 15))
         elif current_time >= slot2 and current_time < slot3:
@@ -61,7 +62,7 @@ class QuestionsViewSet(viewsets.ModelViewSet):
             questions = Question.objects.filter(id__range=(1, 26))
         elif current_time >= slot4 and current_time < slot5:
             questions = Question.objects.filter(id__range=(1, 30))
-        elif current_time >= slot5:
+        elif current_time >= slot5 and current_time< endslot:
             questions = Question.objects.filter(id__range=(1, 33))
         else:
             questions = Question.objects.none()
