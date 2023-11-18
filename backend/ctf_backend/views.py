@@ -14,7 +14,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework import status
 from rest_framework.decorators import api_view
 # from django.contrib.auth import authenticate, login
-from datetime import datetime
+from datetime import datetime, tzinfo
 from django.utils.timezone import make_aware
 from rest_framework.decorators import action
 from django.http import JsonResponse
@@ -22,6 +22,7 @@ from django.contrib.auth import logout
 from celery import shared_task
 from rest_framework.decorators import api_view, permission_classes
 from .middleware import TimeRestrictedMiddleware
+import pytz
 
 def index(request):
     return render_nextjs_page_sync(request)
@@ -45,13 +46,23 @@ class QuestionsViewSet(viewsets.ModelViewSet):
     def create(self,request): # Basically to handle POST Requests
         return Response("Nope",status=status.HTTP_404_NOT_FOUND)
     def list(self, request): # Basically to handle GET Requests
+        # astimezone(tz=pytz.timezone('Asia/Kolkata'))
         current_time = make_aware(datetime.now())
-        time_5_pm = make_aware(datetime(2023, 10, 4, 17, 0, 0))
-        time_5_am = make_aware(datetime(2023, 10, 17, 5, 0, 0))
-        if current_time >= time_5_pm and current_time < time_5_am:
-            questions = Question.objects.filter(id__range=(1, 9))
-        elif current_time >= time_5_am:
-            questions = Question.objects.filter(id__range=(1, 5))
+        slot1 = make_aware(datetime(2023, 11, 17, 19, 0, 0))
+        slot2 = make_aware(datetime(2023, 11, 18, 0, 3, 0))
+        slot3 = make_aware(datetime(2023, 11, 18, 3, 0, 0))
+        slot4 = make_aware(datetime(2023, 11, 18, 6, 0, 0))
+        slot5 = make_aware(datetime(2023, 11, 18, 9, 0, 0))
+        if current_time >= slot1 and current_time < slot2:
+            questions = Question.objects.filter(id__range=(1, 15))
+        elif current_time >= slot2 and current_time < slot3:
+            questions = Question.objects.filter(id__range=(1, 21))
+        elif current_time >= slot3 and current_time < slot4:
+            questions = Question.objects.filter(id__range=(1, 26))
+        elif current_time >= slot4 and current_time < slot5:
+            questions = Question.objects.filter(id__range=(1, 30))
+        elif current_time >= slot5:
+            questions = Question.objects.filter(id__range=(1, 33))
         else:
             questions = Question.objects.none()
         serializer = self.get_serializer(questions,many=True)

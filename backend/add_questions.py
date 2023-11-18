@@ -8,8 +8,8 @@ django.setup()
 
 from ctf_backend.models import Question
 
-def csv_to_dict(file_name):
-    with open(file_name, mode='r') as csv_file:
+def csv_to_dict(file_name, encoding='utf-8'):
+    with open(file_name, mode='r', encoding=encoding) as csv_file:
         csv_reader = csv.DictReader(csv_file)
         return [row for row in csv_reader]
     
@@ -19,7 +19,7 @@ def create_question(title, text, points, link, flag):
     return new_question
 
 def create_questions_from_csv(file_name):
-    for row in csv_to_dict(file_name):
+    for row in csv_to_dict(file_name, encoding='utf-8'):
         title = row['title']
         text = row['text']
         points = row['points']

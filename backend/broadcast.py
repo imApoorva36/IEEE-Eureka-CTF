@@ -4,12 +4,13 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
+import html
 
 # PUT YOUR EMAIL HERE
-from_email = ''
+from_email = 'apoorva.221ec207@nitk.edu.in'
 
 # THIS IS NOT YOUR GMAIL PASSWORD, THIS IS AN APP PASSWORD (LOOK IT UP and ENABLE IT)
-password = ''
+password = 'aeji eqru ljsc xryd'
 
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
@@ -88,18 +89,18 @@ def send_emails():
             <th>Password</th>
         </tr>
         <tr>
-            <td>{details['username']}</td>
-            <td>{details['password']}</td>
+            <td>{html.escape(details['username'])}</td>
+            <td>{html.escape(details['password'])}</td>
         </tr>
         </table>
 
-        <p style="color: #446cb3;">Thank you for participating in our CTF contest! If you have any questions, feel free to reply to this email.</p>
+        <p style="color: #446cb3;">Thank you for participating in the IEEE EUREKA CTF! If you have any questions, feel free to reply to this email.</p>
 
         </body>
         </html>
 
         """
-        send_email(email, 'CTF Login Details', body)
+        send_email(email, 'Revised IEEE EUREKA CTF Login Details', body)
     
 
 send_emails()

@@ -35,7 +35,7 @@ INSTALLED_APPS = [
 ]
 
 
-CSRF_TRUSTED_ORIGINS = ['https://ctf-backend.azurewebsites.net', "https://eurekactf.azurewebsites.net",]
+CSRF_TRUSTED_ORIGINS = ['https://ctf-backend.azurewebsites.net', "https://eurekactf.azurewebsites.net","http://localhost:3000",]
 
 # Optional: Allow cookies to be included in CORS requests (if needed)
 CORS_ALLOW_CREDENTIALS = True
@@ -68,7 +68,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://frontend:3000","https://eurekactf.azurewebsites.net","https://ctf-backend.azurewebsites.net",
+    "http://frontend:3000","http://localhost:3000","https://eurekactf.azurewebsites.net","https://ctf-backend.azurewebsites.net",
 ]
 
 ALLOWED_HOSTS=['frontend','localhost','backend','ctf-backend.azurewebsites.net','127.0.0.1']
@@ -140,7 +140,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 

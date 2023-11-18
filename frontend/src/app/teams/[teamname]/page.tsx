@@ -28,8 +28,8 @@ export default async function TeamDetailPage( {
         <main className={s.team}>
           <h1>{team.name}</h1><hr className={s.hr} /><br /><br />
           <p>Member 1 : {team.member1}</p><br /><br />
-          <p>Member 2 : {team.member2}</p><br /><br />
-          <p>Member 3 : {team.member3}</p><br /><br /> 
+          {team.member2 ? <p>Member 2 : {team.member2}</p> : null}<br /><br />
+          {team.member3 ? <p>Member 3 : {team.member3}</p> : null}<br /><br />
         </main>
       );
     } else {
