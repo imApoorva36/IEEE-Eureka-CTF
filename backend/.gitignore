@@ -17,7 +17,7 @@ db.sqlite3
 media/
 
 # Ignore static files (collected assets)
-staticfiles/
+static/
 
 # Ignore the virtual environment
 venv/
@@ -44,8 +44,8 @@ local_settings.py
 .idea/
 
 # Ignore Docker files (if using Docker)
-Dockerfile
-docker-compose.yml
+# Dockerfile
+# docker-compose.yml
 
 # Ignore dependency and cache files
 *.egg-info/
