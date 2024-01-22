@@ -4,6 +4,7 @@ __pycache__/
 
 # Ignore database files
 db.sqlite3
+azure_db
 
 # Ignore log files
 *.log
