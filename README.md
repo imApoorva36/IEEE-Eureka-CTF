@@ -2,6 +2,8 @@
 
 Welcome to the IEEE-Eureka-CTF repository! This project is the website for the IEEE NITK Student Branch Eureka's Capture the Flag (CTF) event.
 
+[Video link of the website](https://drive.google.com/file/d/111NE1fAcAtKl3yoIyeB_8g6H5l2XzqsT/view?usp=drive_link)
+
 ## Project Structure
 
 ### Backend
