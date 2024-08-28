@@ -1,6 +1,8 @@
 .heading {
 	/* padding: 20px; */
+	text-align: center;
 	font-size: 40px;
+	margin: 0 0 20px 0;
 }
 
 .subheading {
@@ -10,8 +12,7 @@
 }
 
 .questions {
-	background-color: #040110;
-	padding: 20px;
-	margin: 0px 50px;
+	background-color: #0c0000;
+	padding: 4rem;
 	min-height: calc( 100vh - var(--footer-height) - var(--header-height));
 }

@@ -27,6 +27,12 @@ export default function Questions() {
                 if (res.status === 402) {
                     throw new Error('402')
                 }
+                if (res.status === 403) {
+                    throw new Error('403')
+                }
+                if (res.status === 400) {
+                    throw new Error('400')
+                }
 
                 const data = await res.json()
                 setQuestions(data)

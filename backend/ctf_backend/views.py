@@ -24,6 +24,9 @@ from rest_framework.decorators import api_view, permission_classes
 from .middleware import TimeRestrictedMiddleware
 import pytz
 
+
+sections_thresholds = [0, 100, 200, 300, 400, 500, 600]
+
 def index(request):
     return render_nextjs_page_sync(request)
 
@@ -46,26 +49,24 @@ class QuestionsViewSet(viewsets.ModelViewSet):
     def create(self,request): # Basically to handle POST Requests
         return Response("Nope",status=status.HTTP_404_NOT_FOUND)
     def list(self, request): # Basically to handle GET Requests
-        # astimezone(tz=pytz.timezone('Asia/Kolkata'))
-        current_time = make_aware(datetime.now())
-        slot1 = make_aware(datetime(2023, 11, 17, 19, 0, 0))
-        slot2 = make_aware(datetime(2023, 11, 18, 0, 3, 0))
-        slot3 = make_aware(datetime(2023, 11, 18, 3, 0, 0))
-        slot4 = make_aware(datetime(2023, 11, 18, 6, 0, 0))
-        slot5 = make_aware(datetime(2023, 11, 18, 9, 0, 0))
-        endslot = make_aware(datetime(2023, 11, 18, 10, 0, 1))
-        if current_time >= slot1 and current_time < slot2:
-            questions = Question.objects.filter(id__range=(1, 15))
-        elif current_time >= slot2 and current_time < slot3:
-            questions = Question.objects.filter(id__range=(1, 21))
-        elif current_time >= slot3 and current_time < slot4:
-            questions = Question.objects.filter(id__range=(1, 26))
-        elif current_time >= slot4 and current_time < slot5:
-            questions = Question.objects.filter(id__range=(1, 30))
-        elif current_time >= slot5 and current_time< endslot:
-            questions = Question.objects.filter(id__range=(1, 33))
+        # get the category from the request
+        category = int(request.query_params.get('category'))
+        # get team score from the request
+        team = request.user.team
+        score = team.calculate_score()
+        
+        # print(score)
+        print("Sections Thresholds: ",sections_thresholds)
+        print("Category: ",category)
+        print("Score: ",score)
+        
+        if category:
+            if score >= sections_thresholds[category - 1]:
+                questions = Question.objects.filter(section=category)
+            else:
+                return Response({'error': 'You have not reached this section yet.'}, status=status.HTTP_403_FORBIDDEN)
         else:
-            questions = Question.objects.none()
+            return Response({'error': 'Category not specified'}, status=status.HTTP_400_BAD_REQUEST)
         serializer = self.get_serializer(questions,many=True)
         return Response(serializer.data)
 

@@ -1,3 +1,4 @@
+import { Navbar } from '@/components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Lexend } from 'next/font/google'
@@ -10,8 +11,8 @@ const league_spartan = League_Spartan({ subsets: ['latin'] })
 
 
 export const metadata: Metadata = {
-	title: 'IEEE Eureka',
-	description: 'Capture the Flag - IEEE Eureka 2023'
+	title: 'Codered | IEEE',
+	description: 'Capture the Flag - IEEE NITK',
 }
 
 export default function RootLayout({
@@ -26,22 +27,11 @@ export default function RootLayout({
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 			</head>
 			<body className={lexend.className}>
-				<header>
-					<Link href = "/"><img className='logo' src = {"/assets/images/logo.png"} /></Link>
-					<nav>
-						<ul>
-							<li><Link href = "/">HOME</Link></li>
-							<li><Link href = "/teams">TEAMS</Link></li>
-							<li><Link href = "/questions">QUESTIONS</Link></li>
-							<li><Link href = "/scoreboard">SCOREBOARD</Link></li>
-							
-						</ul>
-					</nav>
-				</header>
+				<Navbar/>
 				{children}
 				<footer>
 					<nav className='foot'>
-						Made with <span style={{ color: 'red' }}>❤</span> by Eureka Team, IEEE NITK
+						Made with <span style={{ color: 'white' }}>❤</span> by IEEE NITK
 					</nav>
 				</footer>
 			</body>

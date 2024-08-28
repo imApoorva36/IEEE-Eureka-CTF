@@ -1,17 +1,21 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid #d60f0f; */
     box-sizing: border-box;
 }
 
-:root{
-    --footer-height:50px;
-    --header-height:90px;
+@font-face {
+    font-family: "Rouge Hero";
+    src: url("/roguehero.ttf") format("truetype");
+}
+
+:root {
+    --footer-height: 50px;
+    --header-height: 90px;
 }
 
 body {
-    background-color: #040110;
+    background-color: #1b1b1b; /* Dark grey to contrast with red and black */
     color: #dddddd;
     min-height: 100vh;
 }
@@ -27,53 +31,78 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px 50px;
-    /* box-shadow: 0px 0px 10px 0px rgba(44, 44, 44, 0.75); */
     border-radius: 0px 0px 7px 7px;
-    background-color: rgb(2, 10, 24);
-    opacity: 80%;
-    box-shadow: 0px 1px 2px rgba(0, 255, 255, 0.258), 
-              0px 2px 4px rgba(0, 255, 255, 0.274), 
-              0px 4px 8px rgba(0, 255, 255, 0.25), 
-              0px 8px 16px rgba(0, 255, 255, 0.232);
+    background-color: #080000; /* Deadpool's red */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 
+                0px 2px 4px rgba(0, 0, 0, 0.7), 
+                0px 4px 8px rgba(0, 0, 0, 0.6), 
+                0px 8px 16px rgba(0, 0, 0, 0.5);
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        justify-content: center;
+       display: flex;
+        justify-content: space-between;
         align-items: center;
-        height: 100%;
+        padding: 0 20px;
+        background-color: #080000;
+        position: relative;
     }
 
-    img.logo {
+    .logo {
+        max-height: 60px;
+      }
+
+    .menu-toggle {
+        display: block;
+      }
+
+    /* img.logo {
         max-width: 30vw;
         padding: 10px;
         margin: auto;
-    }
+    } */
 
     header nav {
-        overflow-x: auto;
+        position: absolute;
+        top: var(--header-height);
+        left: 0;
         width: 100%;
-        margin: auto;
+        background-color: #040140;
+        display: none;
+        z-index: 100;
+      }
+
+    .nav-open {
+    display: block;
+    background-color: #080000;
     }
 
     header nav ul {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
     }
 
     header nav ul li a {
-        font-size: 15px;
-        padding: 10px;
-    }
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+        border-bottom: 1px solid #333;
+      }
 
     header nav ul li a:hover {
         padding: 10px;
     }
-
 }
 
 header>a {
@@ -82,44 +111,68 @@ header>a {
 
 header a img {
     max-height: 100%;
-    border-radius: 10px;
+    /* border-radius: 50%; Circular logo like Deadpool's mask */
+    /* border: 2px solid #000; Black border for the logo */
 }
 
 header nav ul {
     list-style-type: none;
     display: flex;
-    gap: 80px;
+    gap: 60px;
 }
 
 header nav ul li a {
-    font-weight: bold;
-    color: white;
+    /* font-weight: =; */
+    color: #ffffff;
     text-decoration: none;
     font-size: 17px;
     padding: 12px;
+    font-family: "Rouge Hero", sans-serif; /* Custom Deadpool-like font */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 header nav ul li a:hover {
-    color: #ffffff;
-    background-color: rgb(59, 59, 234);
+    color: #d60f0f; /* Red on hover */
+    background-color: #000; /* Black background on hover */
     padding: 12px;
-    border-radius: 10%;
+    border-radius: 5px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-
 
 .pd-top {
     padding-top: 120px;
 }
 
-footer nav{
+footer nav {
     text-align: center;
     color: white;
     padding: 10px;
     position: relative;
     bottom: 0;
-    width: 50vw;
+    /* width: 50vw; */
     border-radius: 10px;
-    margin:auto;
+    margin: auto;
     height: var(--footer-height);
-    /* background-color: #d60f0f; */
+    background-color: #250000; 
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8),
+                0px 2px 4px rgba(0, 0, 0, 0.7), 
+                0px 4px 8px rgba(0, 0, 0, 0.6), 
+                0px 8px 16px rgba(0, 0, 0, 0.5);
+    font-family: "Rouge Hero", sans-serif;
 }
+
+/* for mobile view */
+@media (max-width: 996px) {
+    footer nav {
+        width: 100%;
+    }
+}
+
+
+.foot{
+    font-weight: 100;
+}
+
+/* * {
+    border: 1px solid red;
+} */

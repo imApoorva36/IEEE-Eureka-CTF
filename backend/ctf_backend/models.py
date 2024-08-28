@@ -9,6 +9,7 @@ class Team(models.Model):
     member2 = models.CharField(max_length=30, null=True, blank=True)
     member3 = models.CharField(max_length=30, null=True, blank=True)
     contact = models.CharField(max_length=10, null=True, blank=True)
+    highest_section_reached = models.IntegerField(default=1)
 
     def __str__(self):
         return f"{self.id} - {self.user} - {self.name}"
@@ -24,6 +25,8 @@ class Question(models.Model):
     points = models.IntegerField()
     link = models.TextField(null=True, blank=True)
     flag = models.TextField(default="flag{N4LL_US34}")
+    section = models.IntegerField(default=1)
+    
     def __str__(self):
         return f"{self.id} - {self.title} - {self.text} - {self.points} - {self.link} - {self.flag}"
     def user_response_count(self):
