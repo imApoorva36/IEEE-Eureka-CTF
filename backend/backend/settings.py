@@ -69,10 +69,10 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://frontend:3000","http://localhost:3000","https://eurekactf.azurewebsites.net","https://ctf-backend.azurewebsites.net",
+    "http://frontend:3000","http://localhost:3000", "http://localhost:3001", "http://codered-ieee.nitk.edu.in","https://codered-ieee.nitk.edu.in",
 ]
 
-ALLOWED_HOSTS=['frontend','localhost','backend','ctf-backend.azurewebsites.net','127.0.0.1']
+ALLOWED_HOSTS=['frontend','localhost','backend','codered-ieee.nitk.edu.in','127.0.0.1']
 
 ROOT_URLCONF = 'backend.urls'
 
