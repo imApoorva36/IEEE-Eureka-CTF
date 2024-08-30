@@ -3,14 +3,13 @@ import Cookies from 'js-cookie';
 import Link from 'next/link';
 import s from './home.module.css';
 import { Lexend } from 'next/font/google';
-import { League_Spartan } from 'next/font/google';
 import Design from '@/components/Design';
 import { Suspense, useEffect, useState } from 'react';
-import Lottie from 'lottie-react';
+import dynamic from 'next/dynamic';
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 import loadingAnimation from '@/components/loading.json'; // Ensure you have a Lottie animation file
 
 const lexend = Lexend({ subsets: ['latin'] });
-const league_spartan = League_Spartan({ subsets: ['latin'] });
 
 export default function Home() {
   const [username, setUsername] = useState<string | undefined>(undefined);

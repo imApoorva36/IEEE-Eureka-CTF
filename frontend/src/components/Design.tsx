@@ -77,7 +77,7 @@ const Design = () => {
                         shape: {
                             type: "polygon",
                             options: {
-                                sides: 5, // Five-sided particles to resemble shuriken stars
+                                sides: { count: 5 }, // Five-sided particles to resemble shuriken stars
                             },
                         },
                         size: {

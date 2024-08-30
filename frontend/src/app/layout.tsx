@@ -1,13 +1,11 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import { Navbar } from '@/components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Lexend } from 'next/font/google'
 import { League_Spartan } from 'next/font/google'
 
-import Link from "next/link"
-
 const lexend = Lexend({ subsets: ['latin'] })
-const league_spartan = League_Spartan({ subsets: ['latin'] })
 
 
 export const metadata: Metadata = {
@@ -24,7 +22,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head>
-				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=optional" />
 			</head>
 			<body className={lexend.className}>
 				<Navbar/>

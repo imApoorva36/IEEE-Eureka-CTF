@@ -28,6 +28,8 @@
     "@types/react": "18.2.37",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.7",
     "postcss": "latest",
     "tailwindcss": "latest",
     "typescript": "5.2.2"

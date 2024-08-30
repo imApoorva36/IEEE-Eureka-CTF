@@ -1,4 +1,6 @@
 'use client';
+
+import React from 'react';
 import { TeamDetailed } from '@/models/Team';
 import s from './team.module.css';
 import ENDPOINT from '@/helpers/endpoint';
@@ -6,7 +8,7 @@ import { useAuth } from '../../useAuth';
 import Design from '@/components/Design';
 import Cookies from 'js-cookie';
 
-export default async function TeamDetailPage( {
+export default function TeamDetailPage( {
   params
 }: {
   params: { teamname: string };
@@ -15,14 +17,32 @@ export default async function TeamDetailPage( {
   const { teamname } = params;
   const decodedTeamname = decodeURIComponent(teamname); // Decode %20 to space
   const accessToken = Cookies.get('access_token');
+
+  const [teamData, setTeamData] = React.useState<TeamDetailed[] | null>(null);
+
+  const fetchTeamData = async () => {
+    try {
+      const response = await fetch(ENDPOINT + '/teams/', {
+        // headers: {
+        //   'Authorization': `Bearer ${accessToken}`,
+        // },
+      });
+      if (response.ok) {
+        const data = await response.json();
+        setTeamData(data);
+      } else {
+        console.error('Failed to fetch team data');
+      }
+    }
+    catch (err) {
+      console.error(err);
+    }
+  }
+
   // useAuth();
   try {
-    const teams: TeamDetailed[] = await fetch(ENDPOINT + '/teams/', {
-      // headers: {
-      //   'Authorization': `Bearer ${accessToken}`,
-      // },
-    }).then((res) => res.json());
-    const team = teams.find((t) => t.name === decodedTeamname);
+    fetchTeamData();
+    const team = teamData?.find((t) => t.name === decodedTeamname);
     if (team) {
       return (
         <main className={s.team}>

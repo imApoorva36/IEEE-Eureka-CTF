@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Using Font Awesome icons for the menu button
 
 export const Navbar = () => {
@@ -20,7 +21,7 @@ export const Navbar = () => {
       zIndex: 1000,
     }}>
       <Link href="/">
-        <img className="logo" src="/assets/images/logo.png" alt="Logo" />
+        <Image className="logo" src="/assets/images/logo.png" alt="Logo" width={230} height={100} />
       </Link>
       <button className="menu-toggle" onClick={toggleNavbar}>
         {isOpen ? <FaTimes /> : <FaBars />}

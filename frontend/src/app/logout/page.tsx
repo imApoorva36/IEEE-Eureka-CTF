@@ -16,17 +16,19 @@ export default function Logout() {
       await new Promise((resolve) => setTimeout(resolve, 100));
 
       // Remove the authentication tokens from cookies or local storage
-      document.cookie = 'access_token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-      document.cookie = 'refresh_token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-      localStorage.removeItem('access_token');
-      localStorage.removeItem('refresh_token');
-      localStorage.removeItem('username');
-      Cookies.remove('access_token');
-      Cookies.remove('refresh_token');
-      Cookies.remove('username');
-      await new Promise((resolve) => setTimeout(resolve, 100));
-      setLoggingOut(false); // Reset the logging out state
-      router.push('/login');
+      if (typeof document !== 'undefined') {
+        document.cookie = 'access_token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+        document.cookie = 'refresh_token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+        localStorage.removeItem('access_token');
+        localStorage.removeItem('refresh_token');
+        localStorage.removeItem('username');
+        Cookies.remove('access_token');
+        Cookies.remove('refresh_token');
+        Cookies.remove('username');
+        await new Promise((resolve) => setTimeout(resolve, 100));
+        setLoggingOut(false); // Reset the logging out state
+        router.push('/login');
+      }
     }
 
     logout();

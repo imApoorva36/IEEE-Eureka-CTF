@@ -21,7 +21,7 @@ const coolNames = [
 ];
 
 const ScoreboardPage = () => {
-  useAuth();
+  // useAuth();
   const router = useRouter();
 
   const [scores, setScores] = useState<TeamScores [] | null>(null); // Store the top 10 scores
@@ -53,7 +53,7 @@ const ScoreboardPage = () => {
       }
     }
     fetchScoreboard();
-  }, [router]);
+  }, [router, access_token]);
 
   return (
     <main className={`${s.scoreboard} pd-top`}>

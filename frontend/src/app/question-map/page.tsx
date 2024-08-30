@@ -7,7 +7,7 @@ import ENDPOINT from '@/helpers/endpoint';
 import Cookies from 'js-cookie';
 import { Sections, TeamDetailed } from '@/models/Team';
 
-const CustomConnection = ({ start, end }) => (
+const CustomConnection = ({ start, end } : { start: string, end: string }) => (
   <Xarrow
     start={start}
     end={end}
@@ -22,7 +22,7 @@ const CustomConnection = ({ start, end }) => (
     />
 );
 
-export const AdventureMap = () => {
+export default function AdventureMap() {
 
   const islandsXL = [
     { id: 'island1', x: 1, y: 1 , image: '/island-1.png', href: '/questions/1'},
@@ -200,5 +200,3 @@ export const AdventureMap = () => {
     </>
   );
 };
-
-export default AdventureMap;
