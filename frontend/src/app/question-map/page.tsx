@@ -144,7 +144,10 @@ export default function AdventureMap() {
           <h2>
             Team Score:  
             <span className={styles.score}>
-              {' ' + teamData?.calculate_score ?? 0}
+              {teamData ?
+                teamData.calculate_score
+                : 'Loading...'
+              }
             </span>
           </h2>
         </div>

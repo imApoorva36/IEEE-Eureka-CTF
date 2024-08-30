@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config("SECRET_KEY", default='django-insecure-(-j@9zqbe1x)9-i)%*&l&vg(_1j2p(!r@55qdpcuhyf0jdlfas')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 from datetime import timedelta
 
@@ -65,14 +65,13 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'ctf_backend.middleware.TimeRestrictedMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://frontend:3000","http://localhost:3000", "http://localhost:3001", "http://codered-ieee.nitk.edu.in","https://codered-ieee.nitk.edu.in",
+    "http://frontend:3000","http://localhost:3000", "http://localhost:3001", "http://codered-ieee.nitk.ac.in","https://codered-ieee.nitk.ac.in",
 ]
 
-ALLOWED_HOSTS=['frontend','localhost','backend','codered-ieee.nitk.edu.in','127.0.0.1']
+ALLOWED_HOSTS=['frontend','localhost','backend','codered-ieee.nitk.ac.in','127.0.0.1']
 
 ROOT_URLCONF = 'backend.urls'
 
@@ -174,4 +173,10 @@ REST_FRAMEWORK = {
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+}
+
+STORAGES = {
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
 }
