@@ -19,51 +19,49 @@ export default function Page({ params }: { params: { slug: string } }) {
   const [questions, setQuestions] = useState<Question[]>([])
   const [error, setError] = useState<string | null>(null)
   const [sectionsData, setSectionsData] = useState<Sections[]>();
+  const fetchData = async () => {
+    try {
+      const access_token = cookies.access_token;
+      const res = await fetch(`${ENDPOINT}/questions/?category=${params.slug}`, {
+        headers: {
+          Authorization: `Bearer ${access_token}`,
+        },
+        next: { revalidate: 0 }
+      });
+
+      if ([402, 403, 400].includes(res.status)) {
+        setError(res.status.toString());
+        return;
+      }
+
+      const data = await res.json();
+      setQuestions(data);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+  const fetchSectionsData = async () => {
+    try {
+      const access_token = cookies.access_token;
+      const res = await fetch(`${ENDPOINT}/sections/`, {
+        headers: {
+          Authorization: `Bearer ${access_token}`,
+        },
+        next: { revalidate: 0 }
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        setSectionsData(data);
+      } else {
+        console.error('Failed to fetch sections data');
+      }
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const access_token = cookies.access_token;
-        const res = await fetch(`${ENDPOINT}/questions/?category=${params.slug}`, {
-          headers: {
-            Authorization: `Bearer ${access_token}`,
-          },
-          next: { revalidate: 0 }
-        });
-
-        if ([402, 403, 400].includes(res.status)) {
-          setError(res.status.toString());
-          return;
-        }
-
-        const data = await res.json();
-        setQuestions(data);
-      } catch (err) {
-        console.error(err);
-      }
-    };
-
-    const fetchSectionsData = async () => {
-      try {
-        const access_token = cookies.access_token;
-        const res = await fetch(`${ENDPOINT}/sections/`, {
-          headers: {
-            Authorization: `Bearer ${access_token}`,
-          },
-          next: { revalidate: 0 }
-        });
-
-        if (res.ok) {
-          const data = await res.json();
-          setSectionsData(data);
-        } else {
-          console.error('Failed to fetch sections data');
-        }
-      } catch (err) {
-        console.error(err);
-      }
-    };
-
     fetchData();
     fetchSectionsData();
   }, [cookies.access_token, params.slug]);
@@ -93,7 +91,7 @@ export default function Page({ params }: { params: { slug: string } }) {
       <br />
       <br />
       <Suspense fallback={<Lottie animationData={loadingAnimation} loop={true} />}>
-        <QuestionsGrid questions={questions} fetchData={() => {}} />
+        <QuestionsGrid questions={questions} fetchData={fetchData} />
       </Suspense>
     </main>
   );
