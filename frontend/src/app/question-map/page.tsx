@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React from 'react';
 import Xarrow from 'react-xarrows';
@@ -145,7 +146,7 @@ export default function AdventureMap() {
             Team Score:  
             <span className={styles.score}>
               {teamData ?
-                teamData.calculate_score
+                teamData.score
                 : 'Loading...'
               }
             </span>
@@ -158,7 +159,7 @@ export default function AdventureMap() {
             key={island.id}
             id={island.id}
             className={
-              (sectionsData?.[key]?.points_threshold ?? 0) < (teamData?.calculate_score ?? 0) ? styles.island : styles.islandLocked
+              (sectionsData?.[key]?.points_threshold ?? 0) <= (teamData?.score ?? 0) ? styles.island : styles.islandLocked
             }
             style={{
               gridColumn: island.x,
@@ -170,16 +171,16 @@ export default function AdventureMap() {
             }}
           >
             <img src={island.image} alt={island.id} 
-            onClick={() => {
-              if ((sectionsData?.[key]?.points_threshold ?? 0) < (teamData?.calculate_score ?? 0))
-                window.location.href = island.href
-            }}
-              style={{ 
-                maxWidth: maxWidth,
-                cursor: ((sectionsData?.[key]?.points_threshold ?? 0) < (teamData?.calculate_score ?? 0)) ? 'pointer' : 'not-allowed',
+              onClick={() => {
+                if ((sectionsData?.[key]?.points_threshold ?? 0) <= (teamData?.score ?? 0))
+                  window.location.href = island.href
               }}
+                style={{ 
+                  maxWidth: maxWidth,
+                  cursor: ((sectionsData?.[key]?.points_threshold ?? 0) <= (teamData?.score ?? 0)) ? 'pointer' : 'not-allowed',
+                }}
             />
-            {(sectionsData?.[key]?.points_threshold ?? 0) > (teamData?.calculate_score ?? 0) && (
+            {(sectionsData?.[key]?.points_threshold ?? 0) > (teamData?.score ?? 0) && (
               <>
               <div className={styles.lockOverlay}>
                 <img src='/lock.svg' alt="lock" className={styles.lockIcon} />

@@ -46,9 +46,13 @@ class TeamDetailViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
     def create(self,request): 
         return Response("Nope",status=status.HTTP_404_NOT_FOUND)
-    def list(self, request): 
+    def list(self, request):
+        print('request: ',request) 
         user = request.user
-        team = user.team
+        try:
+            team = Team.objects.get(user=user)
+        except Team.DoesNotExist:
+            return Response({'error': 'Team not found'}, status=status.HTTP_404_NOT_FOUND)
         serializer = self.get_serializer(team)
         return Response(serializer.data)
     def update(self, request, pk=None): 
@@ -72,7 +76,7 @@ class QuestionsViewSet(viewsets.ModelViewSet):
         category = int(request.query_params.get('category'))
         # get team score from the request
         team = request.user.team
-        score = team.calculate_score()
+        score = team.score
         
         if category:
             if score >= Section.objects.get(section=category).points_threshold:
@@ -88,22 +92,45 @@ class FlagresponsesViewSet(viewsets.ModelViewSet):
     queryset = Flagresponse.objects.all()
     serializer_class = FlagresponsesSerializer
     permission_classes = [IsAuthenticated]
+
+    MAX_ATTEMPTS = 50  # Maximum attempts per question
+
     def create(self, request):
         if request.method == "POST":
             flagres = request.data.get('flag')
             qnid = request.data.get('id')
             timestamp = make_aware(datetime.now())
-            try:
-                question = get_object_or_404(Question, id=qnid)
-                if flagres != question.flag:
-                    raise ValidationError("Flag is incorrect")
-            except ValidationError as e:
-                return Response({'error': "Flag Incorrect"}, status=status.HTTP_400_BAD_REQUEST)
-            user = request.user
             
-            # compute the team score and update the highest section reached
+            # Fetch the question
+            question = get_object_or_404(Question, id=qnid)
+            user = request.user
             team = user.team
-            team_score = team.calculate_score()
+
+            # Check if the flag is correct
+            if flagres != question.flag:
+                # Update the number of attempts
+                flag_response, created = Flagresponse.objects.get_or_create(
+                    team=team, 
+                    question=question,
+                    defaults={'response': flagres, 'timestamp': timestamp, 'attempts': 1}
+                )
+                
+                if not created:
+                    if flag_response.attempts >= self.MAX_ATTEMPTS:
+                        return Response({'error': "Maximum attempts reached"}, status=status.HTTP_403_FORBIDDEN)
+                    flag_response.response = flagres
+                    flag_response.attempts += 1
+                    flag_response.save(update_fields=['attempts', 'response'])
+
+                return Response({'error': "Flag Incorrect"}, status=status.HTTP_400_BAD_REQUEST)
+            
+            # Check if the team already submitted a response for this question
+            existing_flag_response = Flagresponse.objects.filter(team=team, question=question)
+            if existing_flag_response.exists() and existing_flag_response.last().response == question.flag:
+                return Response({'error': "You have already submitted a correct response for this question."}, status=status.HTTP_404_NOT_FOUND)
+
+            # Update the team score and highest section reached
+            team_score = team.score
             highest_section_reached = 1
             sections_thresholds = [section.points_threshold for section in Section.objects.all()]
             for i in range(1, len(sections_thresholds) + 1):
@@ -112,26 +139,19 @@ class FlagresponsesViewSet(viewsets.ModelViewSet):
             if highest_section_reached > team.highest_section_reached:
                 team.highest_section_reached = highest_section_reached
                 team.save()
-                
-            existing_flag_response = Flagresponse.objects.filter(team__user=user, question=question)
-            if existing_flag_response.exists():
-                return Response({'error': "You have already submitted a response for this question."}, status=status.HTTP_404_NOT_FOUND)
 
-            data = {
-                'team': user.team.id,
-                'question': question.id,
-                'response': flagres,
-                'timestamp': timestamp,
-            }
-            # serializer = FlagresponsesSerializer(data=data)
-            # if serializer.is_valid():
-            Flagresponse.objects.create(team=user.team,timestamp=timestamp,question=question,response=flagres)
-            return Response({"Done"},status=status.HTTP_200_OK)
-                # serializer.save()
-                # return Response(serializer.data, status=status.HTTP_201_CREATED)
-            # else:
-                # return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
+            # Create the flag response entry
+            Flagresponse.objects.create(
+                team=team,
+                question=question,
+                response=flagres,
+                timestamp=timestamp,
+                attempts=1  # Set attempts to 1 for the first correct submission
+            )
+            # update team score
+            team.score += question.points
+            team.save()
+            return Response({"Done"}, status=status.HTTP_200_OK)
 class SectionViewSet(viewsets.ModelViewSet):
     queryset = Section.objects.all()
     serializer_class = SectionSerializer
@@ -154,18 +174,28 @@ class ScoreboardViewSet(viewsets.ModelViewSet):
         teams = Team.objects.all()
         scores = []
         for team in teams:
-            responses = Flagresponse.objects.filter(team=team)
-            total_score = sum(response.question.points for response in responses)
-            scores.append({'team': team.name, 'score': total_score})
+            scores.append({'team': team.name, 'score': team.score})
             if len(scores) == 10:
                 break
         if user.team in teams:
-            responses = Flagresponse.objects.filter(team=user.team)
-            current_user_score = sum(response.question.points for response in responses)
+            current_user_score = user.team.score
         scores = sorted(scores, key=lambda x: x['score'], reverse=True)
         top_10_scores = scores[:10]
         serialized_data = ScoreboardSerializer({'top_10_scores': top_10_scores, 'current_user_score': current_user_score})
         return Response(serialized_data.data)
+    
+class AttemptsViewSet(viewsets.ModelViewSet):
+    queryset = Flagresponse.objects.all()
+    serializer_class = FlagresponsesSerializer
+    permission_classes = [IsAuthenticated]
+    def create(self,request): # Basically to handle POST Requests
+        return Response("Nope",status=status.HTTP_404_NOT_FOUND)
+    def list(self, request):
+        user = request.user
+        team = user.team
+        responses = Flagresponse.objects.filter(team=team)
+        serializer = self.get_serializer(responses, many=True)
+        return Response(serializer.data)
     
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])  # Add this line

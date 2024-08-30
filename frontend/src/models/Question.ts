@@ -3,6 +3,7 @@ export default interface Question {
     title: string
     text: string
     hints: string
+    show_hints: boolean
     points: number
     link: string
     is_answered:boolean

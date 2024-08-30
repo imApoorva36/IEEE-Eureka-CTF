@@ -4,10 +4,11 @@ import { useState } from "react"
 import ENDPOINT from "@/helpers/endpoint"
 import { useCookies } from "react-cookie"
 import { ClipLoader } from "react-spinners"
+import QuestionResponse from "@/models/Responses"
 
-type Props = { question: Question, close: () => void}
+type Props = { question: Question, close: () => void, response: QuestionResponse | undefined, fetchResponses: () => void }
 
-export default function QuestionModal ({ question, close } : Props) {
+export default function QuestionModal ({ question, close, response, fetchResponses } : Props) {
     let [ answer, setAnswer ] = useState("")
     let [ errorText, setErrorText ] = useState("")
     let [ successText, setSuccessText ] = useState(question.is_answered ? "Already answered!" : "")
@@ -56,6 +57,9 @@ export default function QuestionModal ({ question, close } : Props) {
             setLoading(false)
             setErrorText("some error occured")
         }
+        finally{
+            fetchResponses()
+        }
     }
 
     function handleClose () {
@@ -83,7 +87,7 @@ export default function QuestionModal ({ question, close } : Props) {
                         : null
                     }<br /><br />
                     {
-                        question.hints ?
+                        question.show_hints && question.hints ?
                             <div
                                 style={{
                                     border: "1px solid #333",
@@ -105,10 +109,39 @@ export default function QuestionModal ({ question, close } : Props) {
                 </div>
                 <div className={s.bottom}>
                     <div className={s.response}>
-                        <div className={s.textbox}>
-                            <input type="text" value={answer} onChange={e => setAnswer(e.target.value)} disabled={answered} />
+                        <div>
+                            {/* attempts */}
+                            {
+                                response ? 
+                                    <div style={{
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        justifyContent: "space-between",
+                                        alignItems: "start",
+                                    }}>
+                                        <p>Attempts: {response.attempts} / 50</p>
+                                        <p
+                                            style={{
+                                                whiteSpace: "nowrap",
+                                            }}
+                                        >Previous Response: 
+                                            <span style={{ color: "red" }}>
+                                                {'  ' + response.response}
+                                            </span>
+                                        </p>
+                                    </div>
+                                    : null
+                            }
                         </div>
-                        <div className={`${s.button} ${answered ? s.disabled : ""}`} onClick={submit}>Answer</div>
+                        {
+                            !response || (response && response.attempts < 50) ? <>
+                                <div className={s.textbox}>
+                                    <input type="text" value={answer} onChange={e => setAnswer(e.target.value)} disabled={answered} />
+                                </div>
+                                <div className={`${s.button} ${answered ? s.disabled : ""}`} onClick={submit}>Answer</div>
+                            </>
+                            : null
+                        }
                         { 
                             loading ? 
                                 <ClipLoader color = "#3489db" /> 

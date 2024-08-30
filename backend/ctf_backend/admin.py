@@ -7,10 +7,7 @@ class QuestionAdmin(admin.ModelAdmin):
     user_response_count.short_description = 'Users Responded'
 
 class TeamAdmin(admin.ModelAdmin):
-    list_display = ('id','user', 'name', 'contact', 'calculate_score', 'member1','member2','member3')
-    def calculate_score(self,obj):
-        return obj.calculate_score()
-    calculate_score.short_description = 'User Score'
+    list_display = ('id','user', 'name', 'contact', 'score', 'member1','member2','member3')
 
 class FlagresponseAdmin(admin.ModelAdmin):
     list_display = ('id','team','timestamp','question','response')

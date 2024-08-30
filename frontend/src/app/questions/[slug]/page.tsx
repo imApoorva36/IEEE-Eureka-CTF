@@ -13,12 +13,15 @@ import { useCookies } from 'react-cookie'
 import Question from '@/models/Question'
 import QuestionsGrid from '../_components/QuestionsGrid'
 import { Sections } from '@/models/Team';
+import QuestionResponse from '@/models/Responses';
 
 export default function Page({ params }: { params: { slug: string } }) {
   const [cookies] = useCookies(['access_token'])
   const [questions, setQuestions] = useState<Question[]>([])
+  const [responses, setResponses] = useState<QuestionResponse[]>([])
   const [error, setError] = useState<string | null>(null)
   const [sectionsData, setSectionsData] = useState<Sections[]>();
+
   const fetchData = async () => {
     try {
       const access_token = cookies.access_token;
@@ -35,6 +38,7 @@ export default function Page({ params }: { params: { slug: string } }) {
       }
 
       const data = await res.json();
+      console.log(data);
       setQuestions(data);
     } catch (err) {
       console.error(err);
@@ -60,10 +64,32 @@ export default function Page({ params }: { params: { slug: string } }) {
       console.error(err);
     }
   };
+  const fetchQuestionAttempts = async () => {
+    try {
+      const access_token = cookies.access_token;
+      const res = await fetch(`${ENDPOINT}/attempts/`, {
+        headers: {
+          Authorization: `Bearer ${access_token}`,
+        },
+        next: { revalidate: 0 }
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        setResponses(data);
+      } else {
+        console.error('Failed to fetch attempts data');
+      }
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
 
   useEffect(() => {
     fetchData();
     fetchSectionsData();
+    fetchQuestionAttempts();
   }, [cookies.access_token, params.slug]);
 
   if (!params.slug || error) {
@@ -91,7 +117,7 @@ export default function Page({ params }: { params: { slug: string } }) {
       <br />
       <br />
       <Suspense fallback={<Lottie animationData={loadingAnimation} loop={true} />}>
-        <QuestionsGrid questions={questions} fetchData={fetchData} />
+        <QuestionsGrid questions={questions} fetchData={fetchData} fetchResponses={fetchQuestionAttempts} responses={responses} />
       </Suspense>
     </main>
   );

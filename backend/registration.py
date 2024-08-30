@@ -44,7 +44,12 @@ def create_users_from_csv(file_name):
         #     print('Invalid member name')
         #     continue
         
-        password = PasswordGenerator().generate()
+        pwo = PasswordGenerator()
+        
+        pwo.excludeschars = "<>{}[]()=+-*/#!^~|"
+        
+        password = pwo.generate()
+        
         username = create_team_name(team_name)
         user = create_user(username, password)
         # create team if it doesn't exist

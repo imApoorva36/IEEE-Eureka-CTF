@@ -12,7 +12,7 @@ export interface TeamDetailed {
 	member3:string
 	contact:number
 	highest_section_reached:number
-	calculate_score:number
+	score:number
 }
 
 export interface Sections {

@@ -7,7 +7,6 @@ import s from './teams.module.css';
 import ENDPOINT from '@/helpers/endpoint';
 import Cookies from 'js-cookie';
 import Design from '@/components/Design';
-import { useAuth } from '../useAuth';
 
 export default function Teams() {
   const [teamData, setTeamData] = useState<TeamBrief[]>([]);
@@ -93,17 +92,17 @@ export default function Teams() {
             <th onClick={() => handleSort('name')}>Team Name</th>
           </tr>
         </thead>
-        <tbody>
-          {filteredTeams.map((team, index) => (
-            <tr key={index} className={s.teamItem}>
-              <td>
-                <Link href={`/teams/${team.name}`} className={s.teamLink}>
-                  {team.name}
-                </Link>
-              </td>
-            </tr>
-          ))}
-        </tbody>
+          <tbody>
+            {filteredTeams.map((team, index) => (
+              <tr key={index} className={s.teamItem}>
+                <td>
+                  <Link href={`/teams/${team.name}`} className={s.teamLink}>
+                    {team.name}
+                  </Link>
+                </td>
+              </tr>
+            ))}
+          </tbody>
       </table>
     </main>
   );

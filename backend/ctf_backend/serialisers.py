@@ -5,13 +5,13 @@ from rest_framework import status
 class TeamsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Team
-        fields = ('name','member1','member2','member3','contact','highest_section_reached', 'calculate_score')
+        fields = ('name','member1','member2','member3','contact','highest_section_reached', 'score')
 
 class QuestionsSerializer(serializers.ModelSerializer):
     is_answered = serializers.SerializerMethodField()
     class Meta:
         model = Question
-        fields = ('id', 'title', 'text', 'hints', 'points', 'link', 'user_response_count', 'is_answered')    
+        fields = ('id', 'title', 'text', 'hints', 'show_hints', 'points', 'link', 'user_response_count', 'is_answered')    
     def get_is_answered(self, obj):
         user = self.context['request'].user
         return obj.answered(user)
@@ -19,7 +19,7 @@ class QuestionsSerializer(serializers.ModelSerializer):
 class FlagresponsesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Flagresponse
-        fields = ('team', 'timestamp', 'question', 'response')
+        fields = ('team', 'timestamp', 'question', 'response', 'attempts')
     def create(self, validated_data):
         user = self.context['request'].user  # Get the current user
         response = validated_data.get('response')

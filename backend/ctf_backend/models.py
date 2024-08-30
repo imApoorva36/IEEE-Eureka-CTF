@@ -10,19 +10,16 @@ class Team(models.Model):
     member3 = models.CharField(max_length=30, null=True, blank=True)
     contact = models.CharField(max_length=10, null=True, blank=True)
     highest_section_reached = models.IntegerField(default=1)
+    score = models.IntegerField(default=0)
 
     def __str__(self):
         return f"{self.id} - {self.user} - {self.name}"
-    
-    def calculate_score(self):
-        responses = Flagresponse.objects.filter(team=self)
-        score = sum(response.question.points for response in responses)
-        return score
 
 class Question(models.Model):
     title = models.TextField()
     text = models.TextField()
     hints = models.TextField(null=True, blank=True)
+    show_hints = models.BooleanField(default=False)
     points = models.IntegerField()
     link = models.TextField(null=True, blank=True)
     flag = models.TextField(default="flag{N4LL_US34}")
@@ -33,13 +30,16 @@ class Question(models.Model):
     def user_response_count(self):
         return Question.objects.filter(flagresponse__question=self).count()
     def answered(self, user):
-        return Flagresponse.objects.filter(question=self, team__user=user).exists()
+        # get all responses for this question by this user
+        responses = Flagresponse.objects.filter(question=self, team__user=user)
+        return Flagresponse.objects.filter(question=self, team__user=user).exists() and responses.last().response == self.flag
     
 class Flagresponse(models.Model):
     team = models.ForeignKey(Team, on_delete=models.CASCADE)
     timestamp = models.DateTimeField(null=True, blank=True)
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     response = models.CharField(default='', max_length=50, null=True, blank=True)
+    attempts = models.IntegerField(default=0)
     def __str__(self):
         return f"{self.team} - {self.timestamp} - {self.question} - {self.response}"
 
