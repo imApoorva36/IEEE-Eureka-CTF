@@ -35,7 +35,7 @@ INSTALLED_APPS = [
 ]
 
 
-CSRF_TRUSTED_ORIGINS = ['https://ctf-backend.azurewebsites.net', "https://eurekactf.azurewebsites.net","http://localhost:3000",]
+CSRF_TRUSTED_ORIGINS = ['https://codered-ieee.nitk.ac.in', "http://codered-ieee.nitk.ac.in","http://localhost:3000", 'http://localhost:3001']
 
 # Optional: Allow cookies to be included in CORS requests (if needed)
 CORS_ALLOW_CREDENTIALS = True
