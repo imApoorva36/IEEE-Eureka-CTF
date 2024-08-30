@@ -14,12 +14,13 @@ export default function Login() {
     const [cookies, setCookie] = useCookies(['access_token', 'refresh_token', 'username']);
 
 	let [loading, setLoading] = useState(false)
-	let [error, setError] = useState(false)
+	let [error, setError] = useState('')
 
     async function submit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
 
         try {
+            setLoading(true);
             const res = await fetch(ENDPOINT + '/token/', {
                 method: 'POST',
                 headers: {
@@ -31,21 +32,29 @@ export default function Login() {
                 }),
 
             });
-            console.log(res);
             if (res.status === 401) {
                 console.log('Wrong credentials');
+                setError('Invalid credentials');
+                setTimeout(() => {
+                    setError('');
+                }, 5000);
             } else if (res.ok) {
                 const data = await res.json();
                 setCookie('access_token', data.access, { path: '/' });
                 setCookie('refresh_token', data.refresh, { path: '/' });
                 setCookie('username', email, { path: '/' });
-                const username=email;
                 setUsername(email);
-                router.push('/question-map');
-                console.log('Login Successfull!')
+                window.location.href = '/question-map';
             }
         } catch (error) {
+            setError('Backend down, try again later')
+            setTimeout(() => {
+                setError('');
+            }, 5000);
             console.error('Login error:', error);
+        }
+        finally {
+            setLoading(false);
         }
 
         setEmail('');
@@ -82,16 +91,25 @@ export default function Login() {
                         />
                     </div>
                     <div style={{textAlign: 'center'}}>
-                        <button type="submit">
-                            Submit
+                        <button type="submit" disabled={loading}
+                            style={{
+                                cursor: loading ? 'not-allowed' : 'pointer'
+                            }}
+                        >
+                            {
+                                loading ? 'Loading...' : 'Login'
+                            }
                         </button>
                     </div>
                     
                     <br />
                     
-
-                    { loading ? <p>loading</p> : null }
-                    { error ? <p>wrong credentials</p> : null }
+                    <div style={{textAlign: 'center'}}>
+                        {error ? 
+                            <span style={{color: 'red'}}>{error}</span>
+                            : null
+                        }
+                    </div>
 
                 </form>
             </div>

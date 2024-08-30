@@ -68,11 +68,15 @@ export default function QuestionModal ({ question, close } : Props) {
             <div className={s.modal} onClick={e => e.stopPropagation()}>
                 <div className={s.content}>
                     <h2>{question.title}</h2>
+                    <div
+                        className={s.textContent}
+                    >
                     {
                         question.text.split("\n").map((text, i) => {
                             return <p key={i}>{text}</p>
                         })
                     }
+                    </div>
                     {
                         question.link !== "" ?
                             <a target="_blank" href={question.link}>Link to Resources</a>

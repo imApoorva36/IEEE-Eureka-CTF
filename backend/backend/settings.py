@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config("SECRET_KEY", default='django-insecure-(-j@9zqbe1x)9-i)%*&l&vg(_1j2p(!r@55qdpcuhyf0jdlfas')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 from datetime import timedelta
 
@@ -177,6 +177,6 @@ SIMPLE_JWT = {
 
 STORAGES = {
     "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
     },
 }
