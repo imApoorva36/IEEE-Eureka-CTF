@@ -27,15 +27,6 @@
   position: relative;
 }
 
-.userScore_text::after {
-  content: "|"; /* The cursor symbol (you can change it to any character you like) */
-  animation: cursor-blink 1s infinite; /* Blinking animation */
-  opacity: 0.6; /* Slightly transparent */
-  position: absolute;
-  top: 0;
-  right: auto; /* Position the cursor at the end of the text */
-}
-
 @keyframes cursor-blink {
   0%, 100% {
     opacity: 0; /* Cursor is invisible at the start and end of animation */

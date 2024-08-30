@@ -1,20 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100&display=swap');
+
 .login {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px;
-    min-height: calc( 100vh - var(--footer-height) - var(--header-height));
+    min-height: calc(100vh - var(--footer-height) - var(--header-height));
+    background-color: #1B1B1B; /* Dark background */
+    color: #E50914; /* Deadpool red for text */
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
 }
 
-.login p{
+.login p {
     text-align: right;
     margin-left: 200px;
+    font-size: 1.2rem;
+    color: #fff; /* White text */
 }
 
-
-
 @media (max-width: 768px) {
-    .login p{
+    .login p {
         text-align: center;
         margin-left: 0px;
     }
@@ -22,15 +28,16 @@
         font-size: 2rem;
     }
 }
-    
 
 .content {
-    margin : 3rem;
+    margin: 3rem;
     width: 400px;
-    background-color: #050815;
+    background-color: #2A2A2A; /* Slightly lighter dark background */
     border-radius: 10px;
     padding: 3rem 2rem;
     box-shadow: 0 0 2rem rgba(215, 213, 213, 0.275);
+    color: #fff;
+    font-family: 'Lexend', sans-serif;
 }
 
 .formGroup {
@@ -40,28 +47,52 @@
 .formGroup label {
     display: block;
     font-weight: bold;
+    color: #E50914; /* Deadpool red */
+    font-family: 'Lexend', sans-serif;
 }
 
 .formGroup input {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 2px solid #E50914; /* Red border */
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 4px;
     margin-bottom: 10px;
+    background-color: #1B1B1B; /* Dark input background */
+    color: #fff; /* White text */
+    font-family: 'Lexend', sans-serif;
 }
 
 .login button {
-    background-color: #007BFF;
+    background-color: #E50914; /* Deadpool red */
     color: #fff;
-    border: none;
+    border: 2px solid #000; /* Black border */
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Rouge Hero', 'Comic Sans', sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .login button:hover {
-    background-color: #0056b3;
+    background-color: #C20812; /* Darker red */
+    transform: scale(1.05);
+}
+
+.login button:active {
+    background-color: #A1060F; /* Even darker red */
+    transform: scale(0.98);
+}
+
+.login button:before {
+    content: "⚔️ ";
+    font-size: 1.2em;
+}
+
+.login button:after {
+    content: " 💀";
+    font-size: 1.2em;
 }

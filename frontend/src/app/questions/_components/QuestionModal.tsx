@@ -78,6 +78,26 @@ export default function QuestionModal ({ question, close } : Props) {
                             <a target="_blank" href={question.link}>Link to Resources</a>
                         : null
                     }<br /><br />
+                    {
+                        question.hints ?
+                            <div
+                                style={{
+                                    border: "1px solid #333",
+                                    padding: "10px",
+                                    borderRadius: "5px",
+                                    backgroundColor: "#111",
+                                }}
+                            >
+                                <h3>Hints</h3>
+                                <br />
+                                {
+                                    question.hints.split("\n").map((text, i) => {
+                                        return <p key={i}>{text}</p>
+                                    })
+                                }
+                            </div>
+                        : null
+                    }
                 </div>
                 <div className={s.bottom}>
                     <div className={s.response}>

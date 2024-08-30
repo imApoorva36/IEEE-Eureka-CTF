@@ -16,7 +16,9 @@ export const Navbar = () => {
   };
 
   return (
-    <header>
+    <header style={{
+      zIndex: 1000,
+    }}>
       <Link href="/">
         <img className="logo" src="/assets/images/logo.png" alt="Logo" />
       </Link>
@@ -26,8 +28,8 @@ export const Navbar = () => {
       <nav className={isOpen ? 'nav-open' : ''}>
         <ul>
           <li><Link href="/" onClick={closeNavbar}>HOME</Link></li>
-          <li><Link href="/teams" onClick={closeNavbar}>TEAMS</Link></li>
-          <li><Link href="/questions" onClick={closeNavbar}>QUESTIONS</Link></li>
+          <li><Link href="/teams" onClick={closeNavbar}>tEAMS</Link></li>
+          <li><Link href="/question-map" onClick={closeNavbar}>QUESTIONS</Link></li>
           <li><Link href="/scoreboard" onClick={closeNavbar}>SCOREBOARD</Link></li>
         </ul>
       </nav>

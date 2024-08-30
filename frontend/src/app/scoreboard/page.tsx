@@ -6,6 +6,7 @@ import s from './scoreboard.module.css';
 import { useCookies } from 'react-cookie';
 import { useAuth } from '../useAuth';
 import Design from '@/components/Design';
+import { TeamScores } from '@/models/Team';
 const coolNames = [
   'Cool Cat',
   'Funky Monkey',
@@ -22,7 +23,8 @@ const coolNames = [
 const ScoreboardPage = () => {
   useAuth();
   const router = useRouter();
-  const [scores, setScores] = useState<number[]>([]); // Store scores as an array of numbers
+
+  const [scores, setScores] = useState<TeamScores [] | null>(null); // Store the top 10 scores
   const [currentScore, setCurrentScore] = useState<number | null>(null); // Store the current user's score
   const [scoreboardLoaded, setScoreboardLoaded] = useState(false);
 
@@ -39,7 +41,7 @@ const ScoreboardPage = () => {
         });
         if (response.ok) {
           const data = await response.json();
-          const { top_10_scores, current_user_score } = data; // Extract scores
+          const { top_10_scores, current_user_score } = data; // Extract scores 
           setScores(top_10_scores); // Set top 10 scores
           setCurrentScore(current_user_score); // Set the current user's score
           setScoreboardLoaded(true); // Mark scoreboard as loaded
@@ -74,10 +76,10 @@ const ScoreboardPage = () => {
               </tr>
             </thead>
             <tbody className={s.tablebody}>
-              {scores.map((score, index) => (
+              {scores?.map(({ team, score }, index) => (
                 <tr key={index} className={s.scoreRow}>
                   <td>{index+1}</td>
-                  <td>{coolNames[index]}</td>
+                  <td>{team}</td>
                   <td>{score}</td>
                 </tr>
               ))}

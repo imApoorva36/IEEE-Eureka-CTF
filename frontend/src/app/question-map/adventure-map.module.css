@@ -1,4 +1,4 @@
-/* adventure-map.module.css */
+
 .mapContainer {
   display: grid;
   gap: 20px;
@@ -6,10 +6,19 @@
   position: relative;
   padding: 20px;
   background-size: cover;
-  background-position:center;
+  background-position: center;
   background-attachment: fixed;
-  min-height: calc( 100vh - var(--footer-height) - var(--header-height));
+  background-image: url(/bg.jpg);
+  background-color: #000;
+  min-height: calc(100vh - var(--footer-height) - var(--header-height));
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    background-attachment: fixed;
+    background-position: center center;
+  }
 }
+
 
 .island {
   position: relative;
@@ -19,7 +28,6 @@
   height: fit-content !important;
   z-index: 100;
   transition: transform 0.3s ease-in-out, filter 0.9s ease-in-out;
-  /* bottom white glow from drop-shadow filter */
   filter: drop-shadow(0px 5px 10px rgba(247, 103, 103, 0.4)) /* Intense white glow */
           drop-shadow(0px 00px 20px rgba(255, 255, 255, 0.5)); /* Softer white glow */
 }
@@ -28,7 +36,39 @@
   transform: translateY(-10px) scale(1.05);
   filter: drop-shadow(0px 15px 30px rgba(255, 0, 0, 0.7)) /* Intense red glow */
           drop-shadow(0px 20px 40px rgba(255, 0, 0, 0.5)); /* Softer red glow */
+}
 
+.islandLocked {
+  /* locked faded island style */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content !important;
+  z-index: 100;
+  filter: grayscale(100%) brightness(80%) opacity(0.85);
+  cursor: not-allowed;
+}
+
+.lockOverlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.pointsOverlay {
+  position: absolute;
+  bottom: 50;
+  right: 50;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lockIcon{
+  color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -41,4 +81,51 @@
   .mapContainer {
     grid-template-columns: 1fr;
   }
+}
+
+.mapTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2A2A2A50; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  color: #E50914; 
+}
+
+.mapTitle h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #fff; 
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.teamScore {
+  background-color: #1B1B1B;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  /* font-family: 'Lexend', sans-serif; Themed font */
+  font-weight: 700;
+}
+
+.teamScore h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #E50914;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.score {
+  margin: 0;
+  color: #f8e9c4; 
+  text-align: center;
 }

@@ -22,6 +22,7 @@ class Team(models.Model):
 class Question(models.Model):
     title = models.TextField()
     text = models.TextField()
+    hints = models.TextField(null=True, blank=True)
     points = models.IntegerField()
     link = models.TextField(null=True, blank=True)
     flag = models.TextField(default="flag{N4LL_US34}")
@@ -41,3 +42,11 @@ class Flagresponse(models.Model):
     response = models.CharField(default='', max_length=50, null=True, blank=True)
     def __str__(self):
         return f"{self.team} - {self.timestamp} - {self.question} - {self.response}"
+
+class Section(models.Model):
+    section = models.IntegerField()
+    title = models.CharField(max_length=50)
+    description = models.TextField(null=True, blank=True)
+    points_threshold = models.IntegerField()
+    def __str__(self):
+        return f"{self.section} - {self.title}"

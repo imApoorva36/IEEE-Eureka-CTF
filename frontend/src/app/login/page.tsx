@@ -41,7 +41,7 @@ export default function Login() {
                 setCookie('username', email, { path: '/' });
                 const username=email;
                 setUsername(email);
-                router.push('/questions');
+                router.push('/question-map');
                 console.log('Login Successfull!')
             }
         } catch (error) {
@@ -55,7 +55,12 @@ export default function Login() {
     return (
         <main className={s.login}><br /><br />
             <Design/>
-            <h2 className={s.welcome}>Wecome to Login Page, enter your details to be logged into your account!!</h2><br />
+            <h2 className={s.welcome}>
+                Login details are sent to your Registered Email    
+            </h2>
+            
+            <br />
+            
             <div className={s.content}> 
                 <form onSubmit={submit}><br />
                     <div className={s.formGroup}>
@@ -76,7 +81,11 @@ export default function Login() {
                             onChange={(e) => setPassword(e.target.value)}
                         />
                     </div>
-                    <button type="submit">Submit</button>
+                    <div style={{textAlign: 'center'}}>
+                        <button type="submit">
+                            Submit
+                        </button>
+                    </div>
                     
                     <br />
                     
@@ -86,7 +95,12 @@ export default function Login() {
 
                 </form>
             </div>
-            <p>P.S. You will be redirected on successful login</p>
+
+            <div style={{textAlign: 'center'}}>
+            <p style={{color: 'white', fontSize: '20px', fontWeight: '700', textAlign: 'center', margin:'auto'}}>
+                You will be redirected to the Questions after successful login
+            </p>
+            </div>
 		</main>
     );
 }

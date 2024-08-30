@@ -1,42 +1,47 @@
 .card {
     padding: 20px;
-    box-shadow: 0px 3px 5px 0px rgba(0, 255, 255, 0.34);
+    box-shadow: 0px 3px 5px 0px rgba(229, 9, 20, 0.34); /* Deadpool red shadow */
     border-radius: 5px;
     cursor: pointer;
-    /* transition: box-shadow 200ms; */
-    background-color: #0a0812;
+    background-color: #1B1B1B; /* Dark background */
     display: flex;
     flex-direction: column;
-    /* opacity: 80%; */
-    transition: ease-in-out 0.2s;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    color: #fff; /* White text for better contrast */
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 8px 8px 3px rgba(0, 255, 255, 0.229);
+    box-shadow: 0px 8px 8px 3px rgba(229, 9, 20, 0.45); /* Deeper red shadow on hover */
 }
 
 .card h2 {
-    font-size: 20px;
-    margin-bottom: 5px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin: auto;
     text-align: center;
+    color: #E50914;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 
 .card p {
-    font-size: 14px;
-    color: #777777;
+    font-size: 16px;
+    color: #CCCCCC; /* Light gray for better contrast */
     text-align: center;
     margin-bottom: 30px;
 }
 
 .card .points {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 900;
     text-align: right;
     margin-top: 20px;
-    color: #3489db;
+    color: #E50914; /* Deadpool red for points */
 }
 
 .card .points.answered {
-    color: rgb(57, 166, 57);
+    color: #0FFF50; /* Bright green for answered points */
 }

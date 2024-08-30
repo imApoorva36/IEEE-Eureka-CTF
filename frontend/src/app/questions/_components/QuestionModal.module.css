@@ -109,8 +109,12 @@
     grid-auto-rows: 1fr;
     align-items: center;
     column-gap: 10px;
-}
 
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        padding: 0px 10px;
+    }
+}
 .bottom .response .textbox {
     /* display: inline; */
     position: relative;

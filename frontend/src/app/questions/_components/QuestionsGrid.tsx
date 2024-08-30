@@ -6,7 +6,7 @@ import { useState } from "react";
 import QuestionCard from "./QuestionCard";
 import QuestionModal from "./QuestionModal";
 
-export default function QuestionsGrid ({ questions } : { questions: Question[] }) {
+export default function QuestionsGrid ({ questions, fetchData } : { questions: Question[], fetchData: () => void }) {
     let [ selected, setSelected ] = useState<number | false>(false)
     return (
         <>
@@ -14,7 +14,11 @@ export default function QuestionsGrid ({ questions } : { questions: Question[] }
                 selected !== false ?
                     <QuestionModal 
                         question={questions[selected]}
-                        close = {() => setSelected(false)}
+                        close = {() => {
+                            setSelected(false)
+                            fetchData()
+                            console.log('fetching data')
+                        }}
                     />
                 : null
             }

@@ -11,4 +11,18 @@ export interface TeamDetailed {
 	member2: string
 	member3:string
 	contact:number
+	highest_section_reached:number
+	calculate_score:number
+}
+
+export interface Sections {
+	section: number
+	title: string
+	description: string
+	points_threshold: number
+}
+
+export interface TeamScores {
+	team: string
+	score: number
 }

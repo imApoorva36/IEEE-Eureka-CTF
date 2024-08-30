@@ -16,3 +16,17 @@
 	padding: 4rem;
 	min-height: calc( 100vh - var(--footer-height) - var(--header-height));
 }
+
+.backButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: #fff;
+	transition: color 0.3s;
+	margin-bottom: 3rem;
+}
+
+.backButton:hover {
+	color: #e50914;
+}
