@@ -254,14 +254,14 @@ Good luck, and remember: Deadpool is watching you!
 
 Visit [Substring](https://en.wikipedia.org/wiki/Substring#:~:text=In%20formal%20language%20theory%20and,%22%2C%20but%20not%20a%20substring.) [Subsequence](https://en.wikipedia.org/wiki/Subsequence) for formal definitions of substring and subsequences.
 
-The flag to this question is the answer for the above mentioned problem with 2 strings A, B",https://drive.google.com/file/d/1kWJqJXnOHtULDKbNF5AKzloZJCr05Qud/view?usp=sharing,Try thinking of a DP solution,30,CODE{18},
+The flag to this question is the answer for the above mentioned problem with 2 strings A, B",https://drive.google.com/file/d/1kWJqJXnOHtULDKbNF5AKzloZJCr05Qud/view?usp=sharing,Try thinking of a DP solution,30,CODE{18},4
 APIfy,"Wolverine wanted to listen to some Rolling Stones when he realized he forgot his Spotify password!
 Fortunately, he left some clues for himself to get his password back in case he forgets it. This is what the clues say:
 
 - Fetch the number of samples of the most popular song of artist id - `3qm84nBOXUEQ2vnTfUTTFC`
 - Fetch the last 4 characters of the 640x640 display image of the artist of the song id - `6VObnIkLVruX4UVyxWhlqm`
 - The combination of the two shall be the key
-- The final password is in the format CODE{key}",,Spotify API has amazing documentation which will definitely help,30,CODE{7851270bd17},
+- The final password is in the format CODE{key}",,Spotify API has amazing documentation which will definitely help,30,CODE{7851270bd17},4
 LargerNumAandB,"You are given a string & consisting of digits with a length of n. You are also given q queries. Each query specifies indices I and r (where 1 < 1 <r <2n) such that r - 1+1 is even. For each query, Veapon and Kidpool will play a game on a new string which is a substring of a from I to r (inclusive). During the game, on their turn, each player can remove a digit from the substring and append it to their result string (as the least significant digit). Veapon always starts the game. For each query, you need to determine the outcome:
 Add 1 to the answer if Veapon wins.
 Add 2 to the answer if Kidpool wins.
@@ -274,13 +274,13 @@ You are then given the string x.
 You are given q the number of queries.
 You are then given q lines each of which contain 2 number l and r.
 
-Key is the answer in this format (e.g: `CODE{6969}`)",,Prefix sums,30,CODE{9986},
-Virtues Matter,"**Bas**ically, the link below will need you to multiply your twos six times. If you encounter any string of the form “+text+”, you will have to replace that string with a character. (Which character? The “text” part of the string will help you figure that out.) At the end of this journey, you will find a flag, which has to be submitted as CODE{flag}.",https://drive.google.com/drive/folders/1E90f13GNalIzgBGAy_80J93jSBotst_l?usp=sharing,Convert the image(s) into another format.,30,CODE{patience},
-Hard-Core Theoretical Systematic Wordsmith,Open both files and you’ll understand what is to be done. The highlighted letters are to be unscrambled to get the familiar flag. The words of the flag are in uppercase and have to be separated by a ‘_’ before submitting it as CODE{flag}. ,https://drive.google.com/drive/folders/1fHhj2YvzZat2OqBV-jk5SRfPyJUc0-JM?usp=drive_link,"Explore the concepts of OS, DBMS and Computer Architecture. The flag is related to a CS personality.",30,CODE{TURING_AWARD},
+Key is the answer in this format (e.g: `CODE{6969}`)",,Prefix sums,30,CODE{9986},4
+Virtues Matter,"**Bas**ically, the link below will need you to multiply your twos six times. If you encounter any string of the form “+text+”, you will have to replace that string with a character. (Which character? The “text” part of the string will help you figure that out.) At the end of this journey, you will find a flag, which has to be submitted as CODE{flag}.",https://drive.google.com/drive/folders/1E90f13GNalIzgBGAy_80J93jSBotst_l?usp=sharing,Convert the image(s) into another format.,30,CODE{patience},4
+Hard-Core Theoretical Systematic Wordsmith,Open both files and you’ll understand what is to be done. The highlighted letters are to be unscrambled to get the familiar flag. The words of the flag are in uppercase and have to be separated by a ‘_’ before submitting it as CODE{flag}. ,https://drive.google.com/drive/folders/1fHhj2YvzZat2OqBV-jk5SRfPyJUc0-JM?usp=drive_link,"Explore the concepts of OS, DBMS and Computer Architecture. The flag is related to a CS personality.",30,CODE{TURING_AWARD},4
 USE_YOUR_BRAIN_CAESAR,"Deadpool's favorite fictional character, Julius Caesar, the king is stuck! Even his mighty brain is failing him today! So, he pleads with you to use your brain and help him get out of this sticky situation! Once again, do not forget to help Julius get out of this situation, and use your brain to the max extent to make this happen!!
 
 Enter the flag in this format: `CODE{FLAG}`",https://www.mediafire.com/file/sx2w5379ytx6a31/Use_your_brain_caesar.txt/file,"1. Use brainfuck decoder
-2. Use Caesar cipher",30,CODE{ICELAND},
+2. Use Caesar cipher",30,CODE{ICELAND},4
 ImgId,"In the midst of the chaotic battle against Cassandra Nova's forces, Wade and Logan uncover a crucial set of encrypted messages—sent by Pyro just before his betrayal. These messages are hidden within a series of image embedding files, each corresponding to a particular candidate description of that embedding.
 
 To decode Pyro’s hidden instructions and reveal the full extent of Paradox’s treachery, you must identify which sentence best describes each image based on its embedding, effectively aligning the images with their hidden messages.
