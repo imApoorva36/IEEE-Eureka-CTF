@@ -1,43 +1,893 @@
-Timestamp,Email Address,Team Name,Member 1 Name,Member 1 Roll Number,Member 1 Contact Number,Member 2 Name,Member 2 Roll Number,Member 3 Name,Member 3 Roll Number
-11/14/2023 9:03:21,pranavbhat2004@gmail.com,FullStackSlayers,Pranav Bhat P,231IT049,8073304481,Calisto Abel Mathias,231IT015,Pranav Vinodh,231IT050
-11/14/2023 10:11:18,pranaybagde132@gmail.com,BelugaTheHackers,Pranay Bagde,231ME339,7447472722,Mithul Sourav,231ME335,Aryan Deshmukh,231AI006
-11/14/2023 11:42:15,utsavbhamra.231cs161@nitk.edu.in,Sinosuicidal,Utsav Singh Bhamra ,231cs161,9606899829,Vatsal Jay Gandhi ,231cs164,Mohnish raj mani,231EC232
-11/14/2023 11:46:31,sakshamparmar.231cs253@nitk.edu.in,Noxeus,Saksham Parmar,231CS253,6267733526,Nilayan Mazumdar,231EC138,Shreyan Ghosh,231EC153
-11/14/2023 12:43:57,aadithyagb.231ec201@nitk.edu.in,Annihalargh,Asrith Singampalli,231EC110,8919515258,Aadithya.GB,231EC201,Venkatesh Srinivas,231EE262
-11/14/2023 12:47:54,jishnumadav752@gmail.com,RDX,Jishnu madav ,231EC221,7204238356,Vaishnav,231EC264,Shamanth PV,231EC255
-11/14/2023 15:15:01,manishagarwal428728@gmail.com,Phoenix1,Manish Agarwal,231CS232,9671565344,Sahil,231CS233,Manoj,231CS252
-11/14/2023 15:53:06,shriyarajeesh.231it069@nitk.edu.in,Phoenix2,Shriya rajeesh,231IT069,7760544126,Chetasi V Trivedi,231IT019,Vanshika Mittal,231CS163
-11/14/2023 16:02:02,samruddhi.c.deshpande1665@gmail.com,Guinea pigs ,Samruddhi Deshpande ,231EC117,8605218476,Sathvika Bandi,231EC150,Pranavee Chinmayee Harish,231EC239
-11/14/2023 17:44:26,rakshitgarg.231cs247@nitk.edu.in,BroCode,Rakshit Garg,231CS247,9310691218,Samved Sajankila,231CS254,Sanjay Bhat,231CS153
-11/14/2023 19:50:00,naharsuyash@gmail.com,Phoenix3,Phoenix,231EE257,7892799071,Ananya Srivastava,231CV206,Tridhatri,231EE260
-11/14/2023 20:48:03,ranjithrishadd@gmail.com,Eureka,Rishadd Ranjith,231ec241,9901033902,Shanjiv A,231cs155,G Vedanth,231ec216
-11/14/2023 21:32:51,akshat.bharara05@gmail.com,Ctrl Alt Defeat,Akshat Bharara,231CS110,9108920730,Rakshith Kumar,231CS147,Prateek Goel,231EC142
-11/14/2023 21:51:41,saksham.sks11@gmail.com,CyberShield,Saksham Kumar Singh,231AI032,8826015566,Dishanth Arya,231AI008,Utkarsh Shukla ,231AI040
-11/14/2023 21:58:04,nishant.231ee138@nitk.edu.in,iBreach,Nishant A S ,231EE138,6360219728,E V Aditya ,231EE219,Anshuman Dave ,231EE107
-11/14/2023 22:51:38,hannaabdulmajeed@gmail.com,Skill in Spades,Chaitanya Menon,231DS005,8714727341,Jessica Mariam Chandy,231CS227,Hanna Abdul Majeed,231CS125
-11/14/2023 23:07:12,ash29062@gmail.com,Candy Queen,Ashmit R Sambrani,231EC109,7676394075,Rudra Gandhi,231EC147,Tejhuram Ravichandran,231EC263
-11/15/2023 0:33:06,suhasmanjunatha2005@gmail.com,A,Suhas Gowda M ,231MT053,7483457670,,,,
-11/15/2023 8:05:15,saiakhilesh22@gmail.com,Bury Bury Zaemon,Vedh Adla,231AI004,9177992152,Akhilesh Sai Donga ,231DS003,Kalva Kaushik,231DS014
-11/15/2023 9:59:56,varshini.pateel@gmail.com,VPN,Varshini Reddy Pateel,231AI041,8317326594,Priyanka Nitin Mohorikar,231AI028,Nidhi meda,231AI024
-11/15/2023 10:22:05,kediayash83@gmail.com,Dynamic,Yash kedia,231CV158,9065067683,Purav Nayak ,231EC143,Satvik,231EC254
-11/15/2023 12:17:21,kamalkumarn.231ai013@nitk.edu.in,C+++,Kamal Kumar N,231AI013,6364368754,Samriddha Mukhopadhyay,231AI034, Pradyumna Bhat,231AI026
-11/15/2023 13:30:44,dhruvgirishnayak@gmail.com,DGN,Dhruv,231AI007,7892378325,,,,
-11/15/2023 13:38:06,arjunrijesh69@gmail.com,GCC,Arjun Rijesh,231CS212,7019872183,Adithya A ,231EC102,Prabhav S Korwar,231CS141
-11/15/2023 13:39:35,jyoti.231ee122@nitk.edu.in,Area 51,Jyotirmaya Mallick,231EE122,6372078214,Aditya Sherla ,231MT046,Ullas ,231IT082
-11/15/2023 14:22:15,yakovcherianthomas.231ec164@nitk.edu.in,Tricycle,Ronin mukherjee,231ds026,7338458641,Isha Priya,231EE120,Yakov Thomas,231EC164
-11/15/2023 14:55:11,jaivantkosaraju123@gmail.com,Anonymouss,Jaivant kosaraju ,231IT028,8431860635,Aadharsh ramachandra ,231IT001,Paluvadi dinesh manideep,231IT047
-11/15/2023 16:48:10,sksharhaannaim.231cs256@nitk.edu.in,Dijkstra's Dragons,SK Sharhaan Naim,231CS256,9830567982,Aayushman,231CS105,Gautam D,231EC122
-11/15/2023 20:42:15,tharunkrishna.231mn020@nitk.edu.in,Entropy,KB THARUN KRISHNA,231MN020,7204085346,,,,
-11/15/2023 20:52:29,kushagratiwari72@gmail.com,Enigma Elite,Kushagra Tiwari ,231EE128,8318661731,P Jyothir Aditya ,231DS023,Shivansh Baranwal ,231EE155
-11/15/2023 21:00:13,adithyar976@gmail.com,Flag_Conquerors,R Adithya,231cs146,9481490484,Atharva Atul Rege,231cs114,Mohammed Kaif M,231ee235
-11/15/2023 21:28:06,vishalhegde23@gmail.com,WhoPutUsHere?,Vishal Hegde,231EE164,9481346470,Suvarna G,231IT077,Napa Padi,231IT045
-11/15/2023 21:43:14,2005pokemon1@gmail.com,Blanks,Srinikith S,231EE156,9597234134,Vijay V,231EE163,Ranjit Tanneru,231EE159
-11/15/2023 22:24:08,unnatiks2005@gmail.com,Wisdom,Unnati,231ds033,9770714351,Aashi,231ai002,,
-11/15/2023 22:40:55,anaghahatwar.231ee106@nitk.edu.in,Sapphire ,Anagha Hatwar ,231EE106,7349767856,Rithika S,231EE147,Sahasra Pulumati,213EE247
-11/15/2023 22:44:49,tiwari.ansh2005@gmail.com,Only logic,Ansh tiwari ,231EE210,8450000864,Kushagr dang,231ME122,Tejas ,231IT080
-11/15/2023 22:48:33,sivasai299792@gmail.com,Mdmen,Sivasai,231it012,9019283368,,,,
-11/15/2023 23:08:26,mlakshya05@gmail.com,AI Rockers,M Lakshya ,231IT037,9019840753,Debjit Samui,231EE218,Vijeeth,231EE263
-11/15/2023 23:12:06,nehachandrashekar710@gmail.com,Code red,Neha,231CS137,9483781750,Charuneya,231CS117,Siri,231MT007
-11/15/2023 23:13:34,kotwanivinaysatish.231mt024@nitk.edu.in,GODSON,Vinay Kotwani,231MT024,7820827181,Guhan Balaji ,231EC125,,
-11/15/2023 23:24:52,jayanth.hs.05@gmail.com,Last Minute Fighters,H S Jayanth,231IT024,7483017553,Garv Mandloi,231IT023,Sambhav Purohit,231IT053
-11/15/2023 23:23:23,apoorva.221ec207@nitk.edu.in,Truce,Ram Sharma,221AA001,9999999999,Shyam Deva,221AA001,,
+Team Name,Member 1 Name,Member 2 Name,Member 3 Name,Member 1 Contact Number,Email Address
+work.agrimgupta,Agrim Gupta,,,919971118748,work.agrimgupta@gmail.com
+harshithnalkur5,Harshith Raj,Joswin Mendonca,Sunil Kumar Mehta,916363800351,harshithnalkur5@gmail.com
+madhumithadasarathy,Madhumitha Dasarathy,,,916383189147,madhumithadasarathy@gmail.com
+tewarianshul26,Anshul Tewari,,,918859749795,tewarianshul26@gmail.com
+anshul904650,Anshul,Chirag Saini,Devang Meena,919466904650,anshul904650@gmail.com
+CH4S1NG_TH4T_FE3L1NG,Uday Cherri,Mohammad Riyaz,Pedda Babu Nagendla,919398140415,cherriuday@gmail.com
+2coders,Anurag Ghosh,Soumyadeep Chattopadhyay,,917478946371,authenticanurag619@gmail.com
+swayam.chandak221,Swayam Chandak,Nidhi Gandhi,,919890680805,swayam.chandak221@vit.edu
+teenagedirtbag866,Ritika Agrawal,,,919754516764,teenagedirtbag866@gmail.com
+Augustus,Garima Srivastava,,,918303892052,garimansrivastava021@gmail.com
+harshit67811,Harshit Pal,Sumanta Sahoo,Shamik Mandal,919793010837,harshit67811@gmail.com
+shouryabhardwaj19,Shourya Bhardwaj,,,919540851125,shouryabhardwaj19@gmail.com
+indhuja310305,Indhuja I,Srinithi,,919345330221,indhuja310305@gmail.com
+musaddiqbinajaz9491,Musaddiq ajaz,Raghavvram Johnson,Ashwin Oza,919148087613,musaddiqbinajaz9491@gmail.com
+kavyam.aiml2023,Kavya M,,,919043102445,kavyam.aiml2023@citchennai.net
+niveditam0104,Nivedita M,,,919496588703,niveditam0104@gmail.com
+akileshs911,S Akilesh,,,919344649986,akileshs911@gmail.com
+toonshub1725,Chirag Sharma,,,918368059194,toonshub1725@gmail.com
+hrishabhshrivastava16,Hrishabh Shrivastava,Devyash Rasela,,917987037882,hrishabhshrivastava16@gmail.com
+The Shield,Shivam Valand,,,917285862612,23010101289@darshan.ac.in
+architcod28,Archit Sahay,,,919330350323,architcod28@gmail.com
+Code builders,Tanmay Warkhede,SHRIVARDHAN BAVISKAR,VEDANT ALAI,917666389761,tanmaywarkhede2@gmail.com
+Dynamo,Ansh Raj,,,919504633279,anshraj.3811234@gmail.com
+rakeshchikatla12,CHIKATLA RAKESH,GOLI BALA SAIRAM,Praveena neredimalli,916301712297,rakeshchikatla12@gmail.com
+desaivishal4904,Vishal Desai,,,919322512338,desaivishal4904@gmail.com
+Codestorm,Praneetha Brindavanam,Sri Snigdha Yellapragada,,917416234848,praneethabrindavanam04@gmail.com
+vishwajeet.kush18,Vishwajeet kushwaha,,,918934841470,vishwajeet.kush18@gmail.com
+UNKNOWN SQUAD,Debojyoti Saha,Amit Mukherjee,Rahul Santra,919932247711,sahadebojyoti955@gmail.com
+sahithikumari.1103,Sahithi kumari Burada,Bhagya Sri Muni,,916304882411,sahithikumari.1103@gmail.com
+nivedgunni,Nived Govindanunni,,,917306176800,nivedgunni@gmail.com
+lovely.mahour216923,Lovely Mahour,,,917300645306,lovely.mahour216923@gmail.com
+raghupedda55,Pedda Raghunadh,,,917396541155,raghupedda55@gmail.com
+shivanikinagi.321,Shivani Kinagi,Snehal Gavhane,,919049656363,shivanikinagi.321@gmail.com
+RUAS,B Jagadish,AKSHAY P M,,919019497370,23etcs002025@msruas.ac.in
+sanjayvennila2006,Sanjay Gunasekaran,,,916380974687,sanjayvennila2006@gmail.com
+Hexa,Vilashini V,Rikasini K,Sarankumar P,919025936025,vilashiniv11a2@gmail.com
+vishakshigupta790,vishakshi gupta,,,919559080493,vishakshigupta790@gmail.com
+vaithiyanathan30,Vaithiyanathan,,,919342403765,vaithiyanathan30@gmail.com
+ragineedarade,Raginee Darade,,,919584531181,ragineedarade@gmail.com
+monika.m.eee.2022,Monika. M,Akshaya R,,917539994722,monika.m.eee.2022@snsct.org
+hackerccreative,Arpit Sharma,,,919839245550,hackerccreative@gmail.com
+gouravbj2005,Gourav,,,919663468351,gouravbj2005@gmail.com
+AAA Mahesh,Mahesh,Santhi Ranimekala,Ashok G,917760264352,maheshmaheshk15@gmail.com
+saransaran26919,Saran .B,,,919025624435,saransaran26919@gmail.com
+Avengers,Joyce Paul,Princy Hepzibah D S,Jane Vasana Rubavathy J,916385495140,joyce.ug.23.cb@francisxavier.ac.in
+akashyadav72883,Akash Yadav,,,918191880701,akashyadav72883@gmail.com
+bighneshkumarsahoo58,Bighnesh Kumar Sahoo,,,919337561649,bighneshkumarsahoo58@gmail.com
+rithikaa.vs.eee.2022,RITHIKAA SHREE,,,916380030218,rithikaa.vs.eee.2022@snsct.org
+aditikalbhor28,Aditi Kalbhor,Tanaya Kalbhor,,918484099677,aditikalbhor28@gmail.com
+yashiot552,Yash Maurya,Rutuja Chopdekar,Ananya Agarwal,918591930015,yashiot552@gmail.com
+prathamchaudhary3819,Pratham Chaudhary,,,918791353504,prathamchaudhary3819@gmail.com
+raminisaisanthosh,Sai Santhosh Ramini,,,919063019758,raminisaisanthosh@gmail.com
+dhruvmishra1198,Dhruv Mishra,,,917276023106,dhruvmishra1198@gmail.com
+Asteroids,Ananya Patel,Brainard Philemon,,918668981901,virbalabenkpatel@gmail.com
+hehe,Juhi Pandey,,,917340483538,juhipandey20044@gmail.com
+Coding Champ,Meenakshi MV,,,918073425443,meenakshimvtm.2005@gmail.com
+harishkumar.m.cse.2022,Harish Kumar M,,,919361184370,harishkumar.m.cse.2022@snsct.org
+dalalma,Mohammad Adnan Dalal,Ritesh Singh,,919168677924,dalalma@rknec.edu
+RedHub,Ayush Raj,Vasu Garg,Krishna Jhanwar,917759051325,ayush.ttps@gmail.com
+tanishq.jarsodiwala999,Tanishq Jarsodiwala,,,918080942677,tanishq.jarsodiwala999@gmail.com
+prof.work.acc,Piyush kheria,,,919674670829,prof.work.acc@gmail.com
+Rebel Force,Tejasv Rathore,Srijan Shrivastava,,917649003520,rathorenakul171@gmail.com
+namanarora082006,Naman Arora,Jai Makkar,Shashwat Narwal,918847524836,namanarora082006@gmail.com
+ddepanshu973,DEEPANSHU DAHIYA,Bt23106048 Nikshay Kataria,Aryaman vij,919588321981,ddepanshu973@gmail.com
+itsmeashish646,Ashish kumar,,,917493878589,itsmeashish646@gmail.com
+kumarutkarsh815,Utkarsh Rajput,,,917289093757,kumarutkarsh815@gmail.com
+Mugiwara,Shubham Das,,,919136910881,shubhdas2005@gmail.com
+samruddhshubhadarshi,Samruddh shubha darshi,,,919861873879,samruddhshubhadarshi@gmail.com
+suyog.22110168,Suyog Subhash Manke,Khushit Rathod,Anish Borkar,919307156450,suyog.22110168@viit.ac.in
+sohaib6145,Sohaib Siddiq,,,917899434980,sohaib6145@gmail.com
+Xoders,Vijay Yadav,,,917302530313,vicky.panchal2003@gmail.com
+CodeKata,Soumyajit Roy,Navneet Kaur,,916291917186,s.roy19692018@gmail.com
+mathankumar.m.bme.2023,MATHAN KUMAR M,,,919080796928,mathankumar.m.bme.2023@snsct.org
+bhanupratap2556,Bhanu,,,919783271934,bhanupratap2556@gmail.com
+gokul.k.mech.2021,Gokul K,,,918637468665,gokul.k.mech.2021@snsct.org
+sibhi3697,SIBHI K,,,919791896040,sibhi3697@gmail.com
+suryanshubansal01,Suryanshu Bansal,,,917973839379,suryanshubansal01@gmail.com
+chatentoor009,Chaten,Sushant,Sarthak Gartan,917015079161,chatentoor009@gmail.com
+Bindu,Binduja Bavurupudi,,,917396132021,bindujabavurupudi2006@gmail.com
+WARRIORS 5.0,Ayush Goel,,,919968099902,saakfashion04@gmail.com
+aditiparashar22,Aditi Parashar,,,919528764932,aditiparashar22@gmail.com
+shraavyashravs,Shraavya Shravs,,,917702339072,shraavyashravs@gmail.com
+Cheap Codderz,Rajdeep Paul,Subhranil Mondal,Debmallya Bhandari,916289258345,rajdeeppaul427@gmail.com
+Tech Titans,Niharika Saxena,Paridhi Jain,,918356856648,niharika.saxena2805@gmail.com
+raghvendra27cs108,RAGHVENDRA PATEL,,,918815945446,raghvendra27cs108@satiengg.in
+sounaksengupta9,Sounak Sengupta,Mauryavardhan Singh,,919930922890,sounaksengupta9@gmail.com
+nachiketbhadane2,Nachiket Bhadane,,,918999258119,nachiketbhadane2@gmail.com
+kusharma111,Kush,,,919813373017,kusharma111@gmail.com
+shivammadankar50,Shivam Madankar,,,918421689428,shivammadankar50@gmail.com
+cv020203,Chitransh Verma,Akshat Srivastava,,919752060452,cv020203@gmail.com
+tech.harshit,Harshit Garg,,,918310309756,tech.harshit@outlook.com
+Darshan Jain,Darshan Jain,Piyush Dixit,,917354816384,darshanjaind14@gmail.com
+A_team,Dhanavath Santhosh,,,919392709150,santhoshnaik114@gmail.com
+arupjyotimohanty7710,Arup Jyoti Mohanty,,,917008239238,arupjyotimohanty7710@gmail.com
+Team BITS,Pranjal Srivastav,,,919140314721,pranjal.srivastava1008@gmail.com
+yash7249250505,Yash Desai,,,917249250505,yash7249250505@gmail.com
+policesruthireddy,Police Sruthireddy,,,917671858226,policesruthireddy@gmail.com
+Tech Titans,Jatin Arora,,,918178904958,jatin_ug22@nsut.ac.in
+garima2311d,Garima Sahu,,,919302787065,garima2311d@gmail.com
+harshdamkondwar1206,Harsh Damkondwar,Harsh Patil,,919730146062,harshdamkondwar1206@gmail.com
+Imperial,Ishan Shinde,,,919321580138,ishanshindex007@gmail.com
+Homelanders,Shreya Kumari,Janhvi Kurkure,,917011384165,shreya.kum06@gmail.com
+sakshisjadhav9502,Sakshi Jadhav,,,919923806193,sakshisjadhav9502@gmail.com
+Cyber Sentinels,Shree Vishnu Sharma,Soumyajyotji Sarkar,Manthan R M,919686442825,svsharmamysuru@gmail.com
+rashikanungo1040,Rashi Kanungo,,,919340246901,rashikanungo1040@gmail.com
+Error 404,Shreyash Chaurasia,Ujjwal Rana,Harsh Singh,916394846293,shreyashchaurasia77@gmail.com
+manaspatekar9,Manas Patekar,,,918422880876,manaspatekar9@gmail.com
+mrunalini.chintham_2026,Mrunalini Chintham,Mahalaxmi Kamalay,,918179938402,mrunalini.chintham_2026@woxsen.edu.in
+saturufreakinggojo09,Parit Rajput,,,918638440105,saturufreakinggojo09@gmail.com
+DEAD code,Chethan A,Jayadev HN,Chethana J R,919986993784,achethan777@gmail.com
+harshita.21mis7064,HARSHITA Jambagi,,,918971160216,harshitajambagi@gmail.com
+kakulatepradnyesh09,Pradnyesh Kakulte,,,918669019673,kakulatepradnyesh09@gmail.com
+gokulmuruganandham,Gokul M,Nithin Sakthivel,,916385367385,gokulmuruganandham@gmail.com
+dhilon2301,Harpreet Kaur,,,918264511267,dhilon2301@gmail.com
+sridhar.s.cse.2022,SRIDHAR S,,,919095099918,sridhar.s.cse.2022@snsct.org
+22311a05t3,ANIL VARIKALA,,,917013725762,22311a05t3@cse.sreenidhi.edu.in
+alokmoond777,Alok moond,Himansh raj,,919257477746,alokmoond777@gmail.com
+onlysaikihere,Sahishnu Kumar,,,918862962404,mesahishnukumar@gmail.com
+sanjeev.k.ece.2022,SANJEEV KUMAR,,,918220569029,sanjeev.k.ece.2022@snsct.org
+sriramkarthik03,Karthik Sriram,,,919994511971,sriramkarthik03@gmail.com
+mandhata.dev,Mandhata Pathak,,,918127458838,mandhata.dev@gmail.com
+221101042,KARTHIK V,,,918825484135,221101042@rajalakshmi.edu.in
+23mc3007,ANSHIKA MISHRA,,,918168341807,23mc3007@rgipt.ac.in
+bhagwankumarcr7,Bhagwan Kumar,,,916370529088,bhagwankumarcr7@gmail.com
+Newton,Ravish Kumar Tiwari,,,919616812604,ravish.tiwari2024@gmail.com
+cariappaayush,Ayush Cariappa,,,917760749769,cariappaayush@gmail.com
+bhavyagoel1107,Bhavya Goel,Parth Kartikeya singh,,919910933291,bhavyagoel1107@gmail.com
+thanushsaran2004,S.THANUSH SARAN,MANU,PRABHU,919361686573,thanushsaran2004@gmail.com
+nishu.22bce8509,NISHU KUMARI 22BCE8509,,,919060745230,nishu.22bce8509@vitapstudent.ac.in
+b22236,Satyam Kumar,,,919454756129,b22236@students.iitmandi.ac.in
+keerthana.m.it.2022,KEERTHANA M,,,918610471817,keerthana.m.it.2022@snsct.org
+yash05052006,Yash Kumawat,,,918302552695,yash05052006@gmail.com
+R16_projects,Raunak Das,Dhrubo Ghosh,,919007400953,raunakdas.2020@gmail.com
+hemalatha.m.bio.2022,Hemalatha Mahendhiran,,,919952422448,hemalatha.m.bio.2022@snsct.org
+suryaujjain8,Surya Pratap Singh,,,917667746957,suryaujjain8@gmail.com
+aditya.giri1998,ADITYA GOSWAMI,Anushka Sahu,,919171021100,aditya.giri1998@gmail.com
+satyamkumarprasad2007,Satyam Kumar Prasad,,,919798409922,satyamkumarprasad2007@gmail.com
+jaisonjaison2004,jaison john,,,916282602656,jaisonjaison2004@gmail.com
+Coder's Republic,Rahul Waddar,,,919686545003,rahulwaddar001@gmail.com
+Py-kaun?,Muskan Goyal,Anusha H Dandoti,Prince Raj,919983922248,goyalmuskan0606@gmail.com
+ruthvik.patil22,Ruthvik Patil,,,917796536470,ruthvik.patil22@vit.edu
+swayamswarup008,Swayam Swarup Panda,,,919827622897,swayamswarup008@gmail.com
+Bedimaagi manush,Bhoomika Bist,,,918077168218,bhoomika.bist.2005@gmail.com
+gopi.s.mct.2022,Gopi S,,,918015778431,gopi.s.mct.2022@snsct.org
+Teamxyz,suhani jain,,,917906880280,suhani.jain.cd.che23@itbhu.ac.in
+vishnnu.ks.cse.2022,Vishnnu KS,,,916382254474,vishnnu.ks.cse.2022@snsct.org
+nijeesh10th,Nijeesh NJ,,,918217876558,nijeesh10th@gmail.com
+SQUAD ALPHA,SANJAI D,,,919080038088,sanjay.d.eee.2022@snsct.org
+Team-cdrd,Vaibhav,,,918770966461,vaibhav7b@gmail.com
+superstarsunil16,Sunil S,,,917411403375,superstarsunil16@gmail.com
+White_Wind,Praful Kharpuriye,,,918261056093,prafulkharpuriya@gmail.com
+rosanleo783,Rosan Leo,,,919080181908,rosanleo783@gmail.com
+shubhamdubeys791,Shubham dubey,,,919076756367,shubhamdubeys791@gmail.com
+latheesraja655,LATHEESRAJA S,,,918838751609,latheesraja655@gmail.com
+sandilyan.c.eee.2022,Sandilyan Chinnappan,,,917339220361,sandilyan.c.eee.2022@snsct.org
+sujalmh9,Sujal M H,Sujnan Kumar,,918867144895,sujalmh9@gmail.com
+shaiksumehararabbanee,Sumehara Rabbanee Shaik,,,917396896667,shaiksumehararabbanee@gmail.com
+nihal10102004,Nihal Wesly.G.,,,919113257237,nihal10102004@gmail.com
+abhisek.kr2024,Abhisek K R,Preetam Wagh,Dharun Karthik,919344008372,abhisek.kr2024@vitstudent.ac.in
+f20221334,Utkarsh Singhal,,,918376823445,f20221334@hyderabad.bits-pilani.ac.in
+aryan.bajaj.met22,Aryan Bajaj,Ayushi Nagar,,919821816323,aryan.bajaj.met22@itbhu.ac.in
+shatriyasharvan.m.mech.2022,Shatriyasharvan,Sasi Kumar,,916374426609,shatriyasharvan.m.mech.2022@snsct.org
+athv82237,Vani Verma,,,918840549264,athv82237@gmail.com
+Unstoppable Gals,Nandini M Prakash,Sreelakshmi K G,,919567795607,nandinimprakash.06@gmail.com
+varsithvasu201,Varsith Vasu,,,917010104379,varsithvasu201@gmail.com
+vinoth546788,Vinoth Kumar,,,919342096587,vinoth546788@gmail.com
+samyuktha.rv.aiml.2022,Samyuktha R V,,,919791689182,samyuktha.rv.aiml.2022@snsct.org
+f20230003,Shriram Dhumal,,,917219602476,f20230003@pilani.bits-pilani.ac.in
+srinithi.r.aiml.2022,Srinithi R,,,916379153001,srinithi.r.aiml.2022@snsct.org
+rakshitha.b.aiml.2022,Rakshitha B,,,916374381201,rakshitha.b.aiml.2022@snsct.org
+krithick.r.civil.2021,KRITHICK KUMAR,,,918056118651,krithick.r.civil.2021@snsct.org
+Bits EnCrypt,Murtaza Sadriwala,Aditya Rathore,,918435358999,msadriwala9@gmail.com
+Crimson Cryptics,V Anand,S G Sumanth,,918105859451,anandvda451@gmail.com
+hareesh.m.civil.2021,Hareesh M,,,919600326025,hareesh.m.civil.2021@snsct.org
+mkshanjay05,Mk Shanjay,,,919345560423,mkshanjay05@gmail.com
+manojkumar600700,Manoj Kumar,,,919600700320,manojkumar600700@gmail.com
+jaskaran1192004,Jaskaran Singh,,,919709038271,jaskaran1192004@gmail.com
+samyy,Samarth,,,919309511050,samarthghogare@gmail.com
+archit.22210690,Archit Gajbhiye,,,918669224374,archit.22210690@viit.ac.in
+anishrkumar2k5,Anish Kumar,,,917806872997,anishrkumar2k5@gmail.com
+shaleenshukla8,Shaleen Shukla,,,919535263010,shaleenshukla8@gmail.com
+pravinmhaske817,Pravin Mhaske,,,919322059783,pravinmhaske817@gmail.com
+barnikathileepkumar,Barnika Thileep kumar,,,916380254252,barnikathileepkumar@gmail.com
+Neo,Varun PC,Harshavardhan,Harshith R,918618706343,0x0varun0x0@gmail.com
+laxmisravanibulusu,B Laxmi Sravani,Latha K,,918019152124,laxmisravanibulusu@gmail.com
+anonymouslad540,satyam seth,,,918917098875,anonymouslad540@gmail.com
+The Code Crushers,Tavishi Kashyap,Gurmandeep Kaur,,917973313202,tavishi.ruchira@gmail.com
+sahanashree.h.aiml.2022,Sahana Shree,,,916369097709,sahanashree.h.aiml.2022@snsct.org
+238w1a0524,Kethu Madhavareddy,ADDEPALLI HRUSHIKESH,,919390783895,238w1a0524@vrsec.ac.in
+rajanrajendri2005,Rajan Verma,,,918750589268,rajanrajendri2005@gmail.com
+saikavitha766,Sai Kavitha,,,919843827806,saikavitha766@gmail.com
+vedlakkad05,Ved Lakkad,Dey Nayi,Nisarg Patel,919974876307,vedlakkad05@gmail.com
+quasarier24,Vinayak Kaushal,,,916306259507,quasarier24@gmail.com
+Striker,Keerthi G,,,916362198432,keerthig1218@gmail.com
+megavarshini.a.cse.2022,MEGAVARSHINI A,NITHINBHARATHI T,MANSWINI DC,918148447294,megavarshini.a.cse.2022@snsct.org
+janithashri,Janithashri G,Sai Varshini Bathula,Varada Dhapre,917604864543,janithashri@gmail.com
+Chandigarh University,Shivansh Ghildiyal,Ayushi Sharma,Prashant Rathee,918240258589,shivanshghildiyalcu@gmail.com
+29922csai,Rishabh Dwivedi,,,919795703381,29922csai@gmail.com
+manoj.k.cse.2022,Manoj K,,,919360384595,manoj.k.cse.2022@snsct.org
+Akshaya's team,Akshaya Reddy,Lingaram Sindhu Goud,,917815942037,annareddyakshayar@gmail.com
+Shade,Naveen Raj,,,919342296387,naveenengineer17@gmail.com
+2003singhsamar,Samar Singh,,,917007154128,2003singhsamar@gmail.com
+Octane,Shiven Gupta,Tanush Goyal,Ishaan Verma,917003553500,shivengupta11@gmail.com
+Coded,Satvik Chauhan,,,919834906685,satvikchauhan78@gmail.com
+vidhya gunasekar,vidhya gunasekar,,,918682834747,vidhyaguna10@gmail.com
+3_LPA_Optimizer,Kunal Anand,,,919473248971,kunal.anand639@gmail.com
+priyanshu9569903169,Priyanshu TRIVEDI,,,919569903169,priyanshu9569903169@gmail.com
+Codepool Carnage,Swayam Kohli,Maitreyi Jha,Shreyash Agarwal,918799710630,swayamkohli11489@gmail.com
+rishabhsahan,Rishabh Jain H,Nirma J Mali,,919353113908,rishabhsahan@gmail.com
+Intellect Thinkers,K.Kogula Nandhitha,Stachys Thangapapa A E,,918072827731,nandhithakogula@gmail.com
+mahek.bray,Mahekleena Balabantray,,,917847926807,mahek.bray@gmail.com
+07.karthee,Kartheesan,,,916383981875,07.karthee@gmail.com
+ssubiksha15,Subiksha Subi,,,918015257357,ssubiksha15@gmail.com
+himanshupridarshi05,Himanshu Priydarshi,,,916201027105,himanshupridarshi05@gmail.com
+shreyyaz10,Shreyas Kumar Singh,,,918299293094,shreyyaz10@gmail.com
+hamsa.p.ece.2022,Hamsa Ramyaa P,Durga Nandhini,,917358110043,hamsa.p.ece.2022@snsct.org
+sabarish.k.aiml.2022,SABARISH. K,,,919487671601,sabarish.k.aiml.2022@snsct.org
+THE BOSS,JAYANTHRAGAVAN M,,,919361768898,jayanthragavanmylsamy@gmail.com
+manikandan.s.aiml.2022,MANIGANDAN.S SNSCT,VISVESHWARAN DV,Yasvanth Kumar S,919360237051,manikandan.s.aiml.2022@snsct.org
+The Quotients,Puspender Kumar,AYAN,AAYUSH GARG,919306690894,kumarpuspender4276@gmail.com
+overdogs,VAIBHAV SHARMA,Aarush Mangla,Harshdip Saha,919958233529,vaibhav.sharma.ug23@nsut.ac.in
+dhanushya2507,Dhanushya. T,,,918903081384,dhanushya2507@gmail.com
+vinay.22bec7254,KENCHUGUNDU VINAY KUMAR,Uday Kumar Kenchugundu,,919640341829,vinay.22bec7254@vitapstudent.ac.in
+sanjaysrinivasan095,Sanjay S,,,918825679635,sanjaysrinivasan095@gmail.com
+nitheeshwaran.j.cse.2022,NITHEESHWARAN J,,,918148667100,nitheeshwaran.j.cse.2022@snsct.org
+mjgandhi2305,Miten Gandhi,Vatsal Bateriwala,,918799377093,mjgandhi2305@gmail.com
+aruneshelay,Arunesh E,,,919500380770,aruneshelay@gmail.com
+charles.27csa,CHARLES M S,,,917305959816,charles.27csa@licet.ac.in
+sanjay26042003,Sanjay S,,,916380345690,sanjay26042003@gmail.com
+suryanshsrathore,Suryansh Singh Rathore,,,919559993020,suryanshsrathore@gmail.com
+vishaluser77,Vishal Chhabarwal,ROHIT SINGH,,917877382466,vishaluser77@gmail.com
+mayankbkp1,mayank kashyap,,,918002127328,mayankbkp1@gmail.com
+The dangers of my heart,Het Gohil,Piyush Kumar,Vipul Mhatre,919969496669,hetg2501@gmail.com
+codebunderer,DEEPAK KUMAR,Gauri Karkhile,RIYA,917878060190,deepakk.ug23.ec@nitp.ac.in
+musaddiquarajannavar,Musaddiqua Rajannavar,,,917019886226,musaddiquarajannavar@gmail.com
+keerthanamanjunath18,Keerthana Manjunath,,,918951029396,keerthanamanjunath18@gmail.com
+romaerahuja,Romaer Ahuja,,,919997695152,romaerahuja@gmail.com
+dhavahar.c.civil.2021,Dhivahar C,,,916369696988,dhavahar.c.civil.2021@snsct.org
+varimallamanasareddy,Manasa Reddy,,,919392515473,varimallamanasareddy@gmail.com
+nandhinisailaja,Nandhini Rajendran,Poovarasan V,Rakshitha S,919487450985,nandhinisailaja@gmail.com
+Wolhaiksong,Yash Jain,,,919845641801,yashjain.231ch058@nitk.edu.in
+Incognito,Aayush Anand.,Kushagra Tiwari .,Aditya Sarma,919546437373,aayush.231ee101@nitk.edu.in
+CodeMonks,Shubhang Galagali,Pristine Richard,Suhas Gowda,919482031368,shubgalagali.231mt049@nitk.edu.in
+Code Wrecks,Asmit Deshmukh,kshitij Singh,,916264611318,asmit.231ee108@nitk.edu.in
+sahilarshandudekula,Sahil Arshan Dudekula,Rishi Ramesh,R Sairam,918639390731,sahilarshandudekula@gmail.com
+shahparth12406,Parth Shah,,,918310269997,shahparth12406@gmail.com
+Codeblue,Harish Venkatakrishnan,,,918904464950,harishvenkatakrishnan.231ee118@nitk.edu.in
+students,Praveen Bhosle,Thanish P M,Joash Regis,917349272101,praveenbhosle1622@gmail.com
+dhruvnayak.231ai007,Dhruv Girish Nayak.,,,917892378325,dhruvnayak.231ai007@nitk.edu.in
+m4yank.t,Mayank Tiwari,,,919915172290,m4yank.t@gmail.com
+CodeFizz,Vatsalkumar Shah,Jainam Sonigara,Jay Patil,919825897780,mahavirsurat22@gmail.com
+omstudentacc,Om Sengar,Pradnyesh Kakulate,Harsh Rathore,918800496354,omstudentacc@gmail.com
+pavanraj.g17,Pavan G,,,918431273244,pavanraj.g17@gmail.com
+adwaithat6,Adwaitha T,,,919633466853,adwaithat6@gmail.com
+Error 404,Raunil Singh,Akhil Sakthieswaran,Jaivant Kosaraju,918660927251,raunil.universe@gmail.com
+ambaderachuu,Rachanna Ambade,,,917259946834,ambaderachuu@gmail.com
+CSS,Shriya Rajeesh .,Sarayu Narayanan,Chetasi V Trivedi .,917760544126,shriyarajeesh.231it069@nitk.edu.in
+CodeMiners,Krishna Maheshwari,Sharwin Lauren Pais .,Aksheet Ranjan,919664002092,krishnamaheshwari.231mn024@nitk.edu.in
+Jih@@&i,Shashwat Chaturvedi,Utkarsh Shukla,Vedh Adla,916361441071,chaturvedishashwat5@gmail.com
+c0dER3D,Manish Agarwal,Mohnish Kumar,Sahil Mengji,919671565344,manishagarwal428728@gmail.com
+Zenith,Sankar Kumar M,J Jerauld Alwin,Madan prakash K S,919884465817,sankavisankar2005@gmail.com
+monikasree.d.eee.2022,Monika Sree,,,918754017654,monikasree.d.eee.2022@snsct.org
+Maha Sriee Prasenna,Maha Sriee Prasenna B,,,916383029008,mahasrieeprasenna@gmail.com
+yashr1227,Yashashvi Raj,,,919964909651,yashr1227@gmail.com
+gauravkrgupta1204,GAURAV KUMAR GUPTA,Tushar Mishra,,918539952185,gauravkrgupta1204@gmail.com
+Exforce,Krishanu Chakraborty .,Harshavardhan Gowda,Priyanshu K Rai,919110875341,krishanuchakraborty.231ee228@nitk.edu.in
+AKD,Akhil Dang,Ravikesh Kumar,M Phanindra,917505369839,akd.tg2024@gmail.com
+Livepool,Neha Chandrashekar,Dhiya Natarajan,Charuneya M,919483781750,nehachandrashekar.231cs137@nitk.edu.in
+aritraghoshdastidar123,Aritra Ghosh,,,918294569664,aritraghoshdastidar123@gmail.com
+Ultrons,Varun Rathod,CHANDAN B L,Chethan S,919901903514,varrat07@gmail.com
+Nitrogen,Vasanth Prabhu,Kamal Kumar N,Samriddha Mukhopadhyay,917795959374,vasanthprabhukumble@gmail.com
+Code Linguists,Jaspreet singh,Aayush,Aadesh Kumar rai,919971364616,jaspreetsingh11b21@gmail.com
+Tanmeet,Tanmeet Singh Chhabra,,,918269130702,tanmeet.chhabra.0@gmail.com
+lakshasrishivakumar,Lakshasri Shivakumar,,,918939405106,lakshasrishivakumar@gmail.com
+Hackethics,Md Shahbaz Hashmi Ansari,Aadarsh Chandra,Vishal Chandra,917908659229,shahbazhashmi14a@gmail.com
+ramuhm1911,Ramu Malagond,,,918050445001,ramuhm1911@gmail.com
+priyanshuyash801,Priyanshu Yash,,,919162598403,priyanshuyash801@gmail.com
+BitBusters,Bharath Honakatti,Bhanuteja,,918088450870,bharathonakatti2652005@gmail.com
+Triple Threat,Akshaj L Shastry,Akash Madisetty,Akshaj Anantharaman Gopalakrishnan,917338225810,cricketals01@gmail.com
+vgbrothers2003_bee25,Srinivasan V G,Rifaai Jengi Khan S A,NARAYANA MOORTHY P,919750788809,vgbrothers2003_bee25@mepcoeng.ac.in
+Shit-Scared,Anuj Koya,Siva Sai,Akhilesh Sai Donga .,919381107234,anuj.231ds017@nitk.edu.in
+rishith.sahu,Rishith Sahu,Nagarjun N,Sahaj BS,917975036906,rishith.sahu@gmail.com
+Agent-003,Atharva Rege,B Sriram,Adithya R,918446410675,atharvarege05@gmail.com
+206(+1),Purva N S,Nakul Agrawal,Saksham Singh,918073818894,purva.smath@gmail.com
+hello,Satvik Pathak,,,919155140111,mrsatvikpathak@gmail.com
+raikwardharmesh67,Dharmesh Raikwar,,,916392906704,raikwardharmesh67@gmail.com
+CodeAnonymous,Aditya Yarakaraju,,,916302774956,yraditya895@gmail.com
+Supernova,Sanstuti Mishra,Ayushi Bajaj .,Radhika Sharda,919026309640,sanstutimishra.231me247@nitk.edu.in
+pushp764398,KUMAR PRANAV PUSHP RANJAN,,,917667415214,pushp764398@gmail.com
+mailtoadishreegupta,Adishree Gupta,,,918105000114,mailtoadishreegupta@gmail.com
+H4(K3RS,Shuddhasattwa Majumder,Arvind Sivakumar,Shudarsan Regmi,919102477947,tintin27052005@gmail.com
+Third Party Cookies,Rachna Nayak,Ankita Anand,Darshana M,918884319096,rachnanayak22@gmail.com
+DOPinder,Nishant AS,Swaraj Singh,Akshat Bharara,916360219728,nishant.231ee138@nitk.edu.in
+arthdaware.231ch008,Arth Daware .,,,919987356844,arthdaware.231ch008@nitk.edu.in
+ahmadfaraaz2625,Faraaz Ahmad,,,918840993061,ahmadfaraaz2625@gmail.com
+CopyPaste,anshul dadhich,Atharv Rajurkar,Nikhil Kottoli,919001097420,anshuldadhich.231it010@nitk.edu.in
+naharsuyash,Suyash Nahar,Vishruth Srivatsa,Vatsal Gandhi,917892799071,naharsuyash@gmail.com
+theHubs,Siddhi Dhawale,lavanya rathi,Sakshi,918669662251,siddhidhawale.231it072@nitk.edu.in
+sanjandeep7,Sanjan Deep .R,,,918217253944,sanjandeep7@gmail.com
+rajdeepnandy2006,Rajdeep Nandy,,,917585908887,rajdeepnandy2006@gmail.com
+edsam,Rahul Chandrashekar,Subham Dey,,919916270518,rahulchandrashekar285@gmail.com
+shwetanshusinha13,Shwetanshu Sinha,Asif Hoda,,919060963198,shwetanshusinha13@gmail.com
+Sagittarius,Deepak Kumar,Anvesh Mahajan,Gaurang Gupta,919599736817,deepakkumar201120@gmail.com
+himansusheoran2006,Himansu,,,919358703200,himansusheoran2006@gmail.com
+raghavpratap619,Raghav Pratap Singh,Punit,,919981929866,raghavpratap619@gmail.com
+Team W,Aditi Udaya,Aadhya S Shetty,,917899559957,aditi.m.u074@gmail.com
+sherinars2004,sherin Nishara S,,,919943694391,sherinars2004@gmail.com
+X-force,Chinmay Dwivedi,Chaitanya Makkar,Amogh,919555412554,dwivedisd8@gmail.com
+joshibhavya622,Bhavya Joshi,Praneel Maitra,,919205549967,joshibhavya622@gmail.com
+r3d-fl4gs,Roshan Binoj,Kanishk Mittal,Laavanya Rajan,916238595645,roshanbinoj@gmail.com
+sumit89177,Sumit Singh Chauhan,,,918917776264,sumit89177@gmail.com
+shivam000723,Shivam Kumar,,,919663042015,shivam000723@gmail.com
+sianshabhushan,Siansha Bhushan,,,919611461582,sianshabhushan@gmail.com
+Tarun,Harshith,Tarun P,,919480090828,harshithv25@gmail.com
+maheshwaridhruv386,Dhruv Maheshwari,,,919173269123,maheshwaridhruv386@gmail.com
+chavanpritam172,Pritam Chavan,,,919130238226,chavanpritam172@gmail.com
+Hashiras,yash kedia,,,919065067683,kediayash83@gmail.com
+yogaraj.s.civil.2021,Yogaraj S,,,919344583732,yogaraj.s.civil.2021@snsct.org
+deepayansrichandan0,Deepayan Srichandan,Hrithik Pandit,,918984070526,deepayansrichandan0@gmail.com
+RoyalFox,Abhyuday Hegde,,,918073294607,abhyudayjkm@gmail.com
+Rushil Sharma,Rushil Sharma,,,919086126676,workwithrushil@gmail.com
+tech.hitanshi,Hitanshi Singh,,,917309940309,tech.hitanshi@gmail.com
+Virus,Nischay Bharadwaj,Sudhanva Shivapuji,Arjun Dixit,919980543867,nischay.bharadwaj@gmail.com
+tanishop13062005,Tanish Naik,Babu Singadi,Vaishnav Vernekar,919606394005,tanishop13062005@gmail.com
+M,Manasa B P,,,919972443121,manasaprakash2004@gmail.com
+shrutidsce3689,Shruti Sinha,Jai Kesarwani,,918340691764,shrutidsce3689@gmail.com
+anuj9044xyz,Anuj Pal,,,919580073437,anuj9044xyz@gmail.com
+ISFCR PESU,Amogh E M,Arnav Rao,Praneet Tenkila,919611664662,amogh.e.m7@gmail.com
+PathBound,Om Srivastava,Pratham Rao,Rajsimha MV,918882183154,omsribond007@gmail.com
+CODE404,Anshi Sachan,Pal Patel,Dev Prajapati,917985546729,anshijio123@gmail.com
+ASU,Uchit Rajani,Sahil Sonar,Astitva Arya,918799676478,hiuchitrajani@gmail.com
+swathigowda1035,A N SWATHI,Tajana Jain,VINAY NAIK V,919632598430,swathigowda1035@gmail.com
+abhiramamrita,Abhiram bikkina,Tharun reddy,Pavan Vignesh,919666030797,abhiramamrita@gmail.com
+THE UNBEATABLES,Ankit Savaliya,Mansi Vaghasiya,Shreyash Patel,917567280374,savaliyaankit5125@gmail.com
+Team Sobo,Saket Jha,Yash Kumar Singh,Mihir Adhikari,919370456334,saketjha0324@gmail.com
+rohitmangale010,Rohit Mangale,,,918657900191,rohitmangale010@gmail.com
+2sumithra.suresh,Sumithra Suresh,Prachi Gore,Pranav Bhat,919663561106,2sumithra.suresh@gmail.com
+mrunalidgr8,Mrunali Patil,,,919356337373,mrunalidgr8@gmail.com
+The Boys,Shashank Tiwari,Pratham Gowda,Rayn Tariq,919008565937,shankstiwary@gmail.com
+ayadav12,Abishek abishekyadav,Prince Mallik,,917481814603,ayadav12@gitam.in
+universe.bhaskar7.5,Bhaskar Ruwali,,,918439944577,universe.bhaskar7.5@gmail.com
+akshatavduragannavar,AKSHATA DURAGANNAVAR,,,918722262729,akshatavduragannavar@gmail.com
+thanjiyappankanniyappan,Thanjiyappan K,,,917904946778,thanjiyappankanniyappan@gmail.com
+ajay.c.civil.2021,Ajay C,,,919566834657,ajay.c.civil.2021@snsct.org
+jeferson.231cs131,DeletedUser12264097,,,919999999999,deleteduser12264097@d2c.com
+idk dude,Shubham Shah,Anmol Bohra,Khushraj Rathod,917045470122,shubham7045470122@gmail.com
+maniranjan1512,Maniranjan,Sarbajit Kundu,Sankalp Kumar Sinha,919162592464,maniranjan1512@gmail.com
+varshini.pateel,Varshini Pateel,Priyanka Mohorikar,Nidhi Meda,918317326594,varshini.pateel@gmail.com
+WhatsPoppin,Deeksha Kashyap,Srirama Swamy,,919108523629,deekshakashyap05@gmail.com
+aryanpalimkar21,Aryan Palimkar,,,918971098003,aryanpalimkar21@gmail.com
+A* Squad,Jeferson,Ankit Kumar,Anmol Sharma,919035393968,jumbo.pruto@gmail.com
+thakurdheerendrapsingh,Dheerendra pratap singh,,,918604300255,thakurdheerendrapsingh@gmail.com
+Codex,Dilpreet Singh Gill,Sahitya Singh,Vedanshi Gupta,919981775769,dilpreetg0707@gmail.com
+dishanth.231ai008,Dishanth Arya,Aryan Rahul Deshmukh.,Pranay Bagde,917829370710,dishanth.231ai008@nitk.edu.in
+Cryptics,Harsha Rajoor,Abdul Kalam,Barenkala Bhuvan Subramanyam,918660481227,harsharajoorinethical@gmail.com
+suppprith,Suprith R B,Keshav J K,Shreyas T K,919731403924,suppprith@gmail.com
+Access Denied,Priyanshu Lathi,Abhishek Rajput,Ansh Sharma,918552889831,priyanshulathi22@gmail.com
+EHAX,Anuj Rawat,,,918076311554,ajcoolx619@gmail.com
+CU'ians,Lakshay Poonia,Tarun Sharma,,918395929229,lakshaybishnoi2025@gmail.com
+sathvikkumarpamu005,Pamu sathvikkumar,,,919966852005,sathvikkumarpamu005@gmail.com
+shrutisania11,Shruti Sania,Tarun Jangid,,918252359351,shrutisania11@gmail.com
+unnatiks2005,Unnati sharma,,,919770714351,unnatiks2005@gmail.com
+skandan5961,SKANDAN G S,,,917019358948,skandan5961@gmail.com
+Full Stack Slayers,Rijul Raman,Calisto Mathias,Pranav Bhat,916360898496,rijulraman.231it056@nitk.edu.in
+ssachinsingh99,Sachindra Kumar Singh,Ayushi Mitra,Arnab Sengupta,919330376939,ssachinsingh99@gmail.com
+Peterpools,Pradyumna Bhowmick,Sagnik Basak,ANIDIPTA PAL,919330865517,pradyumna.bhowmick.2016@gmail.com
+devayanee999,Devayanee Gupta,Gargi Lodh,Aayushmaan,918584978070,devayanee999@gmail.com
+Xception,Arko Roy,Mohikshit Ghorai,Suparno Saha,916291325676,arkoroy302@gmail.com
+terminalStack,Anika Pandey,,,919739087372,anikaprayag@gmail.com
+kmohammadumar5,Mohammad Umair,Aman Nigam,Mohd Yasir,918604422877,kmohammadumar5@gmail.com
+farhanahmad32954,Farhan Ahmad,Mohd Hamza,KAMRAN AFZAL KHAN,918840038273,farhanahmad32954@gmail.com
+nischal.basavaraju,Nischal Basavaraju,Prahas G R,Vineet Nayak,918073210336,nischal.basavaraju@gmail.com
+muskanm1711,Muskan Srivastav,,,919662670922,muskanm1711@gmail.com
+daksh.22310490,DAKSH TIWARY,,,918668911052,daksh.22310490@viit.ac.in
+kareemun.btech23,KAREEM UN NAWAZ,Dhanush B E,,918073509458,kareemun.btech23@rvu.edu.in
+saikrishna.bathina999,Sai Krishna Bathina,,,917396422613,saikrishna.bathina999@gmail.com
+bhaveshkhairnar28,Bhavesh Khairnar,Rakshith K B,Aryan Sharma,918770114199,bhaveshkhairnar28@gmail.com
+aayushsarraf244,Aayush Sarraf,,,919229922421,aayushsarraf244@gmail.com
+Coders,Praveen Yadav .,Hrishab Sharma .,Suhani Vaidya .,918957369320,py.231cs243@nitk.edu.in
+*ASYNC,Arkul Prathamesh Shenoy,Arjun M S,Amogh Kulkarni,919136608668,prathamesh.shenoy28@gmail.com
+datta01.dl,Datta L,Charan Gowda Chowgondanahalli Manjunatha .,Rajath .,918431468861,datta01.dl@gmail.com
+TeamQuartz,Shashwat Mishra,Ayush Mani,Adarsh Singh,919628568144,shashwatm878@gmail.com
+Web Ghost,Pramathesh V,Aniruddh Yelluri,Ashlesh Prabhu,919148720383,pramatheshv2904@gmail.com
+rakesh904664,Rakesh Adak,,,919046645828,rakesh904664@gmail.com
+CyberTron,Aharnish Jha,Anjali,Dinesh P,919851797979,jhaaharnish01@gmail.com
+bidhan.sureka.aeie28,Bidhan Sureka,Pratik Shaw,,919038292653,bidhan.sureka.aeie28@heritageit.edu.in
+Pradeep,Pushkar,Srujan Iyengar,,919108834551,gr.pushkar.0@gmail.com
+WaonTC 2,Deepak kumar singh,Utkarsh Mudgal,Adwiteek Samadder,919685323206,deepaksgrl184@gmail.com
+dhanushkrishna707,Dhanush krishna,,,917708312112,dhanushkrishna707@gmail.com
+akashmaji200680,supriyo maji,,,918967095517,akashmaji200680@gmail.com
+Syntax Squad,Sayan Adhikary,Sourya Adhikary,Soubhanik Patra,916291457249,sayanadhikary2017@gmail.com
+Cyber Wizard,Preetham VJ,,,919845283675,preethamvj2005@gmail.com
+ananyaacharya9714,Ananya MR,B Vaishnavi,,919353268702,ananyaacharya9714@gmail.com
+ananyasinha2717,Ananya,,,918744064451,ananyasinha2717@gmail.com
+Null Pointerz,Pon Raaj V,Priya Dharsini,Raj KalyanT,917010556117,ponraajv.cse2023@citchennai.net
+DRAGONSTONE,Shreyash Agarwal,Shibam Ghosh,Subhi Jain,918827704885,shreyash181203@gmail.com
+Codester,Danish Hussain,AMISH RAHMAN,Anish Patra,918310200219,dhhussain123@gmail.com
+hemalatham2226,Hemalatha M,Shankaripriya S CSE,,918248660816,hemalatham2226@gmail.com
+adityagaikwad9520,Aditya Gaikwad,Adarsh Chauhan,Anish Kaler,918446069520,adityagaikwad9520@gmail.com
+Phoenix,Shreyans Jain,Anchit Malik,Sriharisesh Jidugu,918860253484,shreyans0528@gmail.com
+pkushad,Kushad Pathania,Divyansh Atri,Samardeep Uppal,916239305794,pkushad@gmail.com
+astha.dewangan,Astha Dewangan,,,918889206425,astha.dewangan@rungta.org
+atalswayam28,Swayam Atal,,,919325445721,atalswayam28@gmail.com
+vijayaditya700,Aditya Vijay,,,919784070593,vijayaditya700@gmail.com
+Earth-838,Aditya Ranjan Sahoo,,,917846817057,adityaen.official101@gmail.com
+burstingfire355,Aditya Rawat,,,919366471551,burstingfire355@gmail.com
+Code Crushers,Anirudh Nayak,Pratham M Attavar,Aadharsh Venkat,917338219470,anirudhnayak1508@gmail.com
+dheeraj.nagaraja,Dheeraj Appaji,,,919481660290,dheeraj.nagaraja@gmail.com
+Team Average,Shamit Hoysal,Vibhu Kav Bhat,,917892757984,shamithoysal@gmail.com
+harshithranjan6971,Harshit Ranjan,Nikhil Guptha,Sourabh Kapure,919113011922,harshithranjan6971@gmail.com
+techrahul.gautam,Rahul Gautam,Anmol Dixit,Sumit Rathore,917877205454,techrahul.gautam@gmail.com
+simranraitani53,Simran Raitani,Prachi Agrawal,,917905820879,simranraitani53@gmail.com
+Marvel Jesus,Vajra Dindakurthi,Vishnu Chiyedu,Dhruv Jain,917386650711,vajradindakurthi@gmail.com
+sasmimoorthy33,Sasmitha M,,,919600452490,sasmimoorthy33@gmail.com
+neon blue,Niharika Saha,Neeraja,Neha Nair,919606657909,niharika.saha535@gmail.com
+nithinteja2006,Nithin Teja,Sacheth Koushal,Anurag Kanogia,917997062819,nithinteja2006@gmail.com
+Brainstorm Brigade,Pulkita Gupta,Poornima Bhatt,Swarnika Singh,918447453753,71pulkitagupta@gmail.com
+BloodReapers,Shanjiv A,Vedanth G,Prabhav Korwar,919731362003,shanjiv177@gmail.com
+harshivkrishnam,Harshivkrishna M,Bharath Sampath,,917449176396,harshivkrishnam@gmail.com
+Pineapple,Dheemanth J .,Rakesh D,Chinmay M Angadi,916360641080,dheemanthj.231ec215@nitk.edu.in
+sdarshan.aids2023,Darshan Sridharbabu,Shanmuga Shyam B,Shree charan Kannan,919444726947,sdarshan.aids2023@citchennai.net
+dhananjay.honnatti12,Dhananjay Honnatti,,,918088370484,dhananjay.honnatti12@gmail.com
+shriya25nair,Shriyadithya nair,Deshna Ramani,Sree Nithi S V,918805862471,shriya25nair@gmail.com
+Red Devils,Inbaselvan Ayyanar,Yuvadarshan M,Danvanthram KK,918072708275,a.inbaselvan@gmail.com
+sivav.cse2023,Siva V,,,918015413817,sivav.cse2023@citchennai.net
+Vibezz,Kathir S,Jason Santo Leon,Mithun S,917200092855,kathirs.cse2023@citchennai.net
+Hack Warriors,Prem Kumar,Rajesh A,,919042082274,epremkumar24@gmail.com
+CodeFighters,MONIKASREE R CSE,Manishaa P CSE,Jossey Marin M,918508895597,monikasreer.cse2023@citchennai.net
+chandhurum.cse2023,Chandhuru M,,,919677378758,chandhurum.cse2023@citchennai.net
+kishored.cse2023,Kishore D,Sathika Begum M,Jaiwant d,919345610482,kishored.cse2023@citchennai.net
+Ctrl+Sync,Akshaya A,Dhanalakshmi D,A Merwin Blessy,917871148148,akshayaxyz1301@gmail.com
+hariniv.cse2023,Harini V,,,919444504014,hariniv.cse2023@citchennai.net
+sharmasakshi2186,Sakshi Sharma,,,919304292619,sharmasakshi2186@gmail.com
+samikshagopal.deore.mat23,Samiksha Deore,,,918624046139,samikshagopal.deore.mat23@itbhu.ac.in
+rakeshsp.cse2023,Rakesh S P,Mukesh G,Ramsriprasaath D,918072209970,rakeshsp.cse2023@citchennai.net
+yadavikash9550,Vikash Yadav,,,917068079550,yadavikash9550@gmail.com
+jesminmofis.cse2023,Jesmin Mofi,,,919150485213,jesminmofis.cse2023@citchennai.net
+ratheerahul602,rahul rathee,Harsh Sharma,Ashish Jaglan,917988509202,ratheerahul602@gmail.com
+Alpha777,Rohit Naik,Sai Kumar C,,918123600366,naikrohit985@gmail.com
+sundarampandey004,Sundaram Pandey,Aditya Verma,Gyanam Shah,919369692361,sundarampandey004@gmail.com
+utsavlaheru,Utsav Laheru,Ajit chauhan,,919328009450,utsavlaheru@gmail.com
+raoshashank072,Shashank Rao,Sameer Joshi,Shreeya Methuku,918310540432,raoshashank072@gmail.com
+goldenbeauty510,Swarnadyuti Sarkar,,,917003018638,goldenbeauty510@gmail.com
+ishubhamgupta1543,Shubham Gupta,Kushal Patil,Vivin Dsouza,916350106667,ishubhamgupta1543@gmail.com
+abhigyan.tripathi.eee22,Abhigyan Tripathi,,,918429035566,abhigyan.tripathi.eee22@itbhu.ac.in
+saieshwarerelli10,E SAI ESHWAR,ROHITH KUMAR GUJJARI,ADDALA PRANAY VARMA,917780754541,saieshwarerelli10@gmail.com
+Hope,Sayanabha Chandra,,,918583078864,sayanabhachandraitsme@gmail.com
+harshdayal2022,Harsh Dayal,,,916394392353,harshdayal2022@vitbhopal.ac.in
+Random,Suvarna G,Varun Acharya K V,Shivam Kumar A,919535894535,suvarnag.231it077@nitk.edu.in
+Pattern Pirates,Mukund Bihari Gupta,Naman Agarwal,AKSHAT JAIN,918957615981,abhishek.jupyter@gmail.com
+kollurumohith2007,Kolluru Mohith,,,916281669671,kollurumohith2007@gmail.com
+a.vishwajith007,Vishwajith,,,918121896296,a.vishwajith007@gmail.com
+$@!N!,Aniket Saini,Stuti Gupta,Saloni Gupta,918279863090,2209301058.aniket@geetauniversity.edu.in
+Go Getters,Rakshit Garg,Sankalp Saharia,Shubhrodipto De,919310691218,rakshitgarg.231cs247@nitk.edu.in
+krishna.official9311,Krishna,,,919311726281,krishna.official9311@gmail.com
+vikashtondwals6,Vikash Saini,,,917737040962,vikashtondwals6@gmail.com
+shruthi.kp.aiml.2022,Shruthi Periyasamy,,,919489266788,shruthi.kp.aiml.2022@snsct.org
+OG,DINESH,Aadharsh Ramachandran,Pavan Kumar,917416135389,dineshmanideep@gmail.com
+Techspark,Akanksha,,,917032076051,prakhya7628@gmail.com
+RedBull,Naman Sinha,Mohnish Raj,Adithya A,919257857284,naan11477@gmail.com
+vaishnavik2552,Vaishnavi K,,,918551902121,vaishnavik2552@gmail.com
+priya2006sam,Priyadharshni Sampath Kumar,,,919600769887,priya2006sam@gmail.com
+manishisntstudying,Manish M Dev,,,918197059167,manishisntstudying@gmail.com
+raghav.cb,Raghav Balaji,,,918105460048,raghav.cb@gmail.com
+s.kodavathi.cse2023,S Kodavathi,,,919363015129,s.kodavathi.cse2023@citchennai.net
+SRI RAM S,SRI RAM S,,,917305901033,srirampopzz46@gmail.com
+achurajan17082006,Akshaya R,,,917010315354,achurajan17082006@gmail.com
+D²C,DHARSAN B,Chitharthaa A,DHANUSH PANDI S,917010455302,dharsanb23it@psnacet.edu.in
+hemasreer.cse2023,HEMA SREE R,,,919361488649,hemasreer.cse2023@citchennai.net
+sachinrohra05,Sachin Rohra,,,919179799796,sachinrohra05@gmail.com
+arya.shedbal,Arya Shedbal,,,919844433445,arya.shedbal@gmail.com
+sanskrutihiwase02,Sanskruti hiwase,,,918208917929,sanskrutihiwase02@gmail.com
+AI Avengers,Bhavani Pavadshetty,Renuka Hosamani,Daneshwari Melshetty,919008354144,bhavanibakkappa@gmail.com
+bujjihari16,HARISANKARREDDY YARAM,,,919640948443,bujjihari16@gmail.com
+meghasainia25,Megha Sainia,,,918840849630,meghasainia25@gmail.com
+siddarthpai.2006,Siddarth Pai,,,918792284357,siddarthpai.2006@gmail.com
+kp0109977,Krushna Patil,,,917757089895,kp0109977@gmail.com
+Mavericks,Uvajanani R P,,,918438961443,uvajanani24@gmail.com
+CodeTrio,Priyansh S U,Nimesh Acharya,Bipin Jain B M,919480388094,priyansh.s.ujjani@gmail.com
+ayushilipi13,Ayushi Bhattacharjee,Arnesh Banerjee,,918910586122,ayushilipi13@gmail.com
+basharaths2006,Basharath S,,,919677631954,basharaths2006@gmail.com
+thisispavithrabalaji,Pavithra B,Anusuya S,,919840188529,thisispavithrabalaji@gmail.com
+affanarshad2005,Affan Arshad,,,917338512931,affanarshad2005@gmail.com
+vedhem999,Vedant Dubey,,,918770824276,vedhem999@gmail.com
+techtrainer1,Mohammad Aslam,,,917838630603,techtrainer1@geetauniversity.edu.in
+sanathkjadhav,Sanath Kumar,,,919392858853,sanathkjadhav@gmail.com
+suhanikasliwal32,Suhani Kasliwal,,,919607154316,suhanikasliwal32@gmail.com
+The X - Force,Dishan D,Aneesh Dutt,Nihal Ravi Ganesh,919663933768,dishan2005d@gmail.com
+venkythegamerr,Venkatesh Vidala,Sandeep Karri,Anirudh Reddy,917989831273,venkythegamerr@gmail.com
+MADMAX,Sathwik Buddhe,Thaneeru Srivathsav,,917780365413,varmasathwik7@gmail.com
+kushmodi66,Kush Chokhawala,,,919106926662,kushmodi66@gmail.com
+dhanushsgowda277,Dhanush S Gowda,,,919008889779,dhanushsgowda277+unstop@gmail.com
+Yend,Ismail Ridwan,,,918807519224,ismailridwan206@gmail.com
+pharikrushna441,Harikrushana Pradhan,DHIPIKA I,,917698706087,pharikrushna441@gmail.com
+rishabh.shenoy23,Rishabh Shenoy,,,917058055335,rishabh.shenoy23@spit.ac.in
+Ranjeet,Ranjeet Kumar Rajak,Amit Kumar chaubey,,918651997844,rkranjeet4545@gmail.com
+Hacktivators,Veeramani N,Janjitha Sa,,916374146622,veerats123@gmail.com
+The Code Ninjas,Varshini Adurti,Ananya A K,Ankita A,919632079916,varshini.231cs204@nitk.edu.in
+nikhilagarwal.231it044@nitk.edu.in,Nikhil Agarwal .,,,919263053097,nikhilagarwal.231it044@nitk.edu.in
+22211a1222,CELUMULA PRANAY KUMAR CELUMULA PRANAY KUMAR Kumar,,,917981147027,22211a1222@bvrit.ac.in
+888,GUDURU TARUNI SRI,,,919059626681,23wh1a0247@bvrithyderabad.edu.in
+sachindhimann71,Sachin Kumar,,,918053961705,sachindhimann71@gmail.com
+Bug Hunter Squad,Ajay Razz,,,917091370375,ajayrazz854334@gmail.com
+Runtime Terrors,Jayesh Patil,,,919028332404,j9925127@gmail.com
+kevinhitman45,Kevin Shiju George,,,919113569983,kevinhitman45@gmail.com
+dm.rohithp,Rohith P,,,919739087242,dm.rohithp@gmail.com
+ALGORITHMIC AVENGERS,Ramana Ganthan,Ramamuthukumaran S CSE,Rahul Jahannathan,919344243380,ramanaganthans.cse2023@citchennai.net
+syedmark786,Syed Mannan,,,917899075032,syedmark786@gmail.com
+kasera.vansh.943,Vansh Kasera,Preethika Penta,Prajwal Aaryan Immadi,918052329468,kasera.vansh.943@gmail.com
+Innov8x,Tanishk Sarraf,Garv Kaushik,Kinshuk Garg,919999363661,sarraftanishk@gmail.com
+computertech9893,Aneri Thange,,,917249078513,computertech9893@gmail.com
+saranlingeshm.cse2023,SARAN LINGESH M CSE,Sivamani R,RAGHUL D CSE,917010787988,saranlingeshm.cse2023@citchennai.net
+1hk23cs135,Sameer Sameer R,,,919353943984,1hk23cs135@hkbk.edu.in
+1/Cos C boiis,Rushil Mandavia,Soham Swanand Palkrit.,MESHRAM PRAJWAL KRUSHNA.,919372212053,mandaviarshl@gmail.com
+vijayshree9646,Vijayshree Vaibhav,,,917667627647,vijayshree9646@gmail.com
+keyabist.231ee226,Keya Bist .,Prathyanga S,,919606767576,keyabist.231ee226@nitk.edu.in
+techbusy.in,S TEJAS,,,917397965804,techbusy.in@gmail.com
+aaryanaaryan123123,Aaryan Reddy,,,916300727176,aaryanaaryan123123@gmail.com
+jaismanjhinger,Jaisman _,Gurnoor Singh,,919056231202,jaismanjhinger@gmail.com
+am8557,Annu Mishra,Livya Falodia,,919832381556,am8557@srmist.edu.in
+manishbarathm.cse2023,Manish Barath M CSE,,,919363064194,manishbarathm.cse2023@citchennai.net
+DDT [Debugging Dream Team],Mubashir Afzal.,sambhav singh,Kishora Shetty,918660041473,mubashirafzal.231ai021@nitk.edu.in
+Twinspira,Sanjay Rajan R,Twinsriram V,VIMALAN S,919486221634,sanjayrajanr.cse2023@citchennai.net
+Debug Divo,Sai Pranav Morisetty,Kasturi Laxmi Narayana,Nishith Reddy Makireddy,917680934060,pranav.m0723@gmail.com
+rishabh.jain23b,RISHABH KUMAR JAIN,Prakshay Saini,,918920445444,rishabh.jain23b@iiitg.ac.in
+pari,Pari Gupta,,,919311547228,parigupta7415.nvps@gmail.com
+suketh2002,Suki A,,,919510315353,suketh2002@gmail.com
+annumathur003,Annu Mathur,,,916006969953,annumathur003@gmail.com
+aryamirani06,Arya Riteshkumar Mirani,,,916354109703,aryamirani06@gmail.com
+Binary_Bandits01,Khushi Pandit,Sarthak Jain,,916355998603,khushipandit0201@gmail.com
+team,Amrith A,Advaith Srinivas,Adnaan Dawood,919344348002,amrithalur2@gmail.com
+sathinilokesh123,Lokesh Sathini,,,919640638667,sathinilokesh123@gmail.com
+Explorers,Abhilash Mathapithru,Khan Hyder Abdulkareem,Ammar Mufeez,917899601144,abhilashmathapithru@gmail.com
+C.Master,Pankaj Raut,,,917066499195,rautpankaj251@gmail.com
+Golden,Deepthi K,,,919448803285,ippidrippy@gmail.com
+231701044,Reuben George,ANISH D,,919345553741,231701044@rajalakshmi.edu.in
+Nikola.Tesla,Vaishnavi Kulkarni,Sankalp Brahmapurkar,,916363469218,vaishnavi.kulkarni6306@gmail.com
+sakshi.22210493,Sakshi Shinde,,,919172325799,sakshi.22210493@viit.ac.in
+divyanshverma0428,Divyansh Verma,,,918120379678,divyanshverma0428@gmail.com
+TeamX,Shravan Kulkarni,Kaushik Kalva,Amogh Manjunath Kulkarni.,917021289711,shravankulkarni2005@gmail.com
+sridhar.s.ece.2022,SRIDHAR S,,,919345750376,sridhar.s.ece.2022@snsce.ac.in
+sadhanamohanraj26,Sadhana Mohanraj,,,919448623366,sadhanamohanraj26@gmail.com
+saxenavanshika18mar,Vanshika Saxena,,,917705023333,saxenavanshika18mar@gmail.com
+Challengers036,Sahil Sharma,,,919053135692,sahil.2209301036@geetauniversity.edu.in
+aayushimaheshwari31,Aayushi Maheshwari,,,919079823674,aayushimaheshwari31@gmail.com
+pranav.patil223,Pranav Patil,,,917249562289,pranav.patil223@vit.edu
+ranaayush063,Ayush Rana,Japneet Singh,MOHIT BHARDWAJ,917018623940,ranaayush063@gmail.com
+Codefolio,Sidam Sinha,Abhilash Kr Mishra,,919864835893,sinhasidam@gmail.com
+gurnoor14164,GURNOOR Singh,,,919417314164,gurnoor14164@gmail.com
+rishabhjaiswal507,RISHABH JAISWAL,,,917725834400,rishabhjaiswal507@gmail.com
+ritikkumarparsa45,Ritik Kumar,,,916200674631,ritikkumarparsa45@gmail.com
+jerlindolce7102005,Jerlin Dolce T,,,918248841392,jerlindolce7102005@gmail.com
+Infinite Loopers,Kunal Katkar,Sambhav Powar,Sanchit Jadhav,917887471825,kunalkatkar.231it033@nitk.edu.in
+nandhu.r.agri.2021,NANDHU R,,,918778345375,nandhu.r.agri.2021@snsct.org
+shubham07kumargupta,Shubham Kumar Gupta,GAUTAM KUMAR,Anurag Verma,918002007238,shubham07kumargupta@gmail.com
+Enigmatic minds,B Partha Sarathy,Priyankkaa BR,Aishwarya G CSE,919363530305,bparathasarathy.cse2023@citchennai.net
+sumatichougule01,Sumati Chougule,TANUSHRI CHOUGALE,,916361041691,sumatichougule01@gmail.com
+Coders,Pavitra Jakati,Shrusti Patil,Spoorti Kokkanavar,918088878447,pavitrajakati@gmail.com
+Avengers,Dhruv Srivastava,Ojesh Srivastav,Aargh Rai,919971856400,dhruvsri37@gmail.com
+divyanshsinghal17,Divyansh,,,917248095052,divyanshsinghal17@gmail.com
+CPU,Udbhav N,Pradyun D,Chinmaya Srivatsa K,919886144805,n.udbhav2006@gmail.com
+karthickrajs22it,KARTHICKRAJ S,Madesh Kanna,,917904432514,karthickrajs22it@psnacet.edu.in
+mohitpatil2005.mp,Mohit Patil,,,918839494155,mohitpatil2005.mp@gmail.com
+mohammedafreed827,Md Afreed pasha,,,916303087656,mohammedafreed827@gmail.com
+sachinguptaskl,Sachin Gupta,Apurv Rohom,Soumyadeep Raj,917488821126,sachinguptaskl@gmail.com
+chappididineshreddy.231cv116,Chappidi Dinesh Reddy .,,,917981579617,chappididineshreddy.231cv116@nitk.edu.in
+Banana beyotches,Arjun Rijesh,Advaith Nair,Akshith Vinu,917019872183,arjunrijesh12@gmail.com
+Ratrack,Abel Thomas Mathew,,,919495564505,atmyworkthomasmail@gmail.com
+wh0_kn0ws,Adithya A,,,919845543390,adithyu123@gmail.com
+Anonymous,Yahya Mohammad Faisal,,,918149645466,yahya.mohammadfaisal@gmail.com
+rohini.r.bme.2023,ROHINI R,,,919677942278,rohini.r.bme.2023@snsct.org
+devtarget100,DEV PATEL,,,916355532266,devtarget100@gmail.com
+prathmeshgour66422,PRATHMESH GOUR,,,916264628076,prathmeshgour66422@gmail.com
+AdmiralK,KAVYA CHAUDHARI,,,919354769503,kavya2005additional@gmail.com
+Bytes Brigade,Neha Patil,Chitra Madarakhandi,Chandana Lakya,917483976843,np5254045@gmail.com
+sainikeerthipriya,S. KEERTHI,,,917013796824,sainikeerthipriya@gmail.com
+shriyabh2005,Shriya Bharadwaj,Shraddha Kovalli,Saivinathi Korukonda,918310291509,shriyabh2005@gmail.com
+motupallidheeraj,Satya Sri Dheeraj Motupalli,Manish Adithya,Sai Dinesh,918332966666,motupallidheeraj@gmail.com
+Chilli,Francis Roger,,,917010302611,kuttybird12@gmail.com
+sridhar.n2023cse,Sridhar N,,,919003236836,sridhar.n2023cse@sece.ac.in
+sakibmalik5347,Mo. Sakib Malik,,,917906801133,sakibmalik5347@gmail.com
+siratchauhan8,Sirat Chauhan,,,916280339049,siratchauhan8@gmail.com
+Code-X,Viswanath Munagapati,,,917569631712,viswa225574@gmail.com
+sparshsinha11,Sparsh Sinha,,,918619217725,sparshsinha11@gmail.com
+dasarinani13505,NAGA MALLESWARA RAO DASARI,,,919390905571,dasarinani13505@gmail.com
+tanishqshinde777,Tanishq Shinde,,,918830180982,tanishqshinde777@gmail.com
+23f3003203,Afzal Jamal,,,918092155146,23f3003203@ds.study.iitm.ac.in
+Trial,Aryan Kapoor,,,917760144114,aryankapoor0303@gmail.com
+ashwin2376,S. Ashwin,,,918088437882,ashwin2376@gmail.com
+22wh1a05d5,VEDASRI LAKSHMI GADDIPATI,,,917673962633,22wh1a05d5@bvrithyderabad.edu.in
+gurramvamsi17,Gurram Vamsi,,,918367494408,gurramvamsi17@gmail.com
+kraman102003,Aman kumar,Maaz,Prince Kumar,919310697299,kraman102003@gmail.com
+sambhavpurohit14,Sambhav Purohit,,,919503277804,sambhavpurohit14@gmail.com
+The Greedy Gang,H S Jayanth,Garv Mandloi,Ronin Mukherjee,917483017553,jayanth.hs.05@gmail.com
+Falcons,Pooja Kasbe,Samidha Mane,Shruti Mishra,918080094206,poojakasbe1301@gmail.com
+prachidashrath1,Prachi D.,,,918999105703,prachidashrath1@gmail.com
+CHOKERS,A R N A V,DEVASHISH RAMOLA,Anshul Rawat,919634110809,kingvegeta306@gmail.com
+tanishqgarg256,tanishq garg,,,918307872808,tanishqgarg256@gmail.com
+d4deepanshu723,Deepanshu Mishra,,,918527972263,d4deepanshu723@gmail.com
+Code Crafters,SAURABH GHUNDRE,,,917397828444,saurabh.ghundre22@vit.edu
+3 Idiots,Shouryadip Chakraborty,Abhishek Agrawal,Ritesh Suresh Ashtkar,918217338763,shouryadip.chakraborty@gmail.com
+1hk23cs010,Aishwarya Bhimrayya,,,917975222957,1hk23cs010@hkbk.edu.in
+rohinishetty28,Rohini Shetty,,,919353355812,rohinishetty28@gmail.com
+chaithanyak635,Chaithanya K,,,917483365497,chaithanyak635@gmail.com
+Tech Titans,Prarthana AR,Padmavasanti Kanteppagoudra,,918618529038,prarthanaholla@gmail.com
+yaschandana,Chandana Jagadish,,,918762776283,yaschandana@gmail.com
+chakrabortyadrita04,Adrita Chakraborty,,,917003159819,chakrabortyadrita04@gmail.com
+gaganv205,Gagan V,Vishisht G,HARSHITHA PAKATI V,917019114359,gaganv205@gmail.com
+rajat.2209301062,Rajat Singh,Garima Malik,Ankit kumar,917404858778,rajat.2209301062@geetauniversity.edu.in
+bt23csa021,Shhaurya Jaiswal,,,919369155131,bt23csa021@iiitn.ac.in
+vetriselvan.m.it.2023,VetriSelvan M,Selvarani Boomi,Harshini S,917418501266,vetriselvan.m.it.2023@snsct.org
+kavish,kavish.M,,,919865824929,kavishm100@gmail.com
+hareesh.m.it.2023,HAREESH M SNS,,,919384397938,hareesh.m.it.2023@snsct.org
+Dragons,PRANNAV R S,Rowfin,Kamalesh,916380098859,prannav.rs.it.2023@snsct.org
+sujithsur94,Sudharsan G,,,916381771212,sujithsur94@gmail.com
+nagabharath991,Bharath N,,,919489465755,nagabharath991@gmail.com
+jeevika.r.it.2023,JEEVIKA R,,,917810063334,jeevika.r.it.2023@snsct.org
+thaaranys.cse2023,Thaarany S,,,916385033982,thaaranys.cse2023@citchennai.net
+pd8982572,Priyadarshini,,,919019821685,pd8982572@gmail.com
+Technocrats,Shivavigneshkannan Karuppiah,Mohit Raj,Karthik S,919159869717,shivavigneshml@gmail.com
+The Archons,Kanishka,Riya Aneja,Garima Ratra,918920678731,kanishka261204@gmail.com
+mohamedjaris.cse2023,Mohamed Jaris,,,918438304400,mohamedjaris.cse2023@citchennai.net
+abhimanyukumar6531,Abhimanyu kumar Singh,,,917297982456,abhimanyukumar6531@gmail.com
+siddaraju102004,Punith S,,,917019099162,siddaraju102004@gmail.com
+sourabhshukla3.14,Sourabh Shukla,,,919717499758,sourabhshukla3.14@gmail.com
+viveks7370,Vivek Kumar,Shivam Kumar,Dularchandra Kumar,917370995401,viveks7370@gmail.com
+ritikjn096,Ritik Jain,Priyanshu Patel,,919983879289,ritikjn096@gmail.com
+Llama,Krupa Marol,Srida N,,917760407999,krupamarol@gmail.com
+shahdevansh1311,Devansh Shah,,,919316803886,shahdevansh1311@gmail.com
+dhanushkarthickk.cse2023,Dhanush Karthick,,,916383995528,dhanushkarthickk.cse2023@citchennai.net
+dillibabur.cse2023,Dillibabu R,,,919597352647,dillibabur.cse2023@citchennai.net
+anudeshmukh1406,Anushka Sanjay Deshmukh,,,918983100197,anudeshmukh1406@gmail.com
+Bajrang Dal,Ansh Sharma,Srishti Ahuja,Abhishek Yadav,917217787725,anshismyname47@gmail.com
+Cool Coders,Yukthika S S,,,919087948415,yukthikass.cse2023@citchennai.net
+Coder,Anirudra Bhattacharjee,,,918697906391,anirudrab81@gmail.com
+navadeep.sai11,Navadeep Sai,,,918310029882,navadeep.sai11@gmail.com
+exspeclearns,Akhilesh VADDE,,,918296195733,exspeclearns@gmail.com
+Rhythmicoder,Nilansh Gupta .,,,916260772922,nilans.231me236@nitk.edu.in
+soundharyam.cse2023,Soundharya,,,919342823658,soundharyam.cse2023@citchennai.net
+Three Piece,Srujan Swamy,M Lakshya,Anirudh S,917406713569,tsrujanswamy.231it079@nitk.edu.in
+hannaabdulmajeed,Hanna Abdul,Jessica Chandy,Dhruva Vinod,919946511888,hannaabdulmajeed@gmail.com
+ardas2018in,Arpita Das,,,919987596048,ardas2018in@gmail.com
+mounesh.ad22,MOUNESH S,,,919025554788,mounesh.ad22@bitsathy.ac.in
+kumarsonoo278,Sonoo kumar,,,919508515477,kumarsonoo278@gmail.com
+The Aces,Ayan Patel,Sayali Nandu,Gargi Jadhav,919860386992,ayanp4701@gmail.com
+FRESHERS,J SREEJITH NAIR,Aadhinath Valiavalappil,Eben Joseph,918970418483,1hk23cs057@hkbk.edu.in
+Solo,SAHISHNURAM,,,916383066240,22n244@psgtech.ac.in
+sankethakumbar,Sanketha Kumbar,,,919986051616,sankethakumbar@gmail.com
+Deadpool and Wolverine,Zarrar Peshimam,Shiven Shukla,,919920101840,zarrarpeshimam@gmail.com
+rajivkumarsai08,rajiv kumar,,,918377017302,rajivkumarsai08@gmail.com
+hitens1792006,HITEN S,Devanand,Johan Bijoy,916360027747,hitens1792006@gmail.com
+Vilas H R,Vilas H R,,,917411222741,vilasvilu3@gmail.com
+samarthmantri06,Samarth Mantri,,,919209219459,samarthmantri06@gmail.com
+navya.shubh2006,Shubh Thakkar,,,918217348231,navya.shubh2006@gmail.com
+kosuriakhil19,Akhil Kosuri,Shiva Santosh reddy Aenugu,Sumith Ram,918074354342,kosuriakhil19@gmail.com
+Code wars,Laxman Prajapat,DHEERAVATH MADHU,,918619937607,theprogrammer452023@gmail.com
+ireneemeldapatricia,Irene Emelda Patricia,,,917975937663,ireneemeldapatricia@gmail.com
+pavantej219,S. Pavan Tej,,,919440369309,pavantej219@gmail.com
+vishaldabhade.1000,vishal Dabhade,,,917387910404,vishaldabhade.1000@gmail.com
+9922005218,NALLA SUNEELA,,,917780707864,9922005218@klu.ac.in
+Us developer,Shravan R,,,916363850438,shravanramakunja1@gmail.com
+ananyarobinson411,Ananya robinson,,,918839188200,ananyarobinson411@gmail.com
+Maximum Effort,Sneha Rawat,,,919870331593,snehar6014@gmail.com
+knights,Shagun Nagpal,Shivangi Gakhar,,918984392422,shagunnagpalluvumaths@gmail.com
+jjainam00,Jainam Jain,,,919444369012,jjainam00@gmail.com
+First experience,Kaustubh Sharma,,,918178202338,multitasker12678@gmail.com
+ctrl_cv,Anupama Rajreddygari,Suhani Vishal,,917032901805,anupamadheeraja2@gmail.com
+manojbarki1,Manoj Barki,R M Harshitha,S B L Prateek,919353026952,manojbarki1@gmail.com
+pandeynisha797,Nisha Kumari,,,919263677653,pandeynisha797@gmail.com
+Hello World,Nandini Eswaran,Rhea Mishra,Greeshma Prabhu,919363057582,nandinieswaran06@gmail.com
+abdulrehmankalsekar10,Abdul Rehman Abdul Alim Kalsekar,,,919326383639,abdulrehmankalsekar10@gmail.com
+gopikasunil83,Gopika Sunil S,,,918197693868,gopikasunil83@gmail.com
+jainbodhini05,Bodhini Jain,,,919660108763,jainbodhini05@gmail.com
+stand proud,Tejas Bajaj,Rahul Saravanan,Shishir Hegde,919099616168,bajajtejas@gmail.com
+shashankkoti05,Koti Shashank,,,919493247884,shashankkoti05@gmail.com
+Data Alchemists,Swapnil Thakur,Soham Jawlekar,Sneha Buktare,918180882332,thswapnil15974@gmail.com
+monugupta002001,Monu Kumar Gupta,,,919826344532,monugupta002001@gmail.com
+Amandeep Gangwar,Amandeep Gangwar,,,916394698450,amandeep8953540339@gmail.com
+devesh08rawat,Devesh Rawat,,,917078140054,devesh08rawat@gmail.com
+Team Mines,ABHAY THAKUR,Anand Patidar,Ayush Sharma,919399988397,abthakur1912@gmail.com
+amulyapaathipatikolar.231cs111,Amulya Kolar,Vanshika Mittal,,919611206707,amulyapaathipatikolar.231cs111@nitk.edu.in
+somya.234017,Somya Shekhar 234017,Keshav Yadav,,919341276825,somya.234017@sggscc.ac.in
+Professional Cats,Prajwal,Saptangshu Datta,Kawaljeet singh,919910538215,prajwalj2006@gmail.com
+sinhamanas105,Manas Sinha,,,919451576857,sinhamanas105@gmail.com
+pritikacu,Pritika Cu,,,919113296113,pritikacu@gmail.com
+praj30028,Priya Raj,,,918271883556,praj30028@gmail.com
+danishag.cse2023,Danish,,,918903099026,danishag.cse2023@citchennai.net
+anoop102910,Anoop Singh,,,916388175878,anoop102910@gmail.com
+211908,BADAL  SHARMA,,,918209511003,211908@juitsolan.in
+MrCool,Adithya D,,,917019965801,adithyashyam318@gmail.com
+CodeWorriers,Yash Suryawanshi,Mohit Liddad,Yash Takate,919158824980,suryawanshiyash65@gmail.com
+sharmadevansh7860,Devansh Sharma,,,918218371950,sharmadevansh7860@gmail.com
+C--,S K Deeraj,Karthik Suryanarayanan,Anantha Narayanan,918141026261,u23ai050@coed.svnit.ac.in
+gauri23bcs34,Gauri Lekshmi Sathya,,,919895585113,gauri23bcs34@iiitkottayam.ac.in
+CodeWarrior,Shivam Kumar,,,919958870589,shivamksbabu504@gmail.com
+Case Wizards,AURSHITHA REDDY R,,,919177397846,aurshithareddyrajula.04@gmail.com
+gaziwahab58,Gazi Wahab,Kamran bin hassan,,919548873994,gaziwahab58@gmail.com
+Noob_Space,Jayanth Parthasarathy,Harsh Iyer,Glen Enosh,919566008683,jayanth23bcs40@iiitkottayam.ac.in
+Triple Trouble,Sashank Adivi,Chanakya Cherukumalli,SOMDATH DEVANSH AGARWAL,916305443683,sashank.231it005@nitk.edu.in
+red,Medicharla Harsha Naga Durga Sathish,Sai Govardhan Rao Medikurthi,ramana reddy rekkala,918885412746,harsha.231it038@nitk.edu.in
+abhisheksingh29476,Abhishek Pratap Singh,,,918340278563,abhisheksingh29476@gmail.com
+Team Lazy,Chethan S D,Sri Sai Raghuveer C,Pratham V,919742625703,chethan9680@gmail.com
+pratyaksh1594,Pratyaksh,,,919971044710,pratyaksh1594@gmail.com
+Pehli nasha,I'm Tapan,,,917093508960,cheekyknight64@gmail.com
+sd4912,SANVI DEVNANI (RA2311003010137),Aaditya Tiwary,Tanay Burnwal,918209877600,sd4912@srmist.edu.in
+vanursab71,Vannoor Sab,Geetha Reddy,,919849124901,vanursab71@gmail.com
+ashwalrshanbhag,Ashwal Shanbhag,,,919008149026,ashwalrshanbhag@gmail.com
+ponrajam2002,Marithangam K,,,918220716015,ponrajam2002@gmail.com
+lraghuram14,Raghuram L,,,917397369120,lraghuram14@gmail.com
+sande,SriSuryaKoushik Ande,,,916302676598,sande@gitam.in
+rp6272697,Rahul Patel,,,919098415775,rp6272697@gmail.com
+Hackers,Shardul Raajendran,,,919654933993,shardulkurupath@gmail.com
+HackHustlers,Vibhash Srivastava,,,917991840264,vibhashsrivastava2004@gmail.com
+22wh1a0223,LOHITHA Polepally,Suppala Hasini,,919346577020,22wh1a0223@bvrithyderabad.edu.in
+mayurabijjanal,Mayura G B,,,918050169529,mayurabijjanal@gmail.com
+sriharig.cse2023,SRI HARI,,,919952196103,sriharig.cse2023@citchennai.net
+Sauce,Sanjay Karumanchi,Parihasa K Reddy,,919392964352,sanjaykarumanchi7@gmail.com
+karthikbalajibm,Karthik Balaji B M,SAIGANESH V,,916382481081,karthikbalajibm@gmail.com
+snehabanerjee469,Sneha Banerjee,,,917426879506,snehabanerjee469@gmail.com
+RANGERS,Soham Thaker,Pratham Baldewa,Pranav Bahety,919718707700,sohambthaker@gmail.com
+22bec039,DEVESH GANGANI,,,919414384157,22bec039@iiitdmj.ac.in
+davisferns18,Davis Fernandes,,,919322071159,davisferns18@gmail.com
+vibharr3004,Vibha Rao,,,919148187452,vibharr3004@gmail.com
+Bit By Bit,Niyati Soni,,,918905931031,niyati1946@gmail.com
+varshinimahalingam04,Varshini Mahalingam,,,917395859336,varshinimahalingam04@gmail.com
+Cicada,Ishita,Swasti G,,919900262448,ssishita15@gmail.com
+Rhythm Of Code,Abhhay S Sharma,Hanuman s,Prabhav P,918618071142,abhhayssharma@gmail.com
+aneeshdas2090,ANEESH DAS,,,919330497606,aneeshdas2090@gmail.com
+Binary Bandits,Abhiram Suresh .,Varun Jimmy,Ganesh Madhav,918848507498,abhiramsuresh.231cs202@nitk.edu.in
+AR2544,Noamaan Abdul Azeem,,,919121492481,noamaan6688@gmail.com
+chandrikav211,Chandrika V,,,919791554177,chandrikav211@gmail.com
+CYDAL,Prajwal uppar,,,917019854269,prajwaluppar789@gmail.com
+amruthudupa33,Amruth Udupa,Vivek,,918792358317,amruthudupa33@gmail.com
+kp148695,Krish Patel,,,917069615545,kp148695@gmail.com
+jaishettyhasini.231ai012,Jaishetty Hasini,Aashi Kumari,Kashish Prajapat,919121575938,jaishettyhasini.231ai012@nitk.edu.in
+anish1811.athira,Athira A,,,919345588702,anish1811.athira@gmail.com
+gopikaselvaraj723,gopika selvaraj,,,919043869163,gopikaselvaraj723@gmail.com
+edwinayabesh05,Edwina Y,,,919080406093,edwinayabesh05@gmail.com
+kavyashreeb893,Kavya shree B,,,916383358147,kavyashreeb893@gmail.com
+pooja.s.it.2023,POOJA S SNS,,,919894694852,pooja.s.it.2023@snsct.org
+Di Kommunists,Mohammed Rehan Tadpatri,Hemanth Elangovan,,919606073446,rehantadpatri2005@gmail.com
+Team B,BHARATH S,,,919487127290,2k23me011@kiot.ac.in
+reckons,Navaneet Murali,Ardhi Tarun,,919972053066,jr7navaneet@gmail.com
+SNS techies,Arulmohan P,AVISHKAR S,,919498353532,iamarulmohan333@gmail.com
+ashikakrish.g5,Ashika subashri G,ASWIN RAAJKUMARAN,,917418788938,ashikakrish.g5@gmail.com
+Happy,Pavni Malhotra,,,917803817232,pavni162004@gmail.com
+ekagragupta814,Ekagra GUPTA,Dhawal Kachhwaha,,918090753680,ekagragupta814@gmail.com
+Platonic Voyeurs,Anshuman Dave,Jyotirmaya Mallick,Vishal Hegde,916363340424,anshumandave2020@gmail.com
+prathameshviroje11,Om Viroje,Tushar Naik,,918850474570,prathameshviroje11@gmail.com
+Andhra Wala,Udayram karella,Pavan,SANGA BALANARSIMHA,919951092324,udayramkarella@gmail.com
+sumitbedre431,Sumit Bedre,,,918123462520,sumitbedre431@gmail.com
+mohammedriyaz1030,Mohammed Riyaz,Muhammed Ashil,,917760834868,mohammedriyaz1030@gmail.com
+anaghaavinash12,Anagha Avinash,,,917259261248,anaghaavinash12@gmail.com
+sreevass06,Sreevas S,,,918330822924,sreevass06@gmail.com
+parthipdev,Parthip Dev,,,918590729883,parthipdev@gmail.com
+QWERTY,Vishal S,Akanksha,Anagha Rao,918971853799,vishalmamatha2005@gmail.com
+nikhiljain110703,Nikhil Jain,,,917987000535,nikhiljain110703@gmail.com
+Team Hyprland,Arnab Sadhu,Hrishikesh Puligal,,917022604366,annyman.81194@protonmail.com
+ganeshb2208,Ganesh Bharadwaj,Gaurav U Kothari,Dhruv Prabhu,919148572522,ganeshb2208@gmail.com
+X-Force,Aditya Bhaskar,Adarsh Akshat,Nikhil Agarwal,918595671650,adityabhaskar5779@gmail.com
+teamrocket,Shumedha,Enakshi Dalui,Subhomoy Majhi,917439445431,shumedhabanerji.9c.9@gmail.com
+atharva.sp21,Atharva Shrikant,Vishal Murugan,Antony Thaikadavil,917827764510,atharva.sp21@gmail.com
+aditya.kurapati23,ADITYA KURAPATI,,,917507546319,aditya.kurapati23@vit.edu
+skandaswaroopan,Skanda Swaroop,,,919538745126,skandaswaroopan@gmail.com
+tridhatri33prakash,TRIDHATRI PRAKASH,Sanchit Udupa,,919731716638,tridhatri33prakash@gmail.com
+atharvasbarge,Atharva Barge,SIDDHANT TIWARI,Saksham Sharma,917558546621,atharvasbarge@gmail.com
+snehasishhaldar415,Snehasish Haldar,,,918910127577,snehasishhaldar415@gmail.com
+Vaishnavi,Vaishnavi D,,,919741574275,vaishnavidsamu@gmail.com
+Coder,Mansi Sharma,,,919319397491,yogesh11222211@gmail.com
+katiyaranshu00,Anshu,,,919104274998,katiyaranshu00@gmail.com
+puneetmalhotra6150,PUNEET MALHOTRA,,,919509799249,puneetmalhotra6150@gmail.com
+tswapnil258,SWAPNIL TIWARI,Shriya Dash,,919305974452,tswapnil258@gmail.com
+MindBlastMagicManjunath,Nilayan Mazumdar .,Shreyan Sen,Saksham Parmar,919932451513,nilayanmazumdar.231ec138@nitk.edu.in
+arnavmiranda,Arnav Miranda,,,919611642484,arnavmiranda@gmail.com
+rushi47409,Rushi Patel,,,919016606144,rushi47409@gmail.com
+23je0127,Anubhaba Agrawal,,,916371724153,23je0127@iitism.ac.in
+damianjude,Damian,,,919019371928,damianjude@duck.com
+poojaharshinecj22it,POOJA HARSHINE C J IT student,,,918695734296,poojaharshinecj22it@psnacet.edu.in
+divyadharshini.n.cst.2023,Divyadharshini N,,,917603980534,divyadharshini.n.cst.2023@snsce.ac.in
+divyasrishanmugam846,Divya sri,,,919080566788,divyasrishanmugam846@gmail.com
+ayush030720004,Ayush Kumar,,,918178583178,ayush030720004@gmail.com
+darkcoders,Mahalaxmi Somisetty,Lasya Sothuku,Tony,919491639131,mahalaxmi1246@gmail.com
+deshpandesamruddhicharudatta.231ec117,Samruddhi Deshpande,Sathvika Bandi,,918605218476,deshpandesamruddhicharudatta.231ec117@nitk.edu.in
+agnirudrasil,Agnirudra Sil,,,917349446630,agnirudra.sil@gmail.com
+TheBoys,Sreejay,Rohit SV,Sandeep Kaushik R,919962750743,23202048@rmd.ac.in
+23202056,Viswa V,,,919444836387,23202056@rmd.ac.in
+23202037,RAVINDHAR G,Saravanakumar C,Sachin D,917010537949,23202037@rmd.ac.in
+codeWar,HETRAM,Soumyadeep Mazumder,Harshit Kandpal,918302427961,hetramgugrwal13@gmail.com
+RBpgrm,Vjtx JP,,,919113842187,vijeethjpoojary@gmail.com
+23202062,SANJAY ADITYA CSBS DEPT,,,918870341997,23202062@rmd.ac.in
+IdemoNole,Sanjay Bhat,Abhijit Kar,Samved Sajankila,917022115280,sanjay95bhat@gmail.com
+TroiSent,Sathwik Mavilla .,Rithvik Saran,Tejhuram Ravichandran,919036858403,sathwikm.231ec253@nitk.edu.in
+balaji200526,Balaji .N,,,919688627100,balaji200526@gmail.com
+2201301071,Manish,Ragini Sharma,Aditi Kumari,919817826521,2201301071@geetauniversity.edu.in
+akki.231it029,Akhilesh,Naveen Nadagouda,,919481960372,akki.231it029@nitk.edu.in
+ranchovamshi,Vamshi chethan AM,D Ramdas Naik,Maley Srijan.,917975883646,ranchovamshi@gmail.com
+anik05169,Anik 05,,,919157531785,anik05169@gmail.com
+Debug Divas,Kartikey Vats,Pawan,Jitesh Kumar,917827856438,vatskartikey264@gmail.com
+Witcher,Sairam,,,919553102343,cholletisairam27@gmail.com
+sjn.174,Sujan H,,,918951784545,sjn.174@gmail.com
+Team RC,H Chetan Reddy,Ram Rithesh Reddy,,919652216427,hcreddy027@gmail.com
+xiig27.muskanagarwal,Muskan Agarwal,Mansi Tibrewal,,917980961891,xiig27.muskanagarwal@gmail.com
+Theodolite,Aayush Dubey,,,919304602398,ayush786dubey@gmail.com
+Augustus,Anjali Yadav,,,918700174696,anjalisyadav18@gmail.com
+sdevansh057,Devansh Sharma,,,917505613755,sdevansh057@gmail.com
+Pool's Wildcard,Atharv Thakle,,,917580837176,atharvthakle@gmail.com
+zeke.personal.01,Yuvraj Yadav,,,918320193508,zeke.personal.01@gmail.com
+devchaudhari.231cs221,Dev Chaudhari,,,919407924694,devchaudhari.231cs221@nitk.edu.in
+redcap,Udeshya Kumar Ray,Anant Yadav,,918402076615,rudr1612@gmail.com
+1ep21is106.ise,Teerthana B M,,,918792596098,1ep21is106.ise@eastpoint.ac.in
+hanantahirkhan,Hanan Tahir Khan,,,917889440429,hanantahirkhan@gmail.com
+chanduakhil777,Chandu Akhil,,,917032049589,chanduakhil777@gmail.com
+koushiknarayan500,Sri Koushik Narayan,Rohan S Nayak,Kandlaguduru Vamsi,918790887807,koushiknarayan500@gmail.com
+ALONE,Kedare Om Shantul .,,,917517382511,omshantulkedare.231ee126@nitk.edu.in
+Phoenix,Spandan Shekhar Sahoo,Sreenidhi Golamaru,Dibyadipan Bhattacharya,918792038561,spandan.22541@gmail.com
+Code/entity,Devraj Naik,Christananda B,,918310443587,devrajnaik1020@gmail.com
+deepanshu010101,Deepanshu Kumar,Pavan Krishna Kumar,Akbarali Batti,919263831870,deepanshu010101@gmail.com
+mihirkhanna1701,Mihir Khanna,,,919650393331,mihirkhanna1701@gmail.com
+vishnudhasan19,Vishnu Dhasan,David Nicodamas,Vishal As,919787867515,vishnudhasan19@gmail.com
+kranthi20057dasari,Kranthi Kiran Dasari,S V Karthikeya,,919550596749,kranthi20057dasari@gmail.com
+srijitadutta025,Srijita Dutta,,,918617310831,srijitadutta025@gmail.com
+aishwarya,Aishwarya Kumari,,,919608250051,aishwarya8409@gmail.com
+CODE RED,BALASUBRAMANIAM L,,,919345238008,balasubramaniam12007@gmail.com
+Team7,Vishal Gangani,,,916360064063,vishalgangani.231cs263@nitk.edu.in
+vyomshah509,Vyom Shah,Maiitra Patel,Yash Solanki,919898936325,vyomshah509@gmail.com
+gaonkarsub,Subrahmanya Gaonkar,,,916361708133,gaonkarsub@gmail.com
+ushasgowda125,Usha S Gowda,Sahana.V,Tanisha G,919019829230,ushasgowda125@gmail.com
+arsharankumar.231cs101,A R Sharan Kumar,Chinmayee M,Aarya M,917338016275,arsharankumar.231cs101@nitk.edu.in
+kpruthvi45,Pruthviraj K,,,917204926224,kpruthvi45@gmail.com
+achuadhi331,Adhithya SR,Rishith Venu bilimagga,,919972916262,achuadhi331@gmail.com
+vedant.17180,Vedant,,,919350125848,vedant.17180@gmail.com
+ROOKIES,Harsh Vardhan Bagri,Jeetu Kumar,Jishnu Prasad,919920127597,harshvardhanbagri904@gmail.com
+pshreyas016,Shreyas Patil,,,918180916885,pshreyas016@gmail.com
+ranjayraj953433,Ranjay kumar,,,918076378965,ranjayraj953433@gmail.com
+Aashuti,Aashuti Gambhir,,,919399006871,aashutigambhir@gmail.com
+yashvikram8250,Yash Vikram,Ayush Soni,Aditya Srivastav,918052598451,yashvikram8250@gmail.com
+mirthulshanjay.t.cst.2023,MIRTHUL SHANJAY,,,918838388346,mirthulshanjay.t.cst.2023@snsce.ac.in
+vinaypepakayala01,Vinay Pepakayala,,,919391785918,vinaypepakayala01@gmail.com
+Red_Rangers,Vadtya Sai Vignesh,Tushar Wadiwa,Nishit Kumar,916305204329,picsofchintu@gmail.com
+VulnX,Krishna Chomal,,,919769126252,krishna.chomal108@gmail.com
+tungenasainishnathrao.231cs260,Tungena Sai Nishnath Rao .,Gudditi Santhosh balaji,M. Dattatreya,919392960563,tungenasainishnathrao.231cs260@nitk.edu.in
+yagyeshgoyal123,Yagyesh Goyal,Chaitanya Kulkarni,,918518916148,yagyeshgoyal123@gmail.com
+aparkhi8304,Atharva Parkhi,Sahil Kumar,SK Sharhaan Naim,917725023154,aparkhi8304@gmail.com
+kumarsingh821032,Neeraj Singh,,,917564019898,kumarsingh821032@gmail.com
+Code till green,Pradyumna Bhat,Siddanth S,Abhijith Sogal V,917349373105,pradyumnabhat.231ai026@nitk.edu.in
+vibhaas23bcs37,Vibhaas Nirantar Srivastava,Harissh Ragav,Alex Gijo,918281497823,vibhaas23bcs37@iiitkottayam.ac.in
+bhuvandharwad.231cv214,Bhuvan Dharwad,,,919448571382,bhuvandharwad.231cv214@nitk.edu.in
+Screwit,Mohanish,Raunak Nayak,Dhiraj Padhi,919036428555,mohanishmk@gmail.com
+karthikgurikar.231mn022,Karthik Gurappa Gurikar.,,,919036189296,karthikgurikar.231mn022@nitk.edu.in
+Racoon boys,Gopala Krishna,Chinmay Naren,,918310905863,n.gopalakrishna4695@gmail.com
+kratika2901,Kratika verma,,,919140016877,kratika2901@gmail.com
+freddyageorge,Freddy G Alexander,,,919446648090,freddyageorge@gmail.com
+Sparklers,SNEHA RATHOD,Vaidehi Guntury,Pranjali Goyal,918688099353,imt_2023079@iiitm.ac.in
+sailappan935,Sailappan S,Aderine Perez,,919025792665,sailappan935@gmail.com
+DEV NEXUS,Amitava Datta,Anirban Ghosh,Pranay De,918910168864,dattaarup2004@gmail.com
+dhanyadwarak,Dhanya D,,,918660142554,dhanyadwarak@gmail.com
+suryaprakash k,SURYAPRAKASH.K SNSCE,,,919345545630,suryaprakash.k.cst.2023@snsce.ac.in
+coder_cats,Zalak Pandit,Vanishka Karkera,,919081004909,zalaknpandit@yahoo.com
+Coder D,Dhruva S,,,919113608244,dhruva.s151@gmail.com
+mekalkepadmaraj,Padmaraj Mekalke,,,918904722889,mekalkepadmaraj@gmail.com
+nhsan,sanjana NH,,,919483016779,nhsanjana85@gmail.com
+pretheeswari58,Prethi M,,,917305525393,pretheeswari58@gmail.com
+harinirajan006,Harini R R,,,919940829575,harinirajan006@gmail.com
+mgbhupesh58,BHUPESH MG,,,919500840304,mgbhupesh58@gmail.com
+aruna.a.ad.2023,Aruna.A A,,,919342893182,aruna.a.ad.2023@snsce.ac.in
+gowthamashanmugam05,Gowthama Shanmugam V,NAVIN PRABHU G,Denik Rido.J,916380232741,gowthamashanmugam05@gmail.com
+vktamilarasi2004,tamil arasi,,,919361318461,vktamilarasi2004@gmail.com
+mohit000pareek,Mohit Pareek,,,917564014104,mohit000pareek@gmail.com
+ShriRam,Aryan .,Himanshu Singh Patel,,917016340248,aryan.231cs213@nitk.edu.in
+Innovators,Dakshata R,Eswari K,Cheithanya S,919578777340,dakshatar8@gmail.com
+anshsingh04986,Ansh Singh,Akshita sharma,,916205063247,anshsingh04986@gmail.com
+beats,Vishnu Rao L,Chintana G,,918792475277,vraolalige@gmail.com
+saranr.it2023,Saran R,,,919344588695,saranr.it2023@citchennai.net
+sujaykarthik25,Sujay Karthikeyan,,,918861602221,sujaykarthik25@gmail.com
+hiruthu58,Hiruthu balachandran,PRIYANGA M,,917708624746,hiruthu58@gmail.com
+siddharthjayprakashrai,Siddharth Rai,,,918928858329,siddharthjayprakashrai@gmail.com
+aasthasingh31jan,Aastha Singh,,,918299063663,aasthasingh31jan@gmail.com
+pkharade2000,Pranali Kharade,Harshad Bhosale,Anshika Yadav,919561387149,pkharade2000@gmail.com
+inventashif,Mohd Kashif,Kanan Kango,,917599425789,test.inventashif@gmail.com
+rahul.k.cst.2023,RAHUL.K SNSCE,Gopika B,,916381430969,rahul.k.cst.2023@snsce.ac.in
+mishtipatel02,Mishti Patel,,,916364683896,mishtipatel02@gmail.com
+divyanshumishra1911,Divyanshu Mishra,,,917755803253,divyanshumishra1911@gmail.com
+nikhilsinghrajpoot04,Nikhil singh,,,916206214208,nikhilsinghrajpoot04@gmail.com
+shobinim863,Shobini.M,,,919361535301,shobinim863@gmail.com
+monisha.m2104,Monisha M,,,918903345451,monisha.m2104@gmail.com
+marwinfkp,Marwin Francis,,,917356541101,marwinfkp@gmail.com
+Arcane,R KARTHIKEYAN,Madhusri V,,918606525261,karthikeyanspro@gmail.com
+dharmaajay2222,Dharma Ajay,,,916385415821,dharmaajay2222@gmail.com
+sarthakx12,Sarthak Verma,,,916307508526,sarthakx12@gmail.com
+kalalpavanteja304,Pavan Teja Kalal,,,917981788928,kalalpavanteja304@gmail.com
+amritraj1485,Amrit Raj,Gaurav Kumar,Ashish Kumar,918210305021,amritraj1485@gmail.com
+gurnoor.codes,Gurnoor Singh Sodhi,,,917719742868,gurnoor.codes@gmail.com
