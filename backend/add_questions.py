@@ -25,7 +25,7 @@ def create_questions_from_csv(file_name):
         points = row['points']
         link = row['link']
         flag = row['flag']
-        section = row['section']
+        section = int(row['section']) + 1
         create_question(title, text, points, link, flag, section)
         print(f'Created question {title} with flag {flag}')
 

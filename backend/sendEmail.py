@@ -10,8 +10,8 @@ def sendEmailFromTemplate(to, subject, template, context):
     # Setting up the SMTP server
     smtp_server = "smtp.gmail.com"
     port = 465
-    login = "vignarajpai@ieee.org"
-    password="amdg yvqs cotq xxjw"
+    login = "vignaraj.211it080@nitk.edu.in"
+    password="pbpy blfh wezb yxxo"
     
     # Setting up the MIME
     msg = MIMEMultipart('alternative')
@@ -40,7 +40,7 @@ def sendEmailFromTemplate(to, subject, template, context):
 
 def getDetails():
     import json
-    with open('login_details.json', 'r') as f:
+    with open('login_details1.json', 'r') as f:
         return json.load(f)
   
 if __name__ == '__main__':
