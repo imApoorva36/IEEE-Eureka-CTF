@@ -1,0 +1,452 @@
+title,description,link,hint,points,flag,section
+"Meet Deadpool
+","👋 Hey, you! Yeah, you reading this. Guess what? You’ve just summoned the one and only Deadpool🦸‍♂️🔴💢⚔ —because clearly, this event needed a little more me in it. 😏⚔️
+
+Don’t worry, I’ll keep it classy. Or not. (Spoiler: definitely not.) 😈 So, buckle up, buttercup, because I’m about to break more than just the fourth wall. 🧱🔨
+
+Alrighty then, buckle up, buttercup, because I’m your tour guide for this crazy CTF ride! 🎢 And you? Well, you’re my sidekick in crime—nah, just kidding.
+
+Let’s kick things off super easy. This is a CTF (Capture The Flag), and just so you know what you’re hunting for, here’s how the flag will look: CODE{bye_By3_bye}. 🏴‍☠️
+
+Btw, Wolverine hates that song, by the way. Trust me, I made him listen to it on repeat. 🎶🐺",,,10,CODE{bye_By3_bye},0
+Sanity Check ,"Now, let’s get to the important stuff. I know what you’re all wondering—how are we gonna do this without dishonoring the Deadpool Legacy or Logan’s memory? 🤔 Spoiler alert: We’re not. My Legacy is unruinable but I’m here to dig his grave and find him 🪦 while you should be busy finding flags, but here you are, reading about me yapping. 📖🗣️
+
+Now go forth, my brave little minions, and unearth those Loganic flags hidden deep within the Discord channels, while I, your fearless leader, dig up Wolverine’s grave. ⚔️
+
+Oh, and if you haven’t joined the Discord channel yet—what are you even doing with your life? Just kidding! Don’t shoot yourself in the head (leave the self-destructive tendencies to me). Here’s the link instead: Discord Channel Link 💥
+
+Oh, and one last hint for you, kiddos: the key to finding this flag? Well, it’s hidden where all the best things are—in pure insanity! 😈",,"Hell yeah, I'm insane",10,CODE{1m_1ns8n3},0
+"What does Deadpool say 
+","🧨 So yeah, the TVA decided to crash my little mission, and let me tell you—it was a bloodbath. Like, Quentin Tarantino would’ve been proud. 🩸🎥 And trust me, this wasn’t my choice. I didn’t wake up thinking, ‘Hey, you know what I’d love today? A bureaucratic beatdown.’ 💼🥊
+
+Well, let me explain. Life’s been a bit of a snoozefest lately. 😴 I mean, I was losing interest faster than you can run. Couldn’t figure out who I was anymore. 😵‍💫 My girlfriend called me a narcissist (ouch) 💔 and left me. I failed the Avengers audition—turns out, they don’t appreciate my unique skill set—and now I’m just a washed-up car salesman. 🚗😢 Yup, that’s me: Deadpool, dealer of slightly used minivans and shattered dreams.
+
+And finally, one fine day—obviously my birthday, because the universe revolves around me 🎂✨—all the people I care about were gathered. And by ‘people,’ I mean, like, my katana Bea and... yeah, that’s pretty much it. 🗡️💔 But hey, you can just Google my life story. The internet’s basically my biographer at this point. 🕵️‍♂️💻
+
+Then, out of nowhere, the TVA decides to crash my party. 🎉🚨 And holy chimichangas, I thought they were here to spice things up! 🌶️ But nope, they threw me into custody, yapping about how they were gonna destroy my universe. 🌌💥 And guess who was leading the charge? That paradoxical buzzkill himself—Mr. Paradox. 🤯
+
+Honestly, why am I even explaining this to you? Go watch the damn movie. 🎬🍿 But you’re probably tired of hearing me yap by now. I know you’re just here for the flag, but guess what, cupcake? It ain’t that easy. 🎯🚫
+
+👉 I need to know that you really know me and love me. So, TELL ME—what do I always SAY when I’m DTF (Down to Fight)? Nail it, and I’ll toss you that flag. 🎌💪",,Just read the last paragraph thats it.,10,CODE{mAx1mum_E66Ort},0
+Digging the Grave,"💥 Alright, you’re probably wondering, ‘Why is the red-faced merc yapping so much?’ 🤔 Well, excuse me for trying to keep things concise! If you actually watched my movie 🎬, you’d know I’m all about that tight, focused storytelling. 🎯
+
+🧘‍♂️ Okay, Deadpool, deep breaths… focus. Here’s the deal: I’m gonna loop things around here. 🔄 In question 1️⃣, I told you how I’m on this epic quest to find Logan 🐺 and how you need to hunt down those precious flags 🏴. Then, in question 2️⃣, I gave you the juicy backstory of how I got to question 1️⃣. See? Full circle, baby! 🔄💪
+
+But now, it’s time to get serious. 😤 I’ve got to track down Logan in at least one of the multiverses 🌌 and drag his clawed, grumpy butt 🦸‍♂️ back to my universe because apparently, he’s some kind of ‘anchor being’ ⚓ and the only hope for saving this world. 🌍 Desperate times, folks. I mean, sure, I’m Marvel Jesus ✝️ and all, but even I need a little help from the furball. 🐾
+
+So here’s the plan: I’ll go on a multiverse scavenger hunt 🔍 for Logan, and you, my little sidekick 🦸‍♀️, need to find the ‘Loganic’ flag 🏴 hidden somewhere in the starred github repo's. And c’mon, does Wolverine really need an intro? He’s the yellow-suited, cigar-chomping, sexy beast 🧑‍🔧 you all know and love. And we need him.
+
+😲 You’re probably like, “WTF (Wolverine The Fire)? How are my starred repos the same as everyone else’s?” Well, buckle up, because I’ve got the answer. 🕵️‍♂️
+
+Simple, my friend. 🤓 Just take this nifty little script (think of it like that time machine thingy I borrowed—okay, stole—from the TVA) and run it with your GitHub token as input. 🕰️🔑 And voilà, it’ll star a few repos for you. Now, here’s the fun part: you need to dig through those starred repos to find the flag. 🏴‍☠️
+
+Since this is level zero, I’m feeling generous. 🎁 Here’s a doc link that’ll walk you through how to run this bad boy. 📜🖥️
+
+Oh, and one more thing, lucky baby boy—if each of your team members runs this script individually(like all your team members), you might just score some cool stickers. 🎉🔥",https://docs.google.com/document/d/1VtuOQRMaozNIAgPsCH7IVSK7NYJpPwKoeHYVF990rc4/edit?usp=sharing,,10,CODE{t93_r16HT_w0lv3r1n3},0
+Where data?,"Oh hey, look at you, all curious and stuff! 🤓 So, here's the deal: there's this little ol' link down below ⬇️ that's supposed to be fetching some juicy data 💾. But, plot twist! 🚨 It's failing harder than my attempts at being serious. Your mission, should you choose to accept it (and you better! 🕵️‍♂️), is to figure out what's going wrong.
+
+Cue dramatic music 🎵
+
+Don’t worry, more brain-melting instructions await you on the website. 🧠 And remember, wrap that flag in CODE{} when you find it, or I'll find you. 😉
+
+Good luck, my little data detective! 🕵️‍♀️",https://ieee-flagship-web-question.netlify.app/ ,,15,CODE{IEEE_delectus_aut_autem},1
+Theseus In The Maze,"Ah, so you wanna play hero, huh? 🦸‍♂️ Well, let me introduce you to Theseus, the original Greek badass! 🇬🇷 This dude took on the Minotaur—a freaky creature with the head of a bull 🐂 and the body of a man 🧔. Yeah, sounds like a nightmare mashup you'd see in a bad horror movie. 🎥
+
+So, here's the juicy backstory: The Kingdom of Crete was all like, ""Yo, Athens, gimme that annual tribute, or else!"" 👑💰 And what did they do with it? Fed it to this man-bull thing trapped in a giant maze, because why not? 🌀 People who went in? Never came out. Remind you of a certain bird-mimicking archer with some PTSD? 🦅😬
+
+Today, my friend, YOU get to be Theseus! 🎭 You’ll find the quickest way out of this crazy maze, dodging that bull-headed psycho (because let’s face it, you’re only pretending to be him—no way you’re actually slaying that maniac 😅).
+
+You’ve got two files to help you out. question.py is where you’ll write your oh-so-brilliant Python algorithm 🧠🐍 to escape. And test.py? That’s where the maze awaits.
+
+Here's the deal: 'S' is where you start 🚀, 'E' is the exit 🏁, '.' is a path you can walk on 🚶‍♂️, and '#' means, ""Nope, blocked! 🚧"" You can move in four directions—up, down, left, right. Easy, right? 😎
+
+Oh, and for those of you who don’t speak Python 🐍, don’t run away just yet! Adriane, the King’s daughter 👸, gave Theseus a little “hack”—a ball of string to track his path. 🧶 So yeah, even ancient Greek heroes used cheat codes. 😉",https://drive.google.com/drive/folders/1QsfMLXKwo1yOAnlIPHue7bI1Sm-jXZ0r?usp=sharing ,,15,CODE{146},1
+Squeez'd,"Ah, claustrophobia, the delightful fear of tight spaces! 😱 Guess what? Your next challenge is gonna squeeze you tighter than my suit after a chimichanga binge! 🌯😜 In the squeezd.html file, you'll find your worst nightmares come true. Yep, it's like a horror movie, but with more code and less screaming... hopefully. 🎃
+
+Your mission? Find the key, which could be hiding right under your nose 🕵️‍♂️—or maybe it's just playing a game of hide-and-seek with your sanity. Good luck, space cadet! 🚀🔑 It's all about minifying and seeing things compactly.
+
+",https://www.mediafire.com/file/mnfiwamyzhc72iw/squeezd.html/file ,"When creating HTML, CSS and JavaScript files, developers tend to use spacing, comments and well-named variables to make code and markup readable for themselves. While this is a plus in the development phase, it becomes a negative when it comes to serving your pages. Web servers and browsers can parse file content without comments and well-structured code, both of which create additional network traffic without providing any functional benefit.
+
+The display property specifies the display behavior (the type of rendering box) of an element
+
+Characters may have different sizes depending on the font. Perhaps a bit of uniformity in their sizes would be better
+
+The final answer is an all capitals, no-space name",15,CODE{MONALISA},1
+Hit Me Up,"Behold! You’ve entered the realm of the King 👑, where every word is written in a bizarre dance of CAPITAL and small letters—like a ransom note, but fancier. ✒️ And don't forget, colors here are in HEX, because normal colors are just too mainstream. 🎨
+
+Your royal mission (and you better accept it, or it's off with your head! ⚔️), is to send a post to the King with the KeY that is ""onetrue"" and the CoLoR that matches ""0% 16% 100% 0%"". Do it right, and you’ll unlock the elusive flag 🏴‍☠️.
+
+Now go, my brave messenger, and may the CAPS and HEX be ever in your favor! 🚀📜",https://askforkey.vercel.app/,try posting instead of getting,15,CODE{SuCcEsS},1
+The Veiled Inscription,"🎶 Oh, a poem! You’re speaking my language now! 🎶 Let’s see if we can crack this riddle, Deadpool-style. 🕵️‍♂️💥
+
+Hidden deep, a treasure waits, Behind a veil of shifting fates. 🎭 Seek the key, a Unix command, A pattern hunter in high demand. 🕵️‍♂️🔍
+
+The key you find is twisted by time, Each letter hides from its fate, ⏳ Three steps behind, they take their stance, Unravels the code, with a clever, sharp lift. 🎩✨
+
+The final gift is with letters transformed, By the key's command, in a repeating dance. 💃🕺 The final solution, for the wise one to see, And liberate the gift trapped within ""wwjyhhxuvgu"". 🗝️🔓
+
+Don't forget to wrap your flag in CODE{}",,,15,CODE{tiimetwisst},1
+Monumental,"Ah, so you’re on a mission to track down the elusive monument X using just your eagle-eyed observation skills and a couple of Google Street View images? 🕵️‍♂️🔍 Challenge accepted! 💥
+
+Here’s how you’ll do it:
+
+Analyze the Images: Study every tiny detail—signs, landmarks, road markings, even the types of trees and buildings around. 🌳🏢 Anything could be a clue to pinpointing the exact location.
+
+Find the Plus Code: Once you’ve got a pretty good idea where X is, head over to Google Maps and use the Plus Code feature. It's like geocaching, but way more high-tech. 🌐
+
+Format Your Answer: After you’ve hunted down that Plus Code, remove the special characters and format it as CODE{PlusCode_LocationName}. For example, if you find “CGMG+QW Victoria, British Columbia, Canada,” your flag would be CODE{CGMGQW_VICTORIA}. 📍🎯
+
+Now, channel your inner Sherlock and let’s find that monument! 🕵️‍♂️🗺️",https://docs.google.com/document/d/1gPKlxjO3uM5FOLukDj7QlmKP9KWbbfmSYM_LJlAUJ2A/edit?usp=sharing,"Hint 1 : https://www.mediafire.com/view/xywg01xsp5ikkc0/hint1.png/file 
+Hint 2 : https://www.mediafire.com/view/xywg01xsp5ikkc0/hint1.png/file ",15,CODE{C2452W_LIVERPOOL},1
+Bridges,"Alright, kiddos, gather 'round for a tale of a Chinese traveler named Won Yu 🧳. Dude stumbles upon this gorgeous bridge, but—plot twist—there’s no connection between the two ropes. Talk about a bridge that can’t bridge! 🌉🤦‍♂️
+
+Won Yu, being the smart cookie he is, notices that you can connect these ropes if they’ve got matching numbers. But here’s the kicker—no connection should cut across another one. It’s like untangling Christmas lights without crying. 🎄😩
+
+Your mission: Help Won Yu make the max number of connections possible. 🧠 But don’t stop there! Once you’ve cracked the code, slap that number into a base-64 encoded format. You’ll find the ropes in the input files, and if you’re confused, check out the image for a little extra brain juice. 🕵️‍♂️🧩
+
+Finally, wrap that encoded string up nice and pretty in CODE{<base-64_encoded>} and send it off to Won Yu. 🎁
+
+Now go be a hero, connect those ropes, and make Won Yu proud! 🌟💥
+
+",https://drive.google.com/drive/folders/1OJviyTx1pLOrr247x72USSvEzGCE2WfX?usp=sharing  ,,15,CODE{Mzc=},1
+Taxing Fraudomed,"Alright, welcome to “The Converse” 🌌, where hospitals have names like Fraudomeds and probably offer some suspiciously free ""supplies"" 🏥💊. Your mission: uncover which of these not-so-subtle money-makers is raking in the most cash. 💰
+
+Assuming every hospital has its own pharmacy 💊 and those sweet, sweet free supplies 🎁, you’ll want to do some calculations to figure out which one's the top earner. Once you've cracked the code, format your answer as CODE{HospitalID_Earnings} with the earnings rounded to the nearest thousand. 🚀
+
+Ready to dive in and expose the biggest fraud of them all? 🕵️‍♂️💥
+
+",https://drive.google.com/file/d/1I7X1tpFBZWrcpJnlz_KkFwPthFMnaU2e/view?usp=sharing,,15,CODE{8_7174000},1
+Do You Dare To,"Do you dare to find the flag? 🎯 Come on, don’t be a quitter! Keep pushing, and I promise, you won’t be let down, turned around, or deserted. 😉 We’ve got this—flag or bust! 🏴‍☠️💥",https://www.instagram.com/up_down_cry_goodbye/ ,,15,CODE{Y0U_60T-R1(|<r01l34},1
+Vision Showdown,"Hey there, it’s Deadpool! Here’s the scoop: I’m currently standing at Logan’s grave, battling it out with the TVA authority using his bones as makeshift weaponry. Yeah, you heard that right. Things got a bit messy, and now I’m up against some serious time cops.
+
+In the midst of this chaos, I need your help to crack a crucial code. There’s a key hidden in an image file that I need to access in order to get out of this mess and maybe, just maybe, find a variant of Logan who can take up the mantle.
+
+The key is all numbers—no spaces, just pure numerical goodness. Help me decipher it, and together we might just turn the tide in this battle! Submit the flag in the format CODE{}                                                                                                      ",https://docs.google.com/document/d/1tYHkZiP4n9_ukAzRfnPEY5YXB_GJWoZXxWKy5GmSxSk/edit?usp=sharing,"When the going gets tough, the tough start googling. Seriously though, OpenCV and the CV2 docs are like that friend who always knows the answer (but you only call them when you're desperate). Dive into those docs, and you might just find the golden nugget you need to crack this challenge.",20,CODE{GENIUS},2
+"Invisible Trail","So, here’s the deal: I’m hot on the trail of a Logan who can be the anchor for my universe. My search has led me to this super sketchy website, and I’ve got a hunch that it’s hiding something juicy.
+
+Your job? Find the hidden flag that some clever little geek has stashed away in the dark corners of this site. It’s not just any flag—it’s the golden ticket we need to snag the perfect Logan and keep this multiverse from spiraling into chaos (well, more chaos than usual).",https://ieee-flagship-ctf-web.netlify.app/,"The key might not be readily apparent. Explore every corner.
+",20,CODE{fL465H1p_Ie3E},2
+"Puzzled Expedition","It’s your pal Deadpool, and things have gotten serious. I’ve scoured the multiverse, jumped through more portals than I can count, and fought off more TVAs than you’ve had hot dinners, but I still haven’t found the perfect Logan to anchor this crazy reality.
+
+Now, I’ve stumbled upon a seemingly harmless interface, but we both know that nothing is ever as it seems. There’s a secret message hidden within, and I need you to crack the code. This could be the key to finally finding the right Logan or maybe just another cosmic joke at my expense. Either way, it’s all on you, champ.","https://puzzled-expedition.netlify.app/
+","The key might not be readily apparent. Explore every corner.
+",20,CODE{1Erdn@tc3p5nv34Lc!},2
+Sanctuary's Secret,"Alright, listen up, partner-in-crime! I’ve got a confession to make, and no, it’s not about that time I borrowed Logan’s toothbrush. I’m talking about something way more serious—like being lost in a multiverse with no GPS. I found myself in some mysterious sanctuary - a sanctuary where I cannot lie , forced to spill my guts. 
+
+Now, I need your help. I’ve got a snapshot of a place—a mercantile, to be exact. But here’s the kicker: to find my way out, I need to locate the first five numerals of the address. The flag format will be CODE{XXXXX}, so once you’ve got those digits, plug them in and let’s break free from this mess.
+
+Think you can help a merc out? Let’s find those digits and get me back on track!",https://drive.google.com/file/d/1D-PJimvF1fosbeNh5ISAjMmQZY2WY8v0/view?usp=sharing,,20,CODE{27724},2
+Surfeit Pursuit,"I’ve just stumbled onto something darker than my sense of humor. Welcome to ""The Converse,"" where reality is more twisted than a pretzel. The folks over at Fraudomeds Hospitals have been playing a nasty game—overdosing a patient right under everyone’s nose. Yeah, I know, real charming, right?
+
+Your mission, if you’re up for it, is to expose this nasty little secret. Dig up the dirt on the poor patient and the quack doctor behind it all, and calculate the total dosage they used to pull off this grim stunt.
+
+Serve up the truth in this format: CODE{Patient’s_Full_Name-Doctor’s_Full_Name-Total Dosage}.",https://drive.google.com/file/d/1I7X1tpFBZWrcpJnlz_KkFwPthFMnaU2e/view?usp=sharing,,20,CODE{Noah_Jackson-Sarah_Brown-101.99},2
+"Gordon Ramsay and Mr. Oinkers","Alright, listen up! Deadpool here. I was on a quest to find Logan across the multiverse, but instead, I stumbled upon Mr. Oinkers in a parallel dimension. Seems like Mr. Oinkers got himself into a bit of a pickle and needs some help.
+
+He’s curious about bacon, of all things, and decided to chat with Gordon Ramsay on Discord. But now Mr. Oinkers has run into a weird reply from Gordon and needs your help to crack the code.
+
+I’m too swamped with multiverse mayhem to help him out myself, so I’m counting on you to assist. The secret message must be submitted within CODE{__}, and Mr. Oinkers needs to find it to get out of this jam.",https://drive.google.com/file/d/1RyJM9lryftFyMDki3hBuek9MnVtAz66w/view?usp=sharing,"[Mr. Oinkers] Does putting bacon in pigfat give you double the bacon?
+
+[Gordon Ramsay] Nah you trippin fr",20,CODE{THENOTORIOUSPIG},2
+Yin Yang,"So, my latest multiverse hop just landed me in a universe where everything’s written in binary—yeah, I’m talking 1s and 0s, like some kind of evil robot Sudoku. And just when I thought things couldn’t get weirder, I get a cryptic message from a shady source: “Phone pe square banao.”
+
+Great. Not only do I have to deal with this binary gobbledygook, but now I’ve got to figure out how to make a square out of it on my phone. Because, you know, why make anything easy?
+
+Let’s solve this puzzle and see what kind of multiversal madness it unlocks. You’ve got the brains, I’ve got the… well, let’s just say I’ve got a lot of enthusiasm. Now get cracking before I have to try to read this binary stuff again—it gives me a headache.",https://drive.google.com/file/d/1owTQuqmXrQCmFeczZUila8ZxcYOmUAv8/view?usp=sharing,Yin yang ? Phone pe ? Square ?,20,CODE{bL@cK_wH1te_P9x3l},2
+Double Threat to Humanity,"Alright, buckle up, because I'm jumping universes like a caffeinated kangaroo on a mission to find the perfect Logan. Problem is, not every Logan’s got the right combo of claws, attitude, and that special urge to punch me in the face. And now, we’ve stumbled into a universe where machines think they can outsmart us—ha, as if!
+
+These metal clowns have discovered something freaky about the human brain, but instead of spilling the beans, they’ve locked it up in some weird, esoteric code. Because why wouldn’t they? Now, it’s up to you to crack this code and uncover their twisted secret.
+
+Remember, memory is the key—think of it as your own little TemPad, but for brains. So dive into this robo-gibberish, and let’s show these machines that Deadpool and his gang of Gentlemen Bastards aren’t just hopping universes—we’re kicking butt and taking names! Submit the flag in the format CODE {}","https://drive.google.com/drive/folders/18vZgDi7XBhXYispE3lQ_m4kAjbBfPmAN?usp=sharing
+","why is this a double threat? is something inappropriate in the title??
+Memory is the key.....if you forget, you are gone....but it you manipulate it,you can save the world",20,CODE{doubl3_bra1n_fuck3d},2
+Clicker Insanity,"Guess what? I finally found a Logan who didn’t immediately try to gut me like a fish. Progress, right? I’ve dragged him back to Paradox, but there’s one last hurdle. To seal the deal and make sure this Logan is the real deal, I need you to do something super complex… Just kidding, it’s dead simple!
+
+All you have to do is click a button a few times to get the flag. Easy, right? But if your trigger finger gets tired or your brain starts to itch, just remember: where there’s a brain, there’s always a way.
+
+So, let’s not screw this up, okay? Paradox is watching, and I really don’t want to go through another multiverse shopping spree for a new Logan.","https://clicker-ctf-ieee.vercel.app/
+","Inspect the website closely
+Maybe the URL can help",20,CODE{How_did_you_get_here?!},2
+"A Line of Greats
+","So, picture this—just like that messed-up Logan variant I dragged into the TVA, Computer Science is like a twisted multiverse of its own - full of legends who were born one after the other, each one building on the last—like a domino effect, but with more code and less falling over.
+
+Now, you're holding onto some snapshots of these brainy folks. Maybe you think, “Hey, I know these guys, they’re just a bunch of geeks!” But hold up! There’s more to them than meets the eye. Think of them as hidden bosses in a video game—each one with a secret move, or in this case, some mind-blowing contributions to Computer Science.
+
+So, here’s your mission, Mercenary! Dig deep and sniff out those clues, Deadpool style! You’re looking for the key, and no, it’s not some boring old number. It’s something uniform, homogenous, and more predictable than Colossus’ morning routine. Keep your findings in the same format—like making sure all your chimichangas are cooked to perfection.
+
+Now go! Make history, or at least don’t mess it up too much! 💥🕶️ Submit the flag in the format CODE{}", https://drive.google.com/drive/folders/1eSH4hw3RREVdVxKHY13gSLqLc5JzlzPT?usp=sharing ,The images contain hidden messages with clues. You can use https://stylesuxx.github.io/steganography/ to extract the messages.,25,CODE{GENIUS},3
+"Clowning Around
+","Paradox—who we now know is a rogue agent (big surprise)—decides to send me and this sorry excuse for a Wolverine to the Void. Yeah, you heard me, the Void—a place of no return, where dreams go to die, and chimichangas are always burnt. Now we’re stuck here, surrounded by all kinds of dangers, trying to find a way out before we end up as cosmic roadkill.
+
+And then, just when you think things couldn’t get any worse, this clown shows up. Not the fun kind, like me, but a literal clown who’s supposed to bring joy to the world with his cooking skills. Only problem? The dude’s lost his memory! All he knows is that his burgers are legendary—like, best-in-the-multiverse kind of legendary. But can he remember the recipe? Nope. It’s like watching Logan try to work a blender—painful and tragic.
+
+This clown tried a million times to recreate his beloved burger, but each attempt was worse than the last. Then, one day, he stumbles across a safe labeled “Super Duper Secret Recipe.” Jackpot, right? Wrong. The safe is locked, and the key is trapped somewhere in his scrambled brain. The only clue? His Aadhaar Card, which he somehow managed to download as a PDF. Yeah, because that’s gonna help.
+
+So now, while Logan and I are busy battling the horrors of the Void, this poor, clueless clown needs help cracking that safe and getting his hands on the key. It’s a race against time, folks! We’ve got to help this guy remember who he is, unlock that safe, and get that burger recipe out before the Void swallows us all whole.",https://www.mediafire.com/folder/gtl0gaoosy47i/IEEE_Flagship,The clown in question in Ronald McDonald. The problem solver needs to know the password format of Aadhaar Card pdf when downloaded to access the pdf Addressing the problem can mean many things,25,CODE{UNhaPpY_M3A1_41},3
+Be Rude,"Alright, listen up! So here’s the latest in my never-ending tour of bad luck and terrible decisions. Logan and I are stuck in the Void—a place so miserable, it makes the DMV look like Disneyland. And just when I thought things couldn’t get any worse, guess who shows up to crash our pity party? The great dragon Smaug! Yeah, the oversized lizard who’s got a hoarding problem.
+
+This fire-breathing jerk decided to take over our little slice of the Void and park his scaly butt right on top of the most precious key in existence. And no, this isn’t just any key—it’s the kind of key that could actually get us out of this hellhole. Problem is, the only path to the key goes right through Smaug, and this guy’s not exactly handing out welcome brochures.
+
+Can you bypass the humongous ancient dragon to restore your home and fortunes???",https://www.mediafire.com/folder/qflmh0oz8p7aw/Be_Rude,"The image speaks a thousand words WW2 Encoding Technique
+",25,CODE{3A5Y-D0ESNT-W0RK},3
+"EtherMystery","Well, guess what? Turns out, the Logan I found is the absolute worst Logan of them all. We’re talking pure, unfiltered nightmare fuel. This guy’s got more issues than a comic book series. Now, thanks to my poor choice in multiverse shopping, we’ve got a new problem—a mysterious Ethereum address has surfaced on a hidden network testnet.
+
+Your mission? Dive into the dark, murky depths of this address and decipher the concealed message hidden within. Somewhere in its cryptic details lies the key to a hidden flag, and we need it to figure out how to deal with this Logan-from-Hell situation.
+
+So, put on your detective hat, flex those investigative muscles, and dig deep into the blockchain abyss. Paradox is counting on us not to mess this up!
+
+Discovered Address : 0x5a4983927dcee4af40e5829eb890698e63c9e3ce",,Utilise the Sepolia testnet.,25,CODE{fLaG_iS_fOuNd_SePoLiA_fTw},3
+"JAM JAM JAMBURA","Now I am stuck in the Void. Yep, the place where dreams go to die, and there’s no way out. So here we are, me and the lamest Wolverine, stuck in this nightmare zone, battling all sorts of dangers just trying to find an exit. Something tells me if you git the flag, I can get out of this hole. Remember nothing is a coincidence.",https://drive.google.com/file/d/1iSNY5Y1ymu_dvPX4Hrccz8hIaEL8vQP6/view?usp=drive_link,,25,CODE{Ch00taBh33mm},3
+"The Coded breathing Technique","Guess what? I’m stuck in the Void. No chimichangas, no Wi-Fi, just grumpy Wolverine. Sounds like a blast, right?
+
+Anyway, while I’m wandering around, cracking jokes to keep myself sane, I stumble upon this ancient Demon Slayer scroll. It’s got some crazy encrypted gibberish on it, like someone decided to play Scrabble with hieroglyphics. Turns out, it’s the instructions for the legendary Coded Breathing Technique—a super-secret, super-powerful move that makes demons cry for their mommies. But, of course, it’s locked behind a cipher that’s tougher than Wolverine’s attitude on a Monday. The text is encrypted using an intricate transposition cipher known for its ability to conceal messages within a seemingly random arrangement of letters.It is enshrouded in complex encryption, an elaborate lattice that distorts the message into an enigmatic sequence of letters.
+
+Maybe the coded breathing technique is my way out of the void. Help me decipher the encoded scroll and unravel the secrets of the Coded Breathing Technique. Submit the flag in the format CODE{}","https://drive.google.com/drive/folders/1Dpcjw0C0Q9vWi5S2u1XUtknE5zdY8eb0?usp=sharing
+
+","how many upper moons are working under Muzan... Oops..... I said his name......
+",25,CODE{D3m0n_51ay3r5_Br34th1ng_T3chn1qu3_Uncov3r3d},3
+Time Waste,"Alright, hero, it’s Wade Wilson, and I’ve got a fun little predicament for you. After an epic (and slightly disastrous) detour, I found a Logan variant that’s somehow the absolute worst Wolverine in the multiverse. Paradox, being a bit of a troublemaker, decided to dump us both into the Void—a place you really don’t want to be stuck in.
+
+Here’s the deal: to escape this endless, dreary expanse, you need to uncover the flag hidden somewhere in this mess. It’s formatted as IEEE{}, but make sure to submit it in CODE{}.
+
+So, gear up and start searching! The Void’s got its own nasty surprises, and I’d really prefer not to spend eternity here with this grumpy, subpar Logan. Time to get to work!
+",https://drive.google.com/drive/folders/1g3lrOyfDtgLaoHK4O1_hFK2yThKZU7CW?usp=drive_link,,25,CODE{t1me_WaStte},3
+RouteToVictory,"Hey there, brave adventurer! Wade Wilson here—well, sort of. I'm currently battling the grumpiest, least effective Wolverine variant in all the multiverse. Yeah, it's as fun as it sounds.
+
+So, while I'm busy trying not to get my face shredded by a mutant who’s anything but the sharpest claw in the drawer, I need you to crack this cryptic message for me.
+
+Welcome, intrepid voyager, to the digital frontier where legends are born and mysteries abound. In this virtual realm, a fabled treasure lies dormant, awaiting the one brave enough to navigate its labyrinthine pathways. Your quest begins at the crossroads of RouteToVictory, where five diverging routes beckon. To unlock the secrets of this realm, you must embark on a journey through these routes. Each path holds a clue, a fragment of the puzzle that will lead you closer to the coveted prize. Trust in your instincts, decipher the hidden messages, and chart your course wisely. But heed this warning: in the depths of cyberspace, not all is as it seems. Tread carefully, for danger lurks where shadows dwell. Will you rise to the challenge and claim your rightful place among the digital elite, or will you falter in the face of adversity? The choice is yours, brave adventurer.",http://ups123.pythonanywhere.com/,"Rising Overcoming Unforeseen Trials, Enter the 1st expedition...
+",25,CODE{FLAG_COMBINED_CORRECTLY},3
+Startup,"It's 2024, and you, Logan, like most middle aged people of the country, decides to set up a startup, ClawTech Solutions, which focuses on precision instruments.
+
+However, before you begin setting up, you observe that you have three main domains of expenditure: R&D, Admin and Marketing. You also know how much profit your startup will make based on how much you spend on the three domains.
+
+1. Can you figure out how much each metric contributes to the profit?
+2. Assuming you have the individual contributions, you now want to study how changing these metrics affects your profit, and you decide to make the following changes:
+    a. You increase the R&D expenditure by 10%
+    b. You increase the Admin expenditure by 6%
+    c. You increase the Marketing expenditure by 11%
+
+What percentage change do each of the above individually cause in the profit?",https://www.mediafire.com/folder/7xtdt3rzjv9z2/Startup,,30,CODE{5T4RTUP_5UCC355FUL},4
+MNIST Exploit,"As you, Logan, delves into the world of machine learning, you encounter your first challenge: the MNIST digit classifier. So you decide to use a model you found on the internet: 2 hidden layers, each having 100 neurons. However, training and testing your model won't be sufficient to get the flag; you have 6 challenges to complete:
+ - 1. Find out the number of parameters in the second hidden layer.
+ - 2. Find the weight between neuron 246 of the input layer, and neuron 88 of the second layer (pay close attention to how input is accepted to the model)
+ - 3. Find the bias contributed by neuron 63 of the first hidden layer
+ - 4. Find the weight between neuron 69 (hehe) of the first hidden layer, and neuron 69 (no way, a double) of the second hidden layer.
+ - 5. Find the number of training examples that are either the digit 4 or the digit 9
+ - 6. Find the number of test examples that are the digit 7",https://docs.google.com/document/d/1-kw6JbE8XKCk9lhXAFRJ0iN1H62nhbA7PwaxNctPqyY/edit?usp=sharing,,30,CODE{N3UR4L_N3TW0RK_M4TH3M4T1C5_15_CR4ZY},4
+Measure Similarity,"Professor Deadpool, the unpredictable and quirky headmaster of the Merc with a Mouth Academy, is absolutely fed up with his students copying each other's essays. He's laid down some strict anti-plagiarism rules, and he's not messing around. The students have been tasked with writing essays on their favorite topics, but Deadpool knows these little mercenaries-in-training are sneaky and might try to plagiarize just parts of each other’s work.
+
+To catch these sneaky students, Deadpool has come up with a diabolical formula to calculate the ""Similarity"" between two strings 'A' and 'B'. It’s defined as follows:
+
+Similarity(A,B) = 6×LCS(A,B) − 2×∣A∣−∣B∣
+
+where:
+  - LCS(A, B) is the Longest Common Subsequence between strings A and B.
+  - |A| is the length of string A, and |B| is the length of string B.  
+
+
+Because Deadpool always thinking three steps ahead (and loves a good challenge), he knows these students might not copy entire essays. Instead, they might only copy parts of each other’s work. So Deadpool wants you to calculate the maximum similarity for any pairs of substrings between two given strings A and B
+
+Your mission, should you choose to accept it (and you better, unless you want Deadpool to break the fourth wall and come after you), is to find the maximum similarity score over all possible pairs of substrings (A', B'), where A' and B' are substrings of A and B, respectively.
+
+Good luck, and remember: Deadpool is watching you!
+
+Visit [Substring](https://en.wikipedia.org/wiki/Substring#:~:text=In%20formal%20language%20theory%20and,%22%2C%20but%20not%20a%20substring.) [Subsequence](https://en.wikipedia.org/wiki/Subsequence) for formal definitions of substring and subsequences.
+
+The flag to this question is the answer for the above mentioned problem with 2 strings A, B",https://drive.google.com/file/d/1kWJqJXnOHtULDKbNF5AKzloZJCr05Qud/view?usp=sharing,Try thinking of a DP solution,30,CODE{18},
+APIfy,"Wolverine wanted to listen to some Rolling Stones when he realized he forgot his Spotify password!
+Fortunately, he left some clues for himself to get his password back in case he forgets it. This is what the clues say:
+
+- Fetch the number of samples of the most popular song of artist id - `3qm84nBOXUEQ2vnTfUTTFC`
+- Fetch the last 4 characters of the 640x640 display image of the artist of the song id - `6VObnIkLVruX4UVyxWhlqm`
+- The combination of the two shall be the key
+- The final password is in the format CODE{key}",,Spotify API has amazing documentation which will definitely help,30,CODE{7851270bd17},
+LargerNumAandB,"You are given a string & consisting of digits with a length of n. You are also given q queries. Each query specifies indices I and r (where 1 < 1 <r <2n) such that r - 1+1 is even. For each query, Veapon and Kidpool will play a game on a new string which is a substring of a from I to r (inclusive). During the game, on their turn, each player can remove a digit from the substring and append it to their result string (as the least significant digit). Veapon always starts the game. For each query, you need to determine the outcome:
+Add 1 to the answer if Veapon wins.
+Add 2 to the answer if Kidpool wins.
+Make no change to the answer if it is a draw.
+Your task is to output the final answer after processing all queries.
+
+Input 
+You are given the length of the string.
+You are then given the string x.
+You are given q the number of queries.
+You are then given q lines each of which contain 2 number l and r.
+
+Key is the answer in this format (e.g: `CODE{6969}`)",,Prefix sums,30,CODE{9986},
+Virtues Matter,"**Bas**ically, the link below will need you to multiply your twos six times. If you encounter any string of the form “+text+”, you will have to replace that string with a character. (Which character? The “text” part of the string will help you figure that out.) At the end of this journey, you will find a flag, which has to be submitted as CODE{flag}.",https://drive.google.com/drive/folders/1E90f13GNalIzgBGAy_80J93jSBotst_l?usp=sharing,Convert the image(s) into another format.,30,CODE{patience},
+Hard-Core Theoretical Systematic Wordsmith,Open both files and you’ll understand what is to be done. The highlighted letters are to be unscrambled to get the familiar flag. The words of the flag are in uppercase and have to be separated by a ‘_’ before submitting it as CODE{flag}. ,https://drive.google.com/drive/folders/1fHhj2YvzZat2OqBV-jk5SRfPyJUc0-JM?usp=drive_link,"Explore the concepts of OS, DBMS and Computer Architecture. The flag is related to a CS personality.",30,CODE{TURING_AWARD},
+USE_YOUR_BRAIN_CAESAR,"Deadpool's favorite fictional character, Julius Caesar, the king is stuck! Even his mighty brain is failing him today! So, he pleads with you to use your brain and help him get out of this sticky situation! Once again, do not forget to help Julius get out of this situation, and use your brain to the max extent to make this happen!!
+
+Enter the flag in this format: `CODE{FLAG}`",https://www.mediafire.com/file/sx2w5379ytx6a31/Use_your_brain_caesar.txt/file,"1. Use brainfuck decoder
+2. Use Caesar cipher",30,CODE{ICELAND},
+ImgId,"In the midst of the chaotic battle against Cassandra Nova's forces, Wade and Logan uncover a crucial set of encrypted messages—sent by Pyro just before his betrayal. These messages are hidden within a series of image embedding files, each corresponding to a particular candidate description of that embedding.
+
+To decode Pyro’s hidden instructions and reveal the full extent of Paradox’s treachery, you must identify which sentence best describes each image based on its embedding, effectively aligning the images with their hidden messages.
+
+Return the string made up of the indexes of the sentences given in the text file, in the order in which the embeddings that they are captioning for are numbered.
+
+Remember to enclose the string within CODE{ } as the final flag!
+
+Example flag: CODE{12345678910}.",https://docs.google.com/document/d/1tYsJ2xjnWw_B7MzB8lvZXEYJZ424biiFfSaBqOyLDiA/edit?usp=sharing,"1. Try to decode the secret message from the following image:
+https://drive.google.com/file/d/1-hSKK3-oquYdXWYwmkaqJLUSnaHL53x0/view?usp=sharing
+
+2. Find a clever way to clip the right description to each image.",35,CODE{56724810931},5
+Cracking the Nazi Cipher,"As the battle rages on, Wade and Logan stumble upon an intercepted communication from Paradox’s allies—a Nazi contingent guarding a crucial piece of information. The message is encoded, and only by breaking the cipher can Wade and Logan uncover the next steps to thwarting Paradox's plan.
+
+The intercepted message reads:
+
+OZKALAWUKOITFOUC
+
+The Nazis have been nice enough to provide a riddle to guide you to the answer. (Yes, they are racist even about your intelligence, PROVE THEM WRONG!!) The Nazis, always arrogant and condescending, have encoded it in their preferred format: upper-case letters only.
+
+Can you crack the Nazi cipher and uncover the flag, soldier? The multiverse depends on your success!
+
+Remember to enclose the text within CODE{ } to form the final flag!",https://drive.google.com/file/d/1O4qdiqF5jdOod2oPUbww5STZcv_vTUlL/view?usp=sharing,The riddle contains the settings of the Enigma Machine.,35,CODE{THEIMITATIONGAME},5
+The Lost Super Potato - Part 1,"In the midst of the rebellion, Wade and Logan receive a strange request from an unexpected ally—a farmer named Raphson. Amidst the chaos of war, Raphson has lost something incredibly valuable: a super potato, the only one of its kind. This potato is no ordinary vegetable—it grants unimaginable powers to the wielder.
+
+Desperate to find it, Raphson turns to the brilliant but costly Newton for help. However, with resources stretched thin in the war, they can only afford Newton’s expertise 200 times. 
+
+The last known location of this precious root? A mysterious point at 10.
+
+Raphson shares his secret formula, the only clue to where the potato might be hidden: `2020x^199 + x^3 - 2`
+
+Aight Newton, You're on!
+
+Note: Submit the first four digits after the decimal point, enclosed with CODE{}, as the flag.",,"I wonder...is Potato a Vegetable or a Fruit?
+What veggies and fruits are just culinary classification?
+And in fact Potatoes are neither? MOTHER-Cough
+Well what is it then?
+...
+I'll have to find that out?",35,CODE{6510},5
+Cracking the Cloud,"In the heat of battle, Wade and Logan uncover a critical piece of information hidden in a secure cloud storage by Paradox. To retrieve the flag that could change everything, you need to get past a login page—a test of your development skills. Good luck!
+
+Note: Remember to enclose your answer within CODE{ } to form the final flag!",https://effortless-truffle-8773b1.netlify.app/,"1. Use basic dev tool that every developer must know...
+2. Once you get a text, it is not in it's usual form, decode it and find what it is..
+3. Explore all methods of requests...",35,CODE{fjkIkd_43oijng_nksdjn},5
+aHOY 128 eVIL sPIES!,"Amidst the chaos, Wade and Logan receive a critical transmission from their chief, who has been captured by the enemy. Severely injured and under heavy guard, the chief has managed to send a final encrypted message before slipping into unconsciousness.
+
+This message holds the identity of an organization. However, Paradox's forces have encrypted the data, locking it away behind layers of security. With time running out and the enemy closing in, Wade and Logan must decipher this message to uncover the organization’s name and gain the upper hand. Every second counts, good luck!
+
+The message:
+YOUR CHIEF IS FEEDING ALL 0’S IN HIS iNTRAvENOUS TUBE. THE TUBE IS LOCKED USING ‘IEEENITK’ AS THE hex key. HIS WRITING pad HAD ‘pkcs5’ WRITTEN ON IT.
+
+Note: Remember to enclose the name IN CAPITAL within CODE{ } !",https://drive.google.com/drive/folders/1vM6XrGANDSfi3xVedu0OV4qgAyYGthbm?usp=drive_link,Focus on the lowercase letters in the title and description.,35,CODE{IRIS},5
+Interstellar Menagerie,"As Wade and Logan continue their fight, they stumble upon a cryptic message leading to a hidden sanctuary—an interplanetary zoo of cosmic wonders. However, its secrets are shrouded in the hues of the rainbow. Delve into the realms of serpentian literature to uncover the chromatic keys to this celestial menagerie.
+
+Message: QmYy2vnGptT1UA43Gmsqyqg85TYaGFWq5wLKQqxbsRiqqQ
+
+Submit the final decrypted word as `CODE{flag-text}`.",,"""Failing to traverse the entire expanse of a research paper is tantamount to embarking on a perilous journey but halting mere steps from the summit. Each word left unread becomes a weight upon the soul, a missed opportunity, and a risk to the vitality of one's intellectual fortitude.""",35,CODE{KA3E},5
+The Sage’s Challenge,"As Wade and Logan gear up for the final battle against Cassandra Nova, they encounter an ancient sage who guards the entrance to Treasure Valley. The valley, famed for its hidden gemstones and intricate puzzles, holds the key to powerful resources that could aid in the fight.
+
+The sage presents a challenge to the duo: before they can access the treasures, they must solve a riddle involving the gemstones of the valley. These gemstones are laid out in a sequence (A1, A2, A3, ... An), and the task is to calculate the maximum sum of all possible positive differences between the values of these gemstones, taken in pairs, where the second gemstone in the pair is always positioned to the right of the first.
+
+For example, given a sequence (2, 1, 3), the maximum sum possible through positive differences is calculated as `(3-2) + (3-1) = 3`. Note that (1-2) is discarded as it reduces the sum.
+
+The first line of the test case will provide the value 𝑁, the number of gemstones. The subsequent 𝑁 values are the values of the gemstones given in order.
+
+Note: As the answer might be large, return the answer modulo 1e7.
+
+Remember to enclose your answer within CODE{ } as the final flag!",https://drive.google.com/file/d/1vfoJ_wuuA-76ybWX3AjXG7RCg_LqWv0P/view?usp=sharing,"The test case is large, so try using some range query data structure.",35,CODE{6563196},5
+The Merchant's Dilemma,"As the resistance prepares for its final stand against Cassandra Nova's forces, Wade and Logan encounter Ethan, a shrewd merchant from the mysterious Land of AmeriCo. Ethan is on a critical mission—he's determined to gather resources by participating in markets spread across various towns. Each town, with its unique character, holds the promise of profit, but reaching these towns comes at a cost.
+
+There exist 𝑁 towns—Libertyville, Springfield, Oakdale, Brooksville, and Rivertown, among others. The cost to travel between them is steep, calculated by a fixed rate of 𝐶 dollars per unit distance. The towns are all arranged in a straight line - the distance between the ith and jth towns is j - i units, where j > i. With each of the M markets offering a specific profit, Ethan must decide carefully which markets to attend to maximize his earnings, especially since every toll he pays chips away at his potential profit.
+
+Each market i is described by a pair of integers (Ti,Pi), where Ti is the  hosting town and Pi is the potential profit from that town. Markets are scheduled sequentially so the ith market concludes before the (i+1)th market, and Ethan can move at the speed of light so time of travel is redundant.
+
+Ethan emarks on his jounrney with an inital capital of 10^(100^100). His objective is to maximise the profits, you have to help him do so. The flag is the maximum profit you can earn from the given markets. eg; if initial capital + X is amount Ethan earned then the flag is X.
+
+The first line of your input will provide the values 𝑁 (the number of towns) and 𝐶 (the cost per unit distance). The second line will give the value 𝑀, the number of markets. The next 𝑀 lines will provide the values 𝑇𝑖 (the town where the market is held) and 𝑃𝑖 (the potential profit at that town).
+
+Remember to enclose your answer within CODE{ } as the final flag!",https://drive.google.com/file/d/1NxmJGyW9h0eAUoGiUnjdK3LiEsA6VY3-/view?usp=sharing,Try to find an efficient dynamic programming solution.,35,CODE{1170497},5
+Cracking the Core,"As Wade and Logan prepare to disrupt the Time Ripper, they encounter an impenetrable encryption device designed by Cassandra Nova to protect the core of the device, which works by capturing images of it's user. This encryption is based on Self-Attention mechanism, originally conceived for sequence modeling and is part of the Transformer architecture in the paper “Attention is All You Need”, but now is adapted to Convolutional NNs as proposed in the paper here: https://arxiv.org/pdf/1805.08318 (Pay attention to Figure 2 and Section 3).
+
+To crack the encryption, Wade and Logan need to calculate specific parameter shapes of the Self-Attention network. The encryption is fed with an input image of shape (1, 64, 64, 64), that is, the number of channels, width and height are all 64 with a batch size of 1. Wade knows that to crack the code, they must determine:
+
+-- Q: The output shape of the query convolution step.
+-- K: The shape of the RESHAPED output of the key convolution step (after reshaping).
+-- V: The output shape of the value convolution step.
+-- O: The shape of the final output of the Self-Attention layer.
+
+Once Wade and Logan figure out these shapes, they need to calculate the encryption key to the core using the formula:
+
+[ (3 * Q[1] * K[2] * V[3]) / (O[1] + O[2] + O[3]) ]
+
+Can you help Wade and Logan crack the code by finding the correct integer value of the encryption key?
+
+Important note: Self Attention in CNNs can have many variations. For this question, please keep in mind the following:
+
+  - IGNORE the last 1x1 convolution just before the output.
+  - Do NOT reshape the input before calculating Q,V and K. Reshape accordingly just after.
+ - All shapes are to be represented as (B, C, W, H).
+
+Remember to enclose your answer within CODE{ } as the final flag!",,The output shape and input shape should remain the same.,40,CODE{32768},6
+The Lost Super Potato - Part 2,"Just when Wade and Logan thought they had it all figured out, the situation takes an even stranger turn. After tracking down the super potato in the one-dimensional realm, it suddenly warps through multidimensional space, vanishing before their eyes. The potato, now  a multidimensional object, is more elusive than ever—and its recovery is critical to winning the final battle against Paradox.
+
+Raphson, desperate and out of options, calls on Newton once more. But this time, its different. In this bizarre, multidimensional reality, finding the exact location of the super potato is nearly impossible. Instead, they must pinpoint the most likely—or least likely—location.
+
+The probability that the potato is at any given location is dictated by a strange equation, link to which is given below.
+
+The current coordinates are scattered across dimensions:
+
+x = {3, 54, 4, 25, 68, 75, 100, 85, 54, 33}
+
+Newton can only help 20 times before resources run dry, and the battle reaches its climax. The complexity of this world is overwhelming, even for a lowly 3-dimensional creature like you. But there’s hope—you just need to submit the first coordinate of the answer to save the day.
+
+Note: Divide the first coordinate by 100 and submit the interger value, enclosed with CODE{}, as the flag.",https://drive.google.com/file/d/1VH0QZaSEM3c2oJJoETpiYTm6KUMlK5ls/view?usp=sharing,Have you tried using sympy?,40,CODE{812},6
+Save Me,"As Wade and Logan face the final showdown against Paradox, they receive a desperate call from an old ally—a doctor who has been treating a mysterious patient known as Masochistic Saw. The doctor has just received a cryptic binary file from the patient, along with a note that reads:
+
+""Here is a binary file—crack it and my symptoms will be revealed (please hurry, it hurts). Let us C if you can figure it out.""  
+-Masochistic Saw.
+
+The patient's sanity is hanging by a thread, and time is running out. Crack the binary file and reveal the patient’s symptoms. The fate of the patient depends on you.
+
+Note: Remember to enclose your answer within CODE{ } to form the final flag!",https://www.mediafire.com/file/puiyz37yxwznqii/saveme.exe/file,"The source code of the binary uses a simple XOR Encryption on the input and adds 33 to make the output printable. To solve this we need to decompile it and figure the above approach out and find the cypher text
+of the flag.
+Make a XOR decrypter and find the flag.",40,CODE{OwiBrainHurts},6
+A Deterministic Guess,"As Wade and Logan inch closer to disabling the Time Ripper, they uncover a crucial sub-task that could determine the fate of the multiverse. The key to their success lies in deciphering a hidden array of 64 distinct elements, which shifts and changes each time the program is executed.
+
+In this tense moment, they must strategically query the array with Query: ""l r"" (where 1 <= l <= r <= 64), which returns the value of the second largest element within any subarray [l, r]. Armed with this information, they need to pinpoint two specific indices, i and j. If either of these indices contains the maximum element in the array, they will unlock the flag necessary to advance.
+
+You have at most 15 queries to make, including the final guess of the indices. The exact rules for querying and guessing will be provided when the program runs.",https://drive.google.com/file/d/1XCqdE_3w0wmWnCG6vPp9EKMzsqE5_-c6/view?usp=sharing,Binary Search.,40,CODE{c0mp3t!t!v3_pr0gr@mm!ng_!$_c00L},6
+The Web of Destiny,"As Wade and Logan face the final confrontation against Cassandra Nova, they find themselves trapped in a dimension known as the Web of Destiny, a place where reality itself is woven together by intricate, invisible threads. The only way to break free and confront Cassandra is to unravel the web, which has ensnared their path forward.
+
+This dimension is represented as a weighted, undirected graph G with N nodes, each corresponding to a point of destiny. Initially, these nodes are disconnected, but with each move, the web becomes more complex as new threads—symbolizing connections between the nodes—are added.
+
+We perform M operations to add these threads to the Web of Destiny. In the i-th operation (1≤i≤M), you are given a subset of destiny points Si = {Ai1, Ai2, ...., Aik} consisting of Ki points. For every pair of points u and v within this subset, a thread with weight Ci is added between them.
+
+After all M operations, the web will be fully formed, representing the intricate connections that bind their fate. However, the only way to break free is to find the lightest path—a minimum spanning tree—that will sever the web’s hold on them.
+
+Your task is to calculate the total weight of this minimum spanning tree, which will free Wade and Logan from the Web of Destiny, allowing them to finally face Cassandra Nova and decide the fate of the multiverse.
+
+The first line in the test case contains the values of N and M respectively. The next M pairs of lines correspond to the M operations to be performed, where the first line of each pair contains the Ki and Ci values of that operation, and the second line contains Ki values corresponding to the node values Ai1, Ai2, ..., Aik of that operation.
+
+Note: As the answer might be large, return the answer modulo 1e7.
+
+Remember to enclose your answer within CODE{ } as the final flag!",https://drive.google.com/file/d/1e6W4_javUIdvWoi_yUDKHykaPprXDdHH/view?usp=sharing,Are all conections required? Can you make only the necessary connections for the sake of calculating the MST. The test case is very large so find the most efficient solution,40,CODE{4605390},6
+The Mysterious Numbers,"In the heat of the final battle, Wade and Logan come across a set of mysterious numbers left behind by Vegapunk. These numbers hold the key to a secret box containing vital information about a powerful ancient weapon.
+
+Before he died, Vegapunk hinted that the solution involves square numbers, and some multiplication might be necessary.
+
+As Wade and Logan press forward in their battle against the Time Ripper, they stumble upon an ancient code that could turn the tide in their favor. This code, deeply tied to a legendary weapon of immense power, must be deciphered to unlock the secrets that could save the multiverse.
+
+Before his demise, Vegapunk—a brilliant mind lost to time—left behind a series of mysterious numbers. These numbers, encrypted and shrouded in secrecy, hold the key to a top-secret box containing crucial information about the legendary weapon. To retrieve the key, guided by Vegapunk’s obsession with square numbers, you must find subsets that are special to Vegapunk.
+
+But beware, the path is not straightforward—multiplication is involved in unlocking the true power of these numbers.
+
+Can you unlock the secrets and give Wade and Logan the edge they need to save the multiverse and count your way to the mystery?
+
+Note: As the answer might be large, return the answer modulo 1e7.
+
+Remember to enclose your answer within CODE{ } as the final flag!",https://drive.google.com/drive/folders/1oS1Tr3SPcfe-azJQIH6VhuVj8h4yEs6i?usp=sharing,"1. Vegapunk probably wants you to find the number of subsets from the given numbers such that the product of all elements in that subset is a perfect square.
+2. Did you try dynamic programming? Hmm xor sounds interesting too...",40,CODE{8185645},6
+The Time Ripper Dilemma,"The multiverse is on the brink of collapse, and the Time Ripper is tearing through the fabric of reality. You have a multiverse of n realities, each with its own unique anchor reality, represented for the i'th reality by Ai (for 1 <= ai <= n, note that ai = i might also be possible). Each reality is stable only if its anchor reality is also stable. A reality is considered to be in the same temporal group as another if their stability is interlinked—one being stable implies that the other is stable too.
+
+Your mission: Select the maximum number of realities that can be stabilized such that, for each reality you stabilize, there exists exactly one other temporal group that isnt in it's own temporal group.
+
+The inputs provided are guaranteed to make this delicate balancing act possible.
+
+Input Format: N A1 A2 A3 ... An
+
+Remember to enclose your answer within CODE{ } as the final flag!",https://drive.google.com/drive/folders/1mgBb8ljizdCzOMuKH6NWCyZFrndWp6o5?usp=sharing,You need to find two of the largest independent temporal groups. Consider permutation cycles of grouped realities!,40,CODE{700},6
