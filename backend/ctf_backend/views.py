@@ -159,7 +159,7 @@ class SectionViewSet(viewsets.ModelViewSet):
     def create(self,request): # Basically to handle POST Requests
         return Response("Nope",status=status.HTTP_404_NOT_FOUND)
     def list(self, request):
-        sections = Section.objects.all()
+        sections = Section.objects.all().order_by('section')
         serializer = self.get_serializer(sections, many=True)
         return Response(serializer.data)
 
@@ -171,7 +171,9 @@ class ScoreboardViewSet(viewsets.ModelViewSet):
         return Response("Nope",status=status.HTTP_404_NOT_FOUND)
     def list(self, request):
         user = request.user
-        teams = Team.objects.all()
+        # get the top 10 teams by score except team id 1
+        teams = Team.objects.all().order_by('-score')
+        teams = [team for team in teams if team.id != 1]
         scores = []
         for team in teams:
             scores.append({'team': team.name, 'score': team.score})
