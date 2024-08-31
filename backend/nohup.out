@@ -1,0 +1,464 @@
+Performing system checks...
+
+System check identified no issues (0 silenced).
+Error: That port is already in use.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 31, 2024 - 03:31:35
+Django version 4.2.10, using settings 'backend.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+[31/Aug/2024 03:31:40] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4185
+[31/Aug/2024 03:31:41] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4185
+[31/Aug/2024 03:31:41] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4185
+[31/Aug/2024 03:41:08] "GET /api/teams/ HTTP/1.1" 200 6722
+[31/Aug/2024 03:41:10] "GET /api/team/ HTTP/1.1" 401 183
+[31/Aug/2024 03:41:10] "GET /api/sections/ HTTP/1.1" 401 183
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/backends/postgresql/base.py", line 25, in <module>
+    import psycopg as Database
+ModuleNotFoundError: No module named 'psycopg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/backends/postgresql/base.py", line 27, in <module>
+    import psycopg2 as Database
+ModuleNotFoundError: No module named 'psycopg2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    autoreload.raise_last_exception()
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/core/management/__init__.py", line 394, in execute
+    autoreload.check_errors(django.setup)()
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/apps/registry.py", line 116, in populate
+    app_config.import_models()
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/apps/config.py", line 269, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/contrib/auth/models.py", line 3, in <module>
+    from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/contrib/auth/base_user.py", line 57, in <module>
+    class AbstractBaseUser(models.Model):
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/models/base.py", line 143, in __new__
+    new_class.add_to_class("_meta", Options(meta, app_label))
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/models/base.py", line 371, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/models/options.py", line 243, in contribute_to_class
+    self.db_table, connection.ops.max_name_length()
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/utils/connection.py", line 15, in __getattr__
+    return getattr(self._connections[self._alias], item)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/utils/connection.py", line 62, in __getitem__
+    conn = self.create_connection(alias)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/utils.py", line 193, in create_connection
+    backend = load_backend(db["ENGINE"])
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/utils.py", line 113, in load_backend
+    return import_module("%s.base" % backend_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/backends/postgresql/base.py", line 29, in <module>
+    raise ImproperlyConfigured("Error loading psycopg2 or psycopg module")
+django.core.exceptions.ImproperlyConfigured: Error loading psycopg2 or psycopg module
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/backends/postgresql/base.py", line 25, in <module>
+    import psycopg as Database
+  File "/home/fctf/.local/lib/python3.10/site-packages/psycopg/__init__.py", line 9, in <module>
+    from . import pq  # noqa: F401 import early to stabilize side effects
+  File "/home/fctf/.local/lib/python3.10/site-packages/psycopg/pq/__init__.py", line 118, in <module>
+    import_from_libpq()
+  File "/home/fctf/.local/lib/python3.10/site-packages/psycopg/pq/__init__.py", line 110, in import_from_libpq
+    raise ImportError(
+ImportError: no pq wrapper available.
+Attempts made:
+- couldn't import psycopg 'c' implementation: No module named 'psycopg_c'
+- couldn't import psycopg 'binary' implementation: No module named 'psycopg_binary'
+- couldn't import psycopg 'python' implementation: libpq library not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/backends/postgresql/base.py", line 27, in <module>
+    import psycopg2 as Database
+ModuleNotFoundError: No module named 'psycopg2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    autoreload.raise_last_exception()
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/core/management/__init__.py", line 394, in execute
+    autoreload.check_errors(django.setup)()
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/apps/registry.py", line 116, in populate
+    app_config.import_models()
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/apps/config.py", line 269, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/contrib/auth/models.py", line 3, in <module>
+    from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/contrib/auth/base_user.py", line 57, in <module>
+    class AbstractBaseUser(models.Model):
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/models/base.py", line 143, in __new__
+    new_class.add_to_class("_meta", Options(meta, app_label))
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/models/base.py", line 371, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/models/options.py", line 243, in contribute_to_class
+    self.db_table, connection.ops.max_name_length()
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/utils/connection.py", line 15, in __getattr__
+    return getattr(self._connections[self._alias], item)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/utils/connection.py", line 62, in __getitem__
+    conn = self.create_connection(alias)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/utils.py", line 193, in create_connection
+    backend = load_backend(db["ENGINE"])
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/utils.py", line 113, in load_backend
+    return import_module("%s.base" % backend_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/backends/postgresql/base.py", line 29, in <module>
+    raise ImproperlyConfigured("Error loading psycopg2 or psycopg module")
+django.core.exceptions.ImproperlyConfigured: Error loading psycopg2 or psycopg module
+Performing system checks...
+
+System check identified no issues (0 silenced).
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/backends/postgresql/base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+  File "/home/fctf/.local/lib/python3.10/site-packages/psycopg/connection.py", line 119, in connect
+    raise last_ex.with_traceback(None)
+psycopg.OperationalError: connection failed: connection to server at "13.71.39.148", port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+could not send SSL negotiation packet: Success
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/core/management/commands/runserver.py", line 136, in inner_run
+    self.check_migrations()
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/core/management/base.py", line 574, in check_migrations
+    executor = MigrationExecutor(connections[DEFAULT_DB_ALIAS])
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/migrations/executor.py", line 18, in __init__
+    self.loader = MigrationLoader(self.connection)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/migrations/loader.py", line 58, in __init__
+    self.build_graph()
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/migrations/loader.py", line 235, in build_graph
+    self.applied_migrations = recorder.applied_migrations()
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/migrations/recorder.py", line 81, in applied_migrations
+    if self.has_table():
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/migrations/recorder.py", line 57, in has_table
+    with self.connection.cursor() as cursor:
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/backends/base/base.py", line 330, in cursor
+    return self._cursor()
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/backends/base/base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/backends/base/base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/fctf/.local/lib/python3.10/site-packages/django/db/backends/postgresql/base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+  File "/home/fctf/.local/lib/python3.10/site-packages/psycopg/connection.py", line 119, in connect
+    raise last_ex.with_traceback(None)
+django.db.utils.OperationalError: connection failed: connection to server at "13.71.39.148", port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+could not send SSL negotiation packet: Success
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 31, 2024 - 06:00:50
+Django version 4.2.10, using settings 'backend.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+[31/Aug/2024 06:01:18] "GET /admin HTTP/1.1" 301 0
+[31/Aug/2024 06:01:18] "GET /admin/ HTTP/1.1" 302 0
+[31/Aug/2024 06:01:18] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4185
+[31/Aug/2024 06:01:32] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[31/Aug/2024 06:01:33] "GET /admin/ HTTP/1.1" 200 7583
+[31/Aug/2024 06:01:43] "GET /admin/ctf_backend/section/add/ HTTP/1.1" 200 11137
+[31/Aug/2024 06:01:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[31/Aug/2024 06:02:48] "POST /admin/ctf_backend/section/add/ HTTP/1.1" 500 145
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 31, 2024 - 06:20:33
+Django version 4.2.10, using settings 'backend.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+[31/Aug/2024 06:20:36] "GET /admin/ctf_backend/section/ HTTP/1.1" 200 15076
+[31/Aug/2024 06:20:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[31/Aug/2024 06:23:53] "GET /admin HTTP/1.1" 301 0
+[31/Aug/2024 06:23:53] "GET /admin/ HTTP/1.1" 200 9780
+[31/Aug/2024 06:25:13] "GET /admin HTTP/1.1" 301 0
+[31/Aug/2024 06:25:14] "GET /admin/ HTTP/1.1" 200 9780
+[31/Aug/2024 06:41:16] "GET /admin HTTP/1.1" 301 0
+[31/Aug/2024 06:41:19] "GET /admin/ HTTP/1.1" 200 9780
+[31/Aug/2024 06:43:17] "GET /admin HTTP/1.1" 301 0
+[31/Aug/2024 06:43:17] "GET /admin/ HTTP/1.1" 200 9780
+[31/Aug/2024 06:43:32] "GET /admin/auth/user/ HTTP/1.1" 200 11940
+[31/Aug/2024 06:43:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[31/Aug/2024 06:43:37] "GET /admin/auth/user/add/ HTTP/1.1" 200 11515
+[31/Aug/2024 06:43:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[31/Aug/2024 06:44:04] "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+[31/Aug/2024 06:44:05] "GET /admin/auth/user/2/change/ HTTP/1.1" 200 22629
+[31/Aug/2024 06:44:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[31/Aug/2024 06:44:38] "GET /admin/ctf_backend/team/ HTTP/1.1" 200 8413
+[31/Aug/2024 06:44:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[31/Aug/2024 06:44:41] "GET /admin/ctf_backend/team/add/ HTTP/1.1" 200 14507
+[31/Aug/2024 06:44:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[31/Aug/2024 06:45:19] "POST /admin/ctf_backend/team/add/ HTTP/1.1" 302 0
+[31/Aug/2024 06:45:19] "GET /admin/ctf_backend/team/ HTTP/1.1" 200 11004
+[31/Aug/2024 06:45:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[31/Aug/2024 06:45:30] "POST /api/token/ HTTP/1.1" 200 483
+request:  <rest_framework.request.Request: GET '/api/team/'>
+[31/Aug/2024 06:45:32] "GET /api/team/ HTTP/1.1" 200 139
+[31/Aug/2024 06:45:32] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 06:46:32] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 06:46:33] "GET /api/attempts/ HTTP/1.1" 200 2
+[31/Aug/2024 06:46:33] "GET /api/questions/?category=1 HTTP/1.1" 200 2
+[31/Aug/2024 06:47:14] "GET /admin HTTP/1.1" 301 0
+[31/Aug/2024 06:47:14] "GET /admin/ HTTP/1.1" 200 10353
+[31/Aug/2024 06:48:40] "GET /admin HTTP/1.1" 301 0
+[31/Aug/2024 06:48:40] "GET /admin/ HTTP/1.1" 302 0
+[31/Aug/2024 06:48:40] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4185
+request:  <rest_framework.request.Request: GET '/api/team/'>
+[31/Aug/2024 07:16:36] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 07:16:36] "GET /api/team/ HTTP/1.1" 200 139
+request:  <rest_framework.request.Request: GET '/api/team/'>
+[31/Aug/2024 07:18:05] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 07:18:05] "GET /api/team/ HTTP/1.1" 200 139
+[31/Aug/2024 07:24:50] "GET /admin HTTP/1.1" 301 0
+[31/Aug/2024 07:24:51] "GET /admin/ HTTP/1.1" 200 10353
+[31/Aug/2024 07:24:59] "GET /admin/ctf_backend/question/ HTTP/1.1" 200 8441
+[31/Aug/2024 07:25:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[31/Aug/2024 07:25:02] "GET /admin/ctf_backend/question/add/ HTTP/1.1" 200 13482
+[31/Aug/2024 07:25:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Unauthorized: /api/token/
+[31/Aug/2024 11:13:33] "POST /api/token/ HTTP/1.1" 401 63
+Unauthorized: /api/token/
+[31/Aug/2024 11:35:16] "POST /api/token/ HTTP/1.1" 401 63
+Unauthorized: /api/token/
+[31/Aug/2024 11:59:21] "POST /api/token/ HTTP/1.1" 401 63
+[31/Aug/2024 13:34:24] "GET /admin/ HTTP/1.1" 200 10353
+request:  <rest_framework.request.Request: GET '/api/team/'>
+[31/Aug/2024 13:34:32] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 13:34:32] "GET /api/team/ HTTP/1.1" 200 139
+[31/Aug/2024 13:34:43] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 13:34:43] "GET /api/questions/?category=1 HTTP/1.1" 200 2
+[31/Aug/2024 13:34:43] "GET /api/attempts/ HTTP/1.1" 200 2
+[31/Aug/2024 13:34:50] "GET /admin HTTP/1.1" 301 0
+[31/Aug/2024 13:34:50] "GET /admin/ HTTP/1.1" 200 10353
+[31/Aug/2024 13:34:57] "GET /admin/ctf_backend/question/ HTTP/1.1" 200 8441
+[31/Aug/2024 13:34:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[31/Aug/2024 13:35:00] "GET /admin/ctf_backend/question/add/ HTTP/1.1" 200 13482
+[31/Aug/2024 13:35:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[31/Aug/2024 13:36:11] "POST /admin/ctf_backend/question/add/ HTTP/1.1" 302 0
+[31/Aug/2024 13:36:12] "GET /admin/ctf_backend/question/ HTTP/1.1" 200 12721
+[31/Aug/2024 13:36:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[31/Aug/2024 13:36:16] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 13:36:16] "GET /api/attempts/ HTTP/1.1" 200 2
+[31/Aug/2024 13:36:16] "GET /api/questions/?category=1 HTTP/1.1" 200 983
+[31/Aug/2024 13:36:23] "GET /api/attempts/ HTTP/1.1" 200 2
+[31/Aug/2024 13:36:23] "GET /api/questions/?category=1 HTTP/1.1" 200 983
+[31/Aug/2024 13:36:23] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 13:36:23] "GET /api/attempts/ HTTP/1.1" 200 2
+[31/Aug/2024 13:36:24] "GET /api/questions/?category=1 HTTP/1.1" 200 983
+[31/Aug/2024 13:36:41] "GET /api/attempts/ HTTP/1.1" 200 2
+[31/Aug/2024 13:36:41] "GET /api/questions/?category=1 HTTP/1.1" 200 983
+request:  <rest_framework.request.Request: GET '/api/team/'>
+[31/Aug/2024 13:36:42] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 13:36:42] "GET /api/team/ HTTP/1.1" 200 139
+[31/Aug/2024 13:36:47] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 13:36:47] "GET /api/attempts/ HTTP/1.1" 200 2
+[31/Aug/2024 13:36:47] "GET /api/questions/?category=1 HTTP/1.1" 200 983
+request:  <rest_framework.request.Request: GET '/api/team/'>
+[31/Aug/2024 13:36:48] "GET /api/team/ HTTP/1.1" 200 139
+[31/Aug/2024 13:36:48] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 13:36:52] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 13:36:52] "GET /api/attempts/ HTTP/1.1" 200 2
+[31/Aug/2024 13:36:52] "GET /api/questions/?category=1 HTTP/1.1" 200 983
+request:  <rest_framework.request.Request: GET '/api/team/'>
+[31/Aug/2024 13:36:54] "GET /api/team/ HTTP/1.1" 200 139
+[31/Aug/2024 13:36:54] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 13:37:23] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 13:37:23] "GET /api/attempts/ HTTP/1.1" 200 2
+[31/Aug/2024 13:37:23] "GET /api/questions/?category=1 HTTP/1.1" 200 983
+Bad Request: /api/response/
+[31/Aug/2024 13:37:49] "POST /api/response/ HTTP/1.1" 400 26
+[31/Aug/2024 13:37:50] "GET /api/attempts/ HTTP/1.1" 200 105
+Bad Request: /api/response/
+[31/Aug/2024 13:37:59] "POST /api/response/ HTTP/1.1" 400 26
+[31/Aug/2024 13:37:59] "GET /api/attempts/ HTTP/1.1" 200 121
+[31/Aug/2024 13:38:11] "GET /api/attempts/ HTTP/1.1" 200 121
+[31/Aug/2024 13:38:11] "GET /api/questions/?category=1 HTTP/1.1" 200 983
+[31/Aug/2024 13:38:18] "GET /api/attempts/ HTTP/1.1" 200 121
+[31/Aug/2024 13:38:18] "GET /api/questions/?category=1 HTTP/1.1" 200 983
+request:  <rest_framework.request.Request: GET '/api/team/'>
+[31/Aug/2024 13:38:20] "GET /api/team/ HTTP/1.1" 200 139
+[31/Aug/2024 13:38:20] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 14:43:20] "GET /api/sections/ HTTP/1.1" 200 3466
+request:  <rest_framework.request.Request: GET '/api/team/'>
+[31/Aug/2024 14:43:20] "GET /api/team/ HTTP/1.1" 200 139
+Unauthorized: /api/token/
+[31/Aug/2024 14:46:18] "POST /api/token/ HTTP/1.1" 401 63
+[31/Aug/2024 14:46:50] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 14:46:50] "GET /api/attempts/ HTTP/1.1" 200 121
+[31/Aug/2024 14:46:50] "GET /api/questions/?category=1 HTTP/1.1" 200 983
+request:  <rest_framework.request.Request: GET '/api/team/'>
+[31/Aug/2024 14:46:52] "GET /api/team/ HTTP/1.1" 200 139
+[31/Aug/2024 14:46:52] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 14:46:54] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 14:46:54] "GET /api/attempts/ HTTP/1.1" 200 121
+[31/Aug/2024 14:46:54] "GET /api/questions/?category=1 HTTP/1.1" 200 983
+[31/Aug/2024 14:46:59] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 14:46:59] "GET /api/attempts/ HTTP/1.1" 200 121
+Forbidden: /api/questions/
+[31/Aug/2024 14:46:59] "GET /api/questions/?category=2 HTTP/1.1" 403 50
+Forbidden: /api/questions/
+[31/Aug/2024 14:47:01] "GET /api/questions/?category=3 HTTP/1.1" 403 50
+[31/Aug/2024 14:47:01] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 14:47:01] "GET /api/attempts/ HTTP/1.1" 200 121
+[31/Aug/2024 14:47:03] "GET /api/sections/ HTTP/1.1" 200 3466
+Forbidden: /api/questions/
+[31/Aug/2024 14:47:03] "GET /api/questions/?category=2 HTTP/1.1" 403 50
+[31/Aug/2024 14:47:03] "GET /api/attempts/ HTTP/1.1" 200 121
+[31/Aug/2024 14:47:06] "GET /api/sections/ HTTP/1.1" 200 3466
+Forbidden: /api/questions/
+[31/Aug/2024 14:47:06] "GET /api/questions/?category=5 HTTP/1.1" 403 50
+[31/Aug/2024 14:47:06] "GET /api/attempts/ HTTP/1.1" 200 121
+[31/Aug/2024 14:47:09] "GET /api/sections/ HTTP/1.1" 200 3466
+Forbidden: /api/questions/
+[31/Aug/2024 14:47:09] "GET /api/questions/?category=5 HTTP/1.1" 403 50
+[31/Aug/2024 14:47:09] "GET /api/attempts/ HTTP/1.1" 200 121
+[31/Aug/2024 14:47:12] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 14:47:12] "GET /api/attempts/ HTTP/1.1" 200 121
+[31/Aug/2024 14:47:12] "GET /api/questions/?category=1 HTTP/1.1" 200 983
+[31/Aug/2024 14:47:18] "GET /api/attempts/ HTTP/1.1" 200 121
+request:  <rest_framework.request.Request: GET '/api/team/'>
+[31/Aug/2024 14:47:18] "GET /api/team/ HTTP/1.1" 200 139
+[31/Aug/2024 14:47:18] "GET /api/sections/ HTTP/1.1" 200 3466
+Unauthorized: /api/token/
+[31/Aug/2024 14:51:56] "POST /api/token/ HTTP/1.1" 401 63
+Bad Request: /api/token/
+[31/Aug/2024 14:52:14] "POST /api/token/ HTTP/1.1" 400 45
+Unauthorized: /api/token/
+[31/Aug/2024 15:21:10] "POST /api/token/ HTTP/1.1" 401 63
+[31/Aug/2024 15:22:16] "POST /api/token/ HTTP/1.1" 200 483
+request:  <rest_framework.request.Request: GET '/api/team/'>
+[31/Aug/2024 15:22:17] "GET /api/team/ HTTP/1.1" 200 139
+[31/Aug/2024 15:22:17] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 15:22:28] "GET /api/teams/ HTTP/1.1" 200 141
+[31/Aug/2024 15:22:32] "GET /api/scoreboard/ HTTP/1.1" 200 71
+request:  <rest_framework.request.Request: GET '/api/team/'>
+[31/Aug/2024 15:22:34] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 15:22:34] "GET /api/team/ HTTP/1.1" 200 139
+[31/Aug/2024 15:22:36] "GET /api/teams/ HTTP/1.1" 200 141
+Unauthorized: /api/token/
+[31/Aug/2024 15:24:30] "POST /api/token/ HTTP/1.1" 401 63
+Unauthorized: /api/token/
+[31/Aug/2024 15:25:03] "POST /api/token/ HTTP/1.1" 401 63
+Unauthorized: /api/token/
+[31/Aug/2024 15:25:22] "POST /api/token/ HTTP/1.1" 401 63
+Unauthorized: /api/token/
+[31/Aug/2024 15:28:37] "POST /api/token/ HTTP/1.1" 401 63
+Unauthorized: /api/token/
+[31/Aug/2024 15:28:54] "POST /api/token/ HTTP/1.1" 401 63
+Unauthorized: /api/token/
+[31/Aug/2024 15:33:35] "POST /api/token/ HTTP/1.1" 401 63
+Unauthorized: /api/token/
+[31/Aug/2024 15:33:47] "POST /api/token/ HTTP/1.1" 401 63
+Unauthorized: /api/token/
+[31/Aug/2024 15:34:07] "POST /api/token/ HTTP/1.1" 401 63
+Unauthorized: /api/token/
+[31/Aug/2024 15:34:27] "POST /api/token/ HTTP/1.1" 401 63
+Unauthorized: /api/token/
+[31/Aug/2024 16:36:39] "POST /api/token/ HTTP/1.1" 401 63
+Unauthorized: /api/token/
+[31/Aug/2024 16:37:02] "POST /api/token/ HTTP/1.1" 401 63
+Unauthorized: /api/token/
+[31/Aug/2024 17:05:53] "POST /api/token/ HTTP/1.1" 401 63
+Unauthorized: /api/token/
+[31/Aug/2024 17:06:22] "POST /api/token/ HTTP/1.1" 401 63
+[31/Aug/2024 17:06:36] "POST /api/token/ HTTP/1.1" 200 483
+request:  <rest_framework.request.Request: GET '/api/team/'>
+[31/Aug/2024 17:06:37] "GET /api/team/ HTTP/1.1" 200 139
+[31/Aug/2024 17:06:37] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 17:06:46] "GET /api/sections/ HTTP/1.1" 200 3466
+[31/Aug/2024 17:06:46] "GET /api/attempts/ HTTP/1.1" 200 121
+[31/Aug/2024 17:06:46] "GET /api/questions/?category=1 HTTP/1.1" 200 983
+request:  <rest_framework.request.Request: GET '/api/team/'>
+[31/Aug/2024 17:12:04] "GET /api/team/ HTTP/1.1" 200 139
+[31/Aug/2024 17:12:04] "GET /api/sections/ HTTP/1.1" 200 3466

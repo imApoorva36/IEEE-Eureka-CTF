@@ -1,0 +1,82 @@
+
+> frontend@0.1.0 start
+> next start run
+
+ ⨯ Invalid project directory provided, no such directory: /home/fctf/IEEE-Eureka-CTF/frontend/run
+
+> frontend@0.1.0 start
+> next start
+
+  ▲ Next.js 14.2.7
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 395ms
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+
+> frontend@0.1.0 start
+> next start
+
+  ▲ Next.js 14.2.7
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 459ms
+
+> frontend@0.1.0 start
+> next start
+
+  ▲ Next.js 14.2.7
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 419ms
+
+> frontend@0.1.0 start
+> next start
+
+  ▲ Next.js 14.2.7
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 394ms
+
+> frontend@0.1.0 start
+> next start
+
+You are using Node.js 18.12.1. For Next.js, Node.js version >= v18.17.0 is required.
+
+> frontend@0.1.0 start
+> next start
+
+  ▲ Next.js 14.2.7
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 398ms
+
+> frontend@0.1.0 start
+> next start
+
+You are using Node.js 18.12.1. For Next.js, Node.js version >= v18.17.0 is required.
+
+> frontend@0.1.0 start
+> next start
+
+  ▲ Next.js 14.2.7
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 390ms
+
+> frontend@0.1.0 start
+> next start
+
+  ▲ Next.js 14.2.7
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 395ms
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
