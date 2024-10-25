@@ -1,83 +1,100 @@
 .home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-	min-height: calc( 100vh - var(--footer-height) - var(--header-height));
-  background-color: #0c0a13;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	min-height: calc(100vh - var(--footer-height) - var(--header-height));
+	background: url("../../public/assets/images/home-bg.png");
+	object-fit: cover;
+	background-size: cover;
+	background-position: bottom;
+	font-family: Arial, sans-serif;
 }
 
 .content {
-  text-align: center;
+	margin-top: 60px;
+	padding: 40px;
+	max-width: 600px;
+	background-color: #de5918;
+	border-top: 4px solid white;
+	border-left: 4px solid white;
+	border-bottom: 4px solid black;
+	border-right: 4px solid black;
 }
 
 .title {
-  font-size: 4rem; /* Adjust the font size to make the title bigger */
-  margin-bottom: 20px; 
-  position: relative;
+	font-size: 4rem; /* Adjust the font size to make the title bigger */
+	color: #fddfc7;
+	font-family: "MarioFont";
+	text-shadow: 4px 8px 0px #000000;
+
+	margin-bottom: 20px;
+	position: relative;
 }
 
 .title::after {
-  content: "|"; /* The cursor symbol (you can change it to any character you like) */
-  animation: cursor-blink 1s infinite; /* Blinking animation */
-  opacity: 0.6; /* Slightly transparent */
-  position: absolute;
-  top: 0;
-  right: auto; /* Position the cursor at the end of the text */
-  font-size: 53px;
+	content: "|"; /* The cursor symbol (you can change it to any character you like) */
+	animation: cursor-blink 1s infinite; /* Blinking animation */
+	opacity: 0.6; /* Slightly transparent */
+	position: absolute;
+	top: 0;
+	right: auto; /* Position the cursor at the end of the text */
+	font-size: 53px;
 }
 
 @keyframes cursor-blink {
-  0%, 100% {
-    opacity: 0; /* Cursor is invisible at the start and end of animation */
-  }
-  50% {
-    opacity: 0.5; /* Cursor is visible halfway through animation */
-  }
+	0%,
+	100% {
+		opacity: 0; /* Cursor is invisible at the start and end of animation */
+	}
+	50% {
+		opacity: 0.5; /* Cursor is visible halfway through animation */
+	}
 }
 
 .subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+	color: #fddfc7;
+	font-size: 1.5rem;
+	margin-bottom: 20px;
 }
 
 .welcomeTeam {
-  font-size: 1.2rem;
-  /* background-color: #d4d4d4; */
-  padding: 10px;
-  border-radius: 8px;
+	font-size: 1.2rem;
+	/* background-color: #d4d4d4; */
+	padding: 10px;
+	border-radius: 8px;
 }
 
 .welcomeTeam span {
-  color: #009688;
-  ;
+	color: #009688;
 }
 
 .buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+	display: flex;
+
+	margin-top: 20px;
 }
 
 .button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 0 10px;
-  background-color: #009688;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background-color 0.3s;
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 0 10px;
+	font-size: 1.5rem;
+	background-color: #007bff;
+	box-shadow: 4px 4px 0px #000000;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 8px;
+	font-weight: 600;
+	transition: background-color 0.3s;
 }
 
 .button:hover {
-  background-color: #007870;
+	background-color: #005ab9;
+	box-shadow: 2px 2px 0px #000000;
 }
 
 .logoutButton {
-  display: flex;
-  justify-content: center;
-  margin-top: 5rem;
+	display: flex;
+	justify-content: center;
+	margin-top: 5rem;
 }

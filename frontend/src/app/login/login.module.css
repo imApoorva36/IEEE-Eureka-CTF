@@ -1,67 +1,76 @@
 .login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px;
-    min-height: calc( 100vh - var(--footer-height) - var(--header-height));
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 60px;
+	min-height: calc(100vh - var(--footer-height) - var(--header-height));
 }
 
-.login p{
-    text-align: right;
-    margin-left: 200px;
+.login p {
+	text-align: right;
+	margin-left: 200px;
+	color: white;
 }
 
-
-
+.welcome {
+	color: white;
+	text-shadow: 4px 4px 0px #000000;
+	font-size: 2.5rem;
+	text-align: center;
+	max-width: 1000px;
+}
 @media (max-width: 768px) {
-    .login p{
-        text-align: center;
-        margin-left: 0px;
-    }
-    .welcome h2 {
-        font-size: 2rem;
-    }
+	.login p {
+		text-align: center;
+		margin-left: 0px;
+	}
+	.welcome {
+		text-align: center;
+		font-size: 2rem;
+	}
 }
-    
 
 .content {
-    margin : 3rem;
-    width: 400px;
-    background-color: #050815;
-    border-radius: 10px;
-    padding: 3rem 2rem;
-    box-shadow: 0 0 2rem rgba(215, 213, 213, 0.275);
+	margin: 3rem;
+	width: 400px;
+	background-color: #f7f7f7;
+	border-radius: 10px;
+	padding: 3rem 2rem;
+	box-shadow: 0 0 2rem rgba(215, 213, 213, 0.275);
 }
 
 .formGroup {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .formGroup label {
-    display: block;
-    font-weight: bold;
+	display: block;
+	color: black;
+	font-weight: 500;
 }
 
 .formGroup input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 4px;
-    margin-bottom: 10px;
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #713300;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 4px;
+	margin-bottom: 10px;
 }
 
 .login button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+	background-color: #007bff;
+	box-shadow: 4px 4px 0px #000000;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 1rem;
+	transition: background-color 0.3s;
 }
 
 .login button:hover {
-    background-color: #0056b3;
+	background-color: #0056b3;
 }

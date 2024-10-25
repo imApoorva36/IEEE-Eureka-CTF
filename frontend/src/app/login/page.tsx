@@ -54,7 +54,7 @@ export default function Login() {
 
     return (
         <main className={s.login}><br /><br />
-            <Design/>
+            {/* <Design/> */}
             <h2 className={s.welcome}>Wecome to Login Page, enter your details to be logged into your account!!</h2><br />
             <div className={s.content}> 
                 <form onSubmit={submit}><br />
