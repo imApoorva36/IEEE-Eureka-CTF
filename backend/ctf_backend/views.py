@@ -86,7 +86,7 @@ class FlagResponsesViewSet(viewsets.ModelViewSet):
             flagres = request.data.get('flag')
             qnid = request.data.get('id')
             timestamp = make_aware(datetime.now())
-            
+            # FIX : Remove raise error
             try:
                 question = get_object_or_404(Question, id=qnid)
                 if flagres != question.flag:

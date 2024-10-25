@@ -9,15 +9,10 @@ class Team(models.Model):
     member2 = models.CharField(max_length=30, null=True, blank=True)
     member3 = models.CharField(max_length=30, null=True, blank=True)
     contact = models.CharField(max_length=10, null=True, blank=True)
-    score = models.PositiveIntegerField(null=True, blank=True)
+    score = models.PositiveIntegerField(default=0, null=False)
 
     def __str__(self):
-        return f"{self.id} - {self.user} - {self.name}"
-    
-    def calculate_score(self):
-        responses = FlagResponse.objects.filter(team=self)
-        score = sum(response.question.points for response in responses)
-        return score
+        return f"{self.id} - {self.user} - {self.name} - {self.score}"
 
 class Question(models.Model):
     title = models.TextField()
