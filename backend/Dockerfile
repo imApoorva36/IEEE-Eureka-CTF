@@ -1,14 +1,28 @@
-FROM python:3.10
+# pull official base image
+FROM python:3.12-slim
 
+# set work directory
 WORKDIR /code
 
-COPY . .
+# set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 
+# install dependencies
+RUN pip install --upgrade pip
+COPY ./backend/requirements.txt .
 RUN pip install -r requirements.txt
-RUN python manage.py collectstatic
 
-ENV PYTHONUNBUFFERED=1
+# copy entrypoint.sh
+COPY ./backend/entrypoint.sh /code/app/entrypoint.sh
+RUN sed -i 's/\r$//g' /code/app/entrypoint.sh
+RUN chmod +x /code/app/entrypoint.sh
 
-EXPOSE 8000
+# copy project
+COPY ./backend .
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# run entrypoint.sh
+ENTRYPOINT ["/code/app/entrypoint.sh"]
+
+RUN useradd eureka --create-home --shell /bin/bash
+USER eureka:eureka
