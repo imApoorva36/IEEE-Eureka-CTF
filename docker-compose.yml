@@ -1,14 +1,55 @@
-version: '3'
-
 services:
+  postgres_db:
+    image: postgres:16.4-bullseye
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_HOST_AUTH_METHOD=scram-sha-256
+      - POSTGRES_INITDB_ARGS="--auth-host=scram-sha-256"
+      - POSTGRES_INITDB_ARGS="--auth-local=scram-sha-256"
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    networks:
+      - internal_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
+      interval: 3s
+      timeout: 60s
+      retries: 5
+    env_file:
+      - ./.env
+    restart: always
   backend:
-    image: e889ceef0235d3890a0b9fc582a0a7f8a7b63eeec1399efda7e91bd04534094e
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    command: python3 manage.py runserver 0.0.0.0:8000
+    depends_on:
+      postgres_db:
+        condition: service_healthy
     ports:
-      - "8000:8000"
-
+      - 8000:8000
+    networks:
+      - internal_network
+    restart: always
+    env_file:
+      - ./.env
   frontend:
-    image: c7dff9223eb35603fa75bb65f8b7e02331ea33762725ac54d95f3f6219c4dd7f
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    command: npm start
     ports:
-      - "3000:3000"
+      - 3000:3000
+    networks:
+      - internal_network
+    restart: always
     depends_on:
       - backend
+
+networks:
+  internal_network:
+volumes:
+  postgres:
+    name: db_data

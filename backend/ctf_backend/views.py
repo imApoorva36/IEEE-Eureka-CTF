@@ -57,7 +57,7 @@ class QuestionsViewSet(viewsets.ModelViewSet):
         slot3 = make_aware(datetime(2023, 11, 18, 3, 0, 0))
         slot4 = make_aware(datetime(2023, 11, 18, 6, 0, 0))
         slot5 = make_aware(datetime(2023, 11, 18, 9, 0, 0))
-        endslot = make_aware(datetime(2023, 11, 18, 10, 0, 1))
+        endslot = make_aware(datetime(2025, 11, 18, 10, 0, 1))
         if current_time >= slot1 and current_time < slot2:
             questions = Question.objects.filter(id__range=(1, 15))
         elif current_time >= slot2 and current_time < slot3:
@@ -101,6 +101,7 @@ class FlagResponsesViewSet(viewsets.ModelViewSet):
                 return Response({'error': "You have already submitted a response for this question."}, status=status.HTTP_404_NOT_FOUND)
             else:
                 user.team.score += question.points
+                user.team.save()
                 return Response({"Done"},status=status.HTTP_200_OK)
 
 class ScoreboardViewSet(viewsets.ModelViewSet):
