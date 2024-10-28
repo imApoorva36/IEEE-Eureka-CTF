@@ -18,27 +18,34 @@
 }
 
 body {
-	background: url("../../public/assets/images/mario-pattern-bg.png");
-	background-color: #fceee1;
+	background-image: url("/assets/images/mario-pattern-bg.png"),
+		/* pattern image */ linear-gradient(0deg, #bc00b7, #23b2ff); /* gradient layer */
+	background-repeat: repeat, no-repeat; /* repeat pattern, no repeat gradient */
+	background-position: center, center; /* position both layers */
+	background-size: auto, cover; /* size the pattern to its default, gradient covers full */
 	color: #dddddd;
 	min-height: 100vh;
 }
 
 header {
+	z-index: 20;
 	height: var(--header-height);
-	width: 100%;
+	width: calc(100% - 20px);
+	margin-top: 10px;
+	margin-inline: auto;
 	position: relative;
 	top: 0;
 	left: 0;
-	margin-right: auto;
+	border-bottom: 4px solid black;
+	border-right: 4px solid black;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0px 50px;
-	/* box-shadow: 0px 0px 10px 0px rgba(44, 44, 44, 0.75); */
-	border-radius: 0px 0px 7px 7px;
-	background-color: red;
-	opacity: 80%;
+	box-shadow: 0px 0px 10px 0px rgba(44, 44, 44, 0.25);
+
+	background-color: #de5918;
+
 	/* box-shadow: 0px 1px 2px rgba(0, 255, 255, 0.258),
 		0px 2px 4px rgba(0, 255, 255, 0.274), 0px 4px 8px rgba(0, 255, 255, 0.25),
 		0px 8px 16px rgba(0, 255, 255, 0.232); */
@@ -106,9 +113,9 @@ header nav ul li a {
 
 header nav ul li a:hover {
 	color: #ffffff;
-	background-color: rgb(59, 59, 234);
+	background-color: #007bff;
 	padding: 12px;
-	border-radius: 10%;
+	box-shadow: 4px 4px 0px black;
 }
 
 .pd-top {

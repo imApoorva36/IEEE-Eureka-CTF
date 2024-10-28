@@ -9,7 +9,7 @@ import { useCookies } from "react-cookie";
 import { useAuth } from "../useAuth";
 
 export default function Questions() {
-	useAuth();
+	//useAuth();
 
 	const dummyData: Question[] = [
 		{
@@ -105,7 +105,7 @@ export default function Questions() {
 	];
 
 	const [cookies] = useCookies(["access_token"]);
-	const [questions, setQuestions] = useState<Question[]>();
+	const [questions, setQuestions] = useState<Question[]>(dummyData);
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -117,7 +117,6 @@ export default function Questions() {
 					},
 					next: { revalidate: 0 },
 				});
-
 
 				if (res.status === 402) {
 					throw new Error("402");
@@ -137,7 +136,7 @@ export default function Questions() {
 		minPoints: number,
 		maxPoints: number
 	) => {
-		return questions.filter(
+		return questions?.filter(
 			(q) => q.points >= minPoints && q.points <= maxPoints
 		);
 	};

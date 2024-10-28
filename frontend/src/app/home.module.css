@@ -12,7 +12,11 @@
 
 .content {
 	margin-top: 60px;
-	padding: 40px;
+	z-index: 20;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
 	max-width: 600px;
 	background-color: #de5918;
 	border-top: 4px solid white;
@@ -21,12 +25,22 @@
 	border-right: 4px solid black;
 }
 
+.video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: "cover";
+	background-color: #5b94fb;
+}
+
 .title {
 	font-size: 4rem; /* Adjust the font size to make the title bigger */
 	color: #fddfc7;
 	font-family: "MarioFont";
 	text-shadow: 4px 8px 0px #000000;
-
+	text-align: center;
 	margin-bottom: 20px;
 	position: relative;
 }
