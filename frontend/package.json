@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "js-cookie": "^3.0.5",
-    "next": "^14.0.1",
+    "next": "^14.2.10",
     "react": "latest",
     "react-cookie": "^6.1.1",
     "react-dom": "latest",
