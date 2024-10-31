@@ -24,6 +24,7 @@ services:
     build:
       context: .
       dockerfile: backend/Dockerfile
+    image: eurekactfacr.azurecr.io/backend:latest
     command: python3 manage.py runserver 0.0.0.0:8000
     depends_on:
       postgres_db:
@@ -39,6 +40,7 @@ services:
     build:
       context: .
       dockerfile: frontend/Dockerfile
+    image: eurekactfacr.azurecr.io/frontend:latest
     command: npm start
     ports:
       - 3000:3000
