@@ -1,12 +1,12 @@
 from django.shortcuts import render
-from django_nextjs.render import render_nextjs_page_sync
+from django_nextjs.render import render_nextjs_page
 # from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import viewsets
-from .models import Team, Question, Flagresponse
+from .models import Team, Question, FlagResponse
 from django.core.exceptions import ValidationError
 from django.http import HttpResponse
-from .serialisers import TeamsSerializer, QuestionsSerializer, FlagresponsesSerializer, ScoreboardSerializer
+from .serialisers import TeamsSerializer, QuestionsSerializer, FlagResponsesSerializer, ScoreboardSerializer
 from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
@@ -23,9 +23,12 @@ from celery import shared_task
 from rest_framework.decorators import api_view, permission_classes
 from .middleware import TimeRestrictedMiddleware
 import pytz
+from django.db.utils import IntegrityError
+from django_ratelimit.decorators import ratelimit
 
-def index(request):
-    return render_nextjs_page_sync(request)
+
+async def index(request):
+    return await render_nextjs_page(request)
 
 class TeamsViewSet(viewsets.ModelViewSet):
     queryset = Team.objects.all()
@@ -45,6 +48,7 @@ class QuestionsViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
     def create(self,request): # Basically to handle POST Requests
         return Response("Nope",status=status.HTTP_404_NOT_FOUND)
+    
     def list(self, request): # Basically to handle GET Requests
         # astimezone(tz=pytz.timezone('Asia/Kolkata'))
         current_time = make_aware(datetime.now())
@@ -53,7 +57,7 @@ class QuestionsViewSet(viewsets.ModelViewSet):
         slot3 = make_aware(datetime(2023, 11, 18, 3, 0, 0))
         slot4 = make_aware(datetime(2023, 11, 18, 6, 0, 0))
         slot5 = make_aware(datetime(2023, 11, 18, 9, 0, 0))
-        endslot = make_aware(datetime(2023, 11, 18, 10, 0, 1))
+        endslot = make_aware(datetime(2025, 11, 18, 10, 0, 1))
         if current_time >= slot1 and current_time < slot2:
             questions = Question.objects.filter(id__range=(1, 15))
         elif current_time >= slot2 and current_time < slot3:
@@ -69,16 +73,20 @@ class QuestionsViewSet(viewsets.ModelViewSet):
         serializer = self.get_serializer(questions,many=True)
         return Response(serializer.data)
 
-class FlagresponsesViewSet(viewsets.ModelViewSet):
-    queryset = Flagresponse.objects.all()
-    serializer_class = FlagresponsesSerializer
+class FlagResponsesViewSet(viewsets.ModelViewSet):
+    queryset = FlagResponse.objects.all()
+    serializer_class = FlagResponsesSerializer
     permission_classes = [IsAuthenticated]
+    
+    @ratelimit(key='ip', rate='1/s', method='POST', block=True)
     def create(self, request):
-        if request.method == "POST":
+        if request.method != "POST":
+            return Response({}, status=status.HTTP_405_METHOD_NOT_ALLOWED)
+        else:
             flagres = request.data.get('flag')
             qnid = request.data.get('id')
             timestamp = make_aware(datetime.now())
-            print('entered')
+            # FIX : Remove raise error
             try:
                 question = get_object_or_404(Question, id=qnid)
                 if flagres != question.flag:
@@ -86,24 +94,15 @@ class FlagresponsesViewSet(viewsets.ModelViewSet):
             except ValidationError as e:
                 return Response({'error': "Flag Incorrect"}, status=status.HTTP_400_BAD_REQUEST)
             user = request.user
-            existing_flag_response = Flagresponse.objects.filter(team__user=user, question=question)
-            if existing_flag_response.exists():
+            
+            try:
+                FlagResponse.objects.create(team=user.team,timestamp=timestamp,question=question,response=flagres)
+            except IntegrityError:
                 return Response({'error': "You have already submitted a response for this question."}, status=status.HTTP_404_NOT_FOUND)
-
-            data = {
-                'team': user.team.id,
-                'question': question.id,
-                'response': flagres,
-                'timestamp': timestamp,
-            }
-            # serializer = FlagresponsesSerializer(data=data)
-            # if serializer.is_valid():
-            Flagresponse.objects.create(team=user.team,timestamp=timestamp,question=question,response=flagres)
-            return Response({"Done"},status=status.HTTP_200_OK)
-                # serializer.save()
-                # return Response(serializer.data, status=status.HTTP_201_CREATED)
-            # else:
-                # return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            else:
+                user.team.score += question.points
+                user.team.save()
+                return Response({"Done"},status=status.HTTP_200_OK)
 
 class ScoreboardViewSet(viewsets.ModelViewSet):
     queryset = Team.objects.all()
@@ -113,18 +112,9 @@ class ScoreboardViewSet(viewsets.ModelViewSet):
         return Response("Nope",status=status.HTTP_404_NOT_FOUND)
     def list(self, request):
         user = request.user
-        teams = Team.objects.all()
-        scores = []
-        for team in teams:
-            responses = Flagresponse.objects.filter(team=team)
-            total_score = sum(response.question.points for response in responses)
-            scores.append(total_score)
-        if user.team in teams:
-            responses = Flagresponse.objects.filter(team=user.team)
-            current_user_score = sum(response.question.points for response in responses)
-        scores.sort(reverse=True)
-        top_10_scores = scores[:10]
-        serialized_data = ScoreboardSerializer({'top_10_scores': top_10_scores, 'current_user_score': current_user_score})
+        teams = Team.objects.all().order_by('-score')[:10]
+        top_10_scores = [team.score for team in teams]
+        serialized_data = ScoreboardSerializer({'top_10_scores': top_10_scores, 'current_user_score': user.team.score})
         return Response(serialized_data.data)
     
 @api_view(['POST'])
