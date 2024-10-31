@@ -22,8 +22,8 @@ services:
     restart: always
   backend:
     build:
-      context: .
-      dockerfile: backend/Dockerfile
+      context: backend
+      dockerfile: Dockerfile
     image: eurekactfacr.azurecr.io/backend:latest
     command: python3 manage.py runserver 0.0.0.0:8000
     depends_on:
@@ -38,8 +38,8 @@ services:
       - ./.env
   frontend:
     build:
-      context: .
-      dockerfile: frontend/Dockerfile
+      context: frontend
+      dockerfile: Dockerfile
     image: eurekactfacr.azurecr.io/frontend:latest
     command: npm start
     ports:

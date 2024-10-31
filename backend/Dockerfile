@@ -10,16 +10,16 @@ ENV PYTHONUNBUFFERED 1
 
 # install dependencies
 RUN pip install --upgrade pip
-COPY ./backend/requirements.txt .
+COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 # copy entrypoint.sh
-COPY ./backend/entrypoint.sh /code/app/entrypoint.sh
+COPY entrypoint.sh /code/app/entrypoint.sh
 RUN sed -i 's/\r$//g' /code/app/entrypoint.sh
 RUN chmod +x /code/app/entrypoint.sh
 
 # copy project
-COPY ./backend .
+COPY . .
 
 # run entrypoint.sh
 ENTRYPOINT ["/code/app/entrypoint.sh"]
