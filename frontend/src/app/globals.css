@@ -1,125 +1,136 @@
 * {
-    margin: 0;
-    padding: 0;
-    /* border: 1px solid #d60f0f; */
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* border: 1px solid #d60f0f; */
+	box-sizing: border-box;
 }
 
-:root{
-    --footer-height:50px;
-    --header-height:90px;
+:root {
+	--footer-height: 0px;
+	--header-height: 90px;
+}
+
+@font-face {
+	font-family: "MarioFont";
+	src: url("../../public/assets/fonts/SuperMario256.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 body {
-    background-color: #040110;
-    color: #dddddd;
-    min-height: 100vh;
+	background-image: url("/assets/images/mario-pattern-bg.png"),
+		/* pattern image */ linear-gradient(0deg, #bc00b7, #23b2ff); /* gradient layer */
+	background-repeat: repeat, no-repeat; /* repeat pattern, no repeat gradient */
+	background-position: center, center; /* position both layers */
+	background-size: auto, cover; /* size the pattern to its default, gradient covers full */
+	color: #dddddd;
+	min-height: 100vh;
 }
 
 header {
-    height: var(--header-height);
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 50px;
-    /* box-shadow: 0px 0px 10px 0px rgba(44, 44, 44, 0.75); */
-    border-radius: 0px 0px 7px 7px;
-    background-color: rgb(2, 10, 24);
-    opacity: 80%;
-    box-shadow: 0px 1px 2px rgba(0, 255, 255, 0.258), 
-              0px 2px 4px rgba(0, 255, 255, 0.274), 
-              0px 4px 8px rgba(0, 255, 255, 0.25), 
-              0px 8px 16px rgba(0, 255, 255, 0.232);
-}
+	z-index: 20;
+	height: var(--header-height);
+	width: calc(100% - 20px);
+	margin-top: 10px;
+	margin-inline: auto;
+	position: relative;
+	top: 0;
+	left: 0;
+	border-bottom: 4px solid black;
+	border-right: 4px solid black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 50px;
+	box-shadow: 0px 0px 10px 0px rgba(44, 44, 44, 0.25);
 
+	background-color: #de5918;
+
+	/* box-shadow: 0px 1px 2px rgba(0, 255, 255, 0.258),
+		0px 2px 4px rgba(0, 255, 255, 0.274), 0px 4px 8px rgba(0, 255, 255, 0.25),
+		0px 8px 16px rgba(0, 255, 255, 0.232); */
+}
 
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
+	header {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
 
-    img.logo {
-        max-width: 30vw;
-        padding: 10px;
-        margin: auto;
-    }
+	img.logo {
+		max-width: 30vw;
+		padding: 10px;
+		margin: auto;
+	}
 
-    header nav {
-        overflow-x: auto;
-        width: 100%;
-        margin: auto;
-    }
+	header nav {
+		overflow-x: auto;
+		width: 100%;
+		margin: auto;
+	}
 
-    header nav ul {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        padding: 10px;
-    }
+	header nav ul {
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+		padding: 10px;
+	}
 
-    header nav ul li a {
-        font-size: 15px;
-        padding: 10px;
-    }
+	header nav ul li a {
+		font-size: 15px;
+		padding: 10px;
+	}
 
-    header nav ul li a:hover {
-        padding: 10px;
-    }
-
+	header nav ul li a:hover {
+		padding: 10px;
+	}
 }
 
-header>a {
-    height: 70%;
+header > a {
+	height: 70%;
 }
 
 header a img {
-    max-height: 100%;
-    border-radius: 10px;
+	max-height: 100%;
+	border-radius: 10px;
 }
 
 header nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 80px;
+	list-style-type: none;
+	display: flex;
+	gap: 80px;
 }
 
 header nav ul li a {
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-    padding: 12px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+	padding: 12px;
 }
 
 header nav ul li a:hover {
-    color: #ffffff;
-    background-color: rgb(59, 59, 234);
-    padding: 12px;
-    border-radius: 10%;
+	color: #ffffff;
+	background-color: #007bff;
+	padding: 12px;
+	box-shadow: 4px 4px 0px black;
 }
-
 
 .pd-top {
-    padding-top: 120px;
+	padding-top: 120px;
 }
 
-footer nav{
-    text-align: center;
-    color: white;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 50vw;
-    border-radius: 10px;
-    margin:auto;
-    height: var(--footer-height);
-    /* background-color: #d60f0f; */
+footer nav {
+	text-align: center;
+	color: white;
+	padding: 10px;
+	position: relative;
+	bottom: 0;
+	width: 50vw;
+	border-radius: 10px;
+	margin: auto;
+	height: var(--footer-height);
+	/* background-color: #d60f0f; */
 }

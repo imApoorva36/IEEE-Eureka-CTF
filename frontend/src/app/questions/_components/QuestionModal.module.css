@@ -1,191 +1,254 @@
 .container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100svh;
-    background-color: #000000cc;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100svh;
+	background-color: #ffd022;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-    animation: fadeIn;
-    animation-duration: 300ms;
-    animation-fill-mode: forwards;
+	animation: fadeIn;
+	animation-duration: 300ms;
+	animation-fill-mode: forwards;
 
-    z-index: 2;
+	z-index: 2;
 }
 
 .container.closing {
-    animation-name: fadeOut;
+	animation-name: fadeOut;
 }
 
 .container.closing .modal {
-    animation-name: zoomOut;
-    animation-timing-function: ease-out;
-    animation-duration: 300ms;
+	animation-name: zoomOut;
+	animation-timing-function: ease-out;
+	animation-duration: 300ms;
 }
 
 .container .modal {
-    width: 90%;
-    max-width: 800px;
-    background-color: #222222;
-    border: 1px solid #aaaaaa;
-    padding: 30px;
-    border-radius: 10px;
-    position: relative;
+	width: 90%;
+	max-width: 800px;
+	background-color: #ffd022;
+	box-shadow: 6px 6px 0px #bb8d1b;
+	border: 1px solid #aaaaaa;
+	padding: 30px;
+	border-radius: 10px;
+	position: relative;
 
-    animation: zoomIn;
-    animation-duration: 400ms;
-    animation-fill-mode: forwards;
+	animation: zoomIn;
+	animation-duration: 400ms;
+	animation-fill-mode: forwards;
 }
 
 @keyframes zoomIn {
-    0% { scale: 50%; }
-    100% { scale: 100%; }
+	0% {
+		scale: 50%;
+	}
+	100% {
+		scale: 100%;
+	}
 }
 
 @keyframes fadeIn {
-    0% { background-color: #00000000; }
-    100% { background-color: #000000cc; }
+	0% {
+		background-color: #00000000;
+	}
+	100% {
+		background-color: #000000cc;
+	}
 }
 
 @keyframes zoomOut {
-    0% { scale: 100%; opacity: 1;}
-    100% { scale: 50%; opacity: 0; }
+	0% {
+		scale: 100%;
+		opacity: 1;
+	}
+	100% {
+		scale: 50%;
+		opacity: 0;
+	}
 }
 
 @keyframes fadeOut {
-    0% { background-color: #000000cc; }
-    100% { background-color: #00000000; }
+	0% {
+		background-color: #000000cc;
+	}
+	100% {
+		background-color: #00000000;
+	}
 }
 
 .modal h2 {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .modal p {
-    text-align: justify;
-    line-height: 150%;
-    margin-bottom: 20px;
+	text-align: justify;
+	line-height: 150%;
+	margin-bottom: 20px;
 }
 
 .modal a {
-    color: rgb(148, 148, 240);
-    font-size: 20px;
-    font-weight: 700;
-    /* display: block; */
-    padding: 20px 0;
+	color: #007bff;
+	font-size: 20px;
+	font-weight: 700;
+	/* display: block; */
+	padding: 20px 0;
 }
 
 #close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-    padding: 20px;
-    font-size: 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	padding: 20px;
+	font-size: 30px;
 }
 
 .bottom {
-    padding: 10px 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: top;
+	padding: 10px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
 }
 
-
 .bottom .points {
-    font-size: 19px;
-    font-weight: 900;
-    /* float: right; */
-    color: rgb(57, 166, 57);;
+	font-size: 19px;
+	font-weight: 900;
+	/* float: right; */
+	color: rgb(57, 166, 57);
 }
 
 .bottom .response {
-    display: grid;
-    grid-template-columns: 6fr 3fr 1fr;
-    grid-auto-rows: 1fr;
-    align-items: center;
-    column-gap: 10px;
+	display: grid;
+	grid-template-columns: 6fr 3fr 1fr;
+	grid-auto-rows: 1fr;
+	align-items: center;
+	column-gap: 10px;
 }
 
 .bottom .response .textbox {
-    /* display: inline; */
-    position: relative;
+	/* display: inline; */
+	background-color: #d7a901;
+	position: relative;
 }
 
 .bottom .textbox::after {
-    content: "";
-    height: 4px;
-    width: 0%;
-    background-color: #3489db;
-    border-radius: 0px 0px 4px 4px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 200ms;
+	content: "";
+	height: 4px;
+	width: 0%;
+	background-color: #d78101;
+	border-radius: 0px 0px 4px 4px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: 200ms;
 }
 
 .bottom .textbox:focus-within:after {
-    width: 100%;
+	width: 100%;
 }
 
 .bottom .textbox input {
-    padding: 10px 10px;
-    width: 100%;
-    font-size: 18px;
-    color: white;
-    outline: none;
-    border: none;
-    border-radius: 3px;
-    background-color: #000000;
-    border-bottom: 2px solid #3489db;
-    transition: 200ms;
-    display: block;
+	padding: 10px 10px;
+	width: 100%;
+	font-size: 18px;
+	color: black;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	background-color: #d7a901;
+	border-bottom: 2px solid #3489db;
+	transition: 200ms;
+	display: block;
 }
 
+.bottom .textbox input::placeholder {
+	color: #00000076;
+}
 .bottom .textbox input:focus {
-    background-color: #080808;
+	background-color: #d7a901;
 }
 
 .bottom .textbox input:disabled {
-    background-color: #111111;
-    border-bottom-color: #2565a1;
+	background-color: #d7a901;
+	border-bottom-color: #2565a1;
 }
 
 .bottom .button {
-    padding: 0px 30px;
-    height: 90%;
-    font-size: 18px;
-    font-weight: 700;
-    background-color: #009688;
-    color: rgb(255, 255, 255);
-    border-radius: 5px;
+	padding: 0px 30px;
+	height: 90%;
+	font-size: 18px;
+	font-weight: 700;
+	background-color: #007bff;
+	box-shadow: 3px 3px 0px #000000;
+	color: rgb(255, 255, 255);
 
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
 }
 
 .bottom .button.disabled {
-    background-color: #015e55;
-    color: #b6b6b6;
-    cursor: default;
+	background-color: #015e55;
+	color: #b6b6b6;
+	cursor: default;
 }
 
-.bottom #error, .bottom #success {
-    grid-column: 1 / 4;
-    font-weight: 700;
-    padding-left: 5px;
-    margin-bottom: 0;
+.bottom #error,
+.bottom #success {
+	grid-column: 1 / 4;
+	font-weight: 700;
+	padding-left: 5px;
+	margin-bottom: 0;
 }
 
 .bottom #error {
-    color: rgb(226, 62, 62);
+	color: rgb(226, 62, 62);
 }
 
 .bottom #success {
-    color: rgb(120, 227, 120);
+	color: rgb(120, 227, 120);
+}
+
+.dot1 {
+	background-color: #93702b;
+	width: 12px;
+	border-radius: 50%;
+	aspect-ratio: 1;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.dot2 {
+	background-color: #93702b;
+	width: 12px;
+	border-radius: 50%;
+	aspect-ratio: 1;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.dot3 {
+	background-color: #93702b;
+	width: 12px;
+	border-radius: 50%;
+	aspect-ratio: 1;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.dot4 {
+	background-color: #93702b;
+	width: 12px;
+	border-radius: 50%;
+	aspect-ratio: 1;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
 }
