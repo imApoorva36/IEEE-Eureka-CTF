@@ -21,10 +21,10 @@ services:
       - ./.env
     restart: always
   backend:
-    # build:
-    #   context: backend
-    #   dockerfile: Dockerfile
-    image: eurekactfacr.azurecr.io/backend:test
+    build:
+      context: backend
+      dockerfile: Dockerfile
+    # image: eurekactfacr.azurecr.io/backend:latest
     depends_on:
       postgres-db:
         condition: service_healthy
@@ -36,10 +36,10 @@ services:
     env_file:
       - ./.env
   frontend:
-    # build:
-    #   context: frontend
-    #   dockerfile: Dockerfile
-    image: eurekactfacr.azurecr.io/frontend:test
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    # image: eurekactfacr.azurecr.io/frontend:latest
     ports:
       - 3000:3000
     networks:
