@@ -12,7 +12,7 @@
     "js-cookie": "^3.0.5",
     "next": "^14.2.10",
     "react": "latest",
-    "react-cookie": "^6.1.1",
+    "react-cookie": "^7.2.2",
     "react-dom": "latest",
     "react-particles": "^2.12.2",
     "react-spinners": "^0.13.8",
