@@ -1,5 +1,5 @@
 services:
-  postgres_db:
+  postgres-db:
     image: postgres:16.4-bullseye
     environment:
       - POSTGRES_USER=${POSTGRES_USER}
@@ -26,7 +26,7 @@ services:
     image: eurekactfacr.azurecr.io/backend:latest
     command: python3 manage.py runserver 0.0.0.0:8000
     depends_on:
-      postgres_db:
+      postgres-db:
         condition: service_healthy
     ports:
       - 8000:8000

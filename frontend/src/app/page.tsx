@@ -42,7 +42,7 @@ export default function Home() {
 				)}
 				{!username && (
 					<div className={s.buttons}>
-						{access_token ? (
+						{username && access_token ? (
 							<Link href="/logout" className={s.button}>
 								Logout
 							</Link>

@@ -37,6 +37,7 @@ export default function Login() {
 			console.log(res);
 			if (res.status === 401) {
 				console.log("Wrong credentials");
+				window.alert("Wrong credentials");
 			} else if (res.ok) {
 				const data = await res.json();
 				setCookie("access_token", data.access, { path: "/" });
