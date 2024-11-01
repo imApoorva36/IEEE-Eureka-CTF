@@ -28,7 +28,7 @@ export default function RootLayout({
 			</head>
 			<body className={lexend.className}>
 				<header>
-					<Link href="/">
+					<Link href="https://ieee.nitk.ac.in">
 						<img className="logo" src={"/assets/images/logo.png"} />
 					</Link>
 					<nav>

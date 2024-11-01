@@ -22,17 +22,15 @@ export default function Home() {
 		<main className={s.home + " " + lexend.className}>
 			{/* <Design /> */}
 
-			<iframe
+			<video
 				className={s.video}
-				width="560"
-				height="315"
-				src="https://www.youtube.com/embed/pT_TMMrkd14?si=IktfoakuCyOrdMPw&autoplay=1&controls=0&mute=1"
-				title="YouTube video player"
-				frameBorder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				referrerPolicy="strict-origin-when-cross-origin"
-				allowFullScreen
-			></iframe>
+				autoPlay
+				loop
+				playsInline
+				poster="/assets/images/home-bg.png"
+			>
+				<source src="/assets/images/home.mp4" type="video/mp4" />
+			</video>
 
 			<div className={s.content}>
 				<h1 className={s.title}>IEEE Eureka CTF 2024</h1>
@@ -44,7 +42,7 @@ export default function Home() {
 				)}
 				{!username && (
 					<div className={s.buttons}>
-						{access_token ? (
+						{username && access_token ? (
 							<Link href="/logout" className={s.button}>
 								Logout
 							</Link>
