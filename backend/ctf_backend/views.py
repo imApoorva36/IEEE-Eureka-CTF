@@ -78,7 +78,7 @@ class FlagResponsesViewSet(viewsets.ModelViewSet):
     serializer_class = FlagResponsesSerializer
     permission_classes = [IsAuthenticated]
     
-    @ratelimit(key='ip', rate='1/s', method='POST', block=True)
+    #@ratelimit(key='ip', rate='1/s', method='POST', block=True)
     def create(self, request):
         if request.method != "POST":
             return Response({}, status=status.HTTP_405_METHOD_NOT_ALLOWED)
