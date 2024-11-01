@@ -4,7 +4,7 @@
   padding: 20px;
   border-radius: 10px;
   min-height: calc( 100vh - var(--footer-height) - var(--header-height));
-  background-color: #040110;
+  
 
 }
 .title {
