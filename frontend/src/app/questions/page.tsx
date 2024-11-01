@@ -9,10 +9,9 @@ import { useCookies } from "react-cookie";
 import { useAuth } from "../useAuth";
 
 export default function Questions() {
+
 	useAuth();
-
-	
-
+  
 	const [cookies] = useCookies(["access_token"]);
 	const [questions, setQuestions] = useState<Question[]>([]);
 
