@@ -1,16 +1,17 @@
 services:
-  postgres_db:
+  postgres-db:
     image: postgres:16.4-bullseye
     environment:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - POSTGRES_DB=${POSTGRES_DB}
       - POSTGRES_HOST_AUTH_METHOD=scram-sha-256
-      - POSTGRES_INITDB_ARGS="--auth-host=scram-sha-256 --auth-local=scram-sha-256"
+      - POSTGRES_INITDB_ARGS=--auth-host=scram-sha-256
+      - POSTGRES_INITDB_ARGS=--auth-local=scram-sha-256
     volumes:
       - postgres:/var/lib/postgresql/data
     networks:
-      - internal_network
+      - internal-network
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
       interval: 3s
@@ -20,37 +21,35 @@ services:
       - ./.env
     restart: always
   backend:
-    build:
-      context: backend
-      dockerfile: Dockerfile
-    image: eurekactfacr.azurecr.io/backend:latest
-    command: python3 manage.py runserver 0.0.0.0:8000
+    # build:
+    #   context: backend
+    #   dockerfile: Dockerfile
+    image: eurekactfacr.azurecr.io/backend:test
     depends_on:
-      postgres_db:
+      postgres-db:
         condition: service_healthy
     ports:
       - 8000:8000
     networks:
-      - internal_network
+      - internal-network
     restart: always
     env_file:
       - ./.env
   frontend:
-    build:
-      context: frontend
-      dockerfile: Dockerfile
-    image: eurekactfacr.azurecr.io/frontend:latest
-    command: npm start
+    # build:
+    #   context: frontend
+    #   dockerfile: Dockerfile
+    image: eurekactfacr.azurecr.io/frontend:test
     ports:
       - 3000:3000
     networks:
-      - internal_network
+      - internal-network
     restart: always
     depends_on:
       - backend
 
 networks:
-  internal_network:
+  internal-network:
     driver: bridge
 volumes:
   postgres:

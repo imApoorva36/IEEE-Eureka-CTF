@@ -35,7 +35,7 @@ INSTALLED_APPS = [
 ]
 
 
-CSRF_TRUSTED_ORIGINS = ['https://ctf-backend.azurewebsites.net', "https://eurekactf.azurewebsites.net","http://localhost:3000",]
+CSRF_TRUSTED_ORIGINS = ['https://ctf-backend.azurewebsites.net', "https://eurekactf.azurewebsites.net","http://localhost:3000", "https://eureka-ctf-backend.ashycliff-aab3b6e6.centralindia.azurecontainerapps.io", "https://eureka-ctf.ashycliff-aab3b6e6.centralindia.azurecontainerapps.io"]
 
 # Optional: Allow cookies to be included in CORS requests (if needed)
 CORS_ALLOW_CREDENTIALS = True
@@ -68,10 +68,10 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://frontend:3000","http://localhost:3000","https://eurekactf.azurewebsites.net","https://ctf-backend.azurewebsites.net",
+    "http://frontend:3000","http://localhost:3000","https://eurekactf.azurewebsites.net","https://ctf-backend.azurewebsites.net", "https://eureka-ctf-backend.ashycliff-aab3b6e6.centralindia.azurecontainerapps.io", "https://eureka-ctf.ashycliff-aab3b6e6.centralindia.azurecontainerapps.io"
 ]
 
-ALLOWED_HOSTS=['frontend','localhost','backend','ctf-backend.azurewebsites.net','127.0.0.1']
+ALLOWED_HOSTS=['frontend','localhost','backend','ctf-backend.azurewebsites.net','127.0.0.1', 'eureka-ctf-backend.ashycliff-aab3b6e6.centralindia.azurecontainerapps.io', 'eureka-ctf.ashycliff-aab3b6e6.centralindia.azurecontainerapps.io']
 
 ROOT_URLCONF = 'backend.urls'
 
