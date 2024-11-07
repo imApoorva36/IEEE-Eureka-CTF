@@ -7,10 +7,10 @@ from email import encoders
 import html
 
 # PUT YOUR EMAIL HERE
-from_email = 'apoorva.221ec207@nitk.edu.in'
+from_email = 'corpusieeenitk@gmail.com'
 
 # THIS IS NOT YOUR GMAIL PASSWORD, THIS IS AN APP PASSWORD (LOOK IT UP and ENABLE IT)
-password = 'aeji eqru ljsc xryd'
+password = 'mvis oqrf tazc xrxj '
 
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
