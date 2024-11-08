@@ -16,6 +16,7 @@ from rest_framework.decorators import api_view
 # from django.contrib.auth import authenticate, login
 from datetime import datetime, tzinfo
 from django.utils.timezone import make_aware
+from django.utils.decorators import method_decorator
 from rest_framework.decorators import action
 from django.http import JsonResponse
 from django.contrib.auth import logout
@@ -78,7 +79,7 @@ class FlagResponsesViewSet(viewsets.ModelViewSet):
     serializer_class = FlagResponsesSerializer
     permission_classes = [IsAuthenticated]
     
-    @ratelimit(key='ip', rate='1/s', method='POST', block=True)
+    @method_decorator(ratelimit(key='ip', rate='1/s', method='POST', block=True))
     def create(self, request):
         if request.method != "POST":
             return Response({}, status=status.HTTP_405_METHOD_NOT_ALLOWED)
